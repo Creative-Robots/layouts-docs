@@ -1,0 +1,61 @@
+{
+    "tag": "object",
+    "allowedAttributes": [
+        {
+            "name": "data",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "image/jpeg",
+                        "application/pdf",
+                        "text/html"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "HTML Object Tag",
+    "shortDescriptionOfTheTag": "The HTML <object> element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.",
+    "usageExamples": [
+        {
+            "title": "Embedding an Image",
+            "description": "Embedding an image using the object tag",
+            "code": "<object data='image.jpg' type='image/jpeg' width='200' height='200'></object>"
+        },
+        {
+            "title": "Embedding a PDF",
+            "description": "Embedding a PDF file using the object tag",
+            "code": "<object data='document.pdf' type='application/pdf' width='800' height='600'></object>"
+        }
+    ]
+}

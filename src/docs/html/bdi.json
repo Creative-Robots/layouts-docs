@@ -1,0 +1,19 @@
+{
+    "tag": "bdi",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "bdi",
+    "shortDescriptionOfTheTag": "The HTML <bdi> element isolates a span of text that might be formatted in a different direction from other text outside it.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using <bdi> tag in HTML",
+            "code": "<p>Here is some text in English <bdi dir=\"rtl\">العربية</bdi> and more text in English.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "HTML snippet with <bdi> tag",
+            "code": "<main>\n  <h1>Partners</h1>\n  <ul>\n    <li><bdi>Gandalf</bdi></li>\n    <li><bdi>Bilbo</bdi></li>\n  </ul>\n</main>"
+        }
+    ]
+}

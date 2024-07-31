@@ -1,0 +1,67 @@
+{
+    "tag": "a",
+    "allowedAttributes": [
+        {
+            "name": "href",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "target",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "_blank",
+                        "_parent",
+                        "_self",
+                        "_top"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "download",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "rel",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "HTML <a> Tag",
+    "shortDescriptionOfTheTag": "The <a> tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the <a> element is the href attribute, which indicates the link's destination.",
+    "usageExamples": [
+        {
+            "title": "Simple usage",
+            "description": "A simple example of using the <a> tag to link to another webpage.",
+            "code": "<a href='https://www.example.com'>Visit Example.com</a>"
+        },
+        {
+            "title": "With target attribute",
+            "description": "An example of using the <a> tag with the target attribute to open a link in a new tab.",
+            "code": "<a href='https://www.example.com' target='_blank'>Open Example.com in new tab</a>"
+        },
+        {
+            "title": "With download attribute",
+            "description": "An example of using the <a> tag with the download attribute to download a file.",
+            "code": "<a href='path/to/file.pdf' download>Download the file</a>"
+        }
+    ]
+}

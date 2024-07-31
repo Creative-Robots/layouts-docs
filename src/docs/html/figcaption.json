@@ -1,0 +1,19 @@
+{
+    "tag": "figcaption",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "figcaption",
+    "shortDescriptionOfTheTag": "The figcaption tag is used to provide a caption or description for a figure element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Adding a caption to a figure element",
+            "code": "<figure>\n  <img src=\"example.jpg\" alt=\"Example\">\n  <figcaption>This is an example image</figcaption>\n</figure>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using figcaption to provide context for a table",
+            "code": "<figure>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n  <figcaption>This is a table showing data from a survey</figcaption>\n</figure>"
+        }
+    ]
+}

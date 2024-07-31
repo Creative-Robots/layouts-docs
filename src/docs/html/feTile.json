@@ -1,0 +1,14 @@
+{
+    "tag": "feTile",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "feTile",
+    "shortDescriptionOfTheTag": "The feTile tag defines an image to be used as a texture map that can be tiled, stretched, or repeated, and can be used within the <filter> element to apply image processing operations such as blurring or color adjustments.",
+    "usageExamples": [
+        {
+            "title": "Example",
+            "description": "Using feTile to create a tiled texture for an SVG shape:",
+            "code": "<filter id=\"tileFilter\">\n  <feTile result=\"tiledImage\" />\n</filter>\n\n<rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"url(#tileFilter)\" />"
+        }
+    ]
+}

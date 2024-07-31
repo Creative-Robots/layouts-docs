@@ -1,0 +1,52 @@
+---
+title: 'Data sources'
+description: 'How to manage and use data sources in Layouts'
+---
+
+In Layouts you can add external or JSON data to any project via the `/data` component.
+
+**ex:**
+```syntax Data 
+/data $movies = mock://movies with title and poster
+/div w-full overflow-x-scroll
+	/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit
+		/foreach $movies
+			/vstack gap-3 %center justify-start
+				/div w-32
+					/aspect-ratio %video-portrait overflow-hidden
+						/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer
+				/center $item.title w-full text-center text-sm
+```
+
+### Detailed usage
+
+Fetch data via from our AI-based mockup API.
+
+**ex:**
+```syntax Mockup API
+/data $movies = mock://A list of movies with title and poster
+```
+### Coming soon
+
+<Warning>Below `/data` functions not yet available. Coming soon!</Warning>
+
+Fetch data from Airtable
+
+**ex:**
+```syntax Airtable
+/data $users = airtable://my-airtable-account/my-database-name/my-table-name
+```
+
+Fetch data from Stripe
+
+**ex:**
+```syntax Stripe
+/data $customers = stripe://my-stripe-account/customers
+```
+
+Fetch data from MongoDB
+
+**ex:**
+```syntax MongoDB
+/data $customers = mongo://my-mongodb-account/my-database-name/my-collection-name
+```

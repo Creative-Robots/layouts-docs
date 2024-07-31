@@ -1,0 +1,47 @@
+{
+    "tag": "feFlood",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "flood-color",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "flood-opacity",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feFlood",
+    "shortDescriptionOfTheTag": "The feFlood SVG filter primitive fills the filter subregion defined through the 'filter' property with the color and opacity defined by the 'flood-color' and 'flood-opacity' properties.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "An example of feFlood with a red flood color and opacity of 0.5",
+            "code": "<feFlood flood-color='red' flood-opacity='0.5' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "An example of feFlood with default values",
+            "code": "<feFlood />"
+        }
+    ]
+}

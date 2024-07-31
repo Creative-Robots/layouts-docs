@@ -1,0 +1,38 @@
+{
+    "tag": "feMerge",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feMerge",
+    "shortDescriptionOfTheTag": "The feMerge SVG filter allows a sequence of filter primitives to be processed.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "This is an example of how to use feMerge with children elements.",
+            "code": "<filter id='customFilter'>\n  <feMerge>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Another example of using feMerge with different attributes.",
+            "code": "<filter id='customFilter'>\n  <feMerge result='mergedImage'>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>"
+        }
+    ]
+}

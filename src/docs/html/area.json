@@ -1,0 +1,136 @@
+{
+    "tag": "area",
+    "allowedAttributes": [
+        {
+            "name": "alt",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "coords",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "shape",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "default",
+                        "rect",
+                        "circle",
+                        "poly"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "href",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "target",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "_blank",
+                        "_parent",
+                        "_self",
+                        "_top"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "rel",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "media",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "hreflang",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "referrerPolicy",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "no-referrer",
+                        "no-referrer-when-downgrade",
+                        "origin",
+                        "origin-when-cross-origin",
+                        "same-origin",
+                        "strict-origin",
+                        "strict-origin-when-cross-origin",
+                        "unsafe-url"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "download",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "<area> Tag",
+    "shortDescriptionOfTheTag": "Defines an area inside an image map that has predefined clickable areas.",
+    "usageExamples": [
+        {
+            "title": "Creating a clickable area",
+            "description": "This example demonstrates the usage of the <area> tag to create a clickable region within an image map. The image map is marked with the usemap attribute and points to the map's ID.",
+            "code": "<img src='workplace.jpg' usemap='#workmap' alt='Workplace'><map name='workmap'><area shape='rect' coords='34,44,270,350' alt='Computer' href='computer.html'></map>"
+        }
+    ]
+}

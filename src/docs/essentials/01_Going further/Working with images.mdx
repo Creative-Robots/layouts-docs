@@ -1,0 +1,157 @@
+---
+title: 'Working with images'
+description: 'How to create and manage images in Layouts'
+
+---
+<img height="full" src="https://dl.dropbox.com/scl/fi/x2xq8q7jim6t1a2gmrzdf/Image_QS_Layoutsdocs.gif?rlkey=e48b7eb6bppove3ffzal00enj&st=vx2kn9df&dl=0" />
+In Layouts, users can leverage AI or access various asset libraries to generate various types of images, modify them on the fly with modifiers, and change an image's aspect ratio, radius etc.
+
+### Images
+
+The `/image` component in Layouts fetches an image from the internet or from your favorite asset libraries.
+
+**ex:**
+```syntax Layouts
+/image %unsplash spaceship size-48 rounded-lg
+```
+
+### Using image variants 
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://dl.dropbox.com/scl/fi/zu4ob8vqqely3shyuoijn/Variants_Images_Layoutsdocs.mp4?rlkey=7io4n0hw8ra4hybrwap56fep1&st=2xh4po5l&dl=0"
+></video>
+
+
+If you'd like to set more constraints on where the image is sourced and how you'd like it to be generated, use the `%variant` to set constraints.
+
+For instance, if you'd like to find an image of a tiger from Google images, use the `/image` component followed by `%google` on the same line.
+
+**ex.**
+``` syntax Layouts
+/image %google tiger
+```
+
+Available image variants include:
+
+| %variant | Description                           |
+| -------- | ------------------------------------- |
+| %unsplash    | Source from Unsplash              |
+| %google      | Source from Google Images |
+| %lexica      | Generate an image with Lexica AI |
+| %lexica-aperture | Generate a photorealistic image with Lexica AI |
+| %dall-e  | Generate an image with OpenAI's Dall-e |
+| %sdxl    | Generate an image from Stable Diffusion |
+| %ai/3D-clay-icon | Generate a 3D clay icon using AI |
+| %ai/children-book | Generate a children's book style image using AI |
+| %ai/clear-style | Generate a clear illustration using AI |
+| %ai/comics | Generate a comic-style image using AI |
+| %ai/flat-illustration | Generate a flat illustration using AI |
+| %ai/interior-design | Generate images of various interior styles using AI |
+| %ai/night-portrait | Generate an night scene portrait using AI |
+| %ai/outline-icon | Generate an outline style icon using AI |
+| %ai/poly-clay-icon | Generate a geometric clay icon using AI |
+| %ai/portrait | Generate a portrait-style image using AI |
+| %ai/undraw | Generate an image from unDraw's open source library |
+| %ai/vector-art | Generate vector art using AI |
+
+
+
+### Icons
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://dl.dropbox.com/scl/fi/dryivajxo6j677avz429r/Icon_Images_Layoutsdocs.mp4?rlkey=qn7vy42dzwbh5bpwob2us63wq&st=g42gh59s&dl=0"
+></video>
+
+Use the `/icon` component in Layouts whenever you need to use a icon in your design. All icons in Layouts are made available via [Lucide](https://lucide.dev/).
+
+For example, if your looking for a rocket icon for your primary `/button` on a landing page, nest the `/icon` component as a child under the button. On the same line as your `/icon` component, type in what you need and we'll find the icon most relevant based on your description. 
+
+**ex.**
+```
+/button %default
+	/icon rocket 
+	/p Get started 
+```
+
+### Illustrations
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://dl.dropbox.com/scl/fi/mbq3oz2w1ylu86z75rcp3/Illustrations_Images_Layoutsdocs.mp4?rlkey=ppzivyw1igpk4wklxwfpaavmh&st=fccbs0dy&dl=0"
+></video>
+
+
+Use the `/illustration` component if you need to use an illustration in your design. 
+For instance, if you've ever needed a minimalist illustration for a landing page, you can use the `/illustration` component and `%minimalistic` variant. On that same line, type in what you need and we’ll find the most relevant illustration based on your description.
+
+**ex.**
+``` syntax Layouts
+/div flex flex-col items-center p-12
+	/illustration %minimalistic video call
+```
+Other available variants for illustrations include: 
+| Illustration variants  |
+| -------- |
+| %kukla-angle
+| %kukla-face
+| %flatline
+| %isometric 
+| %monochromatic
+| %outline
+| %two-color 
+| %minimalistic 
+
+
+### More detailed variant usage
+
+Get an image from Unsplash:
+```syntax Layouts
+/image w-40 %unsplash Tiger w-40
+```
+
+Get an image from Google:
+```syntax Layouts
+/image w-40 %google Tiger w-40
+```
+
+Get an image by url:
+```syntax Layouts
+/image w-40 https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png My image description here
+```
+
+Apply transforms to an image:
+```syntax Layouts
+/image w-40 %google Lion | remove-bg
+```
+
+Create an image with the right aspect-ratio:
+```syntax Layouts
+/div w-40
+	/aspect-ratio %video
+		/image Tiger size-full object-cover
+```
+
+Generate an image with AI:
+```syntax Layouts
+/image w-40 %ai/flat-illustration Calendar
+```
+
+Apply transforms to an illustration:
+```syntax Layouts
+/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize
+```
+

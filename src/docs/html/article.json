@@ -1,0 +1,29 @@
+{
+    "tag": "article",
+    "allowedAttributes": [
+        {
+            "name": "global attributes",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "<article>",
+    "shortDescriptionOfTheTag": "The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.",
+    "usageExamples": [
+        {
+            "title": "Basic usage of <article>",
+            "description": "This example shows how to mark up a simple article, including a header with a title and publication date, and paragraphs of content.",
+            "code": "<article>\n  <header>\n    <h1>Article Title</h1>\n    <p>Published on: <time datetime=\"2023-01-27\">January 27, 2023</time></p>\n  </header>\n  <p>This is a paragraph of content in the article...</p>\n  <p>Another paragraph of article content...</p>\n</article>"
+        },
+        {
+            "title": "Article with sections",
+            "description": "The article element can also be used to enclose sections of content that should be treated as a single, independent item. This example includes multiple sections within the article.",
+            "code": "<article>\n  <header>\n    <h1>Main Article Title</h1>\n  </header>\n  <section>\n    <h2>Section 1 Title</h2>\n    <p>Content of the first section...</p>\n  </section>\n  <section>\n    <h2>Section 2 Title</h2>\n    <p>Content of the second section...</p>\n  </section>\n</article>"
+        }
+    ]
+}

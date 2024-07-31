@@ -1,0 +1,79 @@
+{
+    "tag": "menuitem",
+    "allowedAttributes": [
+        {
+            "name": "checked",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "default",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "icon",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "command",
+                        "checkbox",
+                        "radio"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "menuitem",
+    "shortDescriptionOfTheTag": "Represents a command that a user can invoke from a popup menu or other context menu.",
+    "usageExamples": [
+        {
+            "title": "Basic menuitem example",
+            "description": "Create a simple menuitem.",
+            "code": "<menu><menuitem label='Copy' icon='copy-icon.png'></menuitem></menu>"
+        },
+        {
+            "title": "Menuitem with radio type",
+            "description": "Create a menuitem with radio type.",
+            "code": "<menu><menuitem label='Option 1' type='radio'></menuitem></menu>"
+        }
+    ]
+}

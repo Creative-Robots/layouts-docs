@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@mintlify/components';
+
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+
+h1 {
+  @apply text-[#1E1F22];
+}
+
+p {
+  @apply text-[#5B5E66] 
+}
+
+IconOf {
+  @apply text-[#5B5E66]
+}

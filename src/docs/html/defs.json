@@ -1,0 +1,19 @@
+{
+    "tag": "defs",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Defs",
+    "shortDescriptionOfTheTag": "The <defs> tag is used to define graphical template objects that can be reused within an SVG document.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Defining a linear gradient to be used later in the SVG",
+            "code": "<defs>\n  <linearGradient id=\"grad1\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n    <stop offset=\"0%\" style=\"stop-color:rgb(255,255,0);stop-opacity:1\" />\n    <stop offset=\"100%\" style=\"stop-color:rgb(255,0,0);stop-opacity:1\" />\n  </linearGradient>\n</defs>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Defining a pattern to be used later in the SVG",
+            "code": "<defs>\n  <pattern id=\"pattern1\" width=\"50\" height=\"50\" patternUnits=\"userSpaceOnUse\">\n    <rect width=\"50\" height=\"50\" fill=\"#0099FF\" />\n    <text x=\"5\" y=\"15\" font-size=\"12\" fill=\"white\">Pattern</text>\n  </pattern>\n</defs>"
+        }
+    ]
+}

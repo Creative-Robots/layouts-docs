@@ -1,0 +1,54 @@
+{
+    "tag": "ol",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "1",
+                        "A",
+                        "a",
+                        "I",
+                        "i"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "start",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "reversed",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Ordered List (ol)",
+    "shortDescriptionOfTheTag": "The <ol> tag defines an ordered list of items",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Basic Ordered List",
+            "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Ordered list with attributes",
+            "code": "<ol type='A' start='5' reversed>\n  <li>Apples</li>\n  <li>Bananas</li>\n  <li>Oranges</li>\n</ol>"
+        }
+    ]
+}

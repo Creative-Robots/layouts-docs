@@ -1,0 +1,42 @@
+{
+    "tag": "mask",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "text",
+                        "password"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "placeholder",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Mask Input",
+    "shortDescriptionOfTheTag": "A component for masking user input such as passwords.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Mask input for password with placeholder",
+            "code": "<mask type='password' placeholder='Enter password'></mask>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Mask input for text",
+            "code": "<mask type='text'></mask>"
+        }
+    ]
+}

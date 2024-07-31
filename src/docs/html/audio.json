@@ -1,0 +1,65 @@
+{
+    "tag": "audio",
+    "allowedAttributes": [
+        {
+            "name": "autoplay",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "controls",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "loop",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "muted",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Audio",
+    "shortDescriptionOfTheTag": "The <audio> tag is used to embed sound content in a document, such as music or other audio streams.",
+    "usageExamples": [
+        {
+            "title": "Basic Audio Element",
+            "description": "Embedding audio with controls.",
+            "code": "<audio controls>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>"
+        },
+        {
+            "title": "Autoplay Audio",
+            "description": "Embedding audio that automatically plays when loaded.",
+            "code": "<audio autoplay>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>"
+        }
+    ]
+}

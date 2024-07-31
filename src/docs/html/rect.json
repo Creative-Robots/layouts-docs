@@ -1,0 +1,65 @@
+{
+    "tag": "rect",
+    "allowedAttributes": [
+        {
+            "name": "x",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "fill",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "rect",
+    "shortDescriptionOfTheTag": "The rect element is used to create a rectangle shape in SVG.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a red rectangle with x, y, width and height attributes.",
+            "code": "<rect x='10' y='10' width='100' height='50' fill='red' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Creating a blue rectangle with x, y, width and height attributes.",
+            "code": "<rect x='20' y='20' width='80' height='40' fill='blue' />"
+        }
+    ]
+}

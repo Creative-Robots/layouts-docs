@@ -1,0 +1,52 @@
+{
+    "tag": "header",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "center",
+                        "right"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Header",
+    "shortDescriptionOfTheTag": "Defines a header for a document or section",
+    "usageExamples": [
+        {
+            "title": "Basic header example",
+            "description": "Creating a simple header element",
+            "code": "<header align='center'>Welcome to my website!</header>"
+        },
+        {
+            "title": "Header with ID example",
+            "description": "Adding an ID attribute to a header element",
+            "code": "<header id='main-header'>Main Header</header>"
+        }
+    ]
+}

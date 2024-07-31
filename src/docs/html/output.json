@@ -1,0 +1,47 @@
+{
+    "tag": "output",
+    "allowedAttributes": [
+        {
+            "name": "for",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "form",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "HTML <output> Tag",
+    "shortDescriptionOfTheTag": "The <output> tag represents the result of a calculation or user action.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Basic <output> tag with text content",
+            "code": "<output>Result: 10</output>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using the 'for' attribute to associate the output with a form element",
+            "code": "<output for='quantity'>Result: 10</output>"
+        }
+    ]
+}

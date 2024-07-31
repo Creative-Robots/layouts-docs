@@ -1,0 +1,47 @@
+{
+    "tag": "fieldset",
+    "allowedAttributes": [
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "form",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "fieldset",
+    "shortDescriptionOfTheTag": "The fieldset element is used to group related elements within a form.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Create a fieldset with a legend and input elements inside.",
+            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>"
+        },
+        {
+            "title": "With disabled attribute",
+            "description": "Create a disabled fieldset.",
+            "code": "<fieldset disabled>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>"
+        }
+    ]
+}

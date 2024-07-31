@@ -1,0 +1,19 @@
+{
+    "tag": "body",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Body",
+    "shortDescriptionOfTheTag": "Defines the main content of an HTML document",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "This example shows a simple usage of the body tag.",
+            "code": "<body>\n  <h1>Hello World!</h1>\n</body>"
+        },
+        {
+            "title": "Body with Background Color",
+            "description": "This example sets the background color of the body element.",
+            "code": "<body style=\"background-color: lightblue;\">\n  <h1>Welcome!</h1>\n</body>"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "tag": "path",
+    "allowedAttributes": [
+        {
+            "name": "d",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "fill",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "color"
+                },
+                {
+                    "type": "none"
+                }
+            ]
+        },
+        {
+            "name": "stroke",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "color"
+                }
+            ]
+        },
+        {
+            "name": "stroke-width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "transform",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Path",
+    "shortDescriptionOfTheTag": "Defines a path to be drawn.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A simple path with fill color",
+            "code": "<path d=\"M10 10 L20 20 H20 Z\" fill=\"blue\" />"
+        },
+        {
+            "title": "Example 2",
+            "description": "A path with stroke color and width",
+            "code": "<path d=\"M10 10 L20 20 H20 Z\" stroke=\"black\" stroke-width=\"2\" />"
+        }
+    ]
+}

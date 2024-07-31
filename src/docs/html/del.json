@@ -1,0 +1,33 @@
+{
+    "tag": "del",
+    "allowedAttributes": [
+        {
+            "name": "cite",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "datetime",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "del",
+    "shortDescriptionOfTheTag": "The del element represents a range of text that has been deleted from a document.",
+    "usageExamples": [
+        {
+            "title": "Example",
+            "description": "Usage of del tag to display deleted text",
+            "code": "<del>This text is no longer valid</del>"
+        }
+    ]
+}

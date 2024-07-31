@@ -1,0 +1,44 @@
+---
+title: 'Programming with variables'
+description: 'How to use variables and loops in Layouts'
+
+---
+
+In Layouts, the `/foreach` component, allows for you to iterate over a list of items using variables:
+
+**ex.**
+```syntax Layouts
+/hstack gap-3
+	/foreach [1...10]
+		/center bg-slate-200 size-11 text-slate-700 rounded-lg $item
+```
+### Detailed usage
+
+With a static array: 
+```syntax Layouts
+/grid gap-2
+	/foreach [apple, orange, pineapple]
+		/center p-6 bg-slate-200 $item
+```
+
+With a static array of objects:
+```syntax Layouts
+/grid gap-2
+	/foreach [{ name: apple }, { name:orange }, { name: pineapple }]
+		/center p-6 bg-slate-200 $item.name
+```
+
+With static number series:
+```syntax Layouts
+/grid gap-2
+	/foreach [3...8]
+		/center p-6 bg-slate-200 $item
+```
+
+With dynamic data:
+```syntax Layouts
+/data $movies = mock://A list of movies with title and poster
+/grid gap-2
+	/foreach $movies
+		/center p-6 bg-slate-200 $item.title
+```

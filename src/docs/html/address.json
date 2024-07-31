@@ -1,0 +1,42 @@
+{
+    "tag": "address",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "HTML <address> Tag",
+    "shortDescriptionOfTheTag": "The HTML <address> tag represents the contact information for the author/owner of a document/article or the parent <article> or <body> element, depending on its context. It can include physical address, URL, email address, phone number etc. The addresses inside <address> tag are usually in an italic typeface (browser default style). HTML5 does not support the align attribute in the address tag.",
+    "usageExamples": [
+        {
+            "title": "Example of the <address> tag",
+            "description": "This example uses the <address> tag to specify the contact information for the author of the document",
+            "code": "<address>\n  Written by <a href='mailto:example@example.com'>John Doe</a>.\n  Visit us at:\n  Example.com\n  Box 564, Disneyland\n  USA\n</address>"
+        }
+    ]
+}

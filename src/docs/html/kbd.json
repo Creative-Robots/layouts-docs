@@ -1,0 +1,19 @@
+{
+    "tag": "kbd",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "kbd",
+    "shortDescriptionOfTheTag": "The kbd tag is used to define keyboard input.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Displaying keyboard input",
+            "code": "<kbd>Ctrl</kbd> + <kbd>C</kbd>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Displaying key combinations",
+            "code": "<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd>"
+        }
+    ]
+}

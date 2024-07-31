@@ -1,0 +1,69 @@
+{
+    "tag": "marker",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "markerHeight",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "markerWidth",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "viewBox",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "orient",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "auto",
+                        "auto-start-reverse"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "marker",
+    "shortDescriptionOfTheTag": "The <marker> element is used to define the attributes for markers that may be associated with the given element. Markers are used to add shapes or graphics to the edge or border of a graphical element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Defining a red square marker with an ID of 'squareMarker'",
+            "code": "<marker id='squareMarker' markerHeight='10' markerWidth='10' orient='auto'>\n  <rect width='10' height='10' fill='red'/>\n</marker>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Defining a blue triangle marker with an ID of 'triangleMarker'",
+            "code": "<marker id='triangleMarker' markerHeight='10' markerWidth='10' orient='auto-start-reverse'>\n  <path d='M0,0L10,5L0,10z' fill='blue'/>\n</marker>"
+        }
+    ]
+}

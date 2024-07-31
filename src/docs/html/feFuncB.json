@@ -1,0 +1,54 @@
+{
+    "tag": "feFuncB",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "identity",
+                        "table",
+                        "discrete",
+                        "linear",
+                        "gamma"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "slope",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "intercept",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feFuncB",
+    "shortDescriptionOfTheTag": "The feFuncB element defines the transfer function for the blue component of the input graphic of a filter effects primitive.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Use feFuncB with identity type",
+            "code": "<feFuncB type=\"identity\" />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Use feFuncB with table type",
+            "code": "<feFuncB type=\"table\" slope=\"1.2\" intercept=\"0.5\" />"
+        }
+    ]
+}

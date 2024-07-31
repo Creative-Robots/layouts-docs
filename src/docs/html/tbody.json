@@ -1,0 +1,19 @@
+{
+    "tag": "tbody",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "HTML tbody Tag",
+    "shortDescriptionOfTheTag": "The HTML <tbody> tag defines a group of table rows that form the body of the table content.",
+    "usageExamples": [
+        {
+            "title": "Basic tbody Example",
+            "description": "Create a basic table body with two rows.",
+            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Row 1 Data 1</td>\n      <td>Row 1 Data 2</td>\n    </tr>\n    <tr>\n      <td>Row 2 Data 1</td>\n      <td>Row 2 Data 2</td>\n    </tr>\n  </tbody>\n</table>"
+        },
+        {
+            "title": "Nested tbody Example",
+            "description": "Nest tbody within a table for additional styling or structure.",
+            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Nested tbody Row 1 Data 1</td>\n      <td>Nested tbody Row 1 Data 2</td>\n    </tr>\n  </tbody>\n</table>"
+        }
+    ]
+}

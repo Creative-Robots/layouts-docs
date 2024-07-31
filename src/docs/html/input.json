@@ -1,0 +1,94 @@
+{
+    "tag": "input",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "text",
+                        "password",
+                        "checkbox",
+                        "radio",
+                        "file",
+                        "email",
+                        "number",
+                        "date",
+                        "color"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "value",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "placeholder",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "required",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "pattern",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Input Tag",
+    "shortDescriptionOfTheTag": "The input tag is used to create an input field where users can enter data.",
+    "usageExamples": [
+        {
+            "title": "Basic Text Input",
+            "description": "Creating a basic text input field.",
+            "code": "<input type=\"text\" name=\"username\" placeholder=\"Enter your username\">"
+        },
+        {
+            "title": "Checkbox Input",
+            "description": "Creating a checkbox input field.",
+            "code": "<input type=\"checkbox\" name=\"subscribe\" value=\"yes\"> Subscribe to newsletter"
+        }
+    ]
+}

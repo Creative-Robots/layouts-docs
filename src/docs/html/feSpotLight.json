@@ -1,0 +1,69 @@
+{
+    "tag": "feSpotLight",
+    "allowedAttributes": [
+        {
+            "name": "x",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "z",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "pointsAtX",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "pointsAtY",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "pointsAtZ",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feSpotLight",
+    "shortDescriptionOfTheTag": "The feSpotLight SVG filter primitive creates a spotlight lighting effect.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a spotlight effect with feSpotLight.",
+            "code": "<svg width='400' height='200' xmlns='http://www.w3.org/2000/svg'>\n  <defs>\n    <filter id='exampleFilter' x='0' y='0' width='200%' height='200%'>\n      <feOffset result='offOut' in='SourceGraphic' dx='20' dy='20' />\n      <feBlend in='SourceGraphic' in2='offOut' mode='normal' />\n      <feSpotLight x='50' y='30' z='70' pointsAtX='20' pointsAtY='20' pointsAtZ='20' />\n    </filter>\n  </defs>\n  <rect width='90' height='90' filter='url(#exampleFilter)' />\n</svg>"
+        }
+    ]
+}

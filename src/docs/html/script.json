@@ -1,0 +1,66 @@
+{
+    "tag": "script",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "module",
+                        "text/javascript"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "async",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "async"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "defer",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "defer"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Script",
+    "shortDescriptionOfTheTag": "Define client-side JavaScript within an HTML document",
+    "usageExamples": [
+        {
+            "title": "External Script",
+            "description": "Include an external JavaScript file in your HTML document",
+            "code": "<script src=\"example.js\"></script>"
+        },
+        {
+            "title": "Inline Script",
+            "description": "Write JavaScript directly within the HTML document",
+            "code": "<script type=\"text/javascript\">\n    alert('Hello, World!');\n</script>"
+        }
+    ]
+}

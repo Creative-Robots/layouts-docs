@@ -1,0 +1,29 @@
+{
+    "tag": "dt",
+    "allowedAttributes": [
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "dt",
+    "shortDescriptionOfTheTag": "Defines a term/name in a description list",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Usage of <dt> tag with a term/name",
+            "code": "<dl>\n  <dt>Title</dt>\n  <dd>Description</dd>\n</dl>"
+        },
+        {
+            "title": "Example with Title Attribute",
+            "description": "Usage of <dt> tag with a title attribute",
+            "code": "<dl>\n  <dt title=\"Title Explanation\">Title</dt>\n  <dd>Description</dd>\n</dl>"
+        }
+    ]
+}

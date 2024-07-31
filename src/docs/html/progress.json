@@ -1,0 +1,38 @@
+{
+    "tag": "progress",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "max",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Progress Tag",
+    "shortDescriptionOfTheTag": "The progress tag represents the completion progress of a task",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A simple progress bar showing 50% completion",
+            "code": "<progress value='50' max='100'></progress>"
+        },
+        {
+            "title": "Example 2",
+            "description": "A progress bar showing 75% completion",
+            "code": "<progress value='75' max='100'></progress>"
+        }
+    ]
+}

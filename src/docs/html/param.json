@@ -1,0 +1,38 @@
+{
+    "tag": "param",
+    "allowedAttributes": [
+        {
+            "name": "name",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "value",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Param",
+    "shortDescriptionOfTheTag": "Defines parameters for an object or element in a param element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Setting a parameter name and value",
+            "code": "<param name='autoplay' value='true' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Setting a parameter name without a value",
+            "code": "<param name='loop' />"
+        }
+    ]
+}

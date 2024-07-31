@@ -1,0 +1,56 @@
+{
+    "tag": "tspan",
+    "allowedAttributes": [
+        {
+            "name": "x",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "dx",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "dy",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "tspan",
+    "shortDescriptionOfTheTag": "The tspan element allows to group a part of a text within a text element.",
+    "usageExamples": [
+        {
+            "title": "Basic tspan Example",
+            "description": "This example shows the usage of the tspan tag to style a part of a text.",
+            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red</tspan> word</text>"
+        },
+        {
+            "title": "Nested tspan Example",
+            "description": "This example shows nested tspan tags to apply different styles to different parts of the text.",
+            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red <tspan fill='blue'>blue</tspan></tspan> word</text>"
+        }
+    ]
+}

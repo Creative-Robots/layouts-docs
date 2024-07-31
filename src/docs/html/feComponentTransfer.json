@@ -1,0 +1,54 @@
+{
+    "tag": "feComponentTransfer",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "identity",
+                        "table",
+                        "discrete",
+                        "linear",
+                        "gamma"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feComponentTransfer",
+    "shortDescriptionOfTheTag": "The feComponentTransfer filter primitive functions to linearly scale the input of the filter. It allows operations such as transferring, offset, and limiting channels.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying a feComponentTransfer filter to an image",
+            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncG type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncB type=\"gamma\" exponent=\"0.5\"/>\n  </feComponentTransfer>\n</filter>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using the feComponentTransfer filter with different transfer functions",
+            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"linear\" slope=\"0.5\" intercept=\"0.1\"/>\n    <feFuncG type=\"discrete\" tableValues=\"0.1 0.3 0.7 1\"/>\n    <feFuncB type=\"table\" tableValues=\"0.2 0.5 0.8 1\"/>\n  </feComponentTransfer>\n</filter>"
+        }
+    ]
+}

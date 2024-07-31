@@ -1,0 +1,62 @@
+{
+    "tag": "aside",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "right",
+                        "center",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Aside",
+    "shortDescriptionOfTheTag": "The <aside> tag defines some content aside from the content it is placed in.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "An example of using the <aside> tag.",
+            "code": "<aside>\n   <h2>Related Links</h2>\n   <a href=\"#\">Link 1</a>\n   <a href=\"#\">Link 2</a>\n</aside>"
+        },
+        {
+            "title": "Example with Alignment and Styling",
+            "description": "An example of using alignment and styling with the <aside> tag.",
+            "code": "<aside align=\"left\" style=\"background-color: lightgray;\">\n   <h2>Important Note</h2>\n   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</aside>"
+        }
+    ]
+}

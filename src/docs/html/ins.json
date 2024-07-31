@@ -1,0 +1,38 @@
+{
+    "tag": "ins",
+    "allowedAttributes": [
+        {
+            "name": "cite",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "URL"
+                }
+            ]
+        },
+        {
+            "name": "datetime",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "ins",
+    "shortDescriptionOfTheTag": "The ins tag is used to represent inserted text that has been added to a document.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Inserting a block of text",
+            "code": "<ins>This is an inserted text.</ins>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Inserting text with a citation",
+            "code": "<ins cite=\"https://www.example.com\">Inserted text with a citation</ins>"
+        }
+    ]
+}

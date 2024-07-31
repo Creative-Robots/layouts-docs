@@ -1,0 +1,38 @@
+{
+    "tag": "samp",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "samp",
+    "shortDescriptionOfTheTag": "Defines sample output from a computer program",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Displaying sample output",
+            "code": "<samp>Sample Output</samp>"
+        },
+        {
+            "title": "Example with Class",
+            "description": "Applying a custom class to the samp tag",
+            "code": "<samp class='custom-style'>Custom Sample Output</samp>"
+        }
+    ]
+}

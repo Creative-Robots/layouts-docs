@@ -1,0 +1,78 @@
+{
+    "tag": "ruby",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "lang",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "dir",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "ltr",
+                        "rtl"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "<ruby> Tag",
+    "shortDescriptionOfTheTag": "The <ruby> tag specifies a ruby annotation for East Asian typography, including the pronunciation of East Asian characters.",
+    "usageExamples": [
+        {
+            "title": "Basic Usage",
+            "description": "An example showing the basic usage of the <ruby> tag",
+            "code": "<ruby>漢字<rt>かんじ</rt></ruby>"
+        },
+        {
+            "title": "Ruby with CSS Styling",
+            "description": "An example showing ruby text with applied CSS styles",
+            "code": "<ruby style=\"color: red;\">漢字<rt>かんじ</rt></ruby>"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "tag": "cite",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "cite",
+    "shortDescriptionOfTheTag": "The HTML <cite> tag represents the title of a creative work (e.g. a book, movie, poem, song, painting, sculpture, etc.)",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using <cite> tag to mark up a title",
+            "code": "<p>I read the book <cite>The Great Gatsby</cite> last week.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using <cite> tag for a song title",
+            "code": "<p>Have you heard the song <cite>Bohemian Rhapsody</cite> by Queen?</p>"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tag": "i",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "i",
+    "shortDescriptionOfTheTag": "The <i> tag defines a part of text in an alternate voice or mood.",
+    "usageExamples": [
+        {
+            "title": "Italicize text",
+            "description": "Use <i> tag to italicize text:",
+            "code": "<p>This is normal text. <i>This is italic text.</i></p>"
+        },
+        {
+            "title": "Styling with CSS",
+            "description": "You can style the <i> tag using CSS:",
+            "code": "<style> i { font-style: italic; } </style>"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "tag": "hgroup",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "HGroup",
+    "shortDescriptionOfTheTag": "The HTML <hgroup> element represents a multi-level heading for a section of a document.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "An example of using <hgroup> with nested <h1> and <h2> headings.",
+            "code": "<hgroup>\n  <h1>Main Heading</h1>\n  <h2>Subheading</h2>\n</hgroup>"
+        },
+        {
+            "title": "Structure Example",
+            "description": "An example using multiple nested <hgroup> elements for different heading levels.",
+            "code": "<hgroup>\n  <h1>Main Title</h1>\n  <hgroup>\n    <h2>Sub Title</h2>\n    <hgroup>\n      <h3>Sub Sub Title</h3>\n    </hgroup>\n  </hgroup>\n</hgroup>"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "tag": "select",
+    "allowedAttributes": [
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "multiple",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Select",
+    "shortDescriptionOfTheTag": "The select element is used to create a dropdown list.",
+    "usageExamples": [
+        {
+            "title": "Basic Select",
+            "description": "Create a basic select element with options.",
+            "code": "<select>\n  <option value='option1'>Option 1</option>\n  <option value='option2'>Option 2</option>\n</select>"
+        }
+    ]
+}

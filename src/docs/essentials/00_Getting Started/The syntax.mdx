@@ -1,0 +1,185 @@
+---
+title: The syntax
+description: 'How programming works in Layouts.dev'
+---
+
+## Intro
+
+The syntax we use in Layouts is different from HTML or JSX. See why [here](essentials/What%20is%20Layouts#concise-syntax-to-help-you-focus-on-what-matters).
+Fear not! We decided to keep as close to the original, so it works just the same. 😎
+
+Here’s what you need to know:
+
+### Tabs and `/` instead of XML components.
+
+  Instead of writing: 
+  ``` HTML HTML
+  <div class="bg-indigo-100" >
+	<button>
+		Hello
+	</button>
+</div>
+```
+You write: 
+```syntax Layouts
+/div bg-indigo-100
+	/button Hello
+```
+### Works with (included) React components or any HTML component.
+
+Any HTML component like `/div` or `/section` will work like: 
+
+```syntax Layouts
+/div Hello!
+```
+### Tailwind classes are first-class citizens
+
+Any Tailwind class you input will be detected and used as a class name for the component on the same line: 
+```syntax Layouts
+/button bg-indigo-100
+```
+Is the same as: 
+```HTML HTML
+<button className="bg-indigo-100" />
+```
+<Info>Tailwind classes can live on the same line as the `/component` or as a child of the component, on a line 
+with only Tailwind classes.</Info>
+
+**Here's an example:**
+```syntax Layouts
+/button 
+   bg-indigo-100 font-medium text-xl 
+   This works too
+```
+
+### Props with `@`
+
+Use:
+```syntax Layouts
+/button @onClick={() => alert ('Haha!')}
+```
+Instead of:
+```HTML HTML
+<button onClick={()  => alert('Haha!')} />
+```
+<Info>Props can live either on the same line as the `/component`, or nested as a child with one prop per line.</Info>
+
+**Here's an example:**
+```syntax Layouts
+  /button 
+  @onClick={()  => alert('Haha!')}
+  This works too
+  ```
+
+### Variables
+  
+Layouts uses a simplified syntax for using variables with components.
+- All variable names are prefixed with `$`
+- Adding a variable name on a component line binds the variable to the component
+- Adding the variable name in props or as content uses the variable value there
+
+**Here's an example:**
+```
+  /input $name What’s your name?  
+  /h1 Hello $name !
+```
+
+You can also load data from external sources into variables
+See the specific section about data sources [here](essentials/datasources)
+
+  **ex. Data Source**
+    ```syntax Layouts
+    /data $movies = mock://movies with title and poster
+    /div w-full overflow-x-scroll
+    	/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit
+    		/foreach $movies
+    			/vstack gap-3 %center justify-start
+    				/div w-32
+    					/aspect-ratio %video-portrait overflow-hidden
+    						/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer
+    				/center $item.title w-full text-center text-sm
+    ```
+
+### Short vs. Composable Syntax
+On one hand, a great developer experience should enable you to build something at the speed of light.
+On the other hand, it should give you unobstructed control over the tiniest details of each component.
+To give you both, most components built in Layouts are usable with two types of syntax.
+
+The short syntax is what you will use when you need great default and little customization.
+It’s the syntax we use most of the time in reference implementations.
+It’s made to be as easy to use as MDX and super intuitive _(hopefully...feedback welcome!)_
+    
+    **ex. Context Menu**
+    ```syntax Short Syntax
+    /context-menu
+     Menu item 1 <Alt 1>
+     Menu item 2
+          # Label
+          Sub-menu item 1 <Shift P>
+          ---
+          Sub-menu item 2 <Cmd S>
+    ```
+
+**Composable syntax** is what you’ll need when defaults don’t suit you, or if you need to surgically  
+change the style of a specific element within your components.
+
+    **ex. Context Menu**
+    ```syntax Composable
+/div Right click here flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm
+	/context-menu w-64 
+		/item Back
+		/shortcut 
+			⌘
+	/item Forward
+		/shortcut ⌘]
+		/item Reload
+		/shortcut ⌘R
+    ``` 
+
+### Custom classes
+
+When you find yourself having to break away from the design system to get your design right, consistent with TailwindCSS, you can use arbitrary values in your `/theme`, `/style` and across individal components.
+
+For example, you can add some top-margin to a `/div` by using Tailwind’s square bracket notation to generate a class on any arbitrary value.
+
+This works for everything, including things like text colors, font styles, pseudo-elements, and more.
+
+**ex.**
+```syntax Layouts
+/div flex flex-row items-center mt-[200px]
+  /h1 My avatar
+  /avatar https://github.com/shadcn.png
+			@fallback="CN"
+```
+
+### Variants
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://dl.dropbox.com/scl/fi/ldp5j91ws0nadfobg63la/Variants_Syntax_Layoutsdocs.mp4?rlkey=9t8pjjaf4f28dedk5p1uh55ts&st=6k2bvzg1&dl=0"
+></video>
+
+Many components in Layouts have an alternative version which can share many of the same visual and behavioral differences. 
+
+For instance, if you're working with the `/alert` component in Layouts, you can quickly reference it's implementation (using `>>>`) and notice it's variant is set automatically set to `%default`.
+To change a component's variant, you can either type it in manually, or (for ease of use), cycle thru available variants using your `Shift+Up, Shift+down` on your keyboard.
+
+To look up a component's available variants, you can reference Layouts documentation via the Docs panel in navigation. 
+
+
+### Summary 
+
+After the `/component`, you can apply a number of different properties including:
+    - Type any Tailwind classes and they’ll be recognized as such. For example, write `bg-indigo-900`
+    - Type any other CSS class using the format `.customClassName`
+    - Specify variants for components using `%variantName` syntax
+    - Use custom classes across your `/theme`, `/style`, or individual components in Layouts like `/p-[24px]`.
+    - Add props like `@type=button` or `@title=”Title with spaces”` which will be equivalent to HTML attributes like `<div type=”button” ></div>`
+    - Bind a variable to a component by using `$variableName`
+    - Any plain text will be recognized as a text-string and placed as a child of the component
+
+  To summarize, type any valid HTML component and you can use any Tailwind class on it. Style away!

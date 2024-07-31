@@ -1,0 +1,57 @@
+{
+    "tag": "th",
+    "allowedAttributes": [
+        {
+            "name": "colspan",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "rowspan",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "headers",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "scope",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "row",
+                        "col",
+                        "rowgroup",
+                        "colgroup"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "th",
+    "shortDescriptionOfTheTag": "HTML table header cell element",
+    "usageExamples": [
+        {
+            "title": "Basic th Example",
+            "description": "A simple example of using th tag:",
+            "code": "<table>\n  <tr>\n    <th>Name</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>John</td>\n    <td>30</td>\n  </tr>\n</table>"
+        }
+    ]
+}

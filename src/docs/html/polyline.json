@@ -1,0 +1,70 @@
+{
+    "tag": "polyline",
+    "allowedAttributes": [
+        {
+            "name": "points",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "fill",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke-width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke-linecap",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "round",
+                        "square",
+                        "butt"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "polyline",
+    "shortDescriptionOfTheTag": "The polyline element is used to create a series of connected straight lines.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Creating a polyline with specific points",
+            "code": "<svg>\n  <polyline points='100,100 150,200 200,100' />\n</svg>"
+        },
+        {
+            "title": "Styled Polyline Example",
+            "description": "Styling a polyline with different stroke and fill colors",
+            "code": "<svg>\n  <polyline points='50,50 100,100 150,50' fill='none' stroke='blue' stroke-width='2' />\n</svg>"
+        }
+    ]
+}

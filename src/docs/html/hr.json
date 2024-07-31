@@ -1,0 +1,19 @@
+{
+    "tag": "hr",
+    "allowedAttributes": [],
+    "canHaveChildren": false,
+    "title": "hr",
+    "shortDescriptionOfTheTag": "The <hr> tag represents a thematic break between paragraph-level elements (e.g., a shift of topic).",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Horizontal rule with default styling.",
+            "code": "<hr>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Horizontal rule with custom class 'separator'.",
+            "code": "<hr class='separator'>"
+        }
+    ]
+}

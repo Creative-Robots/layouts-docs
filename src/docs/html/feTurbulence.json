@@ -1,0 +1,47 @@
+{
+    "tag": "feTurbulence",
+    "allowedAttributes": [
+        {
+            "name": "baseFrequency",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "numOctaves",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "seed",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feTurbulence",
+    "shortDescriptionOfTheTag": "The feTurbulence filter primitive creates an image using the Perlin turbulence function. It allows the synthesis of artificial textures like clouds or marble.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating feTurbulence with baseFrequency and numOctaves",
+            "code": "<feTurbulence baseFrequency='0.02' numOctaves='3' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Creating feTurbulence with seed value",
+            "code": "<feTurbulence seed='5' />"
+        }
+    ]
+}

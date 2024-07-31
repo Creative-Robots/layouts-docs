@@ -1,0 +1,19 @@
+{
+    "tag": "p",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "p",
+    "shortDescriptionOfTheTag": "The 'p' tag defines a paragraph in HTML.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A simple paragraph.",
+            "code": "<p>This is a paragraph.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Nested elements within a paragraph.",
+            "code": "<p>This is a <strong>bold</strong> paragraph.</p>"
+        }
+    ]
+}

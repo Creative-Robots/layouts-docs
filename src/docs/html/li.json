@@ -1,0 +1,29 @@
+{
+    "tag": "li",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "li",
+    "shortDescriptionOfTheTag": "Represents a list item in ordered or unordered list.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a simple list item",
+            "code": "<li>Item 1</li>"
+        },
+        {
+            "title": "Example 2",
+            "description": "List item with a specific value",
+            "code": "<li value='5'>Item 5</li>"
+        }
+    ]
+}

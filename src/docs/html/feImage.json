@@ -1,0 +1,47 @@
+{
+    "tag": "feImage",
+    "allowedAttributes": [
+        {
+            "name": "xlink:href",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "in",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feImage",
+    "shortDescriptionOfTheTag": "The 'feImage' element allows to include raster images in a filter.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using feImage with a URL",
+            "code": "<feImage xlink:href=\"image.jpg\" />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using feImage with 'result' and 'in' attributes",
+            "code": "<feImage xlink:href=\"image2.jpg\" result=\"resultImage\" in=\"sourceGraphic\" />"
+        }
+    ]
+}

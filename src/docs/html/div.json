@@ -1,0 +1,47 @@
+{
+    "tag": "div",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "div",
+    "shortDescriptionOfTheTag": "The div element represents a generic container that can be used to group elements together.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a basic div container.",
+            "code": "<div>Hello, World!</div>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using div with class and id attributes.",
+            "code": "<div class='container' id='mainContainer'>Content goes here</div>"
+        }
+    ]
+}

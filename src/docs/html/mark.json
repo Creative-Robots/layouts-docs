@@ -1,0 +1,19 @@
+{
+    "tag": "mark",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "mark",
+    "shortDescriptionOfTheTag": "The HTML <mark> element represents text which is marked or highlighted for reference or emphasis.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using <mark> to highlight text",
+            "code": "<p>This is a <mark>highlighted</mark> text.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using <mark> inside a heading",
+            "code": "<h1>This is <mark>important</mark> heading</h1>"
+        }
+    ]
+}

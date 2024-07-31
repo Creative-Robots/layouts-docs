@@ -1,0 +1,65 @@
+{
+    "tag": "foreignObject",
+    "allowedAttributes": [
+        {
+            "name": "x",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "requiredExtensions",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "foreignObject",
+    "shortDescriptionOfTheTag": "The foreignObject element allows for inclusion of a DOM subtree within an SVG graph that is handled as a foreignObject on the target environment.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a foreignObject element with x, y, width, and height attributes",
+            "code": "<foreignObject x=\"10\" y=\"20\" width=\"50\" height=\"50\"><div>Foreign Content</div></foreignObject>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Including a foreignObject element with a different XML namespace",
+            "code": "<foreignObject x=\"10\" y=\"20\" width=\"100\" height=\"100\" requiredExtensions=\"http://www.w3.org/1999/xhtml\"><body xmlns=\"http://www.w3.org/1999/xhtml\"><div>Foreign Content inside a different namespace</div></body></foreignObject>"
+        }
+    ]
+}

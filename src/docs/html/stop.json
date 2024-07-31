@@ -1,0 +1,19 @@
+{
+    "tag": "stop",
+    "allowedAttributes": [],
+    "canHaveChildren": false,
+    "title": "Stop Tag",
+    "shortDescriptionOfTheTag": "The stop tag defines a stop in a gradient's color transition.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using the stop tag to define a stop in a gradient.",
+            "code": "<stop offset='20%' style='stop-color:rgb(255,255,255);stop-opacity:0.5'></stop>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Another example of using the stop tag with different attributes.",
+            "code": "<stop offset='40%' style='stop-color:rgb(0,0,255);stop-opacity:0.7'></stop>"
+        }
+    ]
+}

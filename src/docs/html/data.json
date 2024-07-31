@@ -1,0 +1,38 @@
+{
+    "tag": "data",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Data Component",
+    "shortDescriptionOfTheTag": "HTML component for storing data values.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "This is a basic example of using the data tag.",
+            "code": "<data value='123'>"
+        },
+        {
+            "title": "Example with ID",
+            "description": "An example of using the data tag with an ID attribute.",
+            "code": "<data value='456' id='data1'>"
+        }
+    ]
+}

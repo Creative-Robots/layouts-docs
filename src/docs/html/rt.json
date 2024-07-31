@@ -1,0 +1,29 @@
+{
+    "tag": "rt",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "rt",
+    "shortDescriptionOfTheTag": "The rt HTML element specifies the ruby text component of a ruby annotation, which is used to provide pronunciation and meaning information for East Asian typography.",
+    "usageExamples": [
+        {
+            "title": "Basic rt Example",
+            "description": "This example demonstrates the usage of the rt tag with ruby text inside.",
+            "code": "<ruby>漢<rt>ㄏㄢˋ</rt>字<rt>～</rt></ruby>"
+        },
+        {
+            "title": "rt with class Attribute",
+            "description": "This example shows how to use the class attribute with the rt tag.",
+            "code": "<ruby>テスト<rt class=\"ruby-text\">test</rt></ruby>"
+        }
+    ]
+}

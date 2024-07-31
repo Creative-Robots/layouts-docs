@@ -1,0 +1,14 @@
+{
+    "tag": "rp",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "rp",
+    "shortDescriptionOfTheTag": "The <rp> tag is used to define what to show in browsers that do not support ruby annotations.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Display ruby annotations where the browser supports it:",
+            "code": "<ruby>\n  Base text <rb>base</rb>\n  <rp>(</rp><rt>ruby annotation</rt><rp>)</rp>\n</ruby>"
+        }
+    ]
+}

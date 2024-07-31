@@ -1,0 +1,78 @@
+{
+    "tag": "keygen",
+    "allowedAttributes": [
+        {
+            "name": "autofocus",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "challenge",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "form",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "keytype",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "rsa",
+                        "ec"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Keygen Element",
+    "shortDescriptionOfTheTag": "The <keygen> element is used to create a key-pair and a submit button.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Basic usage of the keygen element",
+            "code": "<keygen name='mykey' keytype='rsa'>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using autofocus attribute to focus on the element when the page loads",
+            "code": "<keygen name='mykey' autofocus>"
+        }
+    ]
+}

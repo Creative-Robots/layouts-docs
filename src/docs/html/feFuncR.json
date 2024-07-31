@@ -1,0 +1,54 @@
+{
+    "tag": "feFuncR",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "identity",
+                        "table",
+                        "discrete",
+                        "linear",
+                        "gamma"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tableValues",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "slope",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feFuncR",
+    "shortDescriptionOfTheTag": "The feFuncR SVG filter primitive defines a transfer function for the red channel of the input graphic.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Applying a feFuncR filter to an image",
+            "code": "<feFuncR type='gamma' tableValues='0.5'></feFuncR>"
+        },
+        {
+            "title": "Linear Function Example",
+            "description": "Applying a feFuncR filter with linear function",
+            "code": "<feFuncR type='linear' slope='0.5'></feFuncR>"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "tag": "head",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Head",
+    "shortDescriptionOfTheTag": "The head element represents a collection of metadata for the document, including links to stylesheets, scripts, and more.",
+    "usageExamples": [
+        {
+            "title": "Adding a Title",
+            "description": "Add a title to the head section of the document.",
+            "code": "<head>\n    <title>My Webpage</title>\n</head>"
+        },
+        {
+            "title": "Linking CSS",
+            "description": "Link an external CSS file to the head section.",
+            "code": "<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n</head>"
+        }
+    ]
+}

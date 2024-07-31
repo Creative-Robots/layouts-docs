@@ -1,0 +1,57 @@
+{
+    "tag": "webview",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "sandbox",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "boolean",
+                    "options": [
+                        "allow-forms",
+                        "allow-scripts",
+                        "allow-same-origin",
+                        "allow-top-navigation",
+                        "allow-popups"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Webview",
+    "shortDescriptionOfTheTag": "An element to embed an entire web page within an HTML document.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Embedding a web page inside a webview element.",
+            "code": "<webview src='https://www.example.com'></webview>"
+        },
+        {
+            "title": "Example with name and sandbox",
+            "description": "Embedding a web page with custom name and sandbox options.",
+            "code": "<webview src='https://www.example.com' name='exampleFrame' sandbox='allow-forms allow-scripts'></webview>"
+        }
+    ]
+}

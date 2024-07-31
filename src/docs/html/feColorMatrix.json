@@ -1,0 +1,44 @@
+{
+    "tag": "feColorMatrix",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "matrix",
+                        "saturate",
+                        "hueRotate",
+                        "luminanceToAlpha"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "values",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feColorMatrix",
+    "shortDescriptionOfTheTag": "The feColorMatrix SVG filter primitive allows a color matrix to be applied to the input image.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying a greyscale filter using 'feColorMatrix'",
+            "code": "<svg>\n  <filter id=\"greyscale\">\n    <feColorMatrix type=\"saturate\" values=\"0\"/>\n  </filter>\n  <image x=\"0\" y=\"0\" width=\"100\" height=\"100\" xlink:href=\"image.jpg\" filter=\"url(#greyscale)\"/>\n</svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Applying a hue rotation using 'feColorMatrix'",
+            "code": "<svg>\n  <filter id=\"huerotate\">\n    <feColorMatrix type=\"hueRotate\" values=\"90\"/>\n  </filter>\n  <image x=\"0\" y=\"0\" width=\"100\" height=\"100\" xlink:href=\"image.jpg\" filter=\"url(#huerotate)\"/>\n</svg>"
+        }
+    ]
+}

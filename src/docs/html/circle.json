@@ -1,0 +1,74 @@
+{
+    "tag": "circle",
+    "allowedAttributes": [
+        {
+            "name": "cx",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "cy",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "r",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "fill",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke-width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Circle",
+    "shortDescriptionOfTheTag": "The circle tag is used to create a circle shape in SVG.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a red circle with a radius of 50 at coordinates (100, 100).",
+            "code": "<svg>\n  <circle cx='100' cy='100' r='50' fill='red' />\n</svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Creating a blue circle border with a radius of 30 at coordinates (50, 50).",
+            "code": "<svg>\n  <circle cx='50' cy='50' r='30' fill='none' stroke='blue' stroke-width='2' />\n</svg>"
+        }
+    ]
+}

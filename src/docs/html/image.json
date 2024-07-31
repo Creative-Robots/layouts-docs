@@ -1,0 +1,56 @@
+{
+    "tag": "image",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "alt",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Image",
+    "shortDescriptionOfTheTag": "This tag represents an image element.",
+    "usageExamples": [
+        {
+            "title": "Basic Image Tag",
+            "description": "Add a basic image tag with source and alt attributes.",
+            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" />"
+        },
+        {
+            "title": "Image Tag with Height and Width",
+            "description": "An image tag with specified height and width attributes.",
+            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" height=\"100\" width=\"200\" />"
+        }
+    ]
+}
