@@ -55,7 +55,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                     <p className='text-[#1E1F22] text-sm font-normal '>Source : </p>
                     <img alt="authorImg" src="https://seeklogo.com/images/H/html5-without-wordmark-black-white-logo-104D0855A4-seeklogo.com.png"  className='w-[18px]'/>
                     <p className=' text-xs font-bold text-[#1E1F22]'>HTML 5</p>
-                </div>}
+                </div>} 
             </div>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <H1 text="Props"></H1>

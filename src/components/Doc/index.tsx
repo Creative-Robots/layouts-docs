@@ -13,6 +13,8 @@ import { getFilenames } from '@/lib/fileUtils';
 import { rep, repContext } from '@/lib/RepContext';
 import HtmlComponentDoc from './Html';
 import { scrollToElement } from '@/lib/utils';
+import { ComponentDoc } from '@/app/components/[name]/page';
+import LayoutComponentsDoc from './Layout';
 
 export type DocType = {
     tag:string;
@@ -39,8 +41,9 @@ type attributeType = {
 
 // -------------------------------------
 
-interface DocProps extends componentsProps {
-    data: DocType;
+interface DocProps {
+    htmldata: DocType|null;
+    layoutData: ComponentDoc|null;
     isLayouts: boolean;
 }
 
@@ -49,15 +52,15 @@ function convertToHtmlFormat(text:string) {
     return formattedText;
 }
 
-const Doc = ({children, className, data, isLayouts}:DocProps) => {
+const Doc = ({htmldata, isLayouts, layoutData}:DocProps) => {
     
     const [rep, setRep] = useState<rep[]>([]);
     return (
         <repContext.Provider value={{setRep}}> 
 
         {isLayouts
-        ? <></>
-        : <HtmlComponentDoc data={data}></HtmlComponentDoc>}
+        ? layoutData ? <LayoutComponentsDoc data={layoutData}></LayoutComponentsDoc> : null
+        : htmldata ? <HtmlComponentDoc data={htmldata}></HtmlComponentDoc> : null}
         
         <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0  h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
             <h1 className='text-sm font-semibold'>On this page</h1>
