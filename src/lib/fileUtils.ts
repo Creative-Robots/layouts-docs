@@ -4,6 +4,8 @@ import path from 'path';
 
 export type FileElementType = {
     name: string;
+    parsedName: string;
+    path: string;
     folder: FileElementType[];
 }
 
@@ -67,15 +69,45 @@ function parseFolder(currentPwd: string): FileElementType[] {
     // store in the store
     fileNames.forEach((file, i) => {
         if (fs.lstatSync(path.join(currentPwd, file)).isFile()) {
-            store.push({name: removeFileExtension(file), folder: []});
+            store.push({name: removeFileExtension(file), parsedName: parsedFileName(file), path: (currentPwd+"\\"+file), folder: []});
         } else {
-            store.push({name: file, folder: parseFolder(currentPwd + '/' + file)})
+            store.push({name: file, parsedName: parsedFileName(file), path: (currentPwd+"\\"+file), folder: parseFolder(currentPwd + '/' + file)})
         }
     })
 
     return sortAndRemoveLeadingNumbers(store);
 }
 
+export function findElementByParsedName(root: FileElementType[], searchString: string): string | null {
+    for (let element of root) {
+        if (element.parsedName === searchString) {
+            return element.path;
+        }
+        if (element.folder.length > 0) {
+            const foundName = findElementByParsedName(element.folder, searchString);
+            if (foundName !== null) {
+                return foundName;
+            }
+        }
+    }
+    return null;
+}
+
+export function parsedFileName(fileName: string): string {
+    // Suppression de la partie initiale avec chiffres et tirets
+    let modifiedFileName = fileName.replace(/^[\d-]+_/, '');
+
+    // Suppression de l'extension de fichier
+    modifiedFileName = modifiedFileName.replace(/\.\w+$/, '');
+
+    // Conversion en minuscules
+    modifiedFileName = modifiedFileName.toLowerCase();
+
+    // Remplacement des espaces par des tirets
+    modifiedFileName = modifiedFileName.replace(/\s+/g, '-');
+
+    return modifiedFileName;
+}
 export const getFilenames = (directory: string): FileElementType[] => {
   const directoryPath = path.join(process.cwd(), directory);
 

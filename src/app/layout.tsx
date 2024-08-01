@@ -6,8 +6,6 @@ import Badge from "@/components/Badge";
 import Icon from "@/components/Icon";
 import "@mintlify/mdx/dist/styles.css"
 
-
-//icons from !! React Icons !!
 import { CiSearch } from "react-icons/ci";
 import { IoSunnyOutline } from "react-icons/io5";
 import { SheetContent } from "@/components/Sheet";
@@ -45,10 +43,9 @@ export default function RootLayout({
           </div>
         </div>
       </div>
-      <main className="w-full min-h-full bg-[#FDFDFD]">
-        
-        <div className='flex flex-row h-full w-full justify-center relative gap-0'>
-          <div className='w-72 hidden md:block sticky top-0  h-screen p-2 pt-[122px] pl-8 overflow-y-scroll'>
+      <main className="w-full min-h-full bg-[#FDFDFD] ">
+        <div className='flex flex-row h-full w-full justify-center relative max-w-screen gap-0'>
+          <div className='min-w-72 w-72 hidden md:block sticky top-0 h-screen p-2 pt-[122px] ml-12 overflow-y-scroll'>
               <SheetContent/>
           </div>
           {children}

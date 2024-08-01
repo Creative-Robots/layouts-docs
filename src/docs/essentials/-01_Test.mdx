@@ -1,0 +1,64 @@
+---
+title: The syntax
+description: 'How programming works in Layouts.dev'
+---
+
+## Intro
+
+The syntax we use in Layouts is different from HTML or JSX. See why [here](essentials/What%20is%20Layouts#concise-syntax-to-help-you-focus-on-what-matters).
+Fear not! We decided to keep as close to the original, so it works just the same. 😎
+
+Here’s what you need to know:
+
+### Tabs and `/` instead of XML components.
+
+  Instead of writing: 
+  ``` HTML HTML
+  <div class="bg-indigo-100" >
+	<button>
+		Hello
+	</button>
+</div>
+```
+You write: 
+```syntax Layouts
+/div bg-indigo-100
+	/button Hello
+```
+### Works with (included) React components or any HTML component.
+
+Any HTML component like `/div` or `/section` will work like: 
+
+```syntax Layouts
+/div Hello!
+```
+
+
+### Variables
+  
+Layouts uses a simplified syntax for using variables with components.
+- All variable names are prefixed with `$`
+- Adding a variable name on a component line binds the variable to the component
+- Adding the variable name in props or as content uses the variable value there
+
+**Here's an example:**
+```
+  /input $name What’s your name?  
+  /h1 Hello $name !
+```
+
+You can also load data from external sources into variables
+See the specific section about data sources [here](essentials/datasources)
+
+  **ex. Data Source**
+    ```syntax Layouts
+    /data $movies = mock://movies with title and poster
+    /div w-full overflow-x-scroll
+    	/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit
+    		/foreach $movies
+    			/vstack gap-3 %center justify-start
+    				/div w-32
+    					/aspect-ratio %video-portrait overflow-hidden
+    						/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer
+    				/center $item.title w-full text-center text-sm
+    ```
