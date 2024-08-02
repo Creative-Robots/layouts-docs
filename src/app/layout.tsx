@@ -73,7 +73,7 @@ export default function RootLayout({
           </Sheet>
           
           <div className={cn("h-fit w-fit flex flex-row gap-1 justify-start items-center my-auto ml-4")}>
-            <h1 className="text-xs h-fit text-black/30">Layout</h1>
+            <h1 className="text-xs h-fit text-black/30">Layouts</h1>
             <FaChevronRight color="lightgray" strokeWidth={3} size={10}/>
             {/* {items.map((i, idx) => (<React.Fragment key={idx}>
                 <FaChevronRight color="lightgray" strokeWidth={3} size={10} key={idx + 'fa'}/>

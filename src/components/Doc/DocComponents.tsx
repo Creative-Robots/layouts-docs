@@ -83,6 +83,7 @@ export const Section = ({children, className, name}: SectionProps) => {
 
 interface subSectionProps extends SectionProps {
   level: number;
+  tag?: string;
 }
 
 export const SubSection = ({children, className, name, level}: subSectionProps) => {
