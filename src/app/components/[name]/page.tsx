@@ -59,14 +59,14 @@ function getJsonDataLayouts(filename:string):ComponentDoc|null {
 
 export default async function Home({ params }: { params: { name: string } }) {
   const { name } = params;
-  const htmlData = await getJsonData(name);
-  if (htmlData) {
-    return (
-      <Doc htmldata={htmlData} isLayouts={false} layoutData={null}/>
-    );
-  } else {
-    const layoutsData:ComponentDoc|null = getJsonDataLayouts(name);
-    if (layoutsData) return <Doc layoutData={layoutsData} htmldata={null} isLayouts/>;
-    else redirect('/');
+  const layoutsData:ComponentDoc|null = getJsonDataLayouts(name);
+  if (layoutsData) return <Doc layoutData={layoutsData} htmldata={null} isLayouts/>;
+  else {
+    const htmlData = await getJsonData(name);
+    if (htmlData) {
+      return (
+        <Doc htmldata={htmlData} isLayouts={false} layoutData={null}/>
+      );
+    } else redirect('/');
   }
 }

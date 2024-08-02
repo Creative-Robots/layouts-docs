@@ -10,6 +10,8 @@ import { folder_1, folder_2, folder_3 } from "@/lib/Style";
 import { headers } from "next/headers";
 import { URL } from "url";
 
+import LayoutsComponent from '../../docs/Layouts/Components.json';
+
 interface SheetProps extends componentsProps {
     open: boolean;
 }
@@ -30,6 +32,20 @@ function isSpecialCase(file: FileElementType) {
     return false;
 }
 
+function getLayoutsNamesAsF(level:number) {
+    return (
+        <>
+        {LayoutsComponent.map((c, idx) => {
+            return (
+                <FileButton f={{name: c.name,
+                    parsedName: "components/" + c.tag,
+                    path: "",
+                    folder: []}} i={idx} level={level}/>
+            )
+        })}</>
+    )
+}
+
 function specialCase(file: FileElementType, level: number, i:number) {
 
     if (file.name === "Components") {
@@ -38,14 +54,14 @@ function specialCase(file: FileElementType, level: number, i:number) {
                 <span className={cn(folder_1)}>{file.name}</span>
                 <div key={i + level} className="w-full h-fit pl-4 mt-3 flex flex-col gap-1 ">
                     
-
+                    {getLayoutsNamesAsF(level)}
 
                 </div>
             </div>)
         } else if (level === 1) {
             return (
                 <Dropdown name={file.name} key={i + level} >
-
+                    {getLayoutsNamesAsF(level)}
                 </Dropdown>
             )
         } else if (level === 2) {
@@ -53,13 +69,14 @@ function specialCase(file: FileElementType, level: number, i:number) {
                 <span className={cn(folder_3)}>{file.name}</span>
                 <div key={i + level} className="w-full h-fit pl-4 my-3 flex flex-col gap-1">
 
+                    {getLayoutsNamesAsF(level)}
 
                 </div>
             </div>)
         } else {
             return (
                 <>
-                    
+                    {getLayoutsNamesAsF(level)}
                 </>
             )
         }

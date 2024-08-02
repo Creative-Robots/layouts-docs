@@ -140,26 +140,6 @@
         "props": [],
         "subComponents": [
             {
-                "name": "Alert",
-                "tag": "alert",
-                "props": [],
-                "subComponents": [],
-                "examples": [
-                    {
-                        "title": "Short syntax",
-                        "code": "/alert Hello\n\tThis is a description"
-                    },
-                    {
-                        "title": "Short sytax with icon",
-                        "code": "/alert Hello\n\tThis is a description\n\t/icon Info"
-                    },
-                    {
-                        "title": "Composable syntax",
-                        "code": "/alert\n\t/title Hello\n\t/description This is a description\n\t/icon Info"
-                    }
-                ]
-            },
-            {
                 "name": "AlertDescription",
                 "tag": "description",
                 "props": [],

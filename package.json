@@ -15,6 +15,7 @@
     "@mintlify/components": "^0.3.15",
     "@mintlify/mdx": "^0.0.46",
     "@next/mdx": "^14.2.5",
+    "@radix-ui/react-dialog": "^1.1.1",
     "@types/mdx": "^2.0.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",

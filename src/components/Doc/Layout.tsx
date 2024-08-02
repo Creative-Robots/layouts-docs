@@ -1,13 +1,14 @@
 import { ComponentDoc } from "@/app/components/[name]/page";
 import DocBreadcrums from "../Breadcrums";
-import { Title } from "./DocComponents";
+import { PropsTab, Section, SubComponent, SubSection, Title } from "./DocComponents";
+import MyCodeBlock from "../CodeBlock";
 
 interface DocProps {
     data: ComponentDoc;
 }
 
 export default function LayoutComponentsDoc({data}:DocProps) {
-    const {name, description} = data;
+    const {name, description, refImplementation, props, subComponents, examples} = data;
     return (
         <div className='flex flex-col gap-3 pb-20 lg:px-12 md:px-10 sm:px-8 px-5 min-h-screen max-w-[1200px] flex-1 pt-[122px] lg:mx-auto'>
             <DocBreadcrums items={[name]} />
@@ -20,6 +21,40 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                     <p className=' text-xs font-bold text-[#1E1F22]'>inspired by ShadCn</p>
                 </div>} 
             </div>
+            {refImplementation
+            ? <Section name="Ref Implementation">
+                <MyCodeBlock code={refImplementation} withTitleBar={false} language="jsx"></MyCodeBlock>
+            </Section>
+            : <></>}
+            {props && props.length > 0 ? (
+                <Section name="Props">
+                    <PropsTab props={props} />
+                </Section>
+            ) : null}
+            {examples && examples.length > 0 ? (
+                <Section name="Exemples">
+                    {examples.map((e, idx) => {
+                        if (!e.code) return null;
+                        return (
+                            <SubSection name={e.title} level={2}>
+                                <p className='text-base text-[#5B5E66] font-normal'>{description}</p>
+                                <MyCodeBlock code={e.code} language="jsx" withTitleBar title={e.title}></MyCodeBlock>
+                            </SubSection>
+                        )
+                    })}
+                </Section>
+            ) : null}
+            {subComponents && subComponents.length > 0 ? (
+                <Section name="Api Reference">
+                    {subComponents.map((c, idx) => {
+
+                        return (
+                            <SubComponent level={2} data={c}></SubComponent>
+                        )
+                    })}
+                </Section>
+            ) : null}
+            <div className="w-full h-10"></div>
         </div>
     )
 }

@@ -66,7 +66,11 @@ const Doc = ({htmldata, isLayouts, layoutData}:DocProps) => {
             <h1 className='text-sm font-semibold'>On this page</h1>
             {rep.map((e, i) => {
               return (
-                <a key={'ine' + i} className="text-xs font-semibold hover:text-black text-[#555555] size-fit" href={'#' + e.id} onClick={scrollToElement}>{e.name}</a>
+                <a key={'ine' + i} className={cn("text-xs font-semibold hover:text-black text-[#555555] size-fit items-center group flex flex-row", e.level === 2 ? "pl-4" : e.level === 3 ? "pl-8" : "" )} href={'#' + e.id} onClick={scrollToElement}>
+                    {e.level === 2 ? <div className='h-0.5 w-1 rounded-full bg-[#555555] group-hover:bg-black mr-2'></div> : null}
+                    {e.level === 3 ? <div className='size-0.5 rounded-none bg-[#888888] group-hover:bg-black mr-2'></div> : null}
+                    {e.name}
+                </a>
               )
             })}
         </div>

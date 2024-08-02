@@ -10,7 +10,7 @@ export const FileButton = ({f, i, level}:{f:FileElementType, i:number, level:num
     const router = useRouter();
     const path = usePathname();
     const isSelected = useMemo(() => {
-        return path.includes(f.parsedName);
+        return path === '/' + f.parsedName;
     }, [path])
     return (
         <button key={i + level} className={cn(element, isSelected ? selectedElementStyle : " ")} onClick={() => router.push('/' + f.parsedName)}>{f.name}</button>

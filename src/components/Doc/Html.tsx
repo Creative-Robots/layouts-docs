@@ -60,11 +60,11 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <H1 text="Props"></H1>
                 <div className='flex flex-col gap-2 px-4 w-full'>
-                    <div className='grid grid-cols-4'>
-                        <p className='text-base text-[#5B5E66] font-semibold'>Prop</p>
-                        <p className='text-base text-[#5B5E66] font-semibold'>Type</p>
-                        <p className='text-base text-[#5B5E66] font-semibold w-fit'>Options</p>
-                        <p className='text-base text-[#5B5E66] font-semibold text-center'>isRequired</p>
+                    <div className='grid grid-cols-11'>
+                        <p className='text-base text-[#5B5E66] font-semibold col-span-3'>Prop</p>
+                        <p className='text-base text-[#5B5E66] font-semibold col-span-3'>Type</p>
+                        <p className='text-base text-[#5B5E66] font-semibold w-fit col-span-3'>Options</p>
+                        <p className='text-base text-[#5B5E66] font-semibold text-center col-span-2'>isRequired</p>
                     </div>
                 </div> 
                 <div className='w-full h-fit'>
@@ -72,26 +72,26 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                 {allowedAttributes.map((attribute, idx) => {
                     const bg = idx % 2 === allowedAttributes.length % 2 ? "bg-[#fcfcfc]" : "bg-[#fafafa]";
                     return (
-                        <div className={cn('flex flex-col gap-4 min-h-8 justify-center px-4', bg)} key={tag + 'attribute' + idx}>
-                        <div className='grid grid-cols-4'>
-                            <p className="text-sm text-[#373114]">{attribute.name}</p>
+                        <div className={cn('flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3', bg)} key={tag + 'attribute' + idx}>
+                        <div className='grid grid-cols-11 items-center'>
+                            <p className="text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate">{attribute.name}</p>
                             {attribute.acceptedValueTypes && attribute.acceptedValueTypes.length > 0 ? (
                                 <>
-                                <div className='flex flex-col items-start'>
+                                <div className='flex flex-col items-start col-span-3'>
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
                                     <div className='flex flex-col justify-normal items-start' key={attribute.name + 'acceptedValueType' + idx2}>
-                                    <p className="text-sm text-[#5B5E66]">{at.type}</p>
-                                    {at.options?.map((e, i) => (
-                                        <span key={e + i}></span>
-                                    ))}
+                                        <p className="text-sm text-[#5B5E66]">{at.type}</p>
+                                        {at.options?.map((e, i) => (
+                                            <span key={e + i}></span>
+                                        ))}
                                     </div>
                                 ))}
                                 </div>
-                                <div className='flex flex-col justify-normal items-start'>
+                                <div className='flex flex-col justify-normal items-start col-span-3'>
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
-                                    <div className='flex flex-col justify-normal items-start' key={attribute.name + 'options' + idx2}>
+                                    <div className='flex flex-col justify-normal items-center gap-0.5' key={attribute.name + 'options' + idx2}>
                                     {at.options?.map((e, i) => (
-                                        <p className="text-sm text-[#5B5E66]" key={e + i}>{e}</p>
+                                        <p className="text-sm text-[#5B5E66] bg-white rounded-sm px-1" key={e + i}>{e}</p>
                                     ))}
                                     </div>
                                 ))}
@@ -103,7 +103,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                                 <span key="span2"></span>
                             </>
                             )}
-                            <p className="text-sm text-[#1E1F22] text-center">{attribute.isRequired === true ? "✅" : "❌"}</p>
+                            <p className="text-sm text-[#1E1F22] text-center col-span-2">{attribute.isRequired === true ? "✅" : "❌"}</p>
                         </div>
                         </div>
                     );

@@ -3,6 +3,7 @@ import { createContext, Dispatch, SetStateAction, useContext } from "react";
 export interface rep {
     name: string;
     id: string;
+    level?:number;
 }
   
 export const repContext = createContext<{setRep: Dispatch<SetStateAction<rep[]>>}>({setRep: () => {}});
