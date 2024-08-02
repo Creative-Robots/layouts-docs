@@ -19,6 +19,7 @@ import {
   SheetTrigger,
 } from "@/components/ShadCn/Sheet"
 import { cn } from "@/lib/cn";
+import { FaChevronRight } from "react-icons/fa6";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -57,30 +58,32 @@ export default function RootLayout({
         </div>
 
         {/** Sheet if small */}
-        <div className="h-10 w-full flex flex-row border-t border-black/5">
+        <div className="h-12 w-full flex flex-row border-t border-black/5 md:hidden">
           <Sheet>
-            <SheetTrigger className="text-black">Open</SheetTrigger>
-            <SheetC className="bg-white" side={'left'}>
-              <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete your account
-                  and remove your data from our servers.
-                </SheetDescription>
+            <SheetTrigger className=" hover:bg-gray-100 rounded-md size-fit my-auto p-1 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></SheetTrigger>
+            <SheetC className="bg-white overflow-y-scroll" side={'left'}>
+              <SheetHeader className="mb-4">
+                <SheetTitle className="flex flex-row justify-center gap-4">
+                  <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/2bxt0v45q4odj1rvxdqo4/Clip-path-group.svg?rlkey=j7y748ujkqvapbybc6wqcyxy8&st=vjtgh475&dl=0"}></img>
+                  <span className="text-xl font-semibold">Documentation</span>
+                </SheetTitle>
               </SheetHeader>
+              <SheetContent />
             </SheetC>
           </Sheet>
           
-          {/* <div className={cn("h-fit w-fit flex flex-row gap-1 justify-start items-center")}>
-            <h1 className="text-xs h-fit text-black/30">{homeName}</h1>
-            {items.map((i, idx) => (<React.Fragment key={idx}>
+          <div className={cn("h-fit w-fit flex flex-row gap-1 justify-start items-center my-auto ml-4")}>
+            <h1 className="text-xs h-fit text-black/30">Layout</h1>
+            <FaChevronRight color="lightgray" strokeWidth={3} size={10}/>
+            {/* {items.map((i, idx) => (<React.Fragment key={idx}>
                 <FaChevronRight color="lightgray" strokeWidth={3} size={10} key={idx + 'fa'}/>
                 <span className="text-xs text-[#1E1F22]" key={idx + 'sp'}>{i}</span>
-            </React.Fragment>))}
-        </div> */}
+            </React.Fragment>))} */}
+          </div>
         </div>
-
       </div>
+
+      <div className="h-4 w-full md:hidden"></div>
 
       {/** Pages */}
       <main className="w-full min-h-full bg-[#FDFDFD] ">
