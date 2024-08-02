@@ -206,7 +206,7 @@ export const SubComponent = ({data, level}:{data:ComponentDoc, level:number}) =>
             {examples.map((e, idx) => {
                 if (!e.code) return null;
                 return (
-                    <SubSection name={e.title} level={level + 2}>
+                    <SubSection key={idx} name={e.title} level={level + 2}>
                         <p className='text-base text-[#5B5E66] font-normal'>{description}</p>
                         <MyCodeBlock code={e.code} language="jsx" withTitleBar={false} title={e.title}></MyCodeBlock>
                     </SubSection>

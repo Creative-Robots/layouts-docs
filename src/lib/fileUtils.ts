@@ -69,9 +69,9 @@ function parseFolder(currentPwd: string): FileElementType[] {
     // store in the store
     fileNames.forEach((file, i) => {
         if (fs.lstatSync(path.join(currentPwd, file)).isFile()) {
-            store.push({name: removeFileExtension(file), parsedName: parsedFileName(file), path: (currentPwd+"\\"+file), folder: []});
+            store.push({name: removeFileExtension(file), parsedName: parsedFileName(file), path: path.join(currentPwd, file), folder: []});
         } else {
-            store.push({name: file, parsedName: parsedFileName(file), path: (currentPwd+"\\"+file), folder: parseFolder(currentPwd + '/' + file)})
+            store.push({name: file, parsedName: parsedFileName(file), path: path.join(currentPwd, file), folder: parseFolder(path.join(currentPwd, file))})
         }
     })
 

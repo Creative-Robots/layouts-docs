@@ -157,7 +157,8 @@ export default function MdxComponent({content}: MdxComponentProps) {
         <div className="flex flex-row flex-1">
           <div className="max-w-[1200px] flex-1 pt-[122px] lg:mx-auto relative">
             <div className="text-gray-800 px-10 w-full max-w-full overflow-hidden">
-              <MDXProvider components={components}>
+              {/* FIXME: Remove any below */}
+              <MDXProvider components={components as any}>
                   <Title id="title">{content.frontMatter.title}</Title>
                   <Description id="description">{content.frontMatter.description}</Description>
                   <MDXRemote {...content.mdxSource}/>
