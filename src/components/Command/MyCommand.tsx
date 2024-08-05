@@ -44,17 +44,10 @@ export function SearchCommand() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-          {/* <CommandGroup heading="Layouts components">
-            <CommandItem>
-              <Calendar className="mr-2 h-4 w-4" />
-              <span>Calendar</span>
-            </CommandItem>
-          </CommandGroup>
-          <CommandSeparator /> */}
             <CommandGroup heading="HTML components">
-                {HtmlComponents.map((e, idx) => {
+                {HtmlComponents.map((e) => {
                     return (
-                        <CommandItem key={'hComponent ' + idx} onClick={() => router.push('/' + e.parsedName)}>
+                        <CommandItem key={e.name} value={e.name} onMouseDown={() => {router.push('/components/' + e.parsedName); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
                             {/* <Calendar className="mr-2 h-4 w-4" /> */}
                             <span>{e.name}</span>
                         </CommandItem>
@@ -62,12 +55,12 @@ export function SearchCommand() {
                 })}
             </CommandGroup>
           <CommandSeparator />
-          <CommandGroup heading="Layouts components">
-                {LayoutsComponents.map((e, idx) => {
+          <CommandGroup heading="Layouts components" className="gap-0">
+                {LayoutsComponents.map((e) => {
                     return (
-                        <CommandItem key={'lComponent ' + idx} onClick={() => router.push('/' + e.tag)}>
-                            {/* <Calendar className="mr-2 h-4 w-4" /> */}
-                            <span>{e.name}</span>
+                        <CommandItem key={e.tag} value={e.name} onMouseDown={() => {router.push('/components/' + e.tag); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
+                                {/* <Calendar className="mr-2 h-4 w-4" /> */}
+                                <span>{e.name}</span>
                         </CommandItem>
                     )
                 })}
