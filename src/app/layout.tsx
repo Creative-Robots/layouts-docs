@@ -21,6 +21,7 @@ import {
 } from "@/components/ShadCn/Sheet"
 import { cn } from "@/lib/cn";
 import { FaChevronRight } from "react-icons/fa6";
+import { SearchCommand } from "@/components/Command/MyCommand";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -48,10 +49,11 @@ export default async function RootLayout({
           <Badge className="bg-[#F4F3F1] text-[#ED5F00] font-medium hover:bg-[#f4f3f1] py-1 h-min">Docs</Badge>
         </div>
         <div className="flex flex-row gap-3 items-center flex-1 max-w-72 ml-auto">
-          <div className="flex flex-row py-1.5 px-3 gap-1 shadow-sm border border-black/5 w-full rounded-lg bg-white">
+          {/* <div className="flex flex-row py-1.5 px-3 gap-1 shadow-sm border border-black/5 w-full rounded-lg bg-white">
             <CiSearch className="w-4 text-black/40" width={16} height={16}/>
             <input type="text" placeholder="Search..." className="text-sm text-black/40 focus:outline-none w-12 flex-1"></input>
-          </div>
+          </div> */}
+          <SearchCommand></SearchCommand>
           <div className="p-2 rounded hover:bg-black/5">
             <IoSunnyOutline className="text-[#1E1F22]" width={16} height={16}/>
           </div>
