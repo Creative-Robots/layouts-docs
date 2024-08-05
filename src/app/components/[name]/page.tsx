@@ -1,9 +1,9 @@
 'use server'
 
-import Doc, { DocType } from "@/components/Doc";
+import Doc from "@/components/Doc";
 import { redirect } from "next/navigation";
 import path from "path";
-import * as fs from 'fs';
+import fs from 'fs';
 
 import LayoutsComponents from '../../../docs/Layouts/Components.json';
 
@@ -34,7 +34,7 @@ export type ComponentDoc = {
 
 async function getJsonData(filename:string) {
   if (filename === null) return null;
-  const filePath = path.join(process.cwd(), 'src/docs/html/', `${filename}.json`);
+  const filePath = path.join(__dirname, '..', 'src', 'docs', 'html', `${filename}.json`);
   if (!fs.existsSync(filePath)) return null;
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const jsonData = JSON.parse(fileContent);

@@ -1,6 +1,6 @@
 
 import { componentsProps } from "@/lib/componentTypes";
-import { FileElementType, getFilenames } from "@/lib/fileUtils";
+import { FileElementType, getMdxFiles } from "@/lib/fileUtils";
 import React from "react";
 import Dropdown from "../Dropdown";
 import { cn } from "@/lib/cn";
@@ -39,7 +39,6 @@ function getLayoutsNamesAsF(level:number) {
             return (
                 <FileButton key={'sheet_'+idx} f={{name: c.name,
                     parsedName: "components/" + c.tag,
-                    path: "",
                     folder: []}} i={idx} level={level}/>
             )
         })}</>
@@ -91,7 +90,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
     return (
     <>
     {files.map((f:FileElementType, i:number) => {
-        if(f.folder.length > 0) {
+        if(f.folder && f.folder.length > 0) {
             if (isSpecialCase(f)) {
                 return specialCase(f, level, i);
             }
@@ -139,7 +138,7 @@ function removeHost(url: string): string {
   }
 
 export function SheetContent() {
-    const fileNames = getFilenames('src/docs/essentials/');
+    const fileNames = getMdxFiles();
     return (
         <div className="flex flex-col h-fit gap-3">
         {parseFileHierarchie(fileNames, 0)}

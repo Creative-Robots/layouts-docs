@@ -1,5 +1,4 @@
 
-
 export function scrollToElement(event: React.MouseEvent<HTMLAnchorElement>): void {
     event.preventDefault(); // Empêche le comportement par défaut du lien
   

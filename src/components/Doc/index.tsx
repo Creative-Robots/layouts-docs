@@ -3,13 +3,6 @@
 import { cn } from '@/lib/cn';
 import { componentsProps } from '@/lib/componentTypes';
 import React, { useRef, useState } from 'react';
-import DocBreadcrums from '../Breadcrums';
-import Separator from '../Separator';
-import { IoCopySharp } from "react-icons/io5";
-import { FaCheck } from "react-icons/fa6";
-import { SheetContent } from '../Sheet';
-import CopyClipboard from '../ClipBoard';
-import { getFilenames } from '@/lib/fileUtils';
 import { rep, repContext } from '@/lib/RepContext';
 import HtmlComponentDoc from './Html';
 import { scrollToElement } from '@/lib/utils';

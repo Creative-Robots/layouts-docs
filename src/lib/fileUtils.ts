@@ -1,19 +1,21 @@
 
 import fs from 'fs';
-import path from 'path';
+import path, { join } from 'path';
+
+import essentials from '../docs/essential.json'
+
 
 export type FileElementType = {
     name: string;
     parsedName: string;
-    path: string;
-    folder: FileElementType[];
+    content?: {
+        MdxContent: string;
+        MdxFrontMatter: any;
+    };
+    folder?: FileElementType[];
 }
 
-function removeFileExtension(filename: string): string {
-    const lastDotIndex = filename.lastIndexOf('.');
-    if (lastDotIndex === -1) return filename; // Pas d'extension trouvée
-    return filename.substring(0, lastDotIndex);
-}
+const jsonFiles: FileElementType[] = parseJson(essentials)
 
 function sortAndRemoveLeadingNumbers(objects: FileElementType[]): FileElementType[] {
     const regex = /^(-?\d+)_/;
@@ -59,31 +61,28 @@ function sortAndRemoveLeadingNumbers(objects: FileElementType[]): FileElementTyp
     return [...cleanPositiveObjects, ...cleanNegativeObjects];
 }
 
-function parseFolder(currentPwd: string): FileElementType[] {
+function parseJson(json: any): FileElementType[] {
 
     let store: FileElementType[] = [];
 
-    // Liste les fichiers dans le dossier
-    const fileNames = fs.readdirSync(currentPwd);
-
     // store in the store
-    fileNames.forEach((file, i) => {
-        if (fs.lstatSync(path.join(currentPwd, file)).isFile()) {
-            store.push({name: removeFileExtension(file), parsedName: parsedFileName(file), path: path.join(currentPwd, file), folder: []});
+    Object.keys(json).forEach(key => {
+        if (json[key].content) {
+            store.push({name: json[key].name, parsedName: json[key].parsedName, content: json[key].content});
         } else {
-            store.push({name: file, parsedName: parsedFileName(file), path: path.join(currentPwd, file), folder: parseFolder(path.join(currentPwd, file))})
+            store.push({name: json[key].name, parsedName: json[key].parsedName, folder: parseJson(json[key].folder)});
         }
     })
 
     return sortAndRemoveLeadingNumbers(store);
 }
 
-export function findElementByParsedName(root: FileElementType[], searchString: string): string | null {
+export function findElementByParsedName(root: FileElementType[], searchString: string): { MdxContent: string; MdxFrontMatter: any; } | null {
     for (let element of root) {
-        if (element.parsedName === searchString) {
-            return element.path;
+        if (element.parsedName === searchString && element.content) {
+            return element.content;
         }
-        if (element.folder.length > 0) {
+        if (element.folder && element.folder.length > 0) {
             const foundName = findElementByParsedName(element.folder, searchString);
             if (foundName !== null) {
                 return foundName;
@@ -93,30 +92,6 @@ export function findElementByParsedName(root: FileElementType[], searchString: s
     return null;
 }
 
-export function parsedFileName(fileName: string): string {
-    // Suppression de la partie initiale avec chiffres et tirets
-    let modifiedFileName = fileName.replace(/^[\d-]+_/, '');
-
-    // Suppression de l'extension de fichier
-    modifiedFileName = modifiedFileName.replace(/\.\w+$/, '');
-
-    // Conversion en minuscules
-    modifiedFileName = modifiedFileName.toLowerCase();
-
-    // Remplacement des espaces par des tirets
-    modifiedFileName = modifiedFileName.replace(/\s+/g, '-');
-
-    return modifiedFileName;
-}
-export const getFilenames = (directory: string): FileElementType[] => {
-  const directoryPath = path.join(process.cwd(), directory);
-
-  // Vérifie si le chemin spécifié est un dossier
-  if (!fs.existsSync(directoryPath) || !fs.lstatSync(directoryPath).isDirectory()) {
-    throw new Error(`${directoryPath} n'est pas un dossier valide.`);
-  }
-
-  let Files: FileElementType[] = parseFolder(directoryPath);
-
-  return Files;
+export const getMdxFiles = (): FileElementType[] => {
+  return jsonFiles;
 };
