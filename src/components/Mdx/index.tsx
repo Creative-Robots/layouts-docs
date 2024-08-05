@@ -40,20 +40,21 @@ const Linkable = ({id}:{id:string}) => {
 }
 
 // h1
-const CustomH1 = ({ children }: {children:ReactNode, id:string}) => {
-  const id = String(children).normalize();
-  const {setRep} = useRepContext();
+const CustomH1 = ({ children }: { children: ReactNode; id?: string }) => {
+  const normalizedId = String(children).normalize();
+  const { setRep } = useRepContext();
   useEffect(() => {
     setRep((l) => {
-      return [...l, {name: children as string, id: id}];
-    })
-  }, [setRep])
+      return [...l, { name: children as string, id: normalizedId }];
+    });
+  }, [setRep]);
   return (
-    <h1 className={h1Box} id={id}>
-        <Linkable id={id}/>
-        <span className={h1}>{children}</span>
+    <h1 className={h1Box} id={normalizedId}>
+      <Linkable id={normalizedId} />
+      <span className={h1}>{children}</span>
     </h1>
-)};
+  );
+};
 
 // h2
 const CustomH2 = ({ children }: {children:ReactNode, id:string}) => {
