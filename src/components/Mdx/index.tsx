@@ -5,7 +5,7 @@ import { createContext, MouseEventHandler, ReactNode, useEffect, useState } from
 import * as MintComponents from "@mintlify/components"
 import { MDXProvider } from '@mdx-js/react'
 import { cn } from "@/lib/cn"
-import { code, description, descriptionBox, h1, h1Box, h2, h2Box, h3, h3Box, info, li, note, p, title, titleBox, ul } from "@/lib/Style"
+import { code, description, descriptionBox, h1, h1Box, h2, h2Box, h3, h3Box, info, li, note, p, responseField, snippetIntro, title, titleBox, ul } from "@/lib/Style"
 import MyCodeBlock from "../CodeBlock"
 
 import { rep, repContext, useRepContext } from "@/lib/RepContext"
@@ -135,6 +135,27 @@ const Code = ({ children, id, ...props }: {children:ReactNode, id:string}) => {
   : <code className="size-fit text-wrap bg-gray-200 text-gray-800 border border-gray-300">{children}</code>
 )};
 
+// ResponseField
+const ResponseField = ({ children, id }: {children:ReactNode, id:string}) => (
+  <div className={responseField} id={id}>
+    {children}
+  </div>
+);
+
+// Latex
+const Latex = ({ children, id }: {children:ReactNode, id:string}) => (
+  <div className={responseField} id={id}>
+    {children}
+  </div>
+);
+
+// SnippetIntro
+const SnippetIntro = ({ children, id }: {children:ReactNode, id:string}) => (
+  <div className={snippetIntro} id={id}>
+    {children}
+  </div>
+);
+
 // Combinez vos composants personnalisés avec les composants existants
 const components = {
   ...MintComponents,
@@ -147,6 +168,9 @@ const components = {
   Note: Note,
   Info: Info,
   code: Code,
+  ResponseField: ResponseField,
+  Latex: Latex,
+  SnippetIntro: SnippetIntro,
 };
 
 

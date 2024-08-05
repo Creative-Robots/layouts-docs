@@ -16,9 +16,9 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                 <Title text={name}></Title>
                 <p className='text-lg text-[#5B5E66] font-normal'>{description}</p>
                 {name && <div className='flex flex-row gap-2 items-center  '>
-                    <p className='text-[#1E1F22] text-sm font-normal '>Source : </p>
+                    <p className='text-[#1E1F22] text-sm font-normal '>Inspired by  : </p>
                     <img alt="authorImg" src="https://ui.shadcn.com/apple-touch-icon.png"  className='w-[18px]'/>
-                    <p className=' text-xs font-bold text-[#1E1F22]'>inspired by ShadCn</p>
+                    <p className=' text-xs font-bold text-[#1E1F22]'>ShadCn</p>
                 </div>} 
             </div>
             {refImplementation
@@ -47,7 +47,6 @@ export default function LayoutComponentsDoc({data}:DocProps) {
             {subComponents && subComponents.length > 0 ? (
                 <Section name="Api Reference">
                     {subComponents.map((c, idx) => {
-
                         return (
                             <SubComponent key={idx} level={2} data={c}></SubComponent>
                         )

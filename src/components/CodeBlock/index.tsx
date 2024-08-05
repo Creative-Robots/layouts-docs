@@ -3,6 +3,7 @@ import { CodeBlock } from 'react-code-block';
 import CopyClipboard from '../ClipBoard';
 import { useCopyToClipboard } from 'react-use';
 import { cn } from '@/lib/cn';
+import { CodeBlockBox, CodeBlockCopyButton, CodeBlockCopyButtonWithHeader, CodeBlockHeaderTitle, CodeBlockLine, CodeBlockLineB, CodeBlockLineContent, CodeBlockLineNumber, CodeBlockLineToken } from '@/lib/Style';
 
 interface MyCodeBlockProps {
     code: string;
@@ -17,10 +18,10 @@ function MyCodeBlock({ code, language, withTitleBar=false, title }:MyCodeBlockPr
         copyToClipboard(code);
     };
   return (
-    <div className='h-fit w-full max-w-full bg-gray-900 rounded-lg my-4 shadow-lg py-2 relative flex flex-col overflow-hidden'>
-      <div className={cn("h-8 max-w-full w-full text-base border-b border-gray-600 mb-2 ml-2 text-white", withTitleBar ? "" : "hidden")}>{title}</div>
+    <div className={CodeBlockBox}>
+      <div className={cn(CodeBlockHeaderTitle, withTitleBar ? "" : "hidden")}>{title}</div>
       <button
-          className={cn("hover:bg-gray-700 text-white rounded-md p-2 absolute  right-2 text-sm font-semibold", withTitleBar ? "top-1" : "top-0.5")}
+          className={cn(CodeBlockCopyButton, withTitleBar ? CodeBlockCopyButtonWithHeader : "")}
           onClick={copyCode}
           >
           {state.value 
@@ -28,11 +29,11 @@ function MyCodeBlock({ code, language, withTitleBar=false, title }:MyCodeBlockPr
           : <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#808080" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>}
       </button>
       <CodeBlock code={code} language={language}>
-        <CodeBlock.Code className="flex-1 mx-2 overflow-x-scroll relative max-w-ful">
-          <div className="table-row relative max-w-full overflow-x-scroll">
-              <CodeBlock.LineNumber className="table-cell pr-4 text-sm text-gray-500 text-right select-none" />
-              <CodeBlock.LineContent className="table-cell text-wrap text-sm max-w-full overflow-x-scroll">
-                  <CodeBlock.Token className='max-w-full' />
+        <CodeBlock.Code className={CodeBlockLine}>
+          <div className={CodeBlockLineB}>
+              <CodeBlock.LineNumber className={CodeBlockLineNumber} />
+              <CodeBlock.LineContent className={CodeBlockLineContent}>
+                <CodeBlock.Token className={CodeBlockLineToken} />
               </CodeBlock.LineContent>
           </div>
         </CodeBlock.Code>

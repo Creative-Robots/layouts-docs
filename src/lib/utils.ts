@@ -20,3 +20,8 @@ export function scrollToElement(event: React.MouseEvent<HTMLAnchorElement>): voi
       }
     }
   }
+
+export function capitalizeFirstLetter(str: string) {
+  if (!str) return str; // Return the input if it's empty or not a string
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}

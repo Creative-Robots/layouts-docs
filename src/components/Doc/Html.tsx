@@ -8,6 +8,7 @@ import React from "react";
 import CopyClipboard from "../ClipBoard";
 import MyCodeBlock from "../CodeBlock";
 import { H1, Title } from "./DocComponents";
+import { _H2, AcceptChildrenBox, AcceptChildrenIcon, AcceptChildrenTitle, Description, H2Box, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName } from "@/lib/Style";
 
 interface DocProps extends componentsProps {
     data: DocType;
@@ -59,27 +60,27 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
             </div>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <H1 text="Props"></H1>
-                <div className='flex flex-col gap-2 px-4 w-full'>
-                    <div className='grid grid-cols-11'>
-                        <p className='text-base text-[#5B5E66] font-semibold col-span-3'>Prop</p>
-                        <p className='text-base text-[#5B5E66] font-semibold col-span-3'>Type</p>
-                        <p className='text-base text-[#5B5E66] font-semibold w-fit col-span-3'>Options</p>
-                        <p className='text-base text-[#5B5E66] font-semibold text-center col-span-2'>isRequired</p>
+                <div className={cn(PropsHeaderBox)}>
+                    <div className={cn(PropsHeader)}>
+                        <p className={cn(PropsHeaderTitle)}>Prop</p>
+                        <p className={cn(PropsHeaderTitle)}>Type</p>
+                        <p className={cn(PropsHeaderTitle)}>Default</p>
+                        <p className={cn(PropsHeaderTitle, isRequiredTitle)}>isRequired</p>
                     </div>
                 </div> 
                 <div className='w-full h-fit'>
                 <Separator/>
                 {allowedAttributes.map((attribute, idx) => {
-                    const bg = idx % 2 === allowedAttributes.length % 2 ? "bg-[#fcfcfc]" : "bg-[#fafafa]";
+                    const bg = idx % 2 === allowedAttributes.length % 2 ? PropsLine1_2 : PropsLine2_2;
                     return (
-                        <div className={cn('flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3', bg)} key={tag + 'attribute' + idx}>
-                        <div className='grid grid-cols-11 items-center'>
-                            <p className="text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate">{attribute.name}</p>
+                        <div className={cn(PropsLineBox, bg)} key={tag + 'attribute' + idx}>
+                        <div className={cn(PropsLine)}>
+                            <p className={cn(PropsName)}>{attribute.name}</p>
                             {attribute.acceptedValueTypes && attribute.acceptedValueTypes.length > 0 ? (
                                 <>
-                                <div className='flex flex-col items-start col-span-3'>
+                                <div className={PropsCol}>
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
-                                    <div className='flex flex-col justify-normal items-start' key={attribute.name + 'acceptedValueType' + idx2}>
+                                    <div className={cn(PropsColTitle)} key={attribute.name + 'acceptedValueType' + idx2}>
                                         <p className="text-sm text-[#5B5E66]">{at.type}</p>
                                         {at.options?.map((e, i) => (
                                             <span key={e + i}></span>
@@ -87,11 +88,11 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                                     </div>
                                 ))}
                                 </div>
-                                <div className='flex flex-col justify-normal items-start col-span-3'>
+                                <div className={PropsCol}>
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
-                                    <div className='flex flex-col justify-normal items-center gap-0.5' key={attribute.name + 'options' + idx2}>
+                                    <div className={cn(PropsColTitle, "gap-0.5")} key={attribute.name + 'options' + idx2}>
                                     {at.options?.map((e, i) => (
-                                        <p className="text-sm text-[#5B5E66] bg-white rounded-sm px-1" key={e + i}>{e}</p>
+                                        <p className={cn(PropsColTitleText, "truncate bg-white rounded-sm px-1")} key={e + i}>{e}</p>
                                     ))}
                                     </div>
                                 ))}
@@ -110,17 +111,17 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                 })}
                 </div>
             </>}
-            <div className='flex flex-row gap-2 mt-8 items-center'>
-                <h1 className='text-xl font-medium'>Accept children</h1>
-                <p className='text-sm text-[#5B5E66] font-normal ml-10'>{canHaveChildren ? "✅" : "❌"}</p>
+            <div className={cn(H2Box, AcceptChildrenBox)}>
+                <h1 className={cn(_H2, AcceptChildrenTitle)}>Accept children</h1>
+                <p className={AcceptChildrenIcon}>{canHaveChildren ? "✅" : "❌"}</p>
             </div>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <H1 text="Usage Examples"></H1>
                 {usageExamples.map((u, i) => (
-                    <React.Fragment key={u.title + i}>
+                <React.Fragment key={u.title + i}>
                     <div className='flex flex-col ml-4'>
-                    <h2 className='text-lg'>{u.title}</h2>
-                    <p className='text-base text-[#5B5E66]'>{u.description}</p>
+                    <h2 className={_H2}>{u.title}</h2>
+                    <p className={Description}>{u.description}</p>
                     </div>
                     <MyCodeBlock code={convertToHtmlFormat(u.code)} language="html" withTitleBar={false}></MyCodeBlock>
                 </React.Fragment>

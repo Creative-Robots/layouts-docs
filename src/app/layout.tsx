@@ -40,7 +40,7 @@ export default async function RootLayout({
       <body className={inter.className}>
 
       {/** Header of the docs */}
-      <div className="flex flex-col place-content-between border-b border-black/5 fixed z-10 w-[100%] backdrop-blur  bg-[#FDFDFD]">
+      <div className="flex flex-col place-content-between border-b border-black/5 fixed z-30 w-[100%] backdrop-blur  bg-[#FDFDFD]">
         <div className="flex flex-row w-full h-fit p-4">
         <div className="flex flex-row gap-1.5 items-center w-fit mr-4">
           <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/2bxt0v45q4odj1rvxdqo4/Clip-path-group.svg?rlkey=j7y748ujkqvapbybc6wqcyxy8&st=vjtgh475&dl=0"}></img>

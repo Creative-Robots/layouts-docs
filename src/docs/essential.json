@@ -1,15 +1,4 @@
 {
-  "-01_Test.mdx": {
-    "name": "-01_Test",
-    "parsedName": "test",
-    "content": {
-      "MdxContent": "\r\n## Intro\r\n\r\nThe syntax we use in Layouts is different from HTML or JSX. See why [here](essentials/What%20is%20Layouts#concise-syntax-to-help-you-focus-on-what-matters).\r\nFear not! We decided to keep as close to the original, so it works just the same. 😎\r\n\r\nHere’s what you need to know:\r\n\r\n### Tabs and `/` instead of XML components.\r\n\r\n  Instead of writing: \r\n  ``` HTML HTML\r\n  <div class=\"bg-indigo-100\" >\r\n\t<button>\r\n\t\tHello\r\n\t</button>\r\n</div>\r\n```\r\nYou write: \r\n```syntax Layouts\r\n/div bg-indigo-100\r\n\t/button Hello\r\n```\r\n### Works with (included) React components or any HTML component.\r\n\r\nAny HTML component like `/div` or `/section` will work like: \r\n\r\n```syntax Layouts\r\n/div Hello!\r\n```\r\n\r\n\r\n### Variables\r\n  \r\nLayouts uses a simplified syntax for using variables with components.\r\n- All variable names are prefixed with `$`\r\n- Adding a variable name on a component line binds the variable to the component\r\n- Adding the variable name in props or as content uses the variable value there\r\n\r\n**Here's an example:**\r\n```\r\n  /input $name What’s your name?  \r\n  /h1 Hello $name !\r\n```\r\n\r\nYou can also load data from external sources into variables\r\nSee the specific section about data sources [here](essentials/datasources)\r\n\r\n  **ex. Data Source**\r\n    ```syntax Layouts\r\n    /data $movies = mock://movies with title and poster\r\n    /div w-full overflow-x-scroll\r\n    \t/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit\r\n    \t\t/foreach $movies\r\n    \t\t\t/vstack gap-3 %center justify-start\r\n    \t\t\t\t/div w-32\r\n    \t\t\t\t\t/aspect-ratio %video-portrait overflow-hidden\r\n    \t\t\t\t\t\t/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer\r\n    \t\t\t\t/center $item.title w-full text-center text-sm\r\n    ```\r\n",
-      "MdxFrontMatter": {
-        "title": "The syntax",
-        "description": "How programming works in Layouts.dev"
-      }
-    }
-  },
   "-10_Get in touch": {
     "name": "-10_Get in touch",
     "parsedName": "get-in-touch",
