@@ -29,6 +29,10 @@ export type DocType = {
     }[];
 }
 
+export type LayoutDocType = {
+    data: ComponentDoc;
+}
+
 type attributeType = {
     name: string;
     isRequired: boolean;

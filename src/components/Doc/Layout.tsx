@@ -36,7 +36,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                     {examples.map((e, idx) => {
                         if (!e.code) return null;
                         return (
-                            <SubSection name={e.title} level={2}>
+                            <SubSection key={idx} name={e.title} level={2}>
                                 <p className='text-base text-[#5B5E66] font-normal'>{description}</p>
                                 <MyCodeBlock code={e.code} language="jsx" withTitleBar title={e.title}></MyCodeBlock>
                             </SubSection>
@@ -49,7 +49,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                     {subComponents.map((c, idx) => {
 
                         return (
-                            <SubComponent level={2} data={c}></SubComponent>
+                            <SubComponent key={idx} level={2} data={c}></SubComponent>
                         )
                     })}
                 </Section>

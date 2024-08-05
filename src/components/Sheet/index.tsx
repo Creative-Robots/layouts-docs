@@ -37,7 +37,7 @@ function getLayoutsNamesAsF(level:number) {
         <>
         {LayoutsComponent.map((c, idx) => {
             return (
-                <FileButton f={{name: c.name,
+                <FileButton key={'sheet_'+idx} f={{name: c.name,
                     parsedName: "components/" + c.tag,
                     path: "",
                     folder: []}} i={idx} level={level}/>
@@ -96,7 +96,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
                 return specialCase(f, level, i);
             }
             if (level === 0) {
-                return (<div>
+                return (<div key={i}>
                     <span className={cn(folder_1)}>{f.name}</span>
                     <div key={i + level} className="w-full h-fit pl-4 mt-3 flex flex-col gap-1 ">
                         {parseFileHierarchie(f.folder, level+1)}
@@ -107,7 +107,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
                     <Dropdown name={f.name} key={i + level} >{parseFileHierarchie(f.folder, level+1)}</Dropdown>
                 )
             } else if (level === 2) {
-                return (<div>
+                return (<div key={i}>
                     <span className={cn(folder_3)}>{f.name}</span>
                     <div key={i + level} className="w-full h-fit pl-4 my-3 flex flex-col gap-1">
                         {parseFileHierarchie(f.folder, level+1)}
@@ -121,7 +121,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
                 )
             }
         } else {
-            return <FileButton f={f} i={i} level={level}/>
+            return <FileButton key={i} f={f} i={i} level={level}/>
         }
     })}
     </>
