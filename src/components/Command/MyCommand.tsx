@@ -44,17 +44,6 @@ export function SearchCommand() {
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
-            <CommandGroup heading="HTML components">
-                {HtmlComponents.map((e) => {
-                    return (
-                        <CommandItem key={e.name} value={e.name} onMouseDown={() => {router.push('/components/' + e.parsedName); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
-                            {/* <Calendar className="mr-2 h-4 w-4" /> */}
-                            <span>{e.name}</span>
-                        </CommandItem>
-                    )
-                })}
-            </CommandGroup>
-          <CommandSeparator />
           <CommandGroup heading="Layouts components" className="gap-0">
                 {LayoutsComponents.map((e) => {
                     return (
