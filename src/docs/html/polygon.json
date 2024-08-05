@@ -29,7 +29,7 @@
             ]
         },
         {
-            "name": "stroke-width",
+            "name": "strokeWidth",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -50,7 +50,7 @@
         {
             "title": "Example 2",
             "description": "Creating a square with a stroke using polygon:",
-            "code": "<svg>\n  <polygon points='10,10 10,110 110,110 110,10' fill='none' stroke='black' stroke-width='3'/>\n</svg>"
+            "code": "<svg>\n  <polygon points='10,10 10,110 110,110 110,10' fill='none' stroke='black' strokeWidth='3'/>\n</svg>"
         }
     ]
 }

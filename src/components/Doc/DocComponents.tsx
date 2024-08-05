@@ -109,7 +109,7 @@ interface ProspTabProps {
 
 const withToolTip = (tip:string, name:string) => {
   return (
-    <span className="group relative flex flex-row items-center gap-2 cursor-help"><span className="truncate">{name}</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span><div className="hidden group-hover:block absolute bottom-full mb-2 p-2 text-nowrap text-center left-1/2 transform -translate-x-1/2 shadow-lg drop-shadow-sm shadow-gray-200 w-fit max-w-80 h-fit bg-white border border-gray-200 text-black rounded-md">{tip}</div></span>
+    <span className="group relative flex flex-row items-center gap-2 cursor-help"><span className="truncate">{name}</span><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span><div className="hidden group-hover:block absolute bottom-full mb-2 p-2 text-nowrap text-center left-1/2 transform -translate-x-1/2 shadow-lg drop-shadow-sm shadow-gray-200 w-fit max-w-80 h-fit bg-white border border-gray-200 text-black rounded-md">{tip}</div></span>
   )
 }
 

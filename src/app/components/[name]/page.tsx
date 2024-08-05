@@ -6,6 +6,7 @@ import path from "path";
 import fs from 'fs';
 
 import LayoutsComponents from '../../../docs/Layouts/Components.json';
+import HtmlComponents from '../../../docs/html.json'
 
 export type RadixPropDocumentation = {
   name: string,
@@ -33,12 +34,9 @@ export type ComponentDoc = {
 };
 
 async function getJsonData(filename:string) {
-  if (filename === null) return null;
-  const filePath = path.join(__dirname, '..', 'src', 'docs', 'html', `${filename}.json`);
-  if (!fs.existsSync(filePath)) return null;
-  const fileContent = fs.readFileSync(filePath, 'utf8');
-  const jsonData = JSON.parse(fileContent);
-  return jsonData;
+  const match = HtmlComponents.filter(e => e.parsedName === filename);
+  if (match.length !== 1) return null;
+  return match[0].content;
 }
 
 function getJsonDataLayouts(filename:string):ComponentDoc|null {

@@ -32,7 +32,7 @@ type attributeType = {
     acceptedValueTypes:
     {
         type: string;
-        options: string[];
+        options?: string[];
     }[];
 };
 

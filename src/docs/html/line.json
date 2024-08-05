@@ -47,7 +47,7 @@
             ]
         },
         {
-            "name": "stroke-width",
+            "name": "strokeWidth",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -63,17 +63,17 @@
         {
             "title": "Example 1",
             "description": "Draw a black line from point (10,10) to point (50,50)",
-            "code": "<line x1='10' y1='10' x2='50' y2='50' stroke='black' stroke-width='2' />"
+            "code": "<line x1='10' y1='10' x2='50' y2='50' stroke='black' strokeWidth='2' />"
         },
         {
             "title": "Example 2",
             "description": "Draw a red line from point (30,30) to point (100,100)",
-            "code": "<line x1='30' y1='30' x2='100' y2='100' stroke='red' stroke-width='1' />"
+            "code": "<line x1='30' y1='30' x2='100' y2='100' stroke='red' strokeWidth='1' />"
         },
         {
             "title": "Example 3",
             "description": "Draw a blue line from point (50,10) to point (70,90)",
-            "code": "<line x1='50' y1='10' x2='70' y2='90' stroke='blue' stroke-width='3' />"
+            "code": "<line x1='50' y1='10' x2='70' y2='90' stroke='blue' strokeWidth='3' />"
         }
     ]
 }

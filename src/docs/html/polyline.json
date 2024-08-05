@@ -29,7 +29,7 @@
             ]
         },
         {
-            "name": "stroke-width",
+            "name": "strokeWidth",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "name": "stroke-linecap",
+            "name": "strokeLinecap",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -64,7 +64,7 @@
         {
             "title": "Styled Polyline Example",
             "description": "Styling a polyline with different stroke and fill colors",
-            "code": "<svg>\n  <polyline points='50,50 100,100 150,50' fill='none' stroke='blue' stroke-width='2' />\n</svg>"
+            "code": "<svg>\n  <polyline points='50,50 100,100 150,50' fill='none' stroke='blue' strokeWidth='2' />\n</svg>"
         }
     ]
 }

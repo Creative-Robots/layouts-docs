@@ -51,12 +51,12 @@
         {
             "title": "Basic SVG Example",
             "description": "Create a simple SVG element with a rectangle",
-            "code": "<svg width='100' height='100'><rect width='100' height='100' style='fill:rgb(0,0,255);stroke-width:1;stroke:rgb(0,0,0)'/></svg>"
+            "code": "<svg width='100' height='100'><rect width='100' height='100' style='fill:rgb(0,0,255);strokeWidth:1;stroke:rgb(0,0,0)'/></svg>"
         },
         {
             "title": "SVG with viewBox Example",
             "description": "Create a SVG with a different viewbox",
-            "code": "<svg width='200' height='200' viewBox='0 0 200 200'><rect width='100' height='100' style='fill:rgb(255,0,0);stroke-width:1;stroke:rgb(0,0,0)'/></svg>"
+            "code": "<svg width='200' height='200' viewBox='0 0 200 200'><rect width='100' height='100' style='fill:rgb(255,0,0);strokeWidth:1;stroke:rgb(0,0,0)'/></svg>"
         }
     ]
 }
