@@ -13,7 +13,7 @@ export const H3 = ({title, description}:{title:string, description?:string}) => 
         })
       }, [setRep])
     return (
-        <div className={cn(H3Box)} id={id}>
+        <h3 className={cn(H3Box)} id={id}>
             <p className={cn(_H3)}>{title}</p>
             {
                 description && description.length > 0 && 
@@ -21,6 +21,6 @@ export const H3 = ({title, description}:{title:string, description?:string}) => 
                     {description}
                 </span>
             }
-        </div>
+        </h3>
     )
 }

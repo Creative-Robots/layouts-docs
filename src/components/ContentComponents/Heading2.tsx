@@ -13,7 +13,7 @@ export const _Heading2 = ({title, description}:{title:string, description?:strin
         })
       }, [setRep])
     return (
-        <div className={cn(Heading2Box)} id={id}>
+        <h2 className={cn(Heading2Box)} id={id}>
             <p className={cn(Heading2)}>{title}</p>
             {
                 description && description.length > 0 && 
@@ -21,6 +21,6 @@ export const _Heading2 = ({title, description}:{title:string, description?:strin
                     {description}
                 </span>
             }
-        </div>
+        </h2>
     )
 }
