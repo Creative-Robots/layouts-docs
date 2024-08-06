@@ -22,6 +22,8 @@ const other = cn("", innerTextColor);
 
 
 export const paragraphClassName = "block my-4 mx-0 break-normal";
+export const strongClassName = "font-medium";
+
 const ul = cn("flex flex-col my-4");
 const li = cn("flex flex-row justify-start");
 
@@ -40,25 +42,25 @@ const GlobalDescription = "text-sm text-[#5B5E66] mb-2";
 
 // styles for Components Pages
 
-const TitleBox = "justify-start items-start gap-1 flex-col flex w-full mb-0";
-const Title = "text-[#1e1f22] text-4xl font-medium tracking-tight";
-const TitleDescription = cn(GlobalDescription, "");
+const TitleBox = "justify-start items-start gap-1 flex-col flex w-full mb-[32px]";
+const Title = "text-[#1e1f22] text-[30px] font-medium tracking-tight";
+const TitleDescription = cn(GlobalDescription, "text-[18px]");
 
 
 const Heading1Box = "justify-start gap-2 items-start flex-col flex w-full my-[0.67em]";
 const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-medium";
 const Heading1Description = cn(GlobalDescription, "");
 
-const Heading2Box = "justify-start items-start flex-col flex w-full mb-2 my-[0.83em]";
-const Heading2 = "text-[#1e1f22] text-base font-medium";
+const Heading2Box = "justify-start items-start flex-col flex w-full mb-2 mt-[48px] mb-[16px]";
+const Heading2 = "text-[#1e1f22] text-[24px] font-medium";
 const Heading2Description = cn(GlobalDescription, "");
 
 const SubHeadingBox = "justify-start items-start flex-col flex w-full my-2";
 const SubHeading = "text-[#5b5e66] text-sm";
 const SubHeadingDescription = cn(GlobalDescription, "");
 
-const H3Box = "justify-start items-start flex-col flex w-full gap-2 mt-12 my-[1em]";
-const H3 = "text-[#5b5e66] text-sm";
+const H3Box = "justify-start items-start flex-col flex w-full gap-2 mt-[48px] mb-[12px]";
+const H3 = "text-[#5b5e66] text-[20px] font-medium";
 const H3Description = cn(GlobalDescription, "");
 
 

@@ -13,6 +13,7 @@ import { scrollToElement } from "@/lib/utils"
 import { Heading1, Heading2, P, SubHeading, Title } from "../ContentComponents"
 import { Label } from "../ui/label"
 import { CodeBlock } from "../ContentComponents/CodeBlock"
+import { Strong } from "../ContentComponents/Strong"
 
 interface MdxComponentProps {
     content: { mdxSource: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>; frontMatter: { [key: string]: any; }; }
@@ -143,6 +144,7 @@ const components = {
   p: P,
   ul: CustomUl,
   li: CustomLi,
+  strong: Strong,
   Note: Note,
   Info: Info,
   code: Code,
