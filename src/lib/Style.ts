@@ -8,7 +8,7 @@ import { cn } from "./cn";
 const innerTextColor:string = "text-gray-400";
 export const selectedElementStyle:string = "text-[#1e1f22]";
 
-const folder_1 = cn("text-sm text-[#1e1f22] font-body truncate");
+const folder_1 = cn("text-sm text-[#1e1f22] font-medium truncate");
 
 const folder_2 = cn("truncate hover:text-black text-sm", innerTextColor);
 
@@ -34,43 +34,43 @@ const Card = "flex flex-col h-fit p-6 mt-5 border w-full p-3 rounded-xl hover:bo
 
 // similarity
 
-const GlobalDescription = "text-xs text-gray-400";
+const GlobalDescription = "text-sm text-[#5B5E66] mb-2";
 
 // styles for Components Pages
 
-const TitleBox = "justify-start items-start flex-col flex w-full mb-0";
-const Title = "text-[#1e1f22] text-4xl font-body tracking-tight";
+const TitleBox = "justify-start items-start gap-1 flex-col flex w-full mb-0";
+const Title = "text-[#1e1f22] text-4xl font-medium tracking-tight";
 const TitleDescription = cn(GlobalDescription, "");
 
 
-const Heading1Box = "justify-start items-start flex-col flex w-full";
-const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-body";
+const Heading1Box = "justify-start gap-2 items-start flex-col flex w-full";
+const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-medium";
 const Heading1Description = cn(GlobalDescription, "");
 
 const Heading2Box = "justify-start items-start flex-col flex w-full mb-2";
-const Heading2 = "text-[#1e1f22] text-lg tracking-tight font-body";
+const Heading2 = "text-[#1e1f22] text-base font-medium";
 const Heading2Description = cn(GlobalDescription, "");
 
 const SubHeadingBox = "justify-start items-start flex-col flex w-full mb-2";
-const SubHeading = "text-[#5b5e66] text-lg";
+const SubHeading = "text-[#5b5e66] text-sm";
 const SubHeadingDescription = cn(GlobalDescription, "");
 
-const H3Box = "justify-start items-start flex-col flex w-full gap-2 mb-1";
+const H3Box = "justify-start items-start flex-col flex w-full gap-2 mt-12";
 const H3 = "text-[#5b5e66] text-sm";
 const H3Description = cn(GlobalDescription, "");
 
 
-const Section = "flex flex-col gap-4";
-const SubSection = "flex flex-col";
+const Section = "flex flex-col gap-12 my-6";
+const SubSection = "flex flex-col gap-1";
 
 const DivWithToolTip = "relative flex flex-row items-center gap-2 text-xs";
 const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3";
 const PropsNameWithDesc = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
 
 
-const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full";
+const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full -mt-6 -mb-9";
 const PropsHeader = "grid grid-cols-11 gap-2";
-const PropsHeaderTitle = "text-base text-[#5B5E66] font-semibold col-span-3";
+const PropsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
 const isRequiredTitle = "col-span-2 text-center";
 
 const PropsLine1_2 = "bg-[#fcfcfc]";
@@ -83,7 +83,7 @@ const PropsName = "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit
 
 const PropsCol = "flex flex-col justify-normal items-start col-span-3";
 const PropsColTitle = "flex flex-col justify-normal items-start";
-const PropsColTitleText = "text-sx text-[#5B5E66]";
+const PropsColTitleText = "text-xs font-medium text-[#1E1F22]";
 
 const requiredCol = "text-sm text-[#1E1F22] text-center col-span-2";
 

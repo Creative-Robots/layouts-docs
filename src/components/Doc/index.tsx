@@ -59,8 +59,8 @@ const Doc = ({htmldata, isLayouts, layoutData}:DocProps) => {
         ? layoutData ? <LayoutComponentsDoc data={layoutData}></LayoutComponentsDoc> : null
         : htmldata ? <HtmlComponentDoc data={htmldata}></HtmlComponentDoc> : null}
         
-        <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0  h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
-            <h1 className='text-sm font-body'>On this page</h1>
+        <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0 h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
+            <h1 className='text-sm font-medium'>On this page</h1>
             {rep.map((e, i) => {
               return (
                 <a key={'ine' + i} className={cn("text-xs font-normal text-gray-400 hover:text-[#1e1f22] cursor-pointer group flex flex-row items-center", e.level === 2 ? "pl-4" : e.level === 3 ? "pl-8" : "" )} href={'#' + e.id} onClick={scrollToElement}>

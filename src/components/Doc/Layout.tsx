@@ -10,7 +10,7 @@ interface DocProps {
 export default function LayoutComponentsDoc({data}:DocProps) {
     const {name, description, refImplementation, props, subComponents, examples} = data;
     return (
-        <div className='flex flex-col gap-3 pb-20 lg:px-12 md:px-10 sm:px-8 px-5 min-h-screen max-w-[720px] flex-1 pt-[122px] lg:mx-auto'>
+        <div className='flex flex-col gap-3 pb-20 sm:px-0 px-5 min-h-screen max-w-[720px] flex-1 pt-[122px] lg:mx-auto'>
             <DocBreadcrums items={[name]} />
             <div className='flex flex-col gap-1'>
                 <Title title={name} description={description}></Title>
@@ -32,7 +32,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                 </Section>
             ) : null}
             {examples && examples.length > 0 ? (
-                <Section name="Exemples">
+                <Section name="Examples">
                     {examples.map((e, idx) => {
                         if (!e.code) return null;
                         return (
@@ -44,7 +44,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                 </Section>
             ) : null}
             {subComponents && subComponents.length > 0 ? (
-                <Section name="Api Reference">
+                <Section name="API Reference">
                     {subComponents.map((c, idx) => {
                         return (
                             <SubComponent key={idx} level={2} data={c}></SubComponent>

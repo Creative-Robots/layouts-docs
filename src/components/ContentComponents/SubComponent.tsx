@@ -25,7 +25,7 @@ export const SubComponent = ({data, level}:{data:ComponentDoc, level:number}) =>
           </section>
         ) : null}
         {examples && examples.length > 0 ? (
-          <SubSection name={name + " Exemples"} level={level + 1}>
+          <SubSection name={name + " Examples"} level={level + 1}>
               {examples.map((e, idx) => {
                   if (!e.code) return null;
                   return (

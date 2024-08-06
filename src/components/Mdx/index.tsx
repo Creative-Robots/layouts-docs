@@ -175,7 +175,7 @@ export default function MdxComponent({content}: MdxComponentProps) {
             </div>
           </div>
           <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0  h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
-            <Label className="text-sm font-body" >
+            <Label className="text-sm font-medium" >
 							On this page
 						</Label>
             {rep.map((e, i) => {
