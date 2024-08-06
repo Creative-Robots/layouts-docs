@@ -1,8 +1,8 @@
+import { cn } from "@/lib/cn"
+import { paragraphClassName } from "@/lib/Style"
 
-
-
-export const P = () => {
+export const P = ({ className, children } : { className: string, children: any }) => {
     return (
-        <p></p>
-    )
-}
+        <p className={cn(paragraphClassName, className)}>{children}</p>
+    );
+};
