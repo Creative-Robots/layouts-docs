@@ -5,29 +5,36 @@ import { createContext, MouseEventHandler, ReactNode, useEffect, useState } from
 import * as MintComponents from "@mintlify/components"
 import { MDXProvider } from '@mdx-js/react'
 import { cn } from "@/lib/cn"
-import { code, description, descriptionBox, h1, h1Box, h2, h2Box, h3, h3Box, info, li, note, p, responseField, snippetIntro, title, titleBox, ul } from "@/lib/Style"
+import { code, info, li, note, responseField, snippetIntro, ul } from "@/lib/Style"
 import MyCodeBlock from "../CodeBlock"
 
 import { rep, repContext, useRepContext } from "@/lib/RepContext"
 import { scrollToElement } from "@/lib/utils"
+import { Heading1, Heading2, P, SubHeading, Title } from "../ContentComponents"
+import { Label } from "../ui/label"
+import { CodeBlock } from "../ContentComponents/CodeBlock"
 
 interface MdxComponentProps {
     content: { mdxSource: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>; frontMatter: { [key: string]: any; }; }
 }
 
-// title
-const Title = ({ children, id }: {children:ReactNode, id:string}) => (
-    <h1 className={cn(titleBox)} id={id}>
-      <span className={cn(title)}>{children}</span>
-    </h1>
-);
+const CustomH1 = ({ children, id }: {children:ReactNode, id:string}) => {
+  return (
+    <Heading1 title={children as string}/>
+  )
+}
 
-//description
-const Description = ({ children, id }: {children:ReactNode, id:string}) => (
-    <h3 className={cn(descriptionBox)} id={id}>
-      <span className={cn(description)}>{children}</span>
-    </h3>
-);
+const CustomH2 = ({ children, id }: {children:ReactNode, id:string}) => {
+  return (
+    <Heading2 title={children as string}/>
+  )
+}
+
+const CustomH3 = ({ children, id }: {children:ReactNode, id:string}) => {
+  return (
+    <SubHeading title={children as string}/>
+  )
+}
 
 const Linkable = ({id}:{id:string}) => {
     return (
@@ -38,61 +45,6 @@ const Linkable = ({id}:{id:string}) => {
       </div>
     )
 }
-
-// h1
-const CustomH1 = ({ children }: { children: ReactNode; id?: string }) => {
-  const normalizedId = String(children).normalize();
-  const { setRep } = useRepContext();
-  useEffect(() => {
-    setRep((l) => {
-      return [...l, { name: children as string, id: normalizedId }];
-    });
-  }, [setRep]);
-  return (
-    <h1 className={h1Box} id={normalizedId}>
-      <Linkable id={normalizedId} />
-      <span className={h1}>{children}</span>
-    </h1>
-  );
-};
-
-// h2
-const CustomH2 = ({ children }: {children:ReactNode, id:string}) => {
-  const id = String(children).normalize();
-  const {setRep} = useRepContext();
-  useEffect(() => {
-    setRep((l) => {
-      if (l.filter(e => e.id == id).length > 0) return [...l];
-      return [...l, {name: children as string, id: id}];
-    })
-  }, [setRep])
-  return (
-    <h2 className={h2Box} id={id}>
-      <Linkable id={id}/>
-      <span className={h2}>{children}</span>
-    </h2>
-)};
-
-// h3
-const CustomH3 = ({ children }: {children:ReactNode, id:string}) => {
-  const id = String(children).normalize();
-  const {setRep} = useRepContext();
-  useEffect(() => {
-    setRep((l) => {
-      if (l.filter(e => e.id == id).length > 0) return [...l];
-      return [...l, {name: children as string, id: id}];
-    })
-  }, [setRep])
-  return (
-    <h3 className={h3Box} id={id}>
-      <Linkable id={id}/>
-      <span className={h3}>{children}</span>
-    </h3>
-)};
-
-// p
-const CustomP = ({ children }: {children:ReactNode}) => <p className={p}>{children}</p>;
-
 // Ul
 const CustomUl = ({ children, id }: {children:ReactNode, id:string}) => (
     <ul className={ul} id={id}>
@@ -131,7 +83,7 @@ const Code = ({ children, id, ...props }: {children:ReactNode, id:string}) => {
   return (
   String(children).split('\n').length > 1
   // ? <MintComponents.CodeGroup><MintComponents.CodeBlock filename="Layout" className="bg-gray-900">{children}</MintComponents.CodeBlock></MintComponents.CodeGroup>
-  ? <MyCodeBlock code={children as string} language="jsx" withTitleBar={false}></MyCodeBlock>
+  ? <CodeBlock code={children as string} className="mb-4"/>
   : <code className="size-fit text-wrap bg-gray-200 text-gray-800 border border-gray-300">{children}</code>
 )};
 
@@ -162,7 +114,7 @@ const components = {
   h1: CustomH1,
   h2: CustomH2,
   h3: CustomH3,
-  p: CustomP,
+  p: P,
   ul: CustomUl,
   li: CustomLi,
   Note: Note,
@@ -177,25 +129,32 @@ const components = {
 
 export default function MdxComponent({content}: MdxComponentProps) {
     const [rep, setRep] = useState<rep[]>([]);
+    console.log(content.mdxSource);
     return (
       <repContext.Provider value={{setRep}}>
         <div className="flex flex-row flex-1">
-          <div className="max-w-[1200px] flex-1 pt-[122px] lg:mx-auto relative">
+          <div className="max-w-[720px] flex-1 pt-[122px] lg:mx-auto relative">
             <div className="text-gray-800 px-10 w-full max-w-full overflow-hidden">
               {/* FIXME: Remove any below */}
               <MDXProvider components={components as any}>
-                  <Title id="title">{content.frontMatter.title}</Title>
-                  <Description id="description">{content.frontMatter.description}</Description>
+                  <Title title={content.frontMatter.title} description={content.frontMatter.description}/>
                   <MDXRemote {...content.mdxSource}/>
               </MDXProvider>
             </div>
+            <div className="h-[64px] w-full flex justify-center items-center mb-10" >
+              {/* <span className="text-xs" >
+                  64px height
+              </span> */}
+            </div>
           </div>
           <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0  h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
-            <h1 className='text-sm font-semibold'>On this page</h1>
+            <Label className="text-sm font-body" >
+							On this page
+						</Label>
             {rep.map((e, i) => {
               if (i === rep.length - 1) return null;
               return (
-                <a key={'ine' + i} className="text-xs font-semibold hover:text-black text-[#555555] size-fit" href={'#' + e.id} onClick={scrollToElement}>{e.name}</a>
+                <a key={'ine' + i} className="text-xs font-normal text-gray-400 hover:text-[#1e1f22] cursor-pointer" href={'#' + e.id} onClick={scrollToElement}>{e.name}</a>
               )
             })}
           </div>

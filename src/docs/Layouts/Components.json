@@ -316,7 +316,7 @@
         "name": "Background Mesh Gradient",
         "tag": "bg-mesh",
         "description": "A background gradient to use for the page.",
-        "refImplementation": "/div size-40 rounded-lg\n        /bg-mesh Any seed text here for reproductability!",
+        "refImplementation": "/div size-40 rounded-lg\n  /bg-mesh Any seed text here for reproductability!",
         "props": [],
         "subComponents": [],
         "examples": [

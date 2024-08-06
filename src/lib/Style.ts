@@ -5,38 +5,20 @@
 
 import { cn } from "./cn";
 
-const innerTextColor:string = "text-[#555555]";
-export const selectedElementStyle:string = "bg-gray-100 px-4 rounded-md w-fit";
+const innerTextColor:string = "text-gray-400";
+export const selectedElementStyle:string = "text-[#1e1f22]";
 
-const folder_1 = cn("text-sm font-semibold truncate");
+const folder_1 = cn("text-sm text-[#1e1f22] font-body truncate");
 
 const folder_2 = cn("truncate hover:text-black text-sm", innerTextColor);
 
 const folder_3 = cn("text-sm truncate", innerTextColor);
 
-const element = cn("hover:text-black text-sm self-start truncate text-start py-2", innerTextColor);
+const element = cn("hover:text-[#1e1f22] w-fit text-sm font-body text-start truncate py-1", innerTextColor);
 
 const other = cn("", innerTextColor);
 
-
-// styles for Mdx Pages Content
-
-const titleBox = cn("flex whitespace-pre-wrap group mb-4");
-const title = cn("text-4xl text-black");
-
-const descriptionBox = cn("flex whitespace-pre-wrap group mb-4 max-w-full ");
-const description = cn("text-base");
-
-const h1Box = cn("flex whitespace-pre-wrap group");
-const h1 = cn("cursor-pointer text-3xl text-black flex flex-row");
-
-const h2Box = cn("flex whitespace-pre-wrap group mt-12 mb-4");
-const h2 = cn("cursor-pointer text-2xl text-black flex flex-row");
-
-const h3Box = cn("flex whitespace-pre-wrap group mt-6 mb-4 ");
-const h3 = cn("cursor-pointer text-xl text-black flex flex-row");
-
-const p:string = "max-w-full w-full overflow-hidden";
+// relatif to MDX
 
 const ul = cn("flex flex-col my-4");
 const li = cn("flex flex-row justify-start");
@@ -49,24 +31,39 @@ const latex = "";
 const snippetIntro = "";
 
 
+// similarity
+
+const GlobalDescription = "text-xs text-gray-400";
+
 // styles for Components Pages
 
-const H1Box = "flex flex-col gap-2 mt-8";
-const H1 = "text-xl font-medium";
+const TitleBox = "justify-start items-start flex-col flex w-full mb-0";
+const Title = "text-[#1e1f22] text-4xl font-body tracking-tight";
+const TitleDescription = cn(GlobalDescription, "");
 
-const H2Box = "flex flex-col mt-4";
-const H2 = "text-lg font-medium";
 
-const H3Box = "flex flex-col gap-2 mt-8 pl-3";
-const H3 = "text-base text-gray-800 font-medium mb-4";
+const Heading1Box = "justify-start items-start flex-col flex w-full";
+const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-body";
+const Heading1Description = cn(GlobalDescription, "");
 
-const Title = "text-5xl font-semibold";
+const Heading2Box = "justify-start items-start flex-col flex w-full mb-2";
+const Heading2 = "text-[#1e1f22] text-lg tracking-tight font-body";
+const Heading2Description = cn(GlobalDescription, "");
+
+const SubHeadingBox = "justify-start items-start flex-col flex w-full mb-2";
+const SubHeading = "text-[#5b5e66] text-lg";
+const SubHeadingDescription = cn(GlobalDescription, "");
+
+const H3Box = "justify-start items-start flex-col flex w-full gap-2 mb-1";
+const H3 = "text-[#5b5e66] text-sm";
+const H3Description = cn(GlobalDescription, "");
+
 
 const Section = "flex flex-col gap-4";
 const SubSection = "flex flex-col";
 
-const DivWithToolTip = "group relative flex flex-row items-center gap-2 cursor-help";
-const DivWithDescription = "group relative flex flex-row items-center gap-2 cursor-help col-span-3";
+const DivWithToolTip = "relative flex flex-row items-center gap-2 text-xs";
+const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3";
 const PropsNameWithDesc = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
 
 
@@ -79,13 +76,13 @@ const PropsLine1_2 = "bg-[#fcfcfc]";
 const PropsLine2_2 = "bg-[#fafafa]";
 
 const PropsLineBox = "flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3";
-const PropsLine = "grid grid-cols-11 gap-2 items-center";
+const PropsLine = "grid grid-cols-11 gap-2 items-center text-xs";
 
-const PropsName = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate";
+const PropsName = "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate";
 
 const PropsCol = "flex flex-col justify-normal items-start col-span-3";
 const PropsColTitle = "flex flex-col justify-normal items-start";
-const PropsColTitleText = "text-sm text-[#5B5E66]";
+const PropsColTitleText = "text-sx text-[#5B5E66]";
 
 const requiredCol = "text-sm text-[#1E1F22] text-center col-span-2";
 
@@ -123,14 +120,6 @@ export {
     folder_3,
     element,
     other,
-    title,
-    titleBox,
-    description,
-    descriptionBox,
-    h1, h1Box,
-    h2, h2Box,
-    h3, h3Box,
-    p,
     ul,
     li,
     note,
@@ -140,15 +129,33 @@ export {
     latex,
     snippetIntro,
 
-    // Components Page
-    H1 as _H1, H1Box,
-    H2 as _H2, H2Box,
-    H3 as _H3, H3Box,
+    // Components
+    TitleBox,
     Title as _Title,
+    TitleDescription,
+
+    Heading1Box,
+    Heading1,
+    Heading1Description,
+
+    Heading2Box,
+    Heading2,
+    Heading2Description,
+
+    SubHeadingBox,
+    SubHeading,
+    SubHeadingDescription,
+
+    H3Box,
+    H3 as _H3,
+    H3Description,
+
     Section as _Section,
     SubSection as _SubSection,
+
     DivWithToolTip,
     DivWithDescription,
+
     PropsNameWithDesc,
     PropsHeaderBox,
     PropsHeader,

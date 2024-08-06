@@ -11,21 +11,8 @@ import { headers } from "next/headers";
 import { URL } from "url";
 
 import LayoutsComponent from '../../docs/Layouts/Components.json';
-
-interface SheetProps extends componentsProps {
-    open: boolean;
-}
-
-export default function Sheet({open}:SheetProps) {
-
-    // const useMemo
-
-    return (
-        <div className="">
-            
-        </div>
-    )
-}
+import { Button } from "../ui/button";
+import { SheetClose } from "../ShadCn/Sheet";
 
 function isSpecialCase(file: FileElementType) {
     if (file.name === "Components") return true;
@@ -127,21 +114,30 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
     )
 }
 
-function removeHost(url: string): string {
-    try {
-      const parsedUrl = new URL(url);
-      return parsedUrl.pathname + parsedUrl.search + parsedUrl.hash;
-    } catch (e) {
-      // If the URL is relative (i.e., it doesn't include a host), just return it as is
-      return url;
-    }
-  }
-
-export function SheetContent() {
+export function SheetContent({className, bottom=false}:{className?:string, bottom?:boolean}) {
     const fileNames = getMdxFiles();
     return (
-        <div className="flex flex-col h-fit gap-3">
-        {parseFileHierarchie(fileNames, 0)}
+        <>
+        <div className={cn("flex flex-col flex-1 gap-3 px-8 pb-4 overflow-y-scroll", className)}>
+            {parseFileHierarchie(fileNames, 0)}
         </div>
+        {
+            bottom && <div className="w-full border-t border-gray-400/20 h-fit p-6  gap-2 flex flex-col bg-white">
+                <Button className="reset flex flex-row gap-2 items-center p-3 w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
+                    <img alt="message" className="size-3.5" src="https://illustrations.dev/encrypted/img_MzM1QkNEQUQwQzgzQ0MxOUY0MTBFOTM0ODMwQjlDODM2NTZEQ0E3NzA2ODdGOTZE" />
+                    <span className="text-sm" >
+                        Contact support
+                    </span>
+                </Button>
+                <Button className="reset flex flex-row gap-2 items-center p-3 w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
+                    <img alt="" className="size-3.5 opacity-60" src="https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=p3x6p2ud&dl=0" />
+                    <span className="text-sm" >
+                        Open the app
+                    </span>
+                </Button>
+            </div>
+        }
+        
+        </>
     )
 }

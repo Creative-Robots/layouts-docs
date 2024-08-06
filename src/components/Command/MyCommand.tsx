@@ -15,6 +15,7 @@ import {
 import LayoutsComponents from './../../docs/Layouts/Components.json';
 import HtmlComponents from './../../docs/html.json'
 import { useRouter } from "next/navigation";
+import { Input } from "../ui/input";
 
 export function SearchCommand() {
   const [open, setOpen] = React.useState(false);
@@ -34,12 +35,17 @@ export function SearchCommand() {
 
   return (
     <>
-      <p className="text-sm text-muted-foreground w-fit ml-auto px-2">
-        Press{" "}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">⌘</span>K
-        </kbd>
-      </p>
+      <div className="justify-start items-start flex-col flex gap-2 relative max-w-[250px] ml-auto mr-4 self-center" >
+            <Input className="reset py-2 px-4 items-center rounded-lg w-full bg-gray-100 placeholder:text-gray-500 text-[13px] outline-white focus:outline-gray-200 text-[#1e1f22] focus:shadow-sm cursor-pointer" placeHolder="Search..." placeholder="Search.." />
+            <div className="items-center justify-start flex gap-1 absolute right-2 top-2" >
+                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
+                    ⌘
+                </kbd>
+                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
+                    K
+                </kbd>
+            </div>
+        </div>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />
         <CommandList>
