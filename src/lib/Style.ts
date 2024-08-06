@@ -29,6 +29,7 @@ const code = "w-full max-w-full overflow-x-scroll h-fit";
 const responseField = "";
 const latex = "";
 const snippetIntro = "";
+const Card = "flex flex-col h-fit p-6 mt-5 border w-full p-3 rounded-xl hover:border-black cursor-pointer";
 
 
 // similarity
@@ -128,6 +129,7 @@ export {
     responseField,
     latex,
     snippetIntro,
+    Card,
 
     // Components
     TitleBox,
