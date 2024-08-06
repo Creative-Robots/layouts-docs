@@ -20,6 +20,8 @@ const other = cn("", innerTextColor);
 
 // relatif to MDX
 
+
+export const paragraphClassName = "block my-4 mx-0 break-normal";
 const ul = cn("flex flex-col my-4");
 const li = cn("flex flex-row justify-start");
 
