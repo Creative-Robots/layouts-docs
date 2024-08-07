@@ -53,12 +53,14 @@
         {
             "title": "Setting charset",
             "description": "Specify the character encoding for the HTML document.",
-            "code": "<meta charset='UTF-8'>"
+            "code": "<meta charset='UTF-8'>",
+            "layoutsCode": ""
         },
         {
             "title": "Setting description",
             "description": "Specify a description of the HTML document for search engines.",
-            "code": "<meta name='description' content='This is a description'>"
+            "code": "<meta name='description' content='This is a description'>",
+            "layoutsCode": ""
         }
     ]
 }

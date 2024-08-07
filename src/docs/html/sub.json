@@ -27,7 +27,8 @@
         {
             "title": "Example usage of <sub> tag",
             "description": "This example demonstrates the usage of <sub> tag to create subscript text.",
-            "code": "<p>This is a sentence with <sub>subscript</sub> text.</p>"
+            "code": "<p>This is a sentence with <sub>subscript</sub> text.</p>",
+            "layoutsCode": "/p\n\tThis is a sentence with \n\t/sub\n\t\tsubscript\n\t text."
         }
     ]
 }

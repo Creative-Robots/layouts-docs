@@ -1,0 +1,47 @@
+{
+    "tag": "picture",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "alt",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Picture",
+    "shortDescriptionOfTheTag": "The picture element is a semantic HTML5 element that allows developers to specify multiple image resources for different displays.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Basic usage of the picture element with source and alt attributes.",
+            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\">\n</picture>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using the title attribute in a picture element.",
+            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\" title=\"Description of the image\">\n</picture>"
+        }
+    ]
+}

@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Horizontal rule with default styling.",
-            "code": "<hr>"
+            "code": "<hr>",
+            "layoutsCode": "/hr"
         },
         {
             "title": "Example 2",
             "description": "Horizontal rule with custom class 'separator'.",
-            "code": "<hr class='separator'>"
+            "code": "<hr class='separator'>",
+            "layoutsCode": "/hr .separator"
         }
     ]
 }

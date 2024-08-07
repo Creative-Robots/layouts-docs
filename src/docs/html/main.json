@@ -8,12 +8,14 @@
         {
             "title": "Basic Example",
             "description": "A basic example using the main tag.",
-            "code": "<main>\n    <h1>Main Content</h1>\n    <p>This is the main content of the page.</p>\n</main>"
+            "code": "<main>\n    <h1>Main Content</h1>\n    <p>This is the main content of the page.</p>\n</main>",
+            "layoutsCode": "/main\n\t/h1\n\t\tMain Content\n\t/p\n\t\tThis is the main content of the page."
         },
         {
             "title": "Usage with Sections",
             "description": "Using the main tag with multiple sections within it.",
-            "code": "<main>\n    <section>\n        <h2>Section 1</h2>\n        <p>Content of section 1.</p>\n    </section>\n    <section>\n        <h2>Section 2</h2>\n        <p>Content of section 2.</p>\n    </section>\n</main>"
+            "code": "<main>\n    <section>\n        <h2>Section 1</h2>\n        <p>Content of section 1.</p>\n    </section>\n    <section>\n        <h2>Section 2</h2>\n        <p>Content of section 2.</p>\n    </section>\n</main>",
+            "layoutsCode": "/main\n\t/section\n\t\t/h2\n\t\t\tSection 1\n\t\t/p\n\t\t\tContent of section 1.\n\t/section\n\t\t/h2\n\t\t\tSection 2\n\t\t/p\n\t\t\tContent of section 2."
         }
     ]
 }

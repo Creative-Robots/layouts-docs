@@ -1,0 +1,56 @@
+{
+    "tag": "table",
+    "allowedAttributes": [
+        {
+            "name": "border",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "cellpadding",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "cellspacing",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Table",
+    "shortDescriptionOfTheTag": "Defines a table for organizing tabular data.",
+    "usageExamples": [
+        {
+            "title": "Basic Table",
+            "description": "Create a simple table with rows and columns.",
+            "code": "<table>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>"
+        },
+        {
+            "title": "Styled Table",
+            "description": "Add styling to a table using attributes.",
+            "code": "<table border='1' cellpadding='5' cellspacing='0'>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>"
+        }
+    ]
+}

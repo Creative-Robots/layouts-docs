@@ -1,0 +1,29 @@
+{
+    "tag": "q",
+    "allowedAttributes": [
+        {
+            "name": "cite",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "q",
+    "shortDescriptionOfTheTag": "The q tag defines a short quotation.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A simple q tag with a quote",
+            "code": "<q>This is a simple quote</q>"
+        },
+        {
+            "title": "Example 2",
+            "description": "A q tag with a cite attribute",
+            "code": "<q cite=\"https://www.example.com\">This is a quote with a citation</q>"
+        }
+    ]
+}

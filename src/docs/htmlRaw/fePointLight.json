@@ -1,0 +1,78 @@
+{
+    "tag": "fePointLight",
+    "allowedAttributes": [
+        {
+            "name": "x",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "y",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "z",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "dx",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "dy",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "dz",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "spacing",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "fePointLight",
+    "shortDescriptionOfTheTag": "The <fePointLight> SVG element allows to add a point light source to the parent svg element.",
+    "usageExamples": [
+        {
+            "title": "Example",
+            "description": "Adding a fePointLight to an SVG element.",
+            "code": "<svg>\n  <filter id=\"fePointLight\">\n    <fePointLight x=\"10\" y=\"10\" z=\"10\"/>\n  </filter>\n</svg>"
+        }
+    ]
+}

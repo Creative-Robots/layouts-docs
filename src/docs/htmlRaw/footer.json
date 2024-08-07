@@ -1,0 +1,38 @@
+{
+    "tag": "footer",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Footer",
+    "shortDescriptionOfTheTag": "Defines a footer for a document or section.",
+    "usageExamples": [
+        {
+            "title": "Basic Usage",
+            "description": "A basic example of using the footer tag.",
+            "code": "<footer>\n  <p>&copy; 2021 Example Company</p>\n</footer>"
+        },
+        {
+            "title": "Footer with Links",
+            "description": "An example of footer containing links.",
+            "code": "<footer>\n  <nav>\n    <ul>\n      <li><a href=\"#\">Home</a></li>\n      <li><a href=\"#\">About</a></li>\n      <li><a href=\"#\">Contact</a></li>\n    </ul>\n  </nav>\n</footer>"
+        }
+    ]
+}

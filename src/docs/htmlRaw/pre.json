@@ -1,0 +1,19 @@
+{
+    "tag": "pre",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Preformatted Text",
+    "shortDescriptionOfTheTag": "The <pre> tag defines preformatted text.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Display preformatted text",
+            "code": "<pre>\nThis\nis\npreformatted\ntext\n</pre>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Display code snippet with HTML tags",
+            "code": "<pre>\n&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></pre>"
+        }
+    ]
+}

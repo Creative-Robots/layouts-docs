@@ -18,12 +18,14 @@
         {
             "title": "Example 1",
             "description": "Creating a simple list item",
-            "code": "<li>Item 1</li>"
+            "code": "<li>Item 1</li>",
+            "layoutsCode": "/li\n\tItem 1"
         },
         {
             "title": "Example 2",
             "description": "List item with a specific value",
-            "code": "<li value='5'>Item 5</li>"
+            "code": "<li value='5'>Item 5</li>",
+            "layoutsCode": "/li @value={5}\n\tItem 5"
         }
     ]
 }

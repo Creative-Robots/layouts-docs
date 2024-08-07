@@ -1,0 +1,79 @@
+{
+    "tag": "button",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "button",
+                        "submit",
+                        "reset"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "onclick",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Button",
+    "shortDescriptionOfTheTag": "The <button> element represents a clickable button, used to submit forms or trigger JavaScript functions.",
+    "usageExamples": [
+        {
+            "title": "Basic Button",
+            "description": "Create a basic button element.",
+            "code": "<button>Click Me</button>"
+        },
+        {
+            "title": "Disabled Button",
+            "description": "Create a disabled button element.",
+            "code": "<button disabled>Click Me</button>"
+        }
+    ]
+}

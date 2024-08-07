@@ -42,17 +42,20 @@
         {
             "title": "Basic Filter Input",
             "description": "A basic filter input field for filtering text data",
-            "code": "<filter type='text' placeholder='Search by name'></filter>"
+            "code": "<filter type='text' placeholder='Search by name'></filter>",
+            "layoutsCode": "/filter @placeholder=\"Search by name\" @type=\"text\""
         },
         {
             "title": "Numeric Filter Input",
             "description": "A numeric filter input field for filtering number data",
-            "code": "<filter type='number' placeholder='Search by age'></filter>"
+            "code": "<filter type='number' placeholder='Search by age'></filter>",
+            "layoutsCode": "/filter @placeholder=\"Search by age\" @type=\"number\""
         },
         {
             "title": "Date Filter Input",
             "description": "A date filter input field for filtering date data",
-            "code": "<filter type='date'></filter>"
+            "code": "<filter type='date'></filter>",
+            "layoutsCode": "/filter @type=\"date\""
         }
     ]
 }

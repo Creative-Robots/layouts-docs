@@ -8,7 +8,8 @@
         {
             "title": "Example",
             "description": "Using feTile to create a tiled texture for an SVG shape:",
-            "code": "<filter id=\"tileFilter\">\n  <feTile result=\"tiledImage\" />\n</filter>\n\n<rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"url(#tileFilter)\" />"
+            "code": "<filter id=\"tileFilter\">\n  <feTile result=\"tiledImage\" />\n</filter>\n\n<rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" fill=\"url(#tileFilter)\" />",
+            "layoutsCode": "/filter @id=\"tileFilter\"\n\t/fetile @result=\"tiledImage\"\n/rect @fill=\"url(#tileFilter)\" @height={100} @width={100} @x={10} @y={10}"
         }
     ]
 }

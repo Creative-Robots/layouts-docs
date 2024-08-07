@@ -1,0 +1,45 @@
+{
+    "tag": "thead",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "center",
+                        "right",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "valign",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "top",
+                        "middle",
+                        "bottom",
+                        "baseline"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Thead",
+    "shortDescriptionOfTheTag": "Defines a group of rows for a table heading.",
+    "usageExamples": [
+        {
+            "title": "Basic Thead Example",
+            "description": "Creating a basic thead element with two rows and two cells in each row.",
+            "code": "<thead>\n  <tr>\n    <th colspan='2'>Main Title</th>\n  </tr>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n</thead>"
+        }
+    ]
+}

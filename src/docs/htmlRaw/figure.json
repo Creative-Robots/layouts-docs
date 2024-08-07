@@ -1,0 +1,56 @@
+{
+    "tag": "figure",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "figure",
+    "shortDescriptionOfTheTag": "The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A simple usage of the figure tag",
+            "code": "<figure>\n  <img src=\"image.jpg\" alt=\"Description\">\n  <figcaption>Description of the image</figcaption>\n</figure>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using figure with a code snippet",
+            "code": "<figure>\n  <pre><code>const greeting = 'Hello World';\nconsole.log(greeting);</code></pre>\n  <figcaption>Simple code example</figcaption>\n</figure>"
+        }
+    ]
+}

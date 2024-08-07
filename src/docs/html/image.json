@@ -45,12 +45,14 @@
         {
             "title": "Basic Image Tag",
             "description": "Add a basic image tag with source and alt attributes.",
-            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" />"
+            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" />",
+            "layoutsCode": "/img @alt=\"Alt Text\" @src=\"image.jpg\""
         },
         {
             "title": "Image Tag with Height and Width",
             "description": "An image tag with specified height and width attributes.",
-            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" height=\"100\" width=\"200\" />"
+            "code": "<image src=\"image.jpg\" alt=\"Alt Text\" height=\"100\" width=\"200\" />",
+            "layoutsCode": "/img @alt=\"Alt Text\" @height={100} @src=\"image.jpg\" @width={200}"
         }
     ]
 }

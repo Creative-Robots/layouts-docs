@@ -31,12 +31,14 @@
         {
             "title": "Example 1",
             "description": "Mask input for password with placeholder",
-            "code": "<mask type='password' placeholder='Enter password'></mask>"
+            "code": "<mask type='password' placeholder='Enter password'></mask>",
+            "layoutsCode": "/mask @placeholder=\"Enter password\" @type=\"password\""
         },
         {
             "title": "Example 2",
             "description": "Mask input for text",
-            "code": "<mask type='text'></mask>"
+            "code": "<mask type='text'></mask>",
+            "layoutsCode": "/mask @type=\"text\""
         }
     ]
 }

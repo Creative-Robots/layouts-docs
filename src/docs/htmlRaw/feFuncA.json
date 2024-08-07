@@ -1,0 +1,63 @@
+{
+    "tag": "feFuncA",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "identity",
+                        "table",
+                        "discrete",
+                        "linear",
+                        "gamma"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tableValues",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "slope",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "intercept",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feFuncA",
+    "shortDescriptionOfTheTag": "The feFuncA SVG filter primitive defines the transfer function for the alpha component of the input graphic of its parent feComponentTransfer element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Setting up a feFuncA element with type linear and slope 1.",
+            "code": "<feFuncA type='linear' slope='1'/>"
+        },
+        {
+            "title": "Example 2",
+            "description": "An example of using the feFuncA element with type gamma and table values.",
+            "code": "<feFuncA type='gamma' tableValues='0.5 0.7'/>"
+        }
+    ]
+}

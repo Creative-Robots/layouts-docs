@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Using feImage with a URL",
-            "code": "<feImage xlink:href=\"image.jpg\" />"
+            "code": "<feImage xlink:href=\"image.jpg\" />",
+            "layoutsCode": "/feimage @xlink:href=\"image.jpg\""
         },
         {
             "title": "Example 2",
             "description": "Using feImage with 'result' and 'in' attributes",
-            "code": "<feImage xlink:href=\"image2.jpg\" result=\"resultImage\" in=\"sourceGraphic\" />"
+            "code": "<feImage xlink:href=\"image2.jpg\" result=\"resultImage\" in=\"sourceGraphic\" />",
+            "layoutsCode": "/feimage @in=\"sourceGraphic\" @result=\"resultImage\" @xlink:href=\"image2.jpg\""
         }
     ]
 }

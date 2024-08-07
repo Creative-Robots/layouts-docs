@@ -1,0 +1,44 @@
+{
+    "tag": "h2",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "center",
+                        "right",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "h2",
+    "shortDescriptionOfTheTag": "HTML heading level 2 tag",
+    "usageExamples": [
+        {
+            "title": "Basic h2 Example",
+            "description": "Creating a simple h2 heading",
+            "code": "<h2>Hello World</h2>"
+        },
+        {
+            "title": "h2 With Alignment",
+            "description": "Using the align attribute for alignment",
+            "code": "<h2 align='center'>Center Aligned Heading</h2>"
+        }
+    ]
+}

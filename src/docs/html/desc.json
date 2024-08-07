@@ -8,12 +8,14 @@
         {
             "title": "Basic Example",
             "description": "Adding a description paragraph.",
-            "code": "<desc>This is a description.</desc>"
+            "code": "<desc>This is a description.</desc>",
+            "layoutsCode": "/desc\n\tThis is a description."
         },
         {
             "title": "Example with formatted text",
             "description": "Using HTML tags within desc.",
-            "code": "<desc>This is a <strong>bold</strong> description.</desc>"
+            "code": "<desc>This is a <strong>bold</strong> description.</desc>",
+            "layoutsCode": "/desc\n\tThis is a \n\t/strong\n\t\tbold\n\t description."
         }
     ]
 }

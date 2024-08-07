@@ -1,0 +1,19 @@
+{
+    "tag": "h6",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "h6",
+    "shortDescriptionOfTheTag": "Defines the sixth level heading in HTML document.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Using h6 tag to create a subheading in a document",
+            "code": "<h6>This is a subheading</h6>"
+        },
+        {
+            "title": "Nested Example",
+            "description": "Nesting h6 tag within a div element",
+            "code": "<div><h6>This is a subheading within a div</h6></div>"
+        }
+    ]
+}

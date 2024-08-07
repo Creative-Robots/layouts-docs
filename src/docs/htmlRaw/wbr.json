@@ -1,0 +1,14 @@
+{
+    "tag": "wbr",
+    "allowedAttributes": [],
+    "canHaveChildren": false,
+    "title": "WBR Tag",
+    "shortDescriptionOfTheTag": "The <wbr> tag specifies where in a text it would be fine to add a line-break.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using <wbr> tag to specify line break.",
+            "code": "<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery long text.<wbr>With a break in the middle.</p>"
+        }
+    ]
+}

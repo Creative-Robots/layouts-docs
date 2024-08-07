@@ -1,0 +1,61 @@
+{
+    "tag": "feGaussianBlur",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stdDeviation",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "edgeMode",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "duplicate",
+                        "wrap",
+                        "none"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feGaussianBlur",
+    "shortDescriptionOfTheTag": "The feGaussianBlur SVG filter primitive performs a Gaussian blur on the input image.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying a feGaussianBlur filter on an image with standard deviation 2.",
+            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Applying a feGaussianBlur filter on an image with edge mode 'wrap'.",
+            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' edgeMode='wrap' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>"
+        }
+    ]
+}

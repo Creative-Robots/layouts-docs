@@ -65,12 +65,14 @@
         {
             "title": "Example 1",
             "description": "Embedding a YouTube video with iframe.",
-            "code": "<iframe src=\"https://www.youtube.com/embed/VIDEO_ID\" width=\"560\" height=\"315\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>"
+            "code": "<iframe src=\"https://www.youtube.com/embed/VIDEO_ID\" width=\"560\" height=\"315\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>",
+            "layoutsCode": "/iframe @allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" @height={315} @src=\"https://www.youtube.com/embed/VIDEO_ID\" @width={560}"
         },
         {
             "title": "Example 2",
             "description": "Embedding an external website with iframe.",
-            "code": "<iframe src=\"https://www.example.com\" width=\"800\" height=\"600\"></iframe>"
+            "code": "<iframe src=\"https://www.example.com\" width=\"800\" height=\"600\"></iframe>",
+            "layoutsCode": "/iframe @height={600} @src=\"https://www.example.com\" @width={800}"
         }
     ]
 }

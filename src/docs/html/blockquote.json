@@ -18,7 +18,8 @@
         {
             "title": "Basic blockquote",
             "description": "Create a simple blockquote with attribution",
-            "code": "<blockquote>\n  <p>Some quote goes here.</p>\n  <footer>Author Name</footer>\n</blockquote>"
+            "code": "<blockquote>\n  <p>Some quote goes here.</p>\n  <footer>Author Name</footer>\n</blockquote>",
+            "layoutsCode": "/blockquote\n\t/p\n\t\tSome quote goes here.\n\t/footer\n\t\tAuthor Name"
         }
     ]
 }

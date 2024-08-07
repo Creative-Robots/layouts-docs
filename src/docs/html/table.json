@@ -45,12 +45,14 @@
         {
             "title": "Basic Table",
             "description": "Create a simple table with rows and columns.",
-            "code": "<table>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>"
+            "code": "<table>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 1, Column 1\n\t\t\t/td\n\t\t\t\tRow 1, Column 2\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 2, Column 1\n\t\t\t/td\n\t\t\t\tRow 2, Column 2"
         },
         {
             "title": "Styled Table",
             "description": "Add styling to a table using attributes.",
-            "code": "<table border='1' cellpadding='5' cellspacing='0'>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>"
+            "code": "<table border='1' cellpadding='5' cellspacing='0'>\n  <tr>\n    <td>Row 1, Column 1</td>\n    <td>Row 1, Column 2</td>\n  </tr>\n  <tr>\n    <td>Row 2, Column 1</td>\n    <td>Row 2, Column 2</td>\n  </tr>\n</table>",
+            "layoutsCode": "/table @border={1} @cellpadding={5} @cellspacing={0}\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 1, Column 1\n\t\t\t/td\n\t\t\t\tRow 1, Column 2\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 2, Column 1\n\t\t\t/td\n\t\t\t\tRow 2, Column 2"
         }
     ]
 }

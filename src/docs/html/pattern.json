@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Adding a pattern to an input field",
-            "code": "<input type='text' pattern='[A-Za-z]{3}' title='Three uppercase or lowercase letters'>"
+            "code": "<input type='text' pattern='[A-Za-z]{3}' title='Three uppercase or lowercase letters'>",
+            "layoutsCode": "/input @pattern=\"[A-Za-z]{3}\" @title=\"Three uppercase or lowercase letters\" @type=\"text\""
         },
         {
             "title": "Example 2",
             "description": "Using the pattern attribute with a custom message",
-            "code": "<input type='text' pattern='.{8,}' title='Must contain at least 8 characters'>"
+            "code": "<input type='text' pattern='.{8,}' title='Must contain at least 8 characters'>",
+            "layoutsCode": "/input @pattern=\".{8,}\" @title=\"Must contain at least 8 characters\" @type=\"text\""
         }
     ]
 }

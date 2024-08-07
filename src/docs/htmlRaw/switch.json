@@ -1,0 +1,47 @@
+{
+    "tag": "switch",
+    "allowedAttributes": [
+        {
+            "name": "checked",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Switch",
+    "shortDescriptionOfTheTag": "An interactive toggle switch component.",
+    "usageExamples": [
+        {
+            "title": "Basic Switch",
+            "description": "A basic example of a switch component.",
+            "code": "<switch></switch>"
+        },
+        {
+            "title": "Disabled Switch",
+            "description": "An example of a disabled switch component.",
+            "code": "<switch disabled></switch>"
+        }
+    ]
+}

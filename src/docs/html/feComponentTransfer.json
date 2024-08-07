@@ -43,12 +43,14 @@
         {
             "title": "Example 1",
             "description": "Applying a feComponentTransfer filter to an image",
-            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncG type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncB type=\"gamma\" exponent=\"0.5\"/>\n  </feComponentTransfer>\n</filter>"
+            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncG type=\"gamma\" exponent=\"0.5\"/>\n    <feFuncB type=\"gamma\" exponent=\"0.5\"/>\n  </feComponentTransfer>\n</filter>",
+            "layoutsCode": "/filter @id=\"componentTransfer\"\n\t/fecomponenttransfer @in=\"SourceGraphic\" @result=\"transfered\"\n\t\t/fefuncr @exponent={0.5} @type=\"gamma\"\n\t\t\t/fefuncg @exponent={0.5} @type=\"gamma\"\n\t\t\t\t/fefuncb @exponent={0.5} @type=\"gamma\""
         },
         {
             "title": "Example 2",
             "description": "Using the feComponentTransfer filter with different transfer functions",
-            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"linear\" slope=\"0.5\" intercept=\"0.1\"/>\n    <feFuncG type=\"discrete\" tableValues=\"0.1 0.3 0.7 1\"/>\n    <feFuncB type=\"table\" tableValues=\"0.2 0.5 0.8 1\"/>\n  </feComponentTransfer>\n</filter>"
+            "code": "<filter id=\"componentTransfer\">\n  <feComponentTransfer in=\"SourceGraphic\" result=\"transfered\">\n    <feFuncR type=\"linear\" slope=\"0.5\" intercept=\"0.1\"/>\n    <feFuncG type=\"discrete\" tableValues=\"0.1 0.3 0.7 1\"/>\n    <feFuncB type=\"table\" tableValues=\"0.2 0.5 0.8 1\"/>\n  </feComponentTransfer>\n</filter>",
+            "layoutsCode": "/filter @id=\"componentTransfer\"\n\t/fecomponenttransfer @in=\"SourceGraphic\" @result=\"transfered\"\n\t\t/fefuncr @intercept={0.1} @slope={0.5} @type=\"linear\"\n\t\t\t/fefuncg @tablevalues=\"0.1 0.3 0.7 1\" @type=\"discrete\"\n\t\t\t\t/fefuncb @tablevalues=\"0.2 0.5 0.8 1\" @type=\"table\""
         }
     ]
 }

@@ -1,0 +1,72 @@
+{
+    "tag": "feDisplacementMap",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "in2",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "scale",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "xChannelSelector",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "R",
+                        "G",
+                        "B",
+                        "A"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "yChannelSelector",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "R",
+                        "G",
+                        "B",
+                        "A"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feDisplacementMap",
+    "shortDescriptionOfTheTag": "The feDisplacementMap filter primitive uses the pixel values from the image from in2 to spatially displace the image from in.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying displacement map filter to an SVG element",
+            "code": "<svg width='100' height='100'><filter id='displacementFilter'><feDisplacementMap in='SourceGraphic' in2='turbulence' scale='10' xChannelSelector='G' yChannelSelector='B' /></filter></svg>"
+        }
+    ]
+}

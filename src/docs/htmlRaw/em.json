@@ -1,0 +1,19 @@
+{
+    "tag": "em",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "em",
+    "shortDescriptionOfTheTag": "The <em> HTML element represents stressed text, such as emphasizing a word or phrase.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "This example demonstrates the usage of the <em> tag with children elements.",
+            "code": "<em>This is emphasized text</em>"
+        },
+        {
+            "title": "Example 2",
+            "description": "This example shows how to apply italic styling to a section of text using the <em> tag.",
+            "code": "<p>This is normal text <em>This is emphasized text</em></p>"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "tag": "nav",
+    "allowedAttributes": [
+        {
+            "name": "aria-label",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "role",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "<nav>",
+    "shortDescriptionOfTheTag": "The <nav> tag defines a set of navigational links.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "A basic example of using the <nav> tag.",
+            "code": "<nav>\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>"
+        },
+        {
+            "title": "With ARIA Label",
+            "description": "Example of using the aria-label attribute with <nav> tag.",
+            "code": "<nav aria-label=\"Main\">\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>"
+        }
+    ]
+}

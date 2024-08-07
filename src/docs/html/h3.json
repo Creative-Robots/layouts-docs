@@ -51,12 +51,14 @@
         {
             "title": "Example 1",
             "description": "Basic usage of h3 tag",
-            "code": "<h3>This is a third-level heading</h3>"
+            "code": "<h3>This is a third-level heading</h3>",
+            "layoutsCode": "/h3\n\tThis is a third-level heading"
         },
         {
             "title": "Example 2",
             "description": "h3 tag with custom class and alignment",
-            "code": "<h3 class=\"custom-class\" align=\"center\">Center aligned heading</h3>"
+            "code": "<h3 class=\"custom-class\" align=\"center\">Center aligned heading</h3>",
+            "layoutsCode": "/h3 .custom-class @align=\"center\"\n\tCenter aligned heading"
         }
     ]
 }

@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using the stop tag to define a stop in a gradient.",
-            "code": "<stop offset='20%' style='stop-color:rgb(255,255,255);stop-opacity:0.5'></stop>"
+            "code": "<stop offset='20%' style='stop-color:rgb(255,255,255);stop-opacity:0.5'></stop>",
+            "layoutsCode": "/stop @offset=\"20%\" @style=\"stop-color:rgb(255,255,255);stop-opacity:0.5\""
         },
         {
             "title": "Example 2",
             "description": "Another example of using the stop tag with different attributes.",
-            "code": "<stop offset='40%' style='stop-color:rgb(0,0,255);stop-opacity:0.7'></stop>"
+            "code": "<stop offset='40%' style='stop-color:rgb(0,0,255);stop-opacity:0.7'></stop>",
+            "layoutsCode": "/stop @offset=\"40%\" @style=\"stop-color:rgb(0,0,255);stop-opacity:0.7\""
         }
     ]
 }

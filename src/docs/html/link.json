@@ -51,12 +51,14 @@
         {
             "title": "Example",
             "description": "Include a CSS stylesheet.",
-            "code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">"
+            "code": "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">",
+            "layoutsCode": ""
         },
         {
             "title": "Example",
             "description": "Include a favicon icon.",
-            "code": "<link rel=\"icon\" type=\"image/png\" href=\"favicon.png\">"
+            "code": "<link rel=\"icon\" type=\"image/png\" href=\"favicon.png\">",
+            "layoutsCode": ""
         }
     ]
 }

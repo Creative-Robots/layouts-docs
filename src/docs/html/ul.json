@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Creating a simple unordered list with HTML:",
-            "code": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Orange</li>\n</ul>"
+            "code": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Orange</li>\n</ul>",
+            "layoutsCode": "/ul\n\t/li\n\t\tApple\n\t/li\n\t\tBanana\n\t/li\n\t\tOrange"
         },
         {
             "title": "Example 2",
             "description": "Styling the list with CSS:",
-            "code": "<style>\n  ul {\n    list-style-type: circle;\n  }\n</style>\n\n<ul>\n  <li>Red</li>\n  <li>Green</li>\n  <li>Blue</li>\n</ul>"
+            "code": "<style>\n  ul {\n    list-style-type: circle;\n  }\n</style>\n\n<ul>\n  <li>Red</li>\n  <li>Green</li>\n  <li>Blue</li>\n</ul>",
+            "layoutsCode": "/ul\n\t/li\n\t\tRed\n\t/li\n\t\tGreen\n\t/li\n\t\tBlue"
         }
     ]
 }

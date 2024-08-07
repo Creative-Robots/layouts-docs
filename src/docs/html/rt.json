@@ -18,12 +18,14 @@
         {
             "title": "Basic rt Example",
             "description": "This example demonstrates the usage of the rt tag with ruby text inside.",
-            "code": "<ruby>漢<rt>ㄏㄢˋ</rt>字<rt>～</rt></ruby>"
+            "code": "<ruby>漢<rt>ㄏㄢˋ</rt>字<rt>～</rt></ruby>",
+            "layoutsCode": "/ruby\n\t漢\n\t/rt\n\t\tㄏㄢˋ\n\t字\n\t/rt\n\t\t～"
         },
         {
             "title": "rt with class Attribute",
             "description": "This example shows how to use the class attribute with the rt tag.",
-            "code": "<ruby>テスト<rt class=\"ruby-text\">test</rt></ruby>"
+            "code": "<ruby>テスト<rt class=\"ruby-text\">test</rt></ruby>",
+            "layoutsCode": "/ruby\n\tテスト\n\t/rt .ruby-text\n\t\ttest"
         }
     ]
 }

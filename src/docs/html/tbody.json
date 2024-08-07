@@ -8,12 +8,14 @@
         {
             "title": "Basic tbody Example",
             "description": "Create a basic table body with two rows.",
-            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Row 1 Data 1</td>\n      <td>Row 1 Data 2</td>\n    </tr>\n    <tr>\n      <td>Row 2 Data 1</td>\n      <td>Row 2 Data 2</td>\n    </tr>\n  </tbody>\n</table>"
+            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Row 1 Data 1</td>\n      <td>Row 1 Data 2</td>\n    </tr>\n    <tr>\n      <td>Row 2 Data 1</td>\n      <td>Row 2 Data 2</td>\n    </tr>\n  </tbody>\n</table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 1 Data 1\n\t\t\t/td\n\t\t\t\tRow 1 Data 2\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 2 Data 1\n\t\t\t/td\n\t\t\t\tRow 2 Data 2"
         },
         {
             "title": "Nested tbody Example",
             "description": "Nest tbody within a table for additional styling or structure.",
-            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Nested tbody Row 1 Data 1</td>\n      <td>Nested tbody Row 1 Data 2</td>\n    </tr>\n  </tbody>\n</table>"
+            "code": "<table>\n  <tbody>\n    <tr>\n      <td>Nested tbody Row 1 Data 1</td>\n      <td>Nested tbody Row 1 Data 2</td>\n    </tr>\n  </tbody>\n</table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tNested tbody Row 1 Data 1\n\t\t\t/td\n\t\t\t\tNested tbody Row 1 Data 2"
         }
     ]
 }

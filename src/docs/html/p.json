@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "A simple paragraph.",
-            "code": "<p>This is a paragraph.</p>"
+            "code": "<p>This is a paragraph.</p>",
+            "layoutsCode": "/p\n\tThis is a paragraph."
         },
         {
             "title": "Example 2",
             "description": "Nested elements within a paragraph.",
-            "code": "<p>This is a <strong>bold</strong> paragraph.</p>"
+            "code": "<p>This is a <strong>bold</strong> paragraph.</p>",
+            "layoutsCode": "/p\n\tThis is a \n\t/strong\n\t\tbold\n\t paragraph."
         }
     ]
 }

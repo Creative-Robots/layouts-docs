@@ -1,0 +1,47 @@
+{
+    "tag": "metadata",
+    "allowedAttributes": [
+        {
+            "name": "charset",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "metadata",
+    "shortDescriptionOfTheTag": "The <metadata> tag provides metadata about the HTML document.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Setting the character set of the document to UTF-8.",
+            "code": "<metadata charset=\"UTF-8\">"
+        },
+        {
+            "title": "Example 2",
+            "description": "Adding a description to the document.",
+            "code": "<metadata name=\"description\" content=\"This is a sample description.\">"
+        }
+    ]
+}

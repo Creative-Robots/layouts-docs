@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Displaying keyboard input",
-            "code": "<kbd>Ctrl</kbd> + <kbd>C</kbd>"
+            "code": "<kbd>Ctrl</kbd> + <kbd>C</kbd>",
+            "layoutsCode": "/kbd\n\tCtrl\n + \n\n/kbd\n\tC"
         },
         {
             "title": "Example 2",
             "description": "Displaying key combinations",
-            "code": "<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd>"
+            "code": "<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Delete</kbd>",
+            "layoutsCode": "/kbd\n\tCtrl\n + \n\n/kbd\n\tAlt\n + \n\n/kbd\n\tDelete"
         }
     ]
 }

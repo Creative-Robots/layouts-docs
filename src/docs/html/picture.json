@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Basic usage of the picture element with source and alt attributes.",
-            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\">\n</picture>"
+            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\">\n</picture>",
+            "layoutsCode": "/picture\n\t/source @media=\"(min-width: 1024px)\" @srcset=\"image-large.jpg\"\n\t/img @alt=\"A beautiful image\" @src=\"image-small.jpg\""
         },
         {
             "title": "Example 2",
             "description": "Using the title attribute in a picture element.",
-            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\" title=\"Description of the image\">\n</picture>"
+            "code": "<picture>\n  <source srcset=\"image-large.jpg\" media=\"(min-width: 1024px)\">\n  <img src=\"image-small.jpg\" alt=\"A beautiful image\" title=\"Description of the image\">\n</picture>",
+            "layoutsCode": "/picture\n\t/source @media=\"(min-width: 1024px)\" @srcset=\"image-large.jpg\"\n\t/img @alt=\"A beautiful image\" @src=\"image-small.jpg\" @title=\"Description of the image\""
         }
     ]
 }

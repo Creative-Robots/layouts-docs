@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Displaying strong text",
-            "code": "<strong>This is a strong text</strong>"
+            "code": "<strong>This is a strong text</strong>",
+            "layoutsCode": "/strong\n\tThis is a strong text"
         },
         {
             "title": "Example 2",
             "description": "Nested strong text",
-            "code": "<strong>This is a <strong>strong</strong> text</strong>"
+            "code": "<strong>This is a <strong>strong</strong> text</strong>",
+            "layoutsCode": "/strong\n\tThis is a \n\t/strong\n\t\tstrong\n\t text"
         }
     ]
 }

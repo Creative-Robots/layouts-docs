@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Setting the character set of the document to UTF-8.",
-            "code": "<metadata charset=\"UTF-8\">"
+            "code": "<metadata charset=\"UTF-8\">",
+            "layoutsCode": "/metadata @charset=\"UTF-8\""
         },
         {
             "title": "Example 2",
             "description": "Adding a description to the document.",
-            "code": "<metadata name=\"description\" content=\"This is a sample description.\">"
+            "code": "<metadata name=\"description\" content=\"This is a sample description.\">",
+            "layoutsCode": "/metadata @content=\"This is a sample description.\" @name=\"description\""
         }
     ]
 }

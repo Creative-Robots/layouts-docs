@@ -51,12 +51,14 @@
         {
             "title": "Example 1",
             "description": "Embedding a video in a webpage.",
-            "code": "<embed src='video.mp4' width='500' height='300' type='video/mp4'>"
+            "code": "<embed src='video.mp4' width='500' height='300' type='video/mp4'>",
+            "layoutsCode": "/embed @height={300} @src=\"video.mp4\" @type=\"video/mp4\" @width={500}"
         },
         {
             "title": "Example 2",
             "description": "Embedding a website within a webpage.",
-            "code": "<embed src='http://www.example.com' width='800' height='600' type='text/html'>"
+            "code": "<embed src='http://www.example.com' width='800' height='600' type='text/html'>",
+            "layoutsCode": "/embed @height={600} @src=\"http://www.example.com\" @type=\"text/html\" @width={800}"
         }
     ]
 }

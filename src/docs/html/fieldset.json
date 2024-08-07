@@ -36,12 +36,14 @@
         {
             "title": "Basic Example",
             "description": "Create a fieldset with a legend and input elements inside.",
-            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>"
+            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>",
+            "layoutsCode": "/fieldset\n\t/legend\n\t\tPersonal Information\n\t/label @for=\"name\"\n\t\tName:\n\t/input @id=\"name\" @name=\"name\" @type=\"text\""
         },
         {
             "title": "With disabled attribute",
             "description": "Create a disabled fieldset.",
-            "code": "<fieldset disabled>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>"
+            "code": "<fieldset disabled>\n  <legend>Personal Information</legend>\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\">\n</fieldset>",
+            "layoutsCode": "/fieldset @disabled=\"\"\n\t/legend\n\t\tPersonal Information\n\t/label @for=\"name\"\n\t\tName:\n\t/input @id=\"name\" @name=\"name\" @type=\"text\""
         }
     ]
 }

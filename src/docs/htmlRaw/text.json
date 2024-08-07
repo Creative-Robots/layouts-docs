@@ -1,0 +1,38 @@
+{
+    "tag": "text",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Text",
+    "shortDescriptionOfTheTag": "A component for displaying text.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Rendering plain text",
+            "code": "<text>Hello World</text>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Rendering text with custom style",
+            "code": "<text style='color: blue'>Styled Text</text>"
+        }
+    ]
+}

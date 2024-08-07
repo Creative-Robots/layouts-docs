@@ -1,11 +1,11 @@
 'use server'
 
-import Doc from "@/components/Doc";
+import Doc, { DocType } from "@/components/Doc";
 import { redirect } from "next/navigation";
 import path from "path";
 import fs from 'fs';
 
-import LayoutsComponents from '../../../docs/Layouts/Components.json';
+import LayoutsComponents from '../../../docs/layouts.json';
 import HtmlComponents from '../../../docs/html.json'
 
 export type RadixPropDocumentation = {
@@ -24,7 +24,7 @@ export type ComponentDoc = {
   refImplementation?: string,
 
   props: Partial<RadixPropDocumentation>[]|null[],
-  subComponents: ComponentDoc[],
+  subComponents: any[],
 
   examples: {
     title: string,
@@ -33,37 +33,52 @@ export type ComponentDoc = {
   }[],
 };
 
-async function getJsonData(filename:string) {
-  const match = HtmlComponents.filter(e => e.parsedName === filename);
-  if (match.length !== 1) return null;
-  return match[0].content;
+function getJsonData(filename:string):{
+  entries: any,
+  content: DocType
+} |null {
+  const match = HtmlComponents.find(e => e.parsedName === filename);
+  if (!match) return null;
+  return {
+    entries: match.entries,
+    content: match.content
+  };
 }
 
-function getJsonDataLayouts(filename:string):ComponentDoc|null {
-  const match = LayoutsComponents.filter(e => e.tag === filename);
-  if (match.length !== 1) return null;
+function getJsonDataLayouts(filename:string):{
+  entries: any,
+  content: ComponentDoc
+} |null {
+  const match = LayoutsComponents.find(e => e.parsedName === filename);
+  if (!match) return null;
   return {
-    name: match[0].name,
-    tag: match[0].tag,
-    description: match[0].description,
-    refImplementation: match[0].refImplementation,
+    entries: match.entries,
+    content: {
+      name: match.content.name,
+      tag: match.content.tag,
+      description: match.content.description,
+      refImplementation: match.content.refImplementation,
 
-    props: match[0].props,
-    subComponents: match[0].subComponents,
+      props: match.content.props,
+      subComponents: match.content.subComponents,
 
-    examples: match[0].examples,
+      examples: match.content.examples,
+    }
   };
 }
 
 export default async function Home({ params }: { params: { name: string } }) {
   const { name } = params;
-  const layoutsData:ComponentDoc|null = getJsonDataLayouts(name);
-  if (layoutsData) return <Doc layoutData={layoutsData} htmldata={null} isLayouts/>;
+  const layoutsData:{
+    entries: any,
+    content: ComponentDoc
+  } |null = getJsonDataLayouts(name);
+  if (layoutsData) return <Doc layoutData={layoutsData.content} htmldata={null} entries={layoutsData.entries} isLayouts/>;
   else {
-    const htmlData = await getJsonData(name);
+    const htmlData = getJsonData(name);
     if (htmlData) {
       return (
-        <Doc htmldata={htmlData} isLayouts={false} layoutData={null}/>
+        <Doc htmldata={htmlData.content} isLayouts={false} entries={htmlData.entries} layoutData={null}/>
       );
     } else redirect('/');
   }

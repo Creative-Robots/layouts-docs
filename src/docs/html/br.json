@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Insert a line break between two lines of text.",
-            "code": "<p>This is line one<br>This is line two</p>"
+            "code": "<p>This is line one<br>This is line two</p>",
+            "layoutsCode": "/p\n\tThis is line one\n\t/br\n\tThis is line two"
         },
         {
             "title": "Example 2",
             "description": "Create space between elements.",
-            "code": "<p>Paragraph 1</p><br><p>Paragraph 2</p>"
+            "code": "<p>Paragraph 1</p><br><p>Paragraph 2</p>",
+            "layoutsCode": "/p\n\tParagraph 1\n/br\n/p\n\tParagraph 2"
         }
     ]
 }

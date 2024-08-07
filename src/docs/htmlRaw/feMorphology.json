@@ -1,0 +1,51 @@
+{
+    "tag": "feMorphology",
+    "allowedAttributes": [
+        {
+            "name": "operator",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "dilate",
+                        "erode"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "radius",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "in",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feMorphology",
+    "shortDescriptionOfTheTag": "The feMorphology component defines the morphology operation for the feConvolveMatrix element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying dilation morphology operation to an input image.",
+            "code": "<feMorphology operator=\"dilate\" in=\"SourceGraphic\" radius=\"2\"></feMorphology>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Applying erosion morphology operation to an input image.",
+            "code": "<feMorphology operator=\"erode\" in=\"SourceGraphic\" radius=\"1\"></feMorphology>"
+        }
+    ]
+}

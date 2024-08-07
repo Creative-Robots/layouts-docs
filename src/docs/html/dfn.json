@@ -18,12 +18,14 @@
         {
             "title": "Example 1",
             "description": "Using <dfn> to define a term",
-            "code": "<p><dfn title='World Wide Web'>WWW</dfn> is an essential part of the internet.</p>"
+            "code": "<p><dfn title='World Wide Web'>WWW</dfn> is an essential part of the internet.</p>",
+            "layoutsCode": "/p\n\t/dfn @title=\"World Wide Web\"\n\t\tWWW\n\t is an essential part of the internet."
         },
         {
             "title": "Example 2",
             "description": "Nested <dfn> elements",
-            "code": "<p>This is an <dfn title='Example'><dfn title='Nested'>nested</dfn></dfn> definition.</p>"
+            "code": "<p>This is an <dfn title='Example'><dfn title='Nested'>nested</dfn></dfn> definition.</p>",
+            "layoutsCode": "/p\n\tThis is an \n\t/dfn @title=\"Example\"\n\t\t/dfn @title=\"Nested\"\n\t\t\tnested\n\t definition."
         }
     ]
 }

@@ -33,12 +33,14 @@
         {
             "title": "Example 1",
             "description": "Set the base URL for all relative URLs",
-            "code": "<base href=\"https://www.example.com/\">"
+            "code": "<base href=\"https://www.example.com/\">",
+            "layoutsCode": ""
         },
         {
             "title": "Example 2",
             "description": "Set the base URL and specify the target attribute",
-            "code": "<base href=\"https://www.example.com/\" target=\"_blank\">"
+            "code": "<base href=\"https://www.example.com/\" target=\"_blank\">",
+            "layoutsCode": ""
         }
     ]
 }

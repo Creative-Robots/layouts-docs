@@ -1,0 +1,72 @@
+{
+    "tag": "track",
+    "allowedAttributes": [
+        {
+            "name": "default",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "kind",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "subtitles",
+                        "captions",
+                        "descriptions",
+                        "chapters",
+                        "metadata"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "srclang",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Track Element",
+    "shortDescriptionOfTheTag": "The <track> element is used to specify text track for media elements like <audio> and <video>.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Adding a subtitles track to a video element",
+            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='subtitles_en.vtt' kind='subtitles' srclang='en' label='English'>\n</video>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Adding captions to a video element",
+            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='captions_fr.vtt' kind='captions' srclang='fr' label='French'>\n</video>"
+        }
+    ]
+}

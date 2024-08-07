@@ -58,12 +58,14 @@
         {
             "title": "Example 1",
             "description": "Defining a red square marker with an ID of 'squareMarker'",
-            "code": "<marker id='squareMarker' markerHeight='10' markerWidth='10' orient='auto'>\n  <rect width='10' height='10' fill='red'/>\n</marker>"
+            "code": "<marker id='squareMarker' markerHeight='10' markerWidth='10' orient='auto'>\n  <rect width='10' height='10' fill='red'/>\n</marker>",
+            "layoutsCode": "/marker @id=\"squareMarker\" @markerheight={10} @markerwidth={10} @orient=\"auto\"\n\t/rect @fill=\"red\" @height={10} @width={10}"
         },
         {
             "title": "Example 2",
             "description": "Defining a blue triangle marker with an ID of 'triangleMarker'",
-            "code": "<marker id='triangleMarker' markerHeight='10' markerWidth='10' orient='auto-start-reverse'>\n  <path d='M0,0L10,5L0,10z' fill='blue'/>\n</marker>"
+            "code": "<marker id='triangleMarker' markerHeight='10' markerWidth='10' orient='auto-start-reverse'>\n  <path d='M0,0L10,5L0,10z' fill='blue'/>\n</marker>",
+            "layoutsCode": "/marker @id=\"triangleMarker\" @markerheight={10} @markerwidth={10} @orient=\"auto-start-reverse\"\n\t/path @d=\"M0,0L10,5L0,10z\" @fill=\"blue\""
         }
     ]
 }

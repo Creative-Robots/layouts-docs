@@ -28,6 +28,40 @@ function fileData(filePath) {
     return JSON.parse(fileContent);
 }
 
+function parsedContent(fileJson) {
+
+    let entries = [];
+
+    if (fileJson.tag) {
+        entries.push({
+            entry: fileJson.tag,
+            level: 1,
+        });
+    }
+
+    if (fileJson.allowedAttributes.length > 0) {
+        entries.push({
+            entry: "Props",
+            level: 1,
+        });
+    }
+
+    if (fileJson.usageExamples.length > 0) {
+        entries.push({
+            entry: "Usage Examples",
+            level: 1,
+        });
+        fileJson.usageExamples.forEach((ex, index) => {
+            entries.push({
+                entry: ex.title,
+                level: 2,
+            });
+        })
+    }
+
+    return entries;
+}
+
 function parseDir(currentDir) {
     let json = [];
     // Liste les fichiers dans le dossier
@@ -35,10 +69,12 @@ function parseDir(currentDir) {
 
     // store in the store
     fileNames.forEach((file, i) => {
+        const fileDta = fileData(path.join(currentDir, file));
         json.push({
             name: removeFileExtension(file), 
-            parsedName: parsedFileName(file), 
-            content: fileData(path.join(currentDir, file))
+            parsedName: parsedFileName(file),
+            entries: parsedContent(fileDta),
+            content: fileDta,
         });
     });
 

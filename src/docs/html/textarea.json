@@ -45,12 +45,14 @@
         {
             "title": "Basic Example",
             "description": "A basic example of a textarea element.",
-            "code": "<textarea cols='30' rows='10'></textarea>"
+            "code": "<textarea cols='30' rows='10'></textarea>",
+            "layoutsCode": "/textarea @cols={30} @rows={10}"
         },
         {
             "title": "Example with Placeholder",
             "description": "Example of a textarea element with a placeholder text.",
-            "code": "<textarea cols='30' rows='10' placeholder='Enter your text here'></textarea>"
+            "code": "<textarea cols='30' rows='10' placeholder='Enter your text here'></textarea>",
+            "layoutsCode": "/textarea @cols={30} @placeholder=\"Enter your text here\" @rows={10}"
         }
     ]
 }

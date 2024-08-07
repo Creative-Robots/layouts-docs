@@ -1,0 +1,14 @@
+{
+    "tag": "g",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "g",
+    "shortDescriptionOfTheTag": "The <g> SVG element is a container used to group other SVG elements.",
+    "usageExamples": [
+        {
+            "title": "Grouping SVG Elements",
+            "description": "Example of using the <g> element to group multiple SVG elements together.",
+            "code": "<svg>\n  <g>\n    <circle cx='50' cy='50' r='40' fill='red' />\n    <rect x='10' y='10' width='80' height='80' fill='blue' />\n  </g>\n</svg>"
+        }
+    ]
+}

@@ -61,12 +61,14 @@
         {
             "title": "Example 1",
             "description": "Adding a subtitles track to a video element",
-            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='subtitles_en.vtt' kind='subtitles' srclang='en' label='English'>\n</video>"
+            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='subtitles_en.vtt' kind='subtitles' srclang='en' label='English'>\n</video>",
+            "layoutsCode": "/video @controls=\"\"\n\t/source @src=\"movie.mp4\" @type=\"video/mp4\"\n\t/track @kind=\"subtitles\" @label=\"English\" @src=\"subtitles_en.vtt\" @srclang=\"en\""
         },
         {
             "title": "Example 2",
             "description": "Adding captions to a video element",
-            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='captions_fr.vtt' kind='captions' srclang='fr' label='French'>\n</video>"
+            "code": "<video controls>\n  <source src='movie.mp4' type='video/mp4'>\n  <track src='captions_fr.vtt' kind='captions' srclang='fr' label='French'>\n</video>",
+            "layoutsCode": "/video @controls=\"\"\n\t/source @src=\"movie.mp4\" @type=\"video/mp4\"\n\t/track @kind=\"captions\" @label=\"French\" @src=\"captions_fr.vtt\" @srclang=\"fr\""
         }
     ]
 }

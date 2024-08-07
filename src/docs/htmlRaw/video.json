@@ -1,0 +1,65 @@
+{
+    "tag": "video",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "controls",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "controls"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "autoplay",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "autoplay"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "loop",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "loop"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "HTML video Tag",
+    "shortDescriptionOfTheTag": "The video tag in HTML is used to embed a video into a document.",
+    "usageExamples": [
+        {
+            "title": "Basic video tag",
+            "description": "Embedding a video with default settings",
+            "code": "<video src=\"video.mp4\" controls autoplay></video>"
+        },
+        {
+            "title": "Video without controls",
+            "description": "Embedding a video without controls",
+            "code": "<video src=\"video.mp4\" autoplay></video>"
+        }
+    ]
+}

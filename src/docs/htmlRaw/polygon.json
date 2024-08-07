@@ -1,0 +1,56 @@
+{
+    "tag": "polygon",
+    "allowedAttributes": [
+        {
+            "name": "points",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "fill",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "stroke",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "strokeWidth",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Polygon",
+    "shortDescriptionOfTheTag": "Defines a closed shape consisting of a set of connected straight lines in an SVG image.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a simple triangle using polygon:",
+            "code": "<svg>\n  <polygon points='100,10 40,180 190,60' fill='red'/>\n</svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Creating a square with a stroke using polygon:",
+            "code": "<svg>\n  <polygon points='10,10 10,110 110,110 110,10' fill='none' stroke='black' strokeWidth='3'/>\n</svg>"
+        }
+    ]
+}

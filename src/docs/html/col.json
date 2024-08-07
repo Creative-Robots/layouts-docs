@@ -30,12 +30,14 @@
         {
             "title": "Example 1",
             "description": "Set the width of the column to 100 pixels",
-            "code": "<col width='100'>"
+            "code": "<col width='100'>",
+            "layoutsCode": ""
         },
         {
             "title": "Example 2",
             "description": "Define a column to span 2 slots",
-            "code": "<col span='2'>"
+            "code": "<col span='2'>",
+            "layoutsCode": ""
         }
     ]
 }

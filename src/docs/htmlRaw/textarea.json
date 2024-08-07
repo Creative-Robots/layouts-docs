@@ -1,0 +1,56 @@
+{
+    "tag": "textarea",
+    "allowedAttributes": [
+        {
+            "name": "autofocus",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "cols",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "rows",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "placeholder",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Textarea",
+    "shortDescriptionOfTheTag": "Textarea element defines a multi-line input field that allows users to enter text.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "A basic example of a textarea element.",
+            "code": "<textarea cols='30' rows='10'></textarea>"
+        },
+        {
+            "title": "Example with Placeholder",
+            "description": "Example of a textarea element with a placeholder text.",
+            "code": "<textarea cols='30' rows='10' placeholder='Enter your text here'></textarea>"
+        }
+    ]
+}

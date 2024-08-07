@@ -39,7 +39,8 @@
         {
             "title": "Basic Thead Example",
             "description": "Creating a basic thead element with two rows and two cells in each row.",
-            "code": "<thead>\n  <tr>\n    <th colspan='2'>Main Title</th>\n  </tr>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n</thead>"
+            "code": "<thead>\n  <tr>\n    <th colspan='2'>Main Title</th>\n  </tr>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n</thead>",
+            "layoutsCode": "\n  \n    Main Title\n  \n  \n    Header 1\n    Header 2\n  \n\n"
         }
     ]
 }

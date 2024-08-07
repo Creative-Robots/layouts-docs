@@ -1,0 +1,78 @@
+{
+    "tag": "feConvolveMatrix",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "order",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "kernelMatrix",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "divisor",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "bias",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "targetX",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "targetY",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feConvolveMatrix",
+    "shortDescriptionOfTheTag": "The feConvolveMatrix SVG filter primitive performs a 2D convolution of an input image with a given kernel matrix. ",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying a feConvolveMatrix filter to an SVG image.",
+            "code": "<filter id=\"convolve\">\n  <feConvolveMatrix in=\"SourceGraphic\" order=\"3\" kernelMatrix=\"1 1 1 1 -7 1 1 1 1\"/>\n</filter>\n\n<image x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" filter=\"url(#convolve)\"/>\n"
+        }
+    ]
+}

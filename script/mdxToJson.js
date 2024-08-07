@@ -33,6 +33,39 @@ function compileMdx(filePath) {
     };
 }
 
+function createEntry(str, level, tocut) {
+
+    let entry = str.substring(tocut, str.length).trim().replace(/\'/g, "");
+
+    return {
+        entry: entry,
+        level: level,
+    }
+}
+
+function parsedContent(filePath) {
+    let entries = [];
+
+    //read content
+    const fileContent = fs.readFileSync(filePath, 'utf8');
+
+    // Diviser le contenu en lignes
+    const lines = fileContent.split('\n');
+
+    // Analyser chaque ligne
+    lines.forEach((line, index) => {
+        if (line.startsWith("###", 0)) {
+            entries.push(createEntry(line, 1, 4));
+        } else if (line.startsWith("##", 0)) {
+            entries.push(createEntry(line, 1, 3));
+        } else if (line.startsWith("title: ", 0)) {
+            entries.push(createEntry(line, 1, 7));
+        }
+    });
+
+    return entries;
+}
+
 function parseDir(currentDir) {
     let json = {};
     // Liste les fichiers dans le dossier
@@ -44,13 +77,14 @@ function parseDir(currentDir) {
             json[file] = {
                 name: removeFileExtension(file), 
                 parsedName: parsedFileName(file), 
-                content: compileMdx(path.join(currentDir, file))
+                entries: parsedContent(path.join(currentDir, file)),
+                content: compileMdx(path.join(currentDir, file)),
             };
         } else {
             json[file] = {
                 name: file, 
                 parsedName: parsedFileName(file), 
-                folder: parseDir(path.join(currentDir, file))
+                folder: parseDir(path.join(currentDir, file)),
             };
         }
     });

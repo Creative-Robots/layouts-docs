@@ -63,7 +63,8 @@
         {
             "title": "Example 1",
             "description": "Creating a spotlight effect with feSpotLight.",
-            "code": "<svg width='400' height='200' xmlns='http://www.w3.org/2000/svg'>\n  <defs>\n    <filter id='exampleFilter' x='0' y='0' width='200%' height='200%'>\n      <feOffset result='offOut' in='SourceGraphic' dx='20' dy='20' />\n      <feBlend in='SourceGraphic' in2='offOut' mode='normal' />\n      <feSpotLight x='50' y='30' z='70' pointsAtX='20' pointsAtY='20' pointsAtZ='20' />\n    </filter>\n  </defs>\n  <rect width='90' height='90' filter='url(#exampleFilter)' />\n</svg>"
+            "code": "<svg width='400' height='200' xmlns='http://www.w3.org/2000/svg'>\n  <defs>\n    <filter id='exampleFilter' x='0' y='0' width='200%' height='200%'>\n      <feOffset result='offOut' in='SourceGraphic' dx='20' dy='20' />\n      <feBlend in='SourceGraphic' in2='offOut' mode='normal' />\n      <feSpotLight x='50' y='30' z='70' pointsAtX='20' pointsAtY='20' pointsAtZ='20' />\n    </filter>\n  </defs>\n  <rect width='90' height='90' filter='url(#exampleFilter)' />\n</svg>",
+            "layoutsCode": "/svg @height={200} @width={400} @xmlns=\"http://www.w3.org/2000/svg\"\n\t/defs\n\t\t/filter @height=\"200%\" @id=\"exampleFilter\" @width=\"200%\" @x={0} @y={0}\n\t\t\t/feOffset @dx={20} @dy={20} @in=\"SourceGraphic\" @result=\"offOut\"\n\t\t\t/feBlend @in=\"SourceGraphic\" @in2=\"offOut\" @mode=\"normal\"\n\t\t\t/feSpotLight @pointsAtX={20} @pointsAtY={20} @pointsAtZ={20} @x={50} @y={30} @z={70}\n\t/rect @filter=\"url(#exampleFilter)\" @height={90} @width={90}"
         }
     ]
 }

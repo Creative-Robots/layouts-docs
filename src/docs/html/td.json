@@ -36,12 +36,14 @@
         {
             "title": "Basic td Example",
             "description": "Creating a simple cell in a table",
-            "code": "<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>"
+            "code": "<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tCell 1\n\t\t\t/td\n\t\t\t\tCell 2"
         },
         {
             "title": "td with colspan",
             "description": "Creating a cell that spans multiple columns in a table",
-            "code": "<table>\n  <tr>\n    <td colspan=\"2\">Cell 1 and Cell 2 merged</td>\n  </tr>\n</table>"
+            "code": "<table>\n  <tr>\n    <td colspan=\"2\">Cell 1 and Cell 2 merged</td>\n  </tr>\n</table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td @colspan={2}\n\t\t\t\tCell 1 and Cell 2 merged"
         }
     ]
 }

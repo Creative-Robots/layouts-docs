@@ -8,7 +8,8 @@
         {
             "title": "Example 1",
             "description": "Using <wbr> tag to specify line break.",
-            "code": "<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery long text.<wbr>With a break in the middle.</p>"
+            "code": "<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery long text.<wbr>With a break in the middle.</p>",
+            "layoutsCode": "/p\n\tThis is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery long text.\n\t/wbr\n\tWith a break in the middle."
         }
     ]
 }

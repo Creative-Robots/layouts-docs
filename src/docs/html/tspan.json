@@ -45,12 +45,14 @@
         {
             "title": "Basic tspan Example",
             "description": "This example shows the usage of the tspan tag to style a part of a text.",
-            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red</tspan> word</text>"
+            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red</tspan> word</text>",
+            "layoutsCode": "/text @x={10} @y={20}\n\tThis is a \n\t/tspan @fill=\"red\"\n\t\tred\n\t word"
         },
         {
             "title": "Nested tspan Example",
             "description": "This example shows nested tspan tags to apply different styles to different parts of the text.",
-            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red <tspan fill='blue'>blue</tspan></tspan> word</text>"
+            "code": "<text x='10' y='20'>This is a <tspan fill='red'>red <tspan fill='blue'>blue</tspan></tspan> word</text>",
+            "layoutsCode": "/text @x={10} @y={20}\n\tThis is a \n\t/tspan @fill=\"red\"\n\t\tred \n\t\t/tspan @fill=\"blue\"\n\t\t\tblue\n\t word"
         }
     ]
 }

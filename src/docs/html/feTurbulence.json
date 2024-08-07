@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Creating feTurbulence with baseFrequency and numOctaves",
-            "code": "<feTurbulence baseFrequency='0.02' numOctaves='3' />"
+            "code": "<feTurbulence baseFrequency='0.02' numOctaves='3' />",
+            "layoutsCode": "/feturbulence @basefrequency={0.02} @numoctaves={3}"
         },
         {
             "title": "Example 2",
             "description": "Creating feTurbulence with seed value",
-            "code": "<feTurbulence seed='5' />"
+            "code": "<feTurbulence seed='5' />",
+            "layoutsCode": "/feturbulence @seed={5}"
         }
     ]
 }

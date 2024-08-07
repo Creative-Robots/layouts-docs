@@ -1,0 +1,62 @@
+{
+    "tag": "h3",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "right",
+                        "center",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "h3",
+    "shortDescriptionOfTheTag": "Represents the third-level heading in HTML documents.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Basic usage of h3 tag",
+            "code": "<h3>This is a third-level heading</h3>"
+        },
+        {
+            "title": "Example 2",
+            "description": "h3 tag with custom class and alignment",
+            "code": "<h3 class=\"custom-class\" align=\"center\">Center aligned heading</h3>"
+        }
+    ]
+}

@@ -45,12 +45,14 @@
         {
             "title": "Example 1",
             "description": "Applying feOffset filter with dx and dy attributes set to offset the image.",
-            "code": "<feOffset in=\"SourceAlpha\" dx=\"2\" dy=\"2\" result=\"offsetResult\" />"
+            "code": "<feOffset in=\"SourceAlpha\" dx=\"2\" dy=\"2\" result=\"offsetResult\" />",
+            "layoutsCode": "/feoffset @dx={2} @dy={2} @in=\"SourceAlpha\" @result=\"offsetResult\""
         },
         {
             "title": "Example 2",
             "description": "Another example of feOffset in SVG filter.",
-            "code": "<feOffset in=\"SourceGraphic\" dx=\"-3\" dy=\"5\" result=\"offsetResult2\" />"
+            "code": "<feOffset in=\"SourceGraphic\" dx=\"-3\" dy=\"5\" result=\"offsetResult2\" />",
+            "layoutsCode": "/feoffset @dx=\"-3\" @dy={5} @in=\"SourceGraphic\" @result=\"offsetResult2\""
         }
     ]
 }

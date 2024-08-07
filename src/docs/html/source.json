@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Adding a source to a video element",
-            "code": "<video controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  Your browser does not support the video tag.\n</video>"
+            "code": "<video controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  Your browser does not support the video tag.\n</video>",
+            "layoutsCode": "/video @controls=\"\"\n\t/source @src=\"movie.mp4\" @type=\"video/mp4\"\n\t/source @src=\"movie.ogg\" @type=\"video/ogg\"\n  Your browser does not support the video tag."
         },
         {
             "title": "Example 2",
             "description": "Adding a source to an audio element",
-            "code": "<audio controls>\n  <source src=\"music.mp3\" type=\"audio/mp3\">\n  <source src=\"music.ogg\" type=\"audio/ogg\">\n  Your browser does not support the audio element.\n</audio>"
+            "code": "<audio controls>\n  <source src=\"music.mp3\" type=\"audio/mp3\">\n  <source src=\"music.ogg\" type=\"audio/ogg\">\n  Your browser does not support the audio element.\n</audio>",
+            "layoutsCode": "/audio @controls=\"\"\n\t/source @src=\"music.mp3\" @type=\"audio/mp3\"\n\t/source @src=\"music.ogg\" @type=\"audio/ogg\"\n  Your browser does not support the audio element."
         }
     ]
 }

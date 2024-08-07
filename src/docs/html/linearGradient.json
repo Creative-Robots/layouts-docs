@@ -66,12 +66,14 @@
         {
             "title": "Example 1",
             "description": "Creating a simple linear gradient",
-            "code": "<linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>\n  <stop offset='0%' style='stop-color:rgb(255,255,255);stop-opacity:0' />\n  <stop offset='100%' style='stop-color:rgb(255,0,0);stop-opacity:1' />\n</linearGradient>"
+            "code": "<linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>\n  <stop offset='0%' style='stop-color:rgb(255,255,255);stop-opacity:0' />\n  <stop offset='100%' style='stop-color:rgb(255,0,0);stop-opacity:1' />\n</linearGradient>",
+            "layoutsCode": "/lineargradient @id=\"grad1\" @x1=\"0%\" @x2=\"100%\" @y1=\"0%\" @y2=\"0%\"\n\t/stop @offset=\"0%\" @style=\"stop-color:rgb(255,255,255);stop-opacity:0\"\n\t\t/stop @offset=\"100%\" @style=\"stop-color:rgb(255,0,0);stop-opacity:1\""
         },
         {
             "title": "Example 2",
             "description": "Adding direction to the linear gradient",
-            "code": "<linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'>\n  <stop offset='0%' style='stop-color:rgb(255,192,203);stop-opacity:1' />\n  <stop offset='100%' style='stop-color:rgb(220,20,60);stop-opacity:1' />\n</linearGradient>"
+            "code": "<linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='100%'>\n  <stop offset='0%' style='stop-color:rgb(255,192,203);stop-opacity:1' />\n  <stop offset='100%' style='stop-color:rgb(220,20,60);stop-opacity:1' />\n</linearGradient>",
+            "layoutsCode": "/lineargradient @id=\"grad2\" @x1=\"0%\" @x2=\"100%\" @y1=\"0%\" @y2=\"100%\"\n\t/stop @offset=\"0%\" @style=\"stop-color:rgb(255,192,203);stop-opacity:1\"\n\t\t/stop @offset=\"100%\" @style=\"stop-color:rgb(220,20,60);stop-opacity:1\""
         }
     ]
 }

@@ -18,12 +18,14 @@
         {
             "title": "Basic usage of <article>",
             "description": "This example shows how to mark up a simple article, including a header with a title and publication date, and paragraphs of content.",
-            "code": "<article>\n  <header>\n    <h1>Article Title</h1>\n    <p>Published on: <time datetime=\"2023-01-27\">January 27, 2023</time></p>\n  </header>\n  <p>This is a paragraph of content in the article...</p>\n  <p>Another paragraph of article content...</p>\n</article>"
+            "code": "<article>\n  <header>\n    <h1>Article Title</h1>\n    <p>Published on: <time datetime=\"2023-01-27\">January 27, 2023</time></p>\n  </header>\n  <p>This is a paragraph of content in the article...</p>\n  <p>Another paragraph of article content...</p>\n</article>",
+            "layoutsCode": "/article\n\t/header\n\t\t/h1\n\t\t\tArticle Title\n\t\t/p\n\t\t\tPublished on: \n\t\t\t/time @datetime=\"2023-01-27\"\n\t\t\t\tJanuary 27, 2023\n\t/p\n\t\tThis is a paragraph of content in the article...\n\t/p\n\t\tAnother paragraph of article content..."
         },
         {
             "title": "Article with sections",
             "description": "The article element can also be used to enclose sections of content that should be treated as a single, independent item. This example includes multiple sections within the article.",
-            "code": "<article>\n  <header>\n    <h1>Main Article Title</h1>\n  </header>\n  <section>\n    <h2>Section 1 Title</h2>\n    <p>Content of the first section...</p>\n  </section>\n  <section>\n    <h2>Section 2 Title</h2>\n    <p>Content of the second section...</p>\n  </section>\n</article>"
+            "code": "<article>\n  <header>\n    <h1>Main Article Title</h1>\n  </header>\n  <section>\n    <h2>Section 1 Title</h2>\n    <p>Content of the first section...</p>\n  </section>\n  <section>\n    <h2>Section 2 Title</h2>\n    <p>Content of the second section...</p>\n  </section>\n</article>",
+            "layoutsCode": "/article\n\t/header\n\t\t/h1\n\t\t\tMain Article Title\n\t/section\n\t\t/h2\n\t\t\tSection 1 Title\n\t\t/p\n\t\t\tContent of the first section...\n\t/section\n\t\t/h2\n\t\t\tSection 2 Title\n\t\t/p\n\t\t\tContent of the second section..."
         }
     ]
 }

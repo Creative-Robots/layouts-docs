@@ -1,0 +1,29 @@
+{
+    "tag": "dialog",
+    "allowedAttributes": [
+        {
+            "name": "open",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Dialog",
+    "shortDescriptionOfTheTag": "Represents a dialog box or a window.",
+    "usageExamples": [
+        {
+            "title": "Basic Dialog Example",
+            "description": "A basic example of using the dialog component.",
+            "code": "<dialog open>Hello World!</dialog>"
+        },
+        {
+            "title": "Dialog with a Heading",
+            "description": "An example of a dialog with a title.",
+            "code": "<dialog open> <h1>Dialog Title</h1> <p>Hello World!</p> </dialog>"
+        }
+    ]
+}

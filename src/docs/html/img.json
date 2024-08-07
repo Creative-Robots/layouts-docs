@@ -45,7 +45,8 @@
         {
             "title": "Adding image to HTML",
             "description": "Example of using img tag to display an image.",
-            "code": "<img src='image.jpg' alt='Description of the image' />"
+            "code": "<img src='image.jpg' alt='Description of the image' />",
+            "layoutsCode": "/img @alt=\"Description of the image\" @src=\"image.jpg\""
         }
     ]
 }

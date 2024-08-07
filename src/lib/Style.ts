@@ -42,7 +42,8 @@ const GlobalDescription = "text-sm text-[#5B5E66] mb-2";
 
 // styles for Components Pages
 
-const TitleBox = "justify-start items-start gap-1 flex-col flex w-full mb-[32px]";
+const TitleBox = "justify-start items-start gap-1 flex-col flex w-full";
+const TitleBox_Mdx = "mb-[32px]";
 const Title = "text-[#1e1f22] text-[30px] font-medium tracking-tight";
 const TitleDescription = cn(GlobalDescription, "text-[18px]");
 
@@ -51,7 +52,8 @@ const Heading1Box = "justify-start gap-2 items-start flex-col flex w-full my-[0.
 const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-medium";
 const Heading1Description = cn(GlobalDescription, "");
 
-const Heading2Box = "justify-start items-start flex-col flex w-full mb-2 mt-[48px] mb-[16px]";
+const Heading2Box = "justify-start items-start flex-col flex w-full mb-2";
+const Heading2Box_Mdx = "mt-[48px] mb-[16px]";
 const Heading2 = "text-[#1e1f22] text-[24px] font-medium";
 const Heading2Description = cn(GlobalDescription, "");
 
@@ -59,20 +61,21 @@ const SubHeadingBox = "justify-start items-start flex-col flex w-full my-2";
 const SubHeading = "text-[#5b5e66] text-sm";
 const SubHeadingDescription = cn(GlobalDescription, "");
 
-const H3Box = "justify-start items-start flex-col flex w-full gap-2 mt-[48px] mb-[12px]";
+const H3Box = "justify-start items-start flex-col flex w-full gap-2";
+const H3Box_Mdx = " mt-[48px] mb-[12px]";
 const H3 = "text-[#5b5e66] text-[20px] font-medium";
 const H3Description = cn(GlobalDescription, "");
 
 
-const Section = "flex flex-col gap-12 my-6";
-const SubSection = "flex flex-col gap-1";
+const Section = "flex flex-col my-6";
+const SubSection = "flex flex-col gap-1 my-3";
 
 const DivWithToolTip = "relative flex flex-row items-center gap-2 text-xs";
 const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3";
 const PropsNameWithDesc = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
 
 
-const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full -mt-6 -mb-9";
+const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full mt-4 mb-2";
 const PropsHeader = "grid grid-cols-11 gap-2";
 const PropsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
 const isRequiredTitle = "col-span-2 text-center";
@@ -137,6 +140,7 @@ export {
 
     // Components
     TitleBox,
+    TitleBox_Mdx,
     Title as _Title,
     TitleDescription,
 
@@ -145,6 +149,7 @@ export {
     Heading1Description,
 
     Heading2Box,
+    Heading2Box_Mdx,
     Heading2,
     Heading2Description,
 
@@ -153,6 +158,7 @@ export {
     SubHeadingDescription,
 
     H3Box,
+    H3Box_Mdx,
     H3 as _H3,
     H3Description,
 

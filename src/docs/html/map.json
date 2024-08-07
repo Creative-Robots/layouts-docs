@@ -36,7 +36,8 @@
         {
             "title": "Basic Usage",
             "description": "Creating a simple image map with two clickable areas.",
-            "code": "<map name=\"workmap\">\n  <area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\">\n  <area shape=\"circle\" coords=\"290,172,142\" alt=\"Phone\" href=\"phone.htm\">\n</map>"
+            "code": "<map name=\"workmap\">\n  <area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\">\n  <area shape=\"circle\" coords=\"290,172,142\" alt=\"Phone\" href=\"phone.htm\">\n</map>",
+            "layoutsCode": "/map @name=\"workmap\"\n\t/area @alt=\"Computer\" @coords=\"34,44,270,350\" @href=\"computer.htm\" @shape=\"rect\"\n\t/area @alt=\"Phone\" @coords=\"290,172,142\" @href=\"phone.htm\" @shape=\"circle\""
         }
     ]
 }

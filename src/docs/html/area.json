@@ -130,7 +130,8 @@
         {
             "title": "Creating a clickable area",
             "description": "This example demonstrates the usage of the <area> tag to create a clickable region within an image map. The image map is marked with the usemap attribute and points to the map's ID.",
-            "code": "<img src='workplace.jpg' usemap='#workmap' alt='Workplace'><map name='workmap'><area shape='rect' coords='34,44,270,350' alt='Computer' href='computer.html'></map>"
+            "code": "<img src='workplace.jpg' usemap='#workmap' alt='Workplace'><map name='workmap'><area shape='rect' coords='34,44,270,350' alt='Computer' href='computer.html'></map>",
+            "layoutsCode": "/img @alt=\"Workplace\" @src=\"workplace.jpg\" @usemap=\"#workmap\"\n/map @name=\"workmap\"\n\t/area @alt=\"Computer\" @coords=\"34,44,270,350\" @href=\"computer.html\" @shape=\"rect\""
         }
     ]
 }

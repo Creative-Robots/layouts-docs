@@ -68,12 +68,14 @@
         {
             "title": "Basic Button",
             "description": "Create a basic button element.",
-            "code": "<button>Click Me</button>"
+            "code": "<button>Click Me</button>",
+            "layoutsCode": "/button\n\tClick Me"
         },
         {
             "title": "Disabled Button",
             "description": "Create a disabled button element.",
-            "code": "<button disabled>Click Me</button>"
+            "code": "<button disabled>Click Me</button>",
+            "layoutsCode": "/button @disabled=\"\"\n\tClick Me"
         }
     ]
 }

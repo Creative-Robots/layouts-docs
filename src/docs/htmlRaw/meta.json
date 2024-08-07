@@ -1,0 +1,64 @@
+{
+    "tag": "meta",
+    "allowedAttributes": [
+        {
+            "name": "charset",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "content",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "http-equiv",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "content-type"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "keywords",
+                        "description",
+                        "robots"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Meta Tag",
+    "shortDescriptionOfTheTag": "The meta tag provides metadata about the HTML document.",
+    "usageExamples": [
+        {
+            "title": "Setting charset",
+            "description": "Specify the character encoding for the HTML document.",
+            "code": "<meta charset='UTF-8'>"
+        },
+        {
+            "title": "Setting description",
+            "description": "Specify a description of the HTML document for search engines.",
+            "code": "<meta name='description' content='This is a description'>"
+        }
+    ]
+}

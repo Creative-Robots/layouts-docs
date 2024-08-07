@@ -67,12 +67,14 @@
         {
             "title": "Basic Usage",
             "description": "An example showing the basic usage of the <ruby> tag",
-            "code": "<ruby>漢字<rt>かんじ</rt></ruby>"
+            "code": "<ruby>漢字<rt>かんじ</rt></ruby>",
+            "layoutsCode": "/ruby\n\t漢字\n\t/rt\n\t\tかんじ"
         },
         {
             "title": "Ruby with CSS Styling",
             "description": "An example showing ruby text with applied CSS styles",
-            "code": "<ruby style=\"color: red;\">漢字<rt>かんじ</rt></ruby>"
+            "code": "<ruby style=\"color: red;\">漢字<rt>かんじ</rt></ruby>",
+            "layoutsCode": "/ruby @style=\"color: red;\"\n\t漢字\n\t/rt\n\t\tかんじ"
         }
     ]
 }

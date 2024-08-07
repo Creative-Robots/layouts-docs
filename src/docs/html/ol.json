@@ -43,12 +43,14 @@
         {
             "title": "Example 1",
             "description": "Basic Ordered List",
-            "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>"
+            "code": "<ol>\n  <li>First item</li>\n  <li>Second item</li>\n  <li>Third item</li>\n</ol>",
+            "layoutsCode": "/ol\n\t/li\n\t\tFirst item\n\t/li\n\t\tSecond item\n\t/li\n\t\tThird item"
         },
         {
             "title": "Example 2",
             "description": "Ordered list with attributes",
-            "code": "<ol type='A' start='5' reversed>\n  <li>Apples</li>\n  <li>Bananas</li>\n  <li>Oranges</li>\n</ol>"
+            "code": "<ol type='A' start='5' reversed>\n  <li>Apples</li>\n  <li>Bananas</li>\n  <li>Oranges</li>\n</ol>",
+            "layoutsCode": "/ol @reversed=\"\" @start={5} @type=\"A\"\n\t/li\n\t\tApples\n\t/li\n\t\tBananas\n\t/li\n\t\tOranges"
         }
     ]
 }

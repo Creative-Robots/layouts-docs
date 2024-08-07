@@ -1,0 +1,42 @@
+{
+    "tag": "time",
+    "allowedAttributes": [
+        {
+            "name": "datetime",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "pubdate",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "true",
+                        "false"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Time",
+    "shortDescriptionOfTheTag": "Defines a specific time or datetime, or a machine-readable date.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Using the time tag to display a specific date and time.",
+            "code": "<time datetime='2022-01-01T12:00:00'>January 1, 2022</time>"
+        },
+        {
+            "title": "With pubdate Attribute",
+            "description": "Using the pubdate attribute to indicate that the time element is the publication date of the surrounding text.",
+            "code": "<p>Posted on <time datetime='2022-01-01' pubdate='true'>January 1, 2022</time></p>"
+        }
+    ]
+}

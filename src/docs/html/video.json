@@ -54,12 +54,14 @@
         {
             "title": "Basic video tag",
             "description": "Embedding a video with default settings",
-            "code": "<video src=\"video.mp4\" controls autoplay></video>"
+            "code": "<video src=\"video.mp4\" controls autoplay></video>",
+            "layoutsCode": "/video @autoplay=\"\" @controls=\"\" @src=\"video.mp4\""
         },
         {
             "title": "Video without controls",
             "description": "Embedding a video without controls",
-            "code": "<video src=\"video.mp4\" autoplay></video>"
+            "code": "<video src=\"video.mp4\" autoplay></video>",
+            "layoutsCode": "/video @autoplay=\"\" @src=\"video.mp4\""
         }
     ]
 }

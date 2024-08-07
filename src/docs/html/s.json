@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "This is how you can use the s tag.",
-            "code": "<s>This text is no longer accurate.</s>"
+            "code": "<s>This text is no longer accurate.</s>",
+            "layoutsCode": "/s\n\tThis text is no longer accurate."
         },
         {
             "title": "Example 2",
             "description": "You can add a class to style the s tag.",
-            "code": "<s class=\"strikethrough\">This text is no longer relevant.</s>"
+            "code": "<s class=\"strikethrough\">This text is no longer relevant.</s>",
+            "layoutsCode": "/s .strikethrough\n\tThis text is no longer relevant."
         }
     ]
 }

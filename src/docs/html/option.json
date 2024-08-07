@@ -51,17 +51,20 @@
         {
             "title": "Basic Example",
             "description": "Create a simple option element with a value and label.",
-            "code": "<option value='1'>Option 1</option>"
+            "code": "<option value='1'>Option 1</option>",
+            "layoutsCode": "/option @value={1}\n\tOption 1"
         },
         {
             "title": "Disabled Option",
             "description": "Create a disabled option element.",
-            "code": "<option value='2' disabled>Option 2</option>"
+            "code": "<option value='2' disabled>Option 2</option>",
+            "layoutsCode": "/option @disabled=\"\" @value={2}\n\tOption 2"
         },
         {
             "title": "Selected Option",
             "description": "Create a selected option element.",
-            "code": "<option value='3' selected>Option 3</option>"
+            "code": "<option value='3' selected>Option 3</option>",
+            "layoutsCode": "/option @selected=\"\" @value={3}\n\tOption 3"
         }
     ]
 }

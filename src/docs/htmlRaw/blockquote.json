@@ -1,0 +1,24 @@
+{
+    "tag": "blockquote",
+    "allowedAttributes": [
+        {
+            "name": "cite",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "URL"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "blockquote",
+    "shortDescriptionOfTheTag": "The <blockquote> tag specifies a section that is quoted from another source.",
+    "usageExamples": [
+        {
+            "title": "Basic blockquote",
+            "description": "Create a simple blockquote with attribution",
+            "code": "<blockquote>\n  <p>Some quote goes here.</p>\n  <footer>Author Name</footer>\n</blockquote>"
+        }
+    ]
+}

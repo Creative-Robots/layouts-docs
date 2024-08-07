@@ -18,12 +18,14 @@
         {
             "title": "Example 1",
             "description": "A basic example of using a details element",
-            "code": "<details>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>"
+            "code": "<details>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>",
+            "layoutsCode": "/details\n\t/summary\n\t\tClick to reveal more details\n   More details here"
         },
         {
             "title": "Example 2",
             "description": "Using the 'open' attribute to show content by default",
-            "code": "<details open>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>"
+            "code": "<details open>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>",
+            "layoutsCode": "/details @open=\"\"\n\t/summary\n\t\tClick to reveal more details\n   More details here"
         }
     ]
 }

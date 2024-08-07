@@ -1,0 +1,19 @@
+{
+    "tag": "small",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Small",
+    "shortDescriptionOfTheTag": "The small tag defines smaller text.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using the small tag to display smaller text.",
+            "code": "<small>This text is smaller</small>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Nesting the small tag within a paragraph.",
+            "code": "<p>This is a paragraph with <small>smaller text</small></p>"
+        }
+    ]
+}

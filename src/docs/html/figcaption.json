@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Adding a caption to a figure element",
-            "code": "<figure>\n  <img src=\"example.jpg\" alt=\"Example\">\n  <figcaption>This is an example image</figcaption>\n</figure>"
+            "code": "<figure>\n  <img src=\"example.jpg\" alt=\"Example\">\n  <figcaption>This is an example image</figcaption>\n</figure>",
+            "layoutsCode": "/figure\n\t/img @alt=\"Example\" @src=\"example.jpg\"\n\t/figcaption\n\t\tThis is an example image"
         },
         {
             "title": "Example 2",
             "description": "Using figcaption to provide context for a table",
-            "code": "<figure>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n  <figcaption>This is a table showing data from a survey</figcaption>\n</figure>"
+            "code": "<figure>\n  <table>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </table>\n  <figcaption>This is a table showing data from a survey</figcaption>\n</figure>",
+            "layoutsCode": "/figure\n\t/table\n\t\t/tbody\n\t\t\t/tr\n\t\t\t\t/th\n\t\t\t\t\tHeader 1\n\t\t\t\t/th\n\t\t\t\t\tHeader 2\n\t\t\t/tr\n\t\t\t\t/td\n\t\t\t\t\tData 1\n\t\t\t\t/td\n\t\t\t\t\tData 2\n\t/figcaption\n\t\tThis is a table showing data from a survey"
         }
     ]
 }

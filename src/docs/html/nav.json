@@ -27,12 +27,14 @@
         {
             "title": "Basic Example",
             "description": "A basic example of using the <nav> tag.",
-            "code": "<nav>\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>"
+            "code": "<nav>\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>",
+            "layoutsCode": "/nav\n\t/a @href=\"/home\"\n\t\tHome\n\t |\n\t/a @href=\"/about\"\n\t\tAbout"
         },
         {
             "title": "With ARIA Label",
             "description": "Example of using the aria-label attribute with <nav> tag.",
-            "code": "<nav aria-label=\"Main\">\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>"
+            "code": "<nav aria-label=\"Main\">\n  <a href=\"/home\">Home</a> |\n  <a href=\"/about\">About</a>\n</nav>",
+            "layoutsCode": "/nav @aria-label=\"Main\"\n\t/a @href=\"/home\"\n\t\tHome\n\t |\n\t/a @href=\"/about\"\n\t\tAbout"
         }
     ]
 }

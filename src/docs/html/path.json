@@ -32,7 +32,7 @@
             ]
         },
         {
-            "name": "strokeWidth",
+            "name": "stroke-width",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -57,12 +57,14 @@
         {
             "title": "Example 1",
             "description": "A simple path with fill color",
-            "code": "<path d=\"M10 10 L20 20 H20 Z\" fill=\"blue\" />"
+            "code": "<path d=\"M10 10 L20 20 H20 Z\" fill=\"blue\" />",
+            "layoutsCode": "/path @d=\"M10 10 L20 20 H20 Z\" @fill=\"blue\""
         },
         {
             "title": "Example 2",
             "description": "A path with stroke color and width",
-            "code": "<path d=\"M10 10 L20 20 H20 Z\" stroke=\"black\" strokeWidth=\"2\" />"
+            "code": "<path d=\"M10 10 L20 20 H20 Z\" stroke=\"black\" stroke-width=\"2\" />",
+            "layoutsCode": "/path @d=\"M10 10 L20 20 H20 Z\" @stroke=\"black\" @stroke-width={2}"
         }
     ]
 }

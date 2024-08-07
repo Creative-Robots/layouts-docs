@@ -1,0 +1,89 @@
+{
+    "tag": "feFuncG",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "identity",
+                        "table",
+                        "discrete",
+                        "linear"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "tableValues",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "slope",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "intercept",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "amplitude",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "exponent",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "offset",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feFuncG",
+    "shortDescriptionOfTheTag": "The feFuncG SVG filter primitive defines the gamma-function for green component.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Setting type attribute to identity.",
+            "code": "<feFuncG type=\"identity\" />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Setting type attribute to table with tableValues.",
+            "code": "<feFuncG type=\"table\" tableValues=\"0 0.5 1\" />"
+        }
+    ]
+}

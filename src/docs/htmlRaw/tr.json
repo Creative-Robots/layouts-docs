@@ -1,0 +1,19 @@
+{
+    "tag": "tr",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "tr",
+    "shortDescriptionOfTheTag": "HTML Table Row Element",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Creating a simple table row",
+            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td></tr></table>"
+        },
+        {
+            "title": "Nested Example",
+            "description": "Creating a nested table row",
+            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td><tr><table>"
+        }
+    ]
+}

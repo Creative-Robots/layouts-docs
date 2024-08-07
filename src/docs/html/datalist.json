@@ -18,7 +18,8 @@
         {
             "title": "Example 1",
             "description": "Create a datalist with options for an input field",
-            "code": "<input list=\"browsers\" name=\"browser\">\n<datalist id=\"browsers\">\n  <option value=\"Chrome\">\n  <option value=\"Firefox\">\n  <option value=\"Safari\">\n</datalist>"
+            "code": "<input list=\"browsers\" name=\"browser\">\n<datalist id=\"browsers\">\n  <option value=\"Chrome\">\n  <option value=\"Firefox\">\n  <option value=\"Safari\">\n</datalist>",
+            "layoutsCode": "/input @list=\"browsers\" @name=\"browser\"\n/datalist @id=\"browsers\"\n\t/option @value=\"Chrome\"\n\t/option @value=\"Firefox\"\n\t/option @value=\"Safari\""
         }
     ]
 }

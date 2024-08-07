@@ -27,12 +27,14 @@
         {
             "title": "Basic Example",
             "description": "Displaying sample output",
-            "code": "<samp>Sample Output</samp>"
+            "code": "<samp>Sample Output</samp>",
+            "layoutsCode": "/samp\n\tSample Output"
         },
         {
             "title": "Example with Class",
             "description": "Applying a custom class to the samp tag",
-            "code": "<samp class='custom-style'>Custom Sample Output</samp>"
+            "code": "<samp class='custom-style'>Custom Sample Output</samp>",
+            "layoutsCode": "/samp .custom-style\n\tCustom Sample Output"
         }
     ]
 }

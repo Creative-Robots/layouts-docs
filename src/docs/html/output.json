@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Basic <output> tag with text content",
-            "code": "<output>Result: 10</output>"
+            "code": "<output>Result: 10</output>",
+            "layoutsCode": "/output\n\tResult: 10"
         },
         {
             "title": "Example 2",
             "description": "Using the 'for' attribute to associate the output with a form element",
-            "code": "<output for='quantity'>Result: 10</output>"
+            "code": "<output for='quantity'>Result: 10</output>",
+            "layoutsCode": "/output @for=\"quantity\"\n\tResult: 10"
         }
     ]
 }

@@ -18,12 +18,14 @@
         {
             "title": "Basic Dialog Example",
             "description": "A basic example of using the dialog component.",
-            "code": "<dialog open>Hello World!</dialog>"
+            "code": "<dialog open>Hello World!</dialog>",
+            "layoutsCode": "/dialog @open=\"\"\n\tHello World!"
         },
         {
             "title": "Dialog with a Heading",
             "description": "An example of a dialog with a title.",
-            "code": "<dialog open> <h1>Dialog Title</h1> <p>Hello World!</p> </dialog>"
+            "code": "<dialog open> <h1>Dialog Title</h1> <p>Hello World!</p> </dialog>",
+            "layoutsCode": "/dialog @open=\"\"\n\t/h1\n\t\tDialog Title\n\t/p\n\t\tHello World!"
         }
     ]
 }

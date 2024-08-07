@@ -10,7 +10,7 @@ import { folder_1, folder_2, folder_3 } from "@/lib/Style";
 import { headers } from "next/headers";
 import { URL } from "url";
 
-import LayoutsComponent from '../../docs/Layouts/Components.json';
+import LayoutsComponent from '../../docs/RawLayouts/Components.json';
 import { Button } from "../ui/button";
 import { SheetClose } from "../ShadCn/Sheet";
 

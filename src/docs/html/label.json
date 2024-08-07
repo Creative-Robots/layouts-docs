@@ -36,12 +36,14 @@
         {
             "title": "Basic Example",
             "description": "Creating a label for an input field",
-            "code": "<label for=\"username\">Username:</label>"
+            "code": "<label for=\"username\">Username:</label>",
+            "layoutsCode": "/label @for=\"username\"\n\tUsername:"
         },
         {
             "title": "Label with Accesskey",
             "description": "Adding an accesskey attribute to a label",
-            "code": "<label for=\"email\" accesskey=\"e\">Email:</label>"
+            "code": "<label for=\"email\" accesskey=\"e\">Email:</label>",
+            "layoutsCode": "/label @accesskey=\"e\" @for=\"email\"\n\tEmail:"
         }
     ]
 }

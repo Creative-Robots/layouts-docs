@@ -45,12 +45,14 @@
         {
             "title": "Basic Canvas Example",
             "description": "Creating a basic canvas element with dimensions 200px by 200px.",
-            "code": "<canvas width='200' height='200'></canvas>"
+            "code": "<canvas width='200' height='200'></canvas>",
+            "layoutsCode": "/canvas @height={200} @width={200}"
         },
         {
             "title": "Canvas with Styling Example",
             "description": "Creating a canvas element with dimensions 400px by 400px and applying a custom CSS style.",
-            "code": "<canvas width='400' height='400' style='border: 1px solid black;'></canvas>"
+            "code": "<canvas width='400' height='400' style='border: 1px solid black;'></canvas>",
+            "layoutsCode": "/canvas @height={400} @style=\"border: 1px solid black;\" @width={400}"
         }
     ]
 }

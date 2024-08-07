@@ -1,0 +1,51 @@
+{
+    "tag": "img",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "alt",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "img",
+    "shortDescriptionOfTheTag": "The img element represents an image in a document.",
+    "usageExamples": [
+        {
+            "title": "Adding image to HTML",
+            "description": "Example of using img tag to display an image.",
+            "code": "<img src='image.jpg' alt='Description of the image' />"
+        }
+    ]
+}

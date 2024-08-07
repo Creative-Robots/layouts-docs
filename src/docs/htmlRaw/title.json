@@ -1,0 +1,19 @@
+{
+    "tag": "title",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Title",
+    "shortDescriptionOfTheTag": "The title tag defines the title of the document.",
+    "usageExamples": [
+        {
+            "title": "Basic Title Example",
+            "description": "Setting a title for the document.",
+            "code": "<title>Document Title</title>"
+        },
+        {
+            "title": "Nested Title Example",
+            "description": "Using a title tag within the head tag.",
+            "code": "<head>\n  <title>Document Title</title>\n</head>"
+        }
+    ]
+}

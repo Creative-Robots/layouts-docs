@@ -72,7 +72,8 @@
         {
             "title": "Example",
             "description": "Adding a fePointLight to an SVG element.",
-            "code": "<svg>\n  <filter id=\"fePointLight\">\n    <fePointLight x=\"10\" y=\"10\" z=\"10\"/>\n  </filter>\n</svg>"
+            "code": "<svg>\n  <filter id=\"fePointLight\">\n    <fePointLight x=\"10\" y=\"10\" z=\"10\"/>\n  </filter>\n</svg>",
+            "layoutsCode": "/svg\n\t/filter @id=\"fePointLight\"\n\t\t/fePointLight @x={10} @y={10} @z={10}"
         }
     ]
 }

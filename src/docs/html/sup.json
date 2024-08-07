@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Superscript text in HTML.",
-            "code": "<p>This is a <sup>superscript</sup> text.</p>"
+            "code": "<p>This is a <sup>superscript</sup> text.</p>",
+            "layoutsCode": "/p\n\tThis is a \n\t/sup\n\t\tsuperscript\n\t text."
         },
         {
             "title": "Example 2",
             "description": "Superscript text with a class in HTML.",
-            "code": "<p>This is a <sup class=\"example\">superscript</sup> text.</p>"
+            "code": "<p>This is a <sup class=\"example\">superscript</sup> text.</p>",
+            "layoutsCode": "/p\n\tThis is a \n\t/sup .example\n\t\tsuperscript\n\t text."
         }
     ]
 }

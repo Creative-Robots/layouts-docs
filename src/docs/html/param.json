@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Setting a parameter name and value",
-            "code": "<param name='autoplay' value='true' />"
+            "code": "<param name='autoplay' value='true' />",
+            "layoutsCode": "/param @name=\"autoplay\" @value"
         },
         {
             "title": "Example 2",
             "description": "Setting a parameter name without a value",
-            "code": "<param name='loop' />"
+            "code": "<param name='loop' />",
+            "layoutsCode": "/param @name=\"loop\""
         }
     ]
 }

@@ -50,12 +50,14 @@
         {
             "title": "Example 1",
             "description": "Applying a feGaussianBlur filter on an image with standard deviation 2.",
-            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>"
+            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>",
+            "layoutsCode": "/svg @height={210} @width={400}\n\t/defs\n\t\t/filter @id=\"blur\"\n\t\t\t/feGaussianBlur @in=\"SourceGraphic\" @stdDeviation={2}\n\t/rect @height={100} @style=\"filter:url(#blur)\" @width={300}"
         },
         {
             "title": "Example 2",
             "description": "Applying a feGaussianBlur filter on an image with edge mode 'wrap'.",
-            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' edgeMode='wrap' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>"
+            "code": "<svg height='210' width='400'><defs><filter id='blur'><feGaussianBlur in='SourceGraphic' stdDeviation='2' edgeMode='wrap' /></filter></defs><rect width='300' height='100' style='filter:url(#blur)' /></svg>",
+            "layoutsCode": "/svg @height={210} @width={400}\n\t/defs\n\t\t/filter @id=\"blur\"\n\t\t\t/feGaussianBlur @edgeMode=\"wrap\" @in=\"SourceGraphic\" @stdDeviation={2}\n\t/rect @height={100} @style=\"filter:url(#blur)\" @width={300}"
         }
     ]
 }

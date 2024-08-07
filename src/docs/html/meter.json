@@ -63,12 +63,14 @@
         {
             "title": "Basic Usage",
             "description": "A simple example showing the usage of the <meter> element.",
-            "code": "<meter value=\"50\" min=\"0\" max=\"100\">50%</meter>"
+            "code": "<meter value=\"50\" min=\"0\" max=\"100\">50%</meter>",
+            "layoutsCode": "/meter @max={100} @min={0} @value={50}\n\t50%"
         },
         {
             "title": "Custom Styling",
             "description": "An example with custom styling applied to the <meter> element.",
-            "code": "<meter value=\"75\" min=\"0\" max=\"100\" style=\"color: blue;\">75%</meter>"
+            "code": "<meter value=\"75\" min=\"0\" max=\"100\" style=\"color: blue;\">75%</meter>",
+            "layoutsCode": "/meter @max={100} @min={0} @style=\"color: blue;\" @value={75}\n\t75%"
         }
     ]
 }

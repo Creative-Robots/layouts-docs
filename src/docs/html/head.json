@@ -8,12 +8,14 @@
         {
             "title": "Adding a Title",
             "description": "Add a title to the head section of the document.",
-            "code": "<head>\n    <title>My Webpage</title>\n</head>"
+            "code": "<head>\n    <title>My Webpage</title>\n</head>",
+            "layoutsCode": ""
         },
         {
             "title": "Linking CSS",
             "description": "Link an external CSS file to the head section.",
-            "code": "<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n</head>"
+            "code": "<head>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n</head>",
+            "layoutsCode": ""
         }
     ]
 }

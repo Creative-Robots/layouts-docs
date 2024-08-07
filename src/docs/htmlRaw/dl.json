@@ -1,0 +1,14 @@
+{
+    "tag": "dl",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "dl",
+    "shortDescriptionOfTheTag": "The dl tag defines a description list.",
+    "usageExamples": [
+        {
+            "title": "Basic dl tag example",
+            "description": "This example shows how to use the dl tag to create a description list.",
+            "code": "<dl>\n  <dt>Coffee</dt>\n  <dd>Black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>White cold drink</dd>\n</dl>"
+        }
+    ]
+}

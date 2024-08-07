@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using dd tag to define description for a term",
-            "code": "<dl>\n  <dt>Apple</dt>\n  <dd> A fruit that is red or green in color.</dd>\n</dl>"
+            "code": "<dl>\n  <dt>Apple</dt>\n  <dd> A fruit that is red or green in color.</dd>\n</dl>",
+            "layoutsCode": "/dl\n\t/dt\n\t\tApple\n\t/dd\n\t\t A fruit that is red or green in color."
         },
         {
             "title": "Example 2",
             "description": "Nested dd tags within a dl",
-            "code": "<dl>\n  <dt>Apple</dt>\n  <dd> A fruit that is red or green in color.</dd>\n  <dt>Orange</dt>\n  <dd> A fruit that is orange in color.</dd>\n</dl>"
+            "code": "<dl>\n  <dt>Apple</dt>\n  <dd> A fruit that is red or green in color.</dd>\n  <dt>Orange</dt>\n  <dd> A fruit that is orange in color.</dd>\n</dl>",
+            "layoutsCode": "/dl\n\t/dt\n\t\tApple\n\t/dd\n\t\t A fruit that is red or green in color.\n\t/dt\n\t\tOrange\n\t/dd\n\t\t A fruit that is orange in color."
         }
     ]
 }

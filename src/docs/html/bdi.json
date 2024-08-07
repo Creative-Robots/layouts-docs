@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using <bdi> tag in HTML",
-            "code": "<p>Here is some text in English <bdi dir=\"rtl\">العربية</bdi> and more text in English.</p>"
+            "code": "<p>Here is some text in English <bdi dir=\"rtl\">العربية</bdi> and more text in English.</p>",
+            "layoutsCode": "/p\n\tHere is some text in English \n\t/bdi @dir=\"rtl\"\n\t\tالعربية\n\t and more text in English."
         },
         {
             "title": "Example 2",
             "description": "HTML snippet with <bdi> tag",
-            "code": "<main>\n  <h1>Partners</h1>\n  <ul>\n    <li><bdi>Gandalf</bdi></li>\n    <li><bdi>Bilbo</bdi></li>\n  </ul>\n</main>"
+            "code": "<main>\n  <h1>Partners</h1>\n  <ul>\n    <li><bdi>Gandalf</bdi></li>\n    <li><bdi>Bilbo</bdi></li>\n  </ul>\n</main>",
+            "layoutsCode": "/main\n\t/h1\n\t\tPartners\n\t/ul\n\t\t/li\n\t\t\t/bdi\n\t\t\t\tGandalf\n\t\t/li\n\t\t\t/bdi\n\t\t\t\tBilbo"
         }
     ]
 }

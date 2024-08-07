@@ -1,0 +1,14 @@
+{
+    "tag": "legend",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Legend",
+    "shortDescriptionOfTheTag": "Defines a caption for a fieldset element.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Creating a legend for a fieldset element.",
+            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <!-- Other form elements go here -->\n</fieldset>"
+        }
+    ]
+}

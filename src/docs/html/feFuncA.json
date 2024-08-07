@@ -52,12 +52,14 @@
         {
             "title": "Example 1",
             "description": "Setting up a feFuncA element with type linear and slope 1.",
-            "code": "<feFuncA type='linear' slope='1'/>"
+            "code": "<feFuncA type='linear' slope='1'/>",
+            "layoutsCode": "/fefunca @slope={1} @type=\"linear\""
         },
         {
             "title": "Example 2",
             "description": "An example of using the feFuncA element with type gamma and table values.",
-            "code": "<feFuncA type='gamma' tableValues='0.5 0.7'/>"
+            "code": "<feFuncA type='gamma' tableValues='0.5 0.7'/>",
+            "layoutsCode": "/fefunca @tablevalues=\"0.5 0.7\" @type=\"gamma\""
         }
     ]
 }

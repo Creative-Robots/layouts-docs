@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Inserting a block of text",
-            "code": "<ins>This is an inserted text.</ins>"
+            "code": "<ins>This is an inserted text.</ins>",
+            "layoutsCode": "/ins\n\tThis is an inserted text."
         },
         {
             "title": "Example 2",
             "description": "Inserting text with a citation",
-            "code": "<ins cite=\"https://www.example.com\">Inserted text with a citation</ins>"
+            "code": "<ins cite=\"https://www.example.com\">Inserted text with a citation</ins>",
+            "layoutsCode": "/ins @cite=\"https://www.example.com\"\n\tInserted text with a citation"
         }
     ]
 }

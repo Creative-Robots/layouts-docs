@@ -1,0 +1,14 @@
+{
+    "tag": "tfoot",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "tfoot",
+    "shortDescriptionOfTheTag": "The tfoot element defines a group of footer rows in a table.",
+    "usageExamples": [
+        {
+            "title": "Basic tfoot Example",
+            "description": "Example showing the basic usage of the tfoot element.",
+            "code": "<table>\n  <thead>\n    <tr>\n      <th>Header 1</th>\n      <th>Header 2</th>\n    </tr>\n  </thead>\n  <tfoot>\n    <tr>\n      <td>Footer 1</td>\n      <td>Footer 2</td>\n    </tr>\n  </tfoot>\n  <tbody>\n    <tr>\n      <td>Data 1</td>\n      <td>Data 2</td>\n    </tr>\n  </tbody>\n</table>"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "tag": "br",
+    "allowedAttributes": [],
+    "canHaveChildren": false,
+    "title": "br",
+    "shortDescriptionOfTheTag": "The br tag defines a line break.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Insert a line break between two lines of text.",
+            "code": "<p>This is line one<br>This is line two</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Create space between elements.",
+            "code": "<p>Paragraph 1</p><br><p>Paragraph 2</p>"
+        }
+    ]
+}

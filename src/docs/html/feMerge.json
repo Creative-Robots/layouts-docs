@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "This is an example of how to use feMerge with children elements.",
-            "code": "<filter id='customFilter'>\n  <feMerge>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>"
+            "code": "<filter id='customFilter'>\n  <feMerge>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>",
+            "layoutsCode": "/filter @id=\"customFilter\"\n\t/femerge\n\t\t/femergenode @in=\"SourceGraphic\"\n\t\t\t/femergenode @in=\"SourceAlpha\""
         },
         {
             "title": "Example 2",
             "description": "Another example of using feMerge with different attributes.",
-            "code": "<filter id='customFilter'>\n  <feMerge result='mergedImage'>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>"
+            "code": "<filter id='customFilter'>\n  <feMerge result='mergedImage'>\n    <feMergeNode in='SourceGraphic' />\n    <feMergeNode in='SourceAlpha' />\n  </feMerge>\n</filter>",
+            "layoutsCode": "/filter @id=\"customFilter\"\n\t/femerge @result=\"mergedImage\"\n\t\t/femergenode @in=\"SourceGraphic\"\n\t\t\t/femergenode @in=\"SourceAlpha\""
         }
     ]
 }

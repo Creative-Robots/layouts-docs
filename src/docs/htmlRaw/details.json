@@ -1,0 +1,29 @@
+{
+    "tag": "details",
+    "allowedAttributes": [
+        {
+            "name": "open",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Details",
+    "shortDescriptionOfTheTag": "The details element represents a disclosure widget from which the user can obtain additional information or controls.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A basic example of using a details element",
+            "code": "<details>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using the 'open' attribute to show content by default",
+            "code": "<details open>\n   <summary>Click to reveal more details</summary>\n   More details here\n</details>"
+        }
+    ]
+}

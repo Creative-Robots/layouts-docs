@@ -40,12 +40,14 @@
         {
             "title": "Example 1",
             "description": "Applying dilation morphology operation to an input image.",
-            "code": "<feMorphology operator=\"dilate\" in=\"SourceGraphic\" radius=\"2\"></feMorphology>"
+            "code": "<feMorphology operator=\"dilate\" in=\"SourceGraphic\" radius=\"2\"></feMorphology>",
+            "layoutsCode": "/femorphology @in=\"SourceGraphic\" @operator=\"dilate\" @radius={2}"
         },
         {
             "title": "Example 2",
             "description": "Applying erosion morphology operation to an input image.",
-            "code": "<feMorphology operator=\"erode\" in=\"SourceGraphic\" radius=\"1\"></feMorphology>"
+            "code": "<feMorphology operator=\"erode\" in=\"SourceGraphic\" radius=\"1\"></feMorphology>",
+            "layoutsCode": "/femorphology @in=\"SourceGraphic\" @operator=\"erode\" @radius={1}"
         }
     ]
 }

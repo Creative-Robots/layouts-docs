@@ -43,12 +43,14 @@
         {
             "title": "Basic Example",
             "description": "Applying a feFuncR filter to an image",
-            "code": "<feFuncR type='gamma' tableValues='0.5'></feFuncR>"
+            "code": "<feFuncR type='gamma' tableValues='0.5'></feFuncR>",
+            "layoutsCode": "/fefuncr @tablevalues={0.5} @type=\"gamma\""
         },
         {
             "title": "Linear Function Example",
             "description": "Applying a feFuncR filter with linear function",
-            "code": "<feFuncR type='linear' slope='0.5'></feFuncR>"
+            "code": "<feFuncR type='linear' slope='0.5'></feFuncR>",
+            "layoutsCode": "/fefuncr @slope={0.5} @type=\"linear\""
         }
     ]
 }

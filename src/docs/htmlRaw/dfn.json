@@ -1,0 +1,29 @@
+{
+    "tag": "dfn",
+    "allowedAttributes": [
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "dfn",
+    "shortDescriptionOfTheTag": "The HTML <dfn> element is used to indicate the defining instance of a term.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using <dfn> to define a term",
+            "code": "<p><dfn title='World Wide Web'>WWW</dfn> is an essential part of the internet.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Nested <dfn> elements",
+            "code": "<p>This is an <dfn title='Example'><dfn title='Nested'>nested</dfn></dfn> definition.</p>"
+        }
+    ]
+}

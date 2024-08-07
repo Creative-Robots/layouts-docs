@@ -36,12 +36,14 @@
         {
             "title": "Basic Example",
             "description": "Using the use tag to reference a pre-defined shape.",
-            "code": "<svg width='100' height='100'>\n  <rect id='myRectangle' width='90' height='90' fill='blue' />\n  <use href='#myRectangle' x='5' y='5'/>\n</svg>"
+            "code": "<svg width='100' height='100'>\n  <rect id='myRectangle' width='90' height='90' fill='blue' />\n  <use href='#myRectangle' x='5' y='5'/>\n</svg>",
+            "layoutsCode": "/svg @height={100} @width={100}\n\t/rect @fill=\"blue\" @height={90} @id=\"myRectangle\" @width={90}\n\t/use @href=\"#myRectangle\" @x={5} @y={5}"
         },
         {
             "title": "Multiple Use Elements",
             "description": "Using multiple use elements to reference the same shape.",
-            "code": "<svg width='150' height='150'>\n  <rect id='myRectangle' width='70' height='70' fill='green' />\n  <use href='#myRectangle' x='5' y='5'/>\n  <use href='#myRectangle' x='75' y='75'/>\n</svg>"
+            "code": "<svg width='150' height='150'>\n  <rect id='myRectangle' width='70' height='70' fill='green' />\n  <use href='#myRectangle' x='5' y='5'/>\n  <use href='#myRectangle' x='75' y='75'/>\n</svg>",
+            "layoutsCode": "/svg @height={150} @width={150}\n\t/rect @fill=\"green\" @height={70} @id=\"myRectangle\" @width={70}\n\t/use @href=\"#myRectangle\" @x={5} @y={5}\n\t/use @href=\"#myRectangle\" @x={75} @y={75}"
         }
     ]
 }

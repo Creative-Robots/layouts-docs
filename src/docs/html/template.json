@@ -27,12 +27,14 @@
         {
             "title": "Basic Template Example",
             "description": "Create a simple template that can be used multiple times.",
-            "code": "<template id='myTemplate'><p>Hello World!</p></template>"
+            "code": "<template id='myTemplate'><p>Hello World!</p></template>",
+            "layoutsCode": ""
         },
         {
             "title": "Named Template Example",
             "description": "Define a template with a specific name.",
-            "code": "<template id='personTemplate'><p>{{name}}, {{age}} years old</p></template>"
+            "code": "<template id='personTemplate'><p>{{name}}, {{age}} years old</p></template>",
+            "layoutsCode": ""
         }
     ]
 }

@@ -54,7 +54,8 @@
         {
             "title": "Basic Select",
             "description": "Create a basic select element with options.",
-            "code": "<select>\n  <option value='option1'>Option 1</option>\n  <option value='option2'>Option 2</option>\n</select>"
+            "code": "<select>\n  <option value='option1'>Option 1</option>\n  <option value='option2'>Option 2</option>\n</select>",
+            "layoutsCode": "/select\n\t/option @value=\"option1\"\n\t\tOption 1\n\t/option @value=\"option2\"\n\t\tOption 2"
         }
     ]
 }

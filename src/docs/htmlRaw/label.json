@@ -1,0 +1,47 @@
+{
+    "tag": "label",
+    "allowedAttributes": [
+        {
+            "name": "for",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "accesskey",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Label",
+    "shortDescriptionOfTheTag": "Defines a label for an input element",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Creating a label for an input field",
+            "code": "<label for=\"username\">Username:</label>"
+        },
+        {
+            "title": "Label with Accesskey",
+            "description": "Adding an accesskey attribute to a label",
+            "code": "<label for=\"email\" accesskey=\"e\">Email:</label>"
+        }
+    ]
+}

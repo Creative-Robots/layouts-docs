@@ -41,12 +41,14 @@
         {
             "title": "Basic header example",
             "description": "Creating a simple header element",
-            "code": "<header align='center'>Welcome to my website!</header>"
+            "code": "<header align='center'>Welcome to my website!</header>",
+            "layoutsCode": "/header @align=\"center\"\n\tWelcome to my website!"
         },
         {
             "title": "Header with ID example",
             "description": "Adding an ID attribute to a header element",
-            "code": "<header id='main-header'>Main Header</header>"
+            "code": "<header id='main-header'>Main Header</header>",
+            "layoutsCode": "/header @id=\"main-header\"\n\tMain Header"
         }
     ]
 }

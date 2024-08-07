@@ -1,0 +1,71 @@
+{
+    "tag": "h5",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "center",
+                        "right",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "h5",
+    "shortDescriptionOfTheTag": "The h5 element represents a heading for a section.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a simple h5 heading with alignment.",
+            "code": "<h5 align=\"center\">Center Aligned Heading</h5>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Creating a styled h5 heading with a class.",
+            "code": "<h5 class=\"header\">Styled Heading</h5>"
+        }
+    ]
+}

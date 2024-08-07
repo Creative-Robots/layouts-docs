@@ -60,12 +60,14 @@
         {
             "title": "Basic h1 Example",
             "description": "A simple example of using h1 tag",
-            "code": "<h1>Hello World</h1>"
+            "code": "<h1>Hello World</h1>",
+            "layoutsCode": "/h1\n\tHello World"
         },
         {
             "title": "h1 with class attribute",
             "description": "Example of using h1 tag with class attribute",
-            "code": "<h1 class=\"important\">Important Heading</h1>"
+            "code": "<h1 class=\"important\">Important Heading</h1>",
+            "layoutsCode": "/h1 .important\n\tImportant Heading"
         }
     ]
 }

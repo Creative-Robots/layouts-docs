@@ -27,12 +27,14 @@
         {
             "title": "Basic Example",
             "description": "Using a span tag to group text together.",
-            "code": "<span>Hello, <strong>world</strong>!</span>"
+            "code": "<span>Hello, <strong>world</strong>!</span>",
+            "layoutsCode": "/span\n\tHello, \n\t/strong\n\t\tworld\n\t!"
         },
         {
             "title": "Styling Example",
             "description": "Using a span tag to apply custom styles.",
-            "code": "<span style=\"color: red;\">Custom styled text</span>"
+            "code": "<span style=\"color: red;\">Custom styled text</span>",
+            "layoutsCode": "/span @style=\"color: red;\"\n\tCustom styled text"
         }
     ]
 }

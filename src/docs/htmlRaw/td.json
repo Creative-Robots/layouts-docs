@@ -1,0 +1,47 @@
+{
+    "tag": "td",
+    "allowedAttributes": [
+        {
+            "name": "colspan",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "rowspan",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "headers",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "td",
+    "shortDescriptionOfTheTag": "Defines a cell in a table",
+    "usageExamples": [
+        {
+            "title": "Basic td Example",
+            "description": "Creating a simple cell in a table",
+            "code": "<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>"
+        },
+        {
+            "title": "td with colspan",
+            "description": "Creating a cell that spans multiple columns in a table",
+            "code": "<table>\n  <tr>\n    <td colspan=\"2\">Cell 1 and Cell 2 merged</td>\n  </tr>\n</table>"
+        }
+    ]
+}

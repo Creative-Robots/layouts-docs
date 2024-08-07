@@ -1,0 +1,19 @@
+{
+    "tag": "desc",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Desc",
+    "shortDescriptionOfTheTag": "A tag that can contain descriptive text or content.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Adding a description paragraph.",
+            "code": "<desc>This is a description.</desc>"
+        },
+        {
+            "title": "Example with formatted text",
+            "description": "Using HTML tags within desc.",
+            "code": "<desc>This is a <strong>bold</strong> description.</desc>"
+        }
+    ]
+}

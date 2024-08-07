@@ -1,0 +1,29 @@
+{
+    "tag": "feMergeNode",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feMergeNode",
+    "shortDescriptionOfTheTag": "The feMergeNode SVG filter primitive defines the input for subsequent filter primitives.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Create a feMergeNode tag with input 'SourceGraphic'.",
+            "code": "<feMergeNode in='SourceGraphic' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Create a feMergeNode tag with input 'BackgroundImage'.",
+            "code": "<feMergeNode in='BackgroundImage' />"
+        }
+    ]
+}

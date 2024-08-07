@@ -18,12 +18,14 @@
         {
             "title": "Basic Example",
             "description": "Usage of <dt> tag with a term/name",
-            "code": "<dl>\n  <dt>Title</dt>\n  <dd>Description</dd>\n</dl>"
+            "code": "<dl>\n  <dt>Title</dt>\n  <dd>Description</dd>\n</dl>",
+            "layoutsCode": "/dl\n\t/dt\n\t\tTitle\n\t/dd\n\t\tDescription"
         },
         {
             "title": "Example with Title Attribute",
             "description": "Usage of <dt> tag with a title attribute",
-            "code": "<dl>\n  <dt title=\"Title Explanation\">Title</dt>\n  <dd>Description</dd>\n</dl>"
+            "code": "<dl>\n  <dt title=\"Title Explanation\">Title</dt>\n  <dd>Description</dd>\n</dl>",
+            "layoutsCode": "/dl\n\t/dt @title=\"Title Explanation\"\n\t\tTitle\n\t/dd\n\t\tDescription"
         }
     ]
 }

@@ -1,0 +1,62 @@
+{
+    "tag": "embed",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "type",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                },
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Embed",
+    "shortDescriptionOfTheTag": "The embed tag defines a container for an external application or interactive content.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Embedding a video in a webpage.",
+            "code": "<embed src='video.mp4' width='500' height='300' type='video/mp4'>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Embedding a website within a webpage.",
+            "code": "<embed src='http://www.example.com' width='800' height='600' type='text/html'>"
+        }
+    ]
+}

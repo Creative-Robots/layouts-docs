@@ -1,0 +1,91 @@
+{
+    "tag": "feComposite",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "in2",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "operator",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "over",
+                        "in",
+                        "out",
+                        "atop",
+                        "xor",
+                        "arithmetic"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "k1",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "k2",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "k3",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "k4",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feComposite",
+    "shortDescriptionOfTheTag": "The feComposite SVG filter primitive performs the combination of two input images pixel-wise in image space using one of the Porter-Duff compositing operations.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Usage of feComposite with 'over' operator",
+            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='over' />"
+        },
+        {
+            "title": "Example 2",
+            "description": "Usage of feComposite with 'atop' and custom values for k1, k2, k3, k4",
+            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='atop' k1='1' k2='0' k3='0.5' k4='1' />"
+        }
+    ]
+}

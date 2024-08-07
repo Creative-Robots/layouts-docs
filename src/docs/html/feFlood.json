@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "An example of feFlood with a red flood color and opacity of 0.5",
-            "code": "<feFlood flood-color='red' flood-opacity='0.5' />"
+            "code": "<feFlood flood-color='red' flood-opacity='0.5' />",
+            "layoutsCode": "/feflood @flood-color=\"red\" @flood-opacity={0.5}"
         },
         {
             "title": "Example 2",
             "description": "An example of feFlood with default values",
-            "code": "<feFlood />"
+            "code": "<feFlood />",
+            "layoutsCode": "/feflood"
         }
     ]
 }

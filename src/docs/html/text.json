@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Rendering plain text",
-            "code": "<text>Hello World</text>"
+            "code": "<text>Hello World</text>",
+            "layoutsCode": "/text\n\tHello World"
         },
         {
             "title": "Example 2",
             "description": "Rendering text with custom style",
-            "code": "<text style='color: blue'>Styled Text</text>"
+            "code": "<text style='color: blue'>Styled Text</text>",
+            "layoutsCode": "/text @style=\"color: blue\"\n\tStyled Text"
         }
     ]
 }

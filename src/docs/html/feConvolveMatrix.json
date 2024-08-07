@@ -72,7 +72,8 @@
         {
             "title": "Example 1",
             "description": "Applying a feConvolveMatrix filter to an SVG image.",
-            "code": "<filter id=\"convolve\">\n  <feConvolveMatrix in=\"SourceGraphic\" order=\"3\" kernelMatrix=\"1 1 1 1 -7 1 1 1 1\"/>\n</filter>\n\n<image x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" filter=\"url(#convolve)\"/>\n"
+            "code": "<filter id=\"convolve\">\n  <feConvolveMatrix in=\"SourceGraphic\" order=\"3\" kernelMatrix=\"1 1 1 1 -7 1 1 1 1\"/>\n</filter>\n\n<image x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" filter=\"url(#convolve)\"/>\n",
+            "layoutsCode": "/filter @id=\"convolve\"\n\t/feconvolvematrix @in=\"SourceGraphic\" @kernelmatrix=\"1 1 1 1 -7 1 1 1 1\" @order={3}\n/img @filter=\"url(#convolve)\" @height=\"100%\" @width=\"100%\" @x={0} @y={0}"
         }
     ]
 }

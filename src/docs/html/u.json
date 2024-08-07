@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using the u tag to underline text",
-            "code": "<p>This is <u>underlined</u> text.</p>"
+            "code": "<p>This is <u>underlined</u> text.</p>",
+            "layoutsCode": "/p\n\tThis is \n\t/u\n\t\tunderlined\n\t text."
         },
         {
             "title": "Example 2",
             "description": "Nested underlined text",
-            "code": "<p>This is <u>underlined <u>and</u> nested</u> text.</p>"
+            "code": "<p>This is <u>underlined <u>and</u> nested</u> text.</p>",
+            "layoutsCode": "/p\n\tThis is \n\t/u\n\t\tunderlined \n\t\t/u\n\t\t\tand\n\t\t nested\n\t text."
         }
     ]
 }

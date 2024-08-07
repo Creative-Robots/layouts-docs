@@ -7,7 +7,7 @@ import { cn } from "@/lib/cn";
 import React from "react";
 import CopyClipboard from "../ClipBoard";
 import MyCodeBlock from "../CodeBlock";
-import { Heading1, Heading2, Title } from "../ContentComponents";
+import { Heading1, Heading2, SubHeading, Title } from "../ContentComponents";
 import { AcceptChildrenBox, AcceptChildrenIcon, AcceptChildrenTitle, Description, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName } from "@/lib/Style";
 import { CodeBlock } from "../ContentComponents/CodeBlock";
 
@@ -25,6 +25,7 @@ type DocType = {
         title: string;
         description: string;
         code: string;
+        layoutsCode: string;
     }[];
 }
 
@@ -48,7 +49,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
     const {tag, title, shortDescriptionOfTheTag, allowedAttributes, canHaveChildren, usageExamples} = data;
     return (
         
-        <div className='flex flex-col gap-3 pb-20 sm:px-0 px-5 min-h-screen max-w-[720px] flex-1 pt-[122px] lg:mx-auto'>
+        <div className='flex flex-col gap-3 pb-20 px-10 min-h-screen flex-1 pt-[122px]'>
             <DocBreadcrums items={[tag]} />
             <div className='flex flex-col'>
                 <Title title={title} description={shortDescriptionOfTheTag} ></Title>
@@ -61,12 +62,12 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
             </div>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <Heading1 title="Props"></Heading1>
-                <div className={cn(PropsHeaderBox)}>
+                <div className={cn(PropsHeaderBox, "-mt-3 -mb-2")}>
                     <div className={cn(PropsHeader)}>
-                        <p className={cn(PropsHeaderTitle)}>Prop</p>
-                        <p className={cn(PropsHeaderTitle)}>Type</p>
-                        <p className={cn(PropsHeaderTitle)}>Default</p>
-                        <p className={cn(PropsHeaderTitle, isRequiredTitle)}>isRequired</p>
+                    <p className={cn(PropsHeaderTitle)}>Prop</p>
+                    <p className={cn(PropsHeaderTitle)}>Type</p>
+                    <p className={cn(PropsHeaderTitle)}>Default</p>
+                    <p className={cn(PropsHeaderTitle, isRequiredTitle)}>isRequired</p>
                     </div>
                 </div> 
                 <div className='w-full h-fit'>
@@ -112,13 +113,14 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                 })}
                 </div>
             </>}
-            <Heading2 title={"Accept children : " + (canHaveChildren ? "✅" : "❌")}></Heading2>
+            <SubHeading title={"Accept children : " + (canHaveChildren ? "✅" : "❌")}></SubHeading>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <Heading1 title="Usage Examples"></Heading1>
                 {usageExamples.map((u, i) => (
                 <React.Fragment key={u.title + i}>
                     <Heading2 title={u.title} description={u.description}></Heading2>
-                    <CodeBlock code={convertToHtmlFormat(u.code)} />
+                    {/* <CodeBlock code={convertToHtmlFormat(u.code)} /> */}
+                    <CodeBlock code={u.layoutsCode} />
                 </React.Fragment>
                 ))}   
             </>}

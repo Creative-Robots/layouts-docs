@@ -1,0 +1,33 @@
+{
+    "tag": "sub",
+    "allowedAttributes": [
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "sub",
+    "shortDescriptionOfTheTag": "The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.",
+    "usageExamples": [
+        {
+            "title": "Example usage of <sub> tag",
+            "description": "This example demonstrates the usage of <sub> tag to create subscript text.",
+            "code": "<p>This is a sentence with <sub>subscript</sub> text.</p>"
+        }
+    ]
+}

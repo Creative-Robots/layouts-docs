@@ -1,0 +1,19 @@
+{
+    "tag": "strong",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "Strong",
+    "shortDescriptionOfTheTag": "Defines text with strong importance",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Displaying strong text",
+            "code": "<strong>This is a strong text</strong>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Nested strong text",
+            "code": "<strong>This is a <strong>strong</strong> text</strong>"
+        }
+    ]
+}

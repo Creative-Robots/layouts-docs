@@ -43,12 +43,14 @@
         {
             "title": "Example 1",
             "description": "Use feFuncB with identity type",
-            "code": "<feFuncB type=\"identity\" />"
+            "code": "<feFuncB type=\"identity\" />",
+            "layoutsCode": "/fefuncb @type=\"identity\""
         },
         {
             "title": "Example 2",
             "description": "Use feFuncB with table type",
-            "code": "<feFuncB type=\"table\" slope=\"1.2\" intercept=\"0.5\" />"
+            "code": "<feFuncB type=\"table\" slope=\"1.2\" intercept=\"0.5\" />",
+            "layoutsCode": "/fefuncb @intercept={0.5} @slope={1.2} @type=\"table\""
         }
     ]
 }

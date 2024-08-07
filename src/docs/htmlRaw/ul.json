@@ -1,0 +1,19 @@
+{
+    "tag": "ul",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "ul",
+    "shortDescriptionOfTheTag": "The <ul> tag defines an unordered (bulleted) list.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Creating a simple unordered list with HTML:",
+            "code": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Orange</li>\n</ul>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Styling the list with CSS:",
+            "code": "<style>\n  ul {\n    list-style-type: circle;\n  }\n</style>\n\n<ul>\n  <li>Red</li>\n  <li>Green</li>\n  <li>Blue</li>\n</ul>"
+        }
+    ]
+}

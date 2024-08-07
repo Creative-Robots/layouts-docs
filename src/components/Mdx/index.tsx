@@ -1,39 +1,45 @@
 'use client'
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote"
-import { createContext, MouseEventHandler, ReactNode, useEffect, useState } from "react"
+import { ReactNode } from "react"
 import * as MintComponents from "@mintlify/components"
 import { MDXProvider } from '@mdx-js/react'
 import { cn } from "@/lib/cn"
-import { Card, code, info, li, note, responseField, snippetIntro, ul } from "@/lib/Style"
-import MyCodeBlock from "../CodeBlock"
+import { Card, H3Box_Mdx, Heading2Box_Mdx, info, li, note, responseField, snippetIntro, TitleBox_Mdx, ul } from "@/lib/Style"
 
-import { rep, repContext, useRepContext } from "@/lib/RepContext"
 import { scrollToElement } from "@/lib/utils"
 import { Heading1, Heading2, P, SubHeading, Title } from "../ContentComponents"
 import { Label } from "../ui/label"
 import { CodeBlock } from "../ContentComponents/CodeBlock"
 import { Strong } from "../ContentComponents/Strong"
+import Entry from "../ContentComponents/Entry"
 
 interface MdxComponentProps {
-    content: { mdxSource: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>; frontMatter: { [key: string]: any; }; }
+    content: { 
+      mdxSource: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>>; 
+      frontMatter: { [key: string]: any; };
+      entries: {
+        entry: string;
+        level: number;
+      }[] | undefined;
+    }
 }
 
 const CustomH1 = ({ children, id }: {children:ReactNode, id:string}) => {
   return (
-    <Heading1 title={children as string}/>
+    <Heading1 title={children as string} className={TitleBox_Mdx}/>
   )
 }
 
 const CustomH2 = ({ children, id }: {children:ReactNode, id:string}) => {
   return (
-    <Heading2 title={children as string}/>
+    <Heading2 title={children as string} className={Heading2Box_Mdx}/>
   )
 }
 
 const CustomH3 = ({ children, id }: {children:ReactNode, id:string}) => {
   return (
-    <SubHeading title={children as string}/>
+    <SubHeading title={children as string} className={H3Box_Mdx}/>
   )
 }
 
@@ -46,6 +52,7 @@ const Linkable = ({id}:{id:string}) => {
       </div>
     )
 }
+
 // Ul
 const CustomUl = ({ children, id }: {children:ReactNode, id:string}) => (
     <ul className={ul} id={id}>
@@ -157,12 +164,10 @@ const components = {
 
 
 export default function MdxComponent({content}: MdxComponentProps) {
-    const [rep, setRep] = useState<rep[]>([]);
-    console.log(content.mdxSource);
     return (
-      <repContext.Provider value={{setRep}}>
-        <div className="flex flex-row flex-1">
-          <div className="max-w-[720px] flex-1 pt-[122px] lg:mx-auto relative">
+      <>
+        <div className="flex flex-row flex-1 max-w-[1440px]">
+          <div className="max-w-[1440px] flex-1 pt-[122px] relative">
             <div className="text-gray-800 px-10 w-full max-w-full overflow-hidden">
               {/* FIXME: Remove any below */}
               <MDXProvider components={components as any}>
@@ -180,14 +185,14 @@ export default function MdxComponent({content}: MdxComponentProps) {
             <Label className="text-sm font-medium" >
 							On this page
 						</Label>
-            {rep.map((e, i) => {
-              if (i === rep.length - 1) return null;
+            {content.entries ? content.entries?.map((e, i) => {
+              console.log(e);
               return (
-                <a key={'ine' + i} className="text-xs font-normal text-gray-400 hover:text-[#1e1f22] cursor-pointer" href={'#' + e.id} onClick={scrollToElement}>{e.name}</a>
+                <Entry entry={e.entry} i={i} />
               )
-            })}
+            }) : null}
           </div>
         </div>
-      </repContext.Provider>
+      </>
     )
 }

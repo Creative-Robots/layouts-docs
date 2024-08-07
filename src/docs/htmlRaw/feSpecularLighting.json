@@ -1,0 +1,56 @@
+{
+    "tag": "feSpecularLighting",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "surfaceScale",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "specularConstant",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "specularExponent",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feSpecularLighting",
+    "shortDescriptionOfTheTag": "The feSpecularLighting SVG filter primitive lights image pixels with specular highlights. This is similar to Specular lighting in OpenGL.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Apply feSpecularLighting filter to an svg image",
+            "code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100' height='100'>\n  <defs>\n    <filter id='specularLighting'>\n      <feSpecularLighting in='SourceGraphic' surfaceScale='3' specularConstant='0.5' specularExponent='30'></feSpecularLighting>\n    </filter>\n  </defs>\n  <circle cx='50' cy='50' r='40' fill='gold' filter='url(#specularLighting)'></circle>\n</svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using feSpecularLighting filter with a different image",
+            "code": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' width='100' height='100'>\n  <defs>\n    <filter id='specularLighting2'>\n      <feSpecularLighting in='SourceGraphic' surfaceScale='2' specularConstant='0.8' specularExponent='20'></feSpecularLighting>\n    </filter>\n  </defs>\n  <rect x='10' y='10' width='80' height='80' fill='blue' filter='url(#specularLighting2)'></rect>\n</svg>"
+        }
+    ]
+}

@@ -46,12 +46,14 @@
         {
             "title": "Basic Example",
             "description": "Embedding a web page inside a webview element.",
-            "code": "<webview src='https://www.example.com'></webview>"
+            "code": "<webview src='https://www.example.com'></webview>",
+            "layoutsCode": "/webview @src=\"https://www.example.com\""
         },
         {
             "title": "Example with name and sandbox",
             "description": "Embedding a web page with custom name and sandbox options.",
-            "code": "<webview src='https://www.example.com' name='exampleFrame' sandbox='allow-forms allow-scripts'></webview>"
+            "code": "<webview src='https://www.example.com' name='exampleFrame' sandbox='allow-forms allow-scripts'></webview>",
+            "layoutsCode": "/webview @name=\"exampleFrame\" @sandbox=\"allow-forms allow-scripts\" @src=\"https://www.example.com\""
         }
     ]
 }

@@ -1,0 +1,47 @@
+{
+    "tag": "code",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Code",
+    "shortDescriptionOfTheTag": "The <code> tag is used to define a piece of computer code.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Code snippet with CSS styling.",
+            "code": "<code style='color: blue;'>var x = 5;</code>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Code snippet with a class specified.",
+            "code": "<code class='inline-code'>function hello() { return 'world'; }</code>"
+        }
+    ]
+}

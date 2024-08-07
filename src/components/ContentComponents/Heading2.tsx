@@ -1,19 +1,11 @@
 import { cn } from "@/lib/cn";
-import { useRepContext } from "@/lib/RepContext";
 import { Heading2, Heading2Box, Heading2Description } from "@/lib/Style";
-import { useEffect } from "react";
+import { getTextFromChildren } from "@/lib/utils";
 
-export const _Heading2 = ({title, description}:{title:string, description?:string}) => {
-    const {setRep} = useRepContext();
-    const id = title.normalize();
-    useEffect(() => {
-        setRep((l) => {
-          if (l.filter(e => e.id == id).length > 0) return [...l];
-          return [...l, {name: title, id: id, level: 2}];
-        })
-      }, [setRep])
+export const _Heading2 = ({title, description, className}:{title:string, description?:string, className?:string}) => {
+    const id = title.normalize ? title.normalize() : getTextFromChildren(title);
     return (
-        <h2 className={cn(Heading2Box)} id={id}>
+        <h2 className={cn(Heading2Box, className)} id={id}>
             <p className={cn(Heading2)}>{title}</p>
             {
                 description && description.length > 0 && 

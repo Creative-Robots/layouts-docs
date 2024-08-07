@@ -68,12 +68,14 @@
         {
             "title": "Basic menuitem example",
             "description": "Create a simple menuitem.",
-            "code": "<menu><menuitem label='Copy' icon='copy-icon.png'></menuitem></menu>"
+            "code": "<menu><menuitem label='Copy' icon='copy-icon.png'></menuitem></menu>",
+            "layoutsCode": "/menu\n\t/menuitem @icon=\"copy-icon.png\" @label=\"Copy\""
         },
         {
             "title": "Menuitem with radio type",
             "description": "Create a menuitem with radio type.",
-            "code": "<menu><menuitem label='Option 1' type='radio'></menuitem></menu>"
+            "code": "<menu><menuitem label='Option 1' type='radio'></menuitem></menu>",
+            "layoutsCode": "/menu\n\t/menuitem @label=\"Option 1\" @type=\"radio\""
         }
     ]
 }

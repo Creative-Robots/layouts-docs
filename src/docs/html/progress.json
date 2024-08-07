@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "A simple progress bar showing 50% completion",
-            "code": "<progress value='50' max='100'></progress>"
+            "code": "<progress value='50' max='100'></progress>",
+            "layoutsCode": "/progress @max={100} @value={50}"
         },
         {
             "title": "Example 2",
             "description": "A progress bar showing 75% completion",
-            "code": "<progress value='75' max='100'></progress>"
+            "code": "<progress value='75' max='100'></progress>",
+            "layoutsCode": "/progress @max={100} @value={75}"
         }
     ]
 }

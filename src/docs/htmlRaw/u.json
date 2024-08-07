@@ -1,0 +1,19 @@
+{
+    "tag": "u",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "u",
+    "shortDescriptionOfTheTag": "The <u> tag defines underlined text.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using the u tag to underline text",
+            "code": "<p>This is <u>underlined</u> text.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Nested underlined text",
+            "code": "<p>This is <u>underlined <u>and</u> nested</u> text.</p>"
+        }
+    ]
+}

@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Display preformatted text",
-            "code": "<pre>\nThis\nis\npreformatted\ntext\n</pre>"
+            "code": "<pre>\nThis\nis\npreformatted\ntext\n</pre>",
+            "layoutsCode": "/pre\n\tThis\nis\npreformatted\ntext"
         },
         {
             "title": "Example 2",
             "description": "Display code snippet with HTML tags",
-            "code": "<pre>\n&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></pre>"
+            "code": "<pre>\n&lt;html&gt;<br>&lt;head&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;<br></pre>",
+            "layoutsCode": "/pre\n\t<html>\n\t/br\n\t<head>\n\t/br\n\t</head>\n\t/br\n\t<body>\n\t/br\n\t</body>\n\t/br\n\t</html>\n\t/br"
         }
     ]
 }

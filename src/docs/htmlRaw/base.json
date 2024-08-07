@@ -1,0 +1,44 @@
+{
+    "tag": "base",
+    "allowedAttributes": [
+        {
+            "name": "href",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "target",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "_self",
+                        "_blank",
+                        "_parent",
+                        "_top"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Base",
+    "shortDescriptionOfTheTag": "The `<base>` tag specifies the base URL/target for all relative URLs in a document.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Set the base URL for all relative URLs",
+            "code": "<base href=\"https://www.example.com/\">"
+        },
+        {
+            "title": "Example 2",
+            "description": "Set the base URL and specify the target attribute",
+            "code": "<base href=\"https://www.example.com/\" target=\"_blank\">"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "tag": "option",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "disabled",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "disabled"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "selected",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean",
+                    "options": [
+                        "selected"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "label",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Option",
+    "shortDescriptionOfTheTag": "Defines an option that can be selected in a select element.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Create a simple option element with a value and label.",
+            "code": "<option value='1'>Option 1</option>"
+        },
+        {
+            "title": "Disabled Option",
+            "description": "Create a disabled option element.",
+            "code": "<option value='2' disabled>Option 2</option>"
+        },
+        {
+            "title": "Selected Option",
+            "description": "Create a selected option element.",
+            "code": "<option value='3' selected>Option 3</option>"
+        }
+    ]
+}

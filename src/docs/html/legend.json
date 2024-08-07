@@ -8,7 +8,8 @@
         {
             "title": "Basic Example",
             "description": "Creating a legend for a fieldset element.",
-            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <!-- Other form elements go here -->\n</fieldset>"
+            "code": "<fieldset>\n  <legend>Personal Information</legend>\n  <!-- Other form elements go here -->\n</fieldset>",
+            "layoutsCode": "/fieldset\n\t/legend\n\t\tPersonal Information\n\t/#comment"
         }
     ]
 }

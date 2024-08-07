@@ -50,12 +50,14 @@
         {
             "title": "Embedding an Image",
             "description": "Embedding an image using the object tag",
-            "code": "<object data='image.jpg' type='image/jpeg' width='200' height='200'></object>"
+            "code": "<object data='image.jpg' type='image/jpeg' width='200' height='200'></object>",
+            "layoutsCode": "/object @data=\"image.jpg\" @height={200} @type=\"image/jpeg\" @width={200}"
         },
         {
             "title": "Embedding a PDF",
             "description": "Embedding a PDF file using the object tag",
-            "code": "<object data='document.pdf' type='application/pdf' width='800' height='600'></object>"
+            "code": "<object data='document.pdf' type='application/pdf' width='800' height='600'></object>",
+            "layoutsCode": "/object @data=\"document.pdf\" @height={600} @type=\"application/pdf\" @width={800}"
         }
     ]
 }

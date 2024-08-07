@@ -83,12 +83,14 @@
         {
             "title": "Basic Text Input",
             "description": "Creating a basic text input field.",
-            "code": "<input type=\"text\" name=\"username\" placeholder=\"Enter your username\">"
+            "code": "<input type=\"text\" name=\"username\" placeholder=\"Enter your username\">",
+            "layoutsCode": "/input @name=\"username\" @placeholder=\"Enter your username\" @type=\"text\""
         },
         {
             "title": "Checkbox Input",
             "description": "Creating a checkbox input field.",
-            "code": "<input type=\"checkbox\" name=\"subscribe\" value=\"yes\"> Subscribe to newsletter"
+            "code": "<input type=\"checkbox\" name=\"subscribe\" value=\"yes\"> Subscribe to newsletter",
+            "layoutsCode": "/input @name=\"subscribe\" @type=\"checkbox\" @value=\"yes\"\n Subscribe to newsletter\n"
         }
     ]
 }

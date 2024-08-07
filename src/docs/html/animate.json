@@ -61,7 +61,8 @@
         {
             "title": "Basic animate example",
             "description": "This example shows how to use the animate tag to create a simple animation.",
-            "code": "<svg>\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\">\n    <animate attributeName=\"r\" attributeType=\"XML\" from=\"40\" to=\"10\" dur=\"5s\"/>\n  </circle>\n</svg>"
+            "code": "<svg>\n  <circle cx=\"50\" cy=\"50\" r=\"40\" fill=\"red\">\n    <animate attributeName=\"r\" attributeType=\"XML\" from=\"40\" to=\"10\" dur=\"5s\"/>\n  </circle>\n</svg>",
+            "layoutsCode": "/svg\n\t/circle @cx={50} @cy={50} @fill=\"red\" @r={40}\n\t\t/animate @attributeName=\"r\" @attributeType=\"XML\" @dur=\"5s\" @from={40} @to={10}"
         }
     ]
 }

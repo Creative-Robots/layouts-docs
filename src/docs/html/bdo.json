@@ -22,12 +22,14 @@
         {
             "title": "Example 1",
             "description": "Setting text direction to right-to-left",
-            "code": "<bdo dir=\"rtl\">Text content goes here</bdo>"
+            "code": "<bdo dir=\"rtl\">Text content goes here</bdo>",
+            "layoutsCode": "/bdo @dir=\"rtl\"\n\tText content goes here"
         },
         {
             "title": "Example 2",
             "description": "Setting text direction to left-to-right",
-            "code": "<bdo dir=\"ltr\">Text content goes here</bdo>"
+            "code": "<bdo dir=\"ltr\">Text content goes here</bdo>",
+            "layoutsCode": "/bdo @dir=\"ltr\"\n\tText content goes here"
         }
     ]
 }

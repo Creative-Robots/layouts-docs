@@ -8,7 +8,8 @@
         {
             "title": "Basic dl tag example",
             "description": "This example shows how to use the dl tag to create a description list.",
-            "code": "<dl>\n  <dt>Coffee</dt>\n  <dd>Black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>White cold drink</dd>\n</dl>"
+            "code": "<dl>\n  <dt>Coffee</dt>\n  <dd>Black hot drink</dd>\n  <dt>Milk</dt>\n  <dd>White cold drink</dd>\n</dl>",
+            "layoutsCode": "/dl\n\t/dt\n\t\tCoffee\n\t/dd\n\t\tBlack hot drink\n\t/dt\n\t\tMilk\n\t/dd\n\t\tWhite cold drink"
         }
     ]
 }

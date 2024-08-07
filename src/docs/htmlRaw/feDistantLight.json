@@ -1,0 +1,38 @@
+{
+    "tag": "feDistantLight",
+    "allowedAttributes": [
+        {
+            "name": "azimuth",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "elevation",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feDistantLight",
+    "shortDescriptionOfTheTag": "The feDistantLight SVG filter primitive defines a distant light source that can be used within a lighting filter primitive to achieve a lighting effect. The lighting effect created by this light source results in a spotlight, with the light becoming weaker as the angle of incidence moves away from the spot direction.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying a feDistantLight filter to an SVG shape.",
+            "code": "<svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'><filter id='distant_light'><feDistantLight azimuth='45' elevation='30'/></filter><circle cx='50' cy='50' r='40' fill='green' filter='url(#distant_light)'/></svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using feDistantLight with other filter primitives.",
+            "code": "<svg width='100' height='100' xmlns='http://www.w3.org/2000/svg'><filter id='combined_filters'><feDistantLight azimuth='135' elevation='45'/><feSpecularLighting in='SourceGraphic' surfaceScale='5'result='specOut' specularConstant='0.42' specularExponent='1.5'><fePointLight x='200' y='100' z='50'/></feSpecularLighting></filter><rect width='100' height='100' filter='url(#combined_filters)'/></svg>"
+        }
+    ]
+}

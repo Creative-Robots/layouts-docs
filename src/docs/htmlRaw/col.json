@@ -1,0 +1,41 @@
+{
+    "tag": "col",
+    "allowedAttributes": [
+        {
+            "name": "span",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "col",
+    "shortDescriptionOfTheTag": "Defines a column within a table",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Set the width of the column to 100 pixels",
+            "code": "<col width='100'>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Define a column to span 2 slots",
+            "code": "<col span='2'>"
+        }
+    ]
+}

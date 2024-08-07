@@ -52,12 +52,14 @@
         {
             "title": "Example 1",
             "description": "Using feBlend to blend two images with 'multiply' mode",
-            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"multiply\" />\n  </filter>\n</svg>"
+            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"multiply\" />\n  </filter>\n</svg>",
+            "layoutsCode": "/svg\n\t/filter @id=\"blend\"\n\t\t/feBlend @in=\"A\" @in2=\"B\" @mode=\"multiply\""
         },
         {
             "title": "Example 2",
             "description": "Using feBlend to blend two images with 'darken' mode",
-            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"darken\" />\n  </filter>\n</svg>"
+            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"darken\" />\n  </filter>\n</svg>",
+            "layoutsCode": "/svg\n\t/filter @id=\"blend\"\n\t\t/feBlend @in=\"A\" @in2=\"B\" @mode=\"darken\""
         }
     ]
 }

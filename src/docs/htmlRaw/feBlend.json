@@ -1,0 +1,63 @@
+{
+    "tag": "feBlend",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "in2",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "mode",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "normal",
+                        "multiply",
+                        "screen",
+                        "darken",
+                        "lighten"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "result",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "feBlend",
+    "shortDescriptionOfTheTag": "The feBlend SVG filter primitive performs the combination of two input images pixel-wise in image space using one of the supported feBlend modes.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Using feBlend to blend two images with 'multiply' mode",
+            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"multiply\" />\n  </filter>\n</svg>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Using feBlend to blend two images with 'darken' mode",
+            "code": "<svg>\n  <filter id=\"blend\">\n    <feBlend in=\"A\" in2=\"B\" mode=\"darken\" />\n  </filter>\n</svg>"
+        }
+    ]
+}

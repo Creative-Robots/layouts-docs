@@ -1,0 +1,62 @@
+{
+    "tag": "h4",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "right",
+                        "center",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "HTML h4 Tag",
+    "shortDescriptionOfTheTag": "The h4 tag is used to define HTML heading with level 4.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Creating a simple heading using h4 tag",
+            "code": "<h4>This is a heading level 4</h4>"
+        },
+        {
+            "title": "Example with Alignment",
+            "description": "Creating a heading with alignment specified",
+            "code": "<h4 align='center'>Center Aligned Heading 4</h4>"
+        }
+    ]
+}

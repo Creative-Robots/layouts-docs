@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Creating a basic div container.",
-            "code": "<div>Hello, World!</div>"
+            "code": "<div>Hello, World!</div>",
+            "layoutsCode": "/div\n\tHello, World!"
         },
         {
             "title": "Example 2",
             "description": "Using div with class and id attributes.",
-            "code": "<div class='container' id='mainContainer'>Content goes here</div>"
+            "code": "<div class='container' id='mainContainer'>Content goes here</div>",
+            "layoutsCode": "/div container @id=\"mainContainer\"\n\tContent goes here"
         }
     ]
 }

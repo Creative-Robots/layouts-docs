@@ -29,7 +29,7 @@
             ]
         },
         {
-            "name": "strokeWidth",
+            "name": "stroke-width",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -38,7 +38,7 @@
             ]
         },
         {
-            "name": "strokeLinecap",
+            "name": "stroke-linecap",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -59,12 +59,14 @@
         {
             "title": "Basic Example",
             "description": "Creating a polyline with specific points",
-            "code": "<svg>\n  <polyline points='100,100 150,200 200,100' />\n</svg>"
+            "code": "<svg>\n  <polyline points='100,100 150,200 200,100' />\n</svg>",
+            "layoutsCode": "/svg\n\t/polyline @points=\"100,100 150,200 200,100\""
         },
         {
             "title": "Styled Polyline Example",
             "description": "Styling a polyline with different stroke and fill colors",
-            "code": "<svg>\n  <polyline points='50,50 100,100 150,50' fill='none' stroke='blue' strokeWidth='2' />\n</svg>"
+            "code": "<svg>\n  <polyline points='50,50 100,100 150,50' fill='none' stroke='blue' stroke-width='2' />\n</svg>",
+            "layoutsCode": "/svg\n\t/polyline @fill=\"none\" @points=\"50,50 100,100 150,50\" @stroke=\"blue\" @stroke-width={2}"
         }
     ]
 }

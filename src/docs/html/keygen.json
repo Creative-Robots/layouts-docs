@@ -67,12 +67,14 @@
         {
             "title": "Example 1",
             "description": "Basic usage of the keygen element",
-            "code": "<keygen name='mykey' keytype='rsa'>"
+            "code": "<keygen name='mykey' keytype='rsa'>",
+            "layoutsCode": "/keygen @keytype=\"rsa\" @name=\"mykey\""
         },
         {
             "title": "Example 2",
             "description": "Using autofocus attribute to focus on the element when the page loads",
-            "code": "<keygen name='mykey' autofocus>"
+            "code": "<keygen name='mykey' autofocus>",
+            "layoutsCode": "/keygen @autofocus=\"\" @name=\"mykey\""
         }
     ]
 }

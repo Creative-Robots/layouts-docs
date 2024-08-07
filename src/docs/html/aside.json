@@ -51,12 +51,14 @@
         {
             "title": "Basic Example",
             "description": "An example of using the <aside> tag.",
-            "code": "<aside>\n   <h2>Related Links</h2>\n   <a href=\"#\">Link 1</a>\n   <a href=\"#\">Link 2</a>\n</aside>"
+            "code": "<aside>\n   <h2>Related Links</h2>\n   <a href=\"#\">Link 1</a>\n   <a href=\"#\">Link 2</a>\n</aside>",
+            "layoutsCode": "/aside\n\t/h2\n\t\tRelated Links\n\t/a @href=\"#\"\n\t\tLink 1\n\t/a @href=\"#\"\n\t\tLink 2"
         },
         {
             "title": "Example with Alignment and Styling",
             "description": "An example of using alignment and styling with the <aside> tag.",
-            "code": "<aside align=\"left\" style=\"background-color: lightgray;\">\n   <h2>Important Note</h2>\n   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</aside>"
+            "code": "<aside align=\"left\" style=\"background-color: lightgray;\">\n   <h2>Important Note</h2>\n   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>\n</aside>",
+            "layoutsCode": "/aside @align=\"left\" @style=\"background-color: lightgray;\"\n\t/h2\n\t\tImportant Note\n\t/p\n\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit."
         }
     ]
 }

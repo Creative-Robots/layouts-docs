@@ -1,0 +1,38 @@
+{
+    "tag": "view",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "View",
+    "shortDescriptionOfTheTag": "A container for organizing content in HTML.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "A basic example of using the view tag.",
+            "code": "<view>Content goes here</view>"
+        },
+        {
+            "title": "Example with ID",
+            "description": "An example of using the ID attribute with the view tag.",
+            "code": "<view id=\"container\">Content goes here</view>"
+        }
+    ]
+}

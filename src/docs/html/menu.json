@@ -18,12 +18,14 @@
         {
             "title": "Basic Menu",
             "description": "Create a basic menu with multiple options.",
-            "code": "<menu type='toolbar'>\n  <li><button>New</button></li>\n  <li><button>Open</button></li>\n</menu>"
+            "code": "<menu type='toolbar'>\n  <li><button>New</button></li>\n  <li><button>Open</button></li>\n</menu>",
+            "layoutsCode": "/menu @type=\"toolbar\"\n\t/li\n\t\t/button\n\t\t\tNew\n\t/li\n\t\t/button\n\t\t\tOpen"
         },
         {
             "title": "Context Menu",
             "description": "Create a context menu with right-click functionality.",
-            "code": "<menu type='context'>\n  <li><button>Cut</button></li>\n  <li><button>Copy</button></li>\n</menu>"
+            "code": "<menu type='context'>\n  <li><button>Cut</button></li>\n  <li><button>Copy</button></li>\n</menu>",
+            "layoutsCode": "/menu @type=\"context\"\n\t/li\n\t\t/button\n\t\t\tCut\n\t/li\n\t\t/button\n\t\t\tCopy"
         }
     ]
 }

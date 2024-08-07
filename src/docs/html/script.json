@@ -55,12 +55,14 @@
         {
             "title": "External Script",
             "description": "Include an external JavaScript file in your HTML document",
-            "code": "<script src=\"example.js\"></script>"
+            "code": "<script src=\"example.js\"></script>",
+            "layoutsCode": ""
         },
         {
             "title": "Inline Script",
             "description": "Write JavaScript directly within the HTML document",
-            "code": "<script type=\"text/javascript\">\n    alert('Hello, World!');\n</script>"
+            "code": "<script type=\"text/javascript\">\n    alert('Hello, World!');\n</script>",
+            "layoutsCode": ""
         }
     ]
 }

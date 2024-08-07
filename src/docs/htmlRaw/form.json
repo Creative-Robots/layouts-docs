@@ -1,0 +1,71 @@
+{
+    "tag": "form",
+    "allowedAttributes": [
+        {
+            "name": "action",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "method",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "get",
+                        "post"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "enctype",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "application/x-www-form-urlencoded",
+                        "multipart/form-data",
+                        "text/plain"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "target",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "_self",
+                        "_blank",
+                        "_parent",
+                        "_top"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Form Element",
+    "shortDescriptionOfTheTag": "Defines an interactive form for user input",
+    "usageExamples": [
+        {
+            "title": "Basic Form Example",
+            "description": "A simple form that submits data to a specified URL",
+            "code": "<form action=\"/submit\" method=\"post\">\n  <input type=\"text\" name=\"username\" />\n  <button type=\"submit\">Submit</button>\n</form>"
+        },
+        {
+            "title": "Form with File Upload Example",
+            "description": "A form that allows users to upload a file",
+            "code": "<form action=\"/upload\" method=\"post\" enctype=\"multipart/form-data\">\n  <input type=\"file\" name=\"file\" />\n  <button type=\"submit\">Upload</button>\n</form>"
+        }
+    ]
+}

@@ -31,12 +31,14 @@
         {
             "title": "Basic Example",
             "description": "Using the time tag to display a specific date and time.",
-            "code": "<time datetime='2022-01-01T12:00:00'>January 1, 2022</time>"
+            "code": "<time datetime='2022-01-01T12:00:00'>January 1, 2022</time>",
+            "layoutsCode": "/time @datetime=\"2022-01-01T12:00:00\"\n\tJanuary 1, 2022"
         },
         {
             "title": "With pubdate Attribute",
             "description": "Using the pubdate attribute to indicate that the time element is the publication date of the surrounding text.",
-            "code": "<p>Posted on <time datetime='2022-01-01' pubdate='true'>January 1, 2022</time></p>"
+            "code": "<p>Posted on <time datetime='2022-01-01' pubdate='true'>January 1, 2022</time></p>",
+            "layoutsCode": "/p\n\tPosted on \n\t/time @datetime=\"2022-01-01\" @pubdate\n\t\tJanuary 1, 2022"
         }
     ]
 }

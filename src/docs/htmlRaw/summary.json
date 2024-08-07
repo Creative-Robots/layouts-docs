@@ -1,0 +1,14 @@
+{
+    "tag": "summary",
+    "allowedAttributes": [],
+    "canHaveChildren": true,
+    "title": "summary",
+    "shortDescriptionOfTheTag": "The summary element represents a summary, caption, or legend for the content of its parent details element.",
+    "usageExamples": [
+        {
+            "title": "Example",
+            "description": "Using summary tag with details tag",
+            "code": "<details>\n  <summary>Click me to see more</summary>\n  <p>Additional information.</p>\n</details>"
+        }
+    ]
+}

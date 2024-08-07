@@ -36,12 +36,14 @@
         {
             "title": "Basic Switch",
             "description": "A basic example of a switch component.",
-            "code": "<switch></switch>"
+            "code": "<switch></switch>",
+            "layoutsCode": "/switch"
         },
         {
             "title": "Disabled Switch",
             "description": "An example of a disabled switch component.",
-            "code": "<switch disabled></switch>"
+            "code": "<switch disabled></switch>",
+            "layoutsCode": "/switch @disabled=\"\""
         }
     ]
 }

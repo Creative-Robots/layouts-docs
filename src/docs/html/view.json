@@ -27,12 +27,14 @@
         {
             "title": "Basic Example",
             "description": "A basic example of using the view tag.",
-            "code": "<view>Content goes here</view>"
+            "code": "<view>Content goes here</view>",
+            "layoutsCode": "/view\n\tContent goes here"
         },
         {
             "title": "Example with ID",
             "description": "An example of using the ID attribute with the view tag.",
-            "code": "<view id=\"container\">Content goes here</view>"
+            "code": "<view id=\"container\">Content goes here</view>",
+            "layoutsCode": "/view @id=\"container\"\n\tContent goes here"
         }
     ]
 }

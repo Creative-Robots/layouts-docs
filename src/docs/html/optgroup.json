@@ -27,12 +27,14 @@
         {
             "title": "Example 1",
             "description": "Create a dropdown list with two groups of options",
-            "code": "<select>\n  <optgroup label='Group 1'>\n    <option value='1'>Option 1.1</option>\n    <option value='2'>Option 1.2</option>\n  </optgroup>\n  <optgroup label='Group 2'>\n    <option value='3'>Option 2.1</option>\n    <option value='4'>Option 2.2</option>\n  </optgroup>\n</select>"
+            "code": "<select>\n  <optgroup label='Group 1'>\n    <option value='1'>Option 1.1</option>\n    <option value='2'>Option 1.2</option>\n  </optgroup>\n  <optgroup label='Group 2'>\n    <option value='3'>Option 2.1</option>\n    <option value='4'>Option 2.2</option>\n  </optgroup>\n</select>",
+            "layoutsCode": "/select\n\t/optgroup @label=\"Group 1\"\n\t\t/option @value={1}\n\t\t\tOption 1.1\n\t\t/option @value={2}\n\t\t\tOption 1.2\n\t/optgroup @label=\"Group 2\"\n\t\t/option @value={3}\n\t\t\tOption 2.1\n\t\t/option @value={4}\n\t\t\tOption 2.2"
         },
         {
             "title": "Example 2",
             "description": "Using disabled attribute for an optgroup",
-            "code": "<select>\n  <optgroup label='Group 1' disabled='true'>\n    <option value='1'>Option 1</option>\n  </optgroup>\n</select>"
+            "code": "<select>\n  <optgroup label='Group 1' disabled='true'>\n    <option value='1'>Option 1</option>\n  </optgroup>\n</select>",
+            "layoutsCode": "/select\n\t/optgroup @disabled @label=\"Group 1\"\n\t\t/option @value={1}\n\t\t\tOption 1"
         }
     ]
 }

@@ -54,12 +54,14 @@
         {
             "title": "Basic Audio Element",
             "description": "Embedding audio with controls.",
-            "code": "<audio controls>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>"
+            "code": "<audio controls>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>",
+            "layoutsCode": "/audio @controls=\"\"\n\t/source @src=\"audioFile.mp3\" @type=\"audio/mpeg\"\n  Your browser does not support the audio tag."
         },
         {
             "title": "Autoplay Audio",
             "description": "Embedding audio that automatically plays when loaded.",
-            "code": "<audio autoplay>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>"
+            "code": "<audio autoplay>\n  <source src=\"audioFile.mp3\" type=\"audio/mpeg\">\n  Your browser does not support the audio tag.\n</audio>",
+            "layoutsCode": "/audio @autoplay=\"\"\n\t/source @src=\"audioFile.mp3\" @type=\"audio/mpeg\"\n  Your browser does not support the audio tag."
         }
     ]
 }

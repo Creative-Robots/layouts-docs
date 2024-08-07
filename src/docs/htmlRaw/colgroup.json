@@ -1,0 +1,24 @@
+{
+    "tag": "colgroup",
+    "allowedAttributes": [
+        {
+            "name": "span",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "colgroup",
+    "shortDescriptionOfTheTag": "Defines a group of columns in a table to be applied together.",
+    "usageExamples": [
+        {
+            "title": "Basic colgroup example",
+            "description": "Creating a colgroup element with specific span attribute.",
+            "code": "<colgroup span=\"2\">\n  <col>\n  <col>\n</colgroup>"
+        }
+    ]
+}

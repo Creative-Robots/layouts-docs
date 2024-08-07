@@ -1,0 +1,47 @@
+{
+    "tag": "section",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Section",
+    "shortDescriptionOfTheTag": "The <section> tag defines sections in a document, such as chapters, headers, footers, or any other section of the document.",
+    "usageExamples": [
+        {
+            "title": "Basic Example",
+            "description": "Create a simple section element with some text content.",
+            "code": "<section>\n  <h2>Section Title</h2>\n  <p>This is a section of the document.</p>\n</section>"
+        },
+        {
+            "title": "Section with Class",
+            "description": "Add a class to the section element for custom styling.",
+            "code": "<section class=\"custom-section\">\n  <h2>Custom Section</h2>\n  <p>This section has a custom style applied.</p>\n</section>"
+        }
+    ]
+}

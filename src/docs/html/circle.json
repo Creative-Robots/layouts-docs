@@ -47,7 +47,7 @@
             ]
         },
         {
-            "name": "strokeWidth",
+            "name": "stroke-width",
             "isRequired": false,
             "acceptedValueTypes": [
                 {
@@ -63,12 +63,14 @@
         {
             "title": "Example 1",
             "description": "Creating a red circle with a radius of 50 at coordinates (100, 100).",
-            "code": "<svg>\n  <circle cx='100' cy='100' r='50' fill='red' />\n</svg>"
+            "code": "<svg>\n  <circle cx='100' cy='100' r='50' fill='red' />\n</svg>",
+            "layoutsCode": "/svg\n\t/circle @cx={100} @cy={100} @fill=\"red\" @r={50}"
         },
         {
             "title": "Example 2",
             "description": "Creating a blue circle border with a radius of 30 at coordinates (50, 50).",
-            "code": "<svg>\n  <circle cx='50' cy='50' r='30' fill='none' stroke='blue' strokeWidth='2' />\n</svg>"
+            "code": "<svg>\n  <circle cx='50' cy='50' r='30' fill='none' stroke='blue' stroke-width='2' />\n</svg>",
+            "layoutsCode": "/svg\n\t/circle @cx={50} @cy={50} @fill=\"none\" @r={30} @stroke=\"blue\" @stroke-width={2}"
         }
     ]
 }

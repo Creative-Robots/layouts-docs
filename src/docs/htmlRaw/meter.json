@@ -1,0 +1,74 @@
+{
+    "tag": "meter",
+    "allowedAttributes": [
+        {
+            "name": "value",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "min",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "max",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "low",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "high",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "optimum",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "Meter Element",
+    "shortDescriptionOfTheTag": "The <meter> element represents a scalar measurement within a known range.",
+    "usageExamples": [
+        {
+            "title": "Basic Usage",
+            "description": "A simple example showing the usage of the <meter> element.",
+            "code": "<meter value=\"50\" min=\"0\" max=\"100\">50%</meter>"
+        },
+        {
+            "title": "Custom Styling",
+            "description": "An example with custom styling applied to the <meter> element.",
+            "code": "<meter value=\"75\" min=\"0\" max=\"100\" style=\"color: blue;\">75%</meter>"
+        }
+    ]
+}

@@ -8,7 +8,8 @@
         {
             "title": "Basic Example",
             "description": "Display ruby annotations where the browser supports it:",
-            "code": "<ruby>\n  Base text <rb>base</rb>\n  <rp>(</rp><rt>ruby annotation</rt><rp>)</rp>\n</ruby>"
+            "code": "<ruby>\n  Base text <rb>base</rb>\n  <rp>(</rp><rt>ruby annotation</rt><rp>)</rp>\n</ruby>",
+            "layoutsCode": "/ruby\n  Base text \n\t/rb\n\t\tbase\n\t/rp\n\t\t(\n\t/rt\n\t\truby annotation\n\t/rp\n\t\t)"
         }
     ]
 }

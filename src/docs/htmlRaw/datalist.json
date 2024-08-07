@@ -1,0 +1,24 @@
+{
+    "tag": "datalist",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "DataList",
+    "shortDescriptionOfTheTag": "The <datalist> tag specifies a list of pre-defined options for an <input> element.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Create a datalist with options for an input field",
+            "code": "<input list=\"browsers\" name=\"browser\">\n<datalist id=\"browsers\">\n  <option value=\"Chrome\">\n  <option value=\"Firefox\">\n  <option value=\"Safari\">\n</datalist>"
+        }
+    ]
+}

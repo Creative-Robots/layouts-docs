@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "A symbol with an ID of 'mySymbol' and a viewBox of '0 0 100 100'.",
-            "code": "<symbol id='mySymbol' viewBox='0 0 100 100'>...</symbol>"
+            "code": "<symbol id='mySymbol' viewBox='0 0 100 100'>...</symbol>",
+            "layoutsCode": "/symbol @id=\"mySymbol\" @viewbox=\"0 0 100 100\"\n\t..."
         },
         {
             "title": "Example 2",
             "description": "A symbol with an ID of 'anotherSymbol' and a preserve aspect ratio value of 'xMinYMin'.",
-            "code": "<symbol id='anotherSymbol' preserveAspectRatio='xMinYMin'>...</symbol>"
+            "code": "<symbol id='anotherSymbol' preserveAspectRatio='xMinYMin'>...</symbol>",
+            "layoutsCode": "/symbol @id=\"anotherSymbol\" @preserveaspectratio=\"xMinYMin\"\n\t..."
         }
     ]
 }

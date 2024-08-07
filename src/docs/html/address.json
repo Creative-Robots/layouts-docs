@@ -36,7 +36,8 @@
         {
             "title": "Example of the <address> tag",
             "description": "This example uses the <address> tag to specify the contact information for the author of the document",
-            "code": "<address>\n  Written by <a href='mailto:example@example.com'>John Doe</a>.\n  Visit us at:\n  Example.com\n  Box 564, Disneyland\n  USA\n</address>"
+            "code": "<address>\n  Written by <a href='mailto:example@example.com'>John Doe</a>.\n  Visit us at:\n  Example.com\n  Box 564, Disneyland\n  USA\n</address>",
+            "layoutsCode": "/address\n  Written by \n\t/a @href=\"mailto:example@example.com\"\n\t\tJohn Doe\n\t.\n  Visit us at:\n  Example.com\n  Box 564, Disneyland\n  USA"
         }
     ]
 }

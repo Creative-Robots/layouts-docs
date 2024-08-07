@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "This example shows how to use the <b> tag to make text bold:",
-            "code": "<p>This is <b>bold</b> text.</p>"
+            "code": "<p>This is <b>bold</b> text.</p>",
+            "layoutsCode": "/p\n\tThis is \n\t/b\n\t\tbold\n\t text."
         },
         {
             "title": "Example 2",
             "description": "Another example of using the <b> tag within a heading:",
-            "code": "<h1>This is a <b>bold</b> heading</h1>"
+            "code": "<h1>This is a <b>bold</b> heading</h1>",
+            "layoutsCode": "/h1\n\tThis is a \n\t/b\n\t\tbold\n\t heading"
         }
     ]
 }

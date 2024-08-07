@@ -40,12 +40,14 @@
         {
             "title": "Internal Style Sheet",
             "description": "Define CSS styles within the HTML document.",
-            "code": "<style>\n  body {\n    background-color: lightblue;\n  }\n</style>"
+            "code": "<style>\n  body {\n    background-color: lightblue;\n  }\n</style>",
+            "layoutsCode": ""
         },
         {
             "title": "External Style Sheet",
             "description": "Link to an external CSS file to be applied to the HTML document.",
-            "code": "<style type=\"text/css\">\n  @import url('styles.css');\n</style>"
+            "code": "<style type=\"text/css\">\n  @import url('styles.css');\n</style>",
+            "layoutsCode": ""
         }
     ]
 }

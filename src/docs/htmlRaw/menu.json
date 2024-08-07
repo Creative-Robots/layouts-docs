@@ -1,0 +1,29 @@
+{
+    "tag": "menu",
+    "allowedAttributes": [
+        {
+            "name": "type",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Menu",
+    "shortDescriptionOfTheTag": "Represents a group of commands that a user can perform.",
+    "usageExamples": [
+        {
+            "title": "Basic Menu",
+            "description": "Create a basic menu with multiple options.",
+            "code": "<menu type='toolbar'>\n  <li><button>New</button></li>\n  <li><button>Open</button></li>\n</menu>"
+        },
+        {
+            "title": "Context Menu",
+            "description": "Create a context menu with right-click functionality.",
+            "code": "<menu type='context'>\n  <li><button>Cut</button></li>\n  <li><button>Copy</button></li>\n</menu>"
+        }
+    ]
+}

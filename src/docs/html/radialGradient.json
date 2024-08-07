@@ -63,12 +63,14 @@
         {
             "title": "Basic Example",
             "description": "Create a simple radial gradient.",
-            "code": "<radialGradient id=\"grad1\">\n  <stop offset=\"0%\" style=\"stop-color:rgb(255,255,255);stop-opacity:0\" />\n  <stop offset=\"100%\" style=\"stop-color:rgb(0,0,255);stop-opacity:1\" />\n</radialGradient>"
+            "code": "<radialGradient id=\"grad1\">\n  <stop offset=\"0%\" style=\"stop-color:rgb(255,255,255);stop-opacity:0\" />\n  <stop offset=\"100%\" style=\"stop-color:rgb(0,0,255);stop-opacity:1\" />\n</radialGradient>",
+            "layoutsCode": "/radialgradient @id=\"grad1\"\n\t/stop @offset=\"0%\" @style=\"stop-color:rgb(255,255,255);stop-opacity:0\"\n\t\t/stop @offset=\"100%\" @style=\"stop-color:rgb(0,0,255);stop-opacity:1\""
         },
         {
             "title": "With Attributes",
             "description": "Define a radial gradient with specific attributes.",
-            "code": "<radialGradient id=\"grad2\" cx=\"30%\" cy=\"30%\" r=\"30%\" fx=\"50%\" fy=\"50%\">\n  <stop offset=\"0%\" style=\"stop-color:rgb(255,255,255);stop-opacity:0\" />\n  <stop offset=\"100%\" style=\"stop-color:rgb(0,0,255);stop-opacity:1\" />\n</radialGradient>"
+            "code": "<radialGradient id=\"grad2\" cx=\"30%\" cy=\"30%\" r=\"30%\" fx=\"50%\" fy=\"50%\">\n  <stop offset=\"0%\" style=\"stop-color:rgb(255,255,255);stop-opacity:0\" />\n  <stop offset=\"100%\" style=\"stop-color:rgb(0,0,255);stop-opacity:1\" />\n</radialGradient>",
+            "layoutsCode": "/radialgradient @cx=\"30%\" @cy=\"30%\" @fx=\"50%\" @fy=\"50%\" @id=\"grad2\" @r=\"30%\"\n\t/stop @offset=\"0%\" @style=\"stop-color:rgb(255,255,255);stop-opacity:0\"\n\t\t/stop @offset=\"100%\" @style=\"stop-color:rgb(0,0,255);stop-opacity:1\""
         }
     ]
 }

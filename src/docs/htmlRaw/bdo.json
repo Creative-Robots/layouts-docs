@@ -1,0 +1,33 @@
+{
+    "tag": "bdo",
+    "allowedAttributes": [
+        {
+            "name": "dir",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "ltr",
+                        "rtl"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "bdo",
+    "shortDescriptionOfTheTag": "The bdo element overrides the current text direction.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Setting text direction to right-to-left",
+            "code": "<bdo dir=\"rtl\">Text content goes here</bdo>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Setting text direction to left-to-right",
+            "code": "<bdo dir=\"ltr\">Text content goes here</bdo>"
+        }
+    ]
+}

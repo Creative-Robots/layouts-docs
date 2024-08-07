@@ -12,14 +12,16 @@ async function getMdxData(filename: string){
   if (!filename) return null;
 
   // Trouver le fichier correspondant à filename.mdx dans tous les sous-dossiers à partir de src/docs/
-  const content = findElementByParsedName(files, filename);
+  const Dta = findElementByParsedName(files, filename);
+  if (!Dta) return null;
 
-  if (!content) return null;
+  const {content, entries} = Dta;
 
   // Lire le contenu du fichier MDX
   const mdxSource = await serialize(content.MdxContent);
   
   return {
+    entries,
     mdxSource,
     frontMatter: content.MdxFrontMatter
   }

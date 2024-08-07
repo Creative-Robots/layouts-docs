@@ -8,12 +8,14 @@
         {
             "title": "Basic Title Example",
             "description": "Setting a title for the document.",
-            "code": "<title>Document Title</title>"
+            "code": "<title>Document Title</title>",
+            "layoutsCode": ""
         },
         {
             "title": "Nested Title Example",
             "description": "Using a title tag within the head tag.",
-            "code": "<head>\n  <title>Document Title</title>\n</head>"
+            "code": "<head>\n  <title>Document Title</title>\n</head>",
+            "layoutsCode": ""
         }
     ]
 }

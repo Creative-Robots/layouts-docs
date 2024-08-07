@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using <mark> to highlight text",
-            "code": "<p>This is a <mark>highlighted</mark> text.</p>"
+            "code": "<p>This is a <mark>highlighted</mark> text.</p>",
+            "layoutsCode": "/p\n\tThis is a \n\t/mark\n\t\thighlighted\n\t text."
         },
         {
             "title": "Example 2",
             "description": "Using <mark> inside a heading",
-            "code": "<h1>This is <mark>important</mark> heading</h1>"
+            "code": "<h1>This is <mark>important</mark> heading</h1>",
+            "layoutsCode": "/h1\n\tThis is \n\t/mark\n\t\timportant\n\t heading"
         }
     ]
 }

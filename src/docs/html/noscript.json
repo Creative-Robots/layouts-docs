@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Usage of noscript with text content inside",
-            "code": "<noscript>This website requires JavaScript to run.</noscript>"
+            "code": "<noscript>This website requires JavaScript to run.</noscript>",
+            "layoutsCode": ""
         },
         {
             "title": "Example 2",
             "description": "Usage of noscript with other HTML tags inside",
-            "code": "<noscript><p>This website requires JavaScript to run.</p></noscript>"
+            "code": "<noscript><p>This website requires JavaScript to run.</p></noscript>",
+            "layoutsCode": ""
         }
     ]
 }

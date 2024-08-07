@@ -1,0 +1,38 @@
+{
+    "tag": "template",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Template",
+    "shortDescriptionOfTheTag": "Defines a template that can be cloned and inserted into the document.",
+    "usageExamples": [
+        {
+            "title": "Basic Template Example",
+            "description": "Create a simple template that can be used multiple times.",
+            "code": "<template id='myTemplate'><p>Hello World!</p></template>"
+        },
+        {
+            "title": "Named Template Example",
+            "description": "Define a template with a specific name.",
+            "code": "<template id='personTemplate'><p>{{name}}, {{age}} years old</p></template>"
+        }
+    ]
+}

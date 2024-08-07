@@ -36,12 +36,14 @@
         {
             "title": "Basic Example",
             "description": "Create a simple section element with some text content.",
-            "code": "<section>\n  <h2>Section Title</h2>\n  <p>This is a section of the document.</p>\n</section>"
+            "code": "<section>\n  <h2>Section Title</h2>\n  <p>This is a section of the document.</p>\n</section>",
+            "layoutsCode": "/section\n\t/h2\n\t\tSection Title\n\t/p\n\t\tThis is a section of the document."
         },
         {
             "title": "Section with Class",
             "description": "Add a class to the section element for custom styling.",
-            "code": "<section class=\"custom-section\">\n  <h2>Custom Section</h2>\n  <p>This section has a custom style applied.</p>\n</section>"
+            "code": "<section class=\"custom-section\">\n  <h2>Custom Section</h2>\n  <p>This section has a custom style applied.</p>\n</section>",
+            "layoutsCode": "/section .custom-section\n\t/h2\n\t\tCustom Section\n\t/p\n\t\tThis section has a custom style applied."
         }
     ]
 }

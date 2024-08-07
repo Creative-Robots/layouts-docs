@@ -80,12 +80,14 @@
         {
             "title": "Example 1",
             "description": "Usage of feComposite with 'over' operator",
-            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='over' />"
+            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='over' />",
+            "layoutsCode": "/fecomposite @in=\"SourceGraphic\" @in2=\"SourceAlpha\" @operator=\"over\""
         },
         {
             "title": "Example 2",
             "description": "Usage of feComposite with 'atop' and custom values for k1, k2, k3, k4",
-            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='atop' k1='1' k2='0' k3='0.5' k4='1' />"
+            "code": "<feComposite in='SourceGraphic' in2='SourceAlpha' operator='atop' k1='1' k2='0' k3='0.5' k4='1' />",
+            "layoutsCode": "/fecomposite @in=\"SourceGraphic\" @in2=\"SourceAlpha\" @k1={1} @k2={0} @k3={0.5} @k4={1} @operator=\"atop\""
         }
     ]
 }

@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Code snippet with CSS styling.",
-            "code": "<code style='color: blue;'>var x = 5;</code>"
+            "code": "<code style='color: blue;'>var x = 5;</code>",
+            "layoutsCode": "/code @style=\"color: blue;\"\n\tvar x = 5;"
         },
         {
             "title": "Example 2",
             "description": "Code snippet with a class specified.",
-            "code": "<code class='inline-code'>function hello() { return 'world'; }</code>"
+            "code": "<code class='inline-code'>function hello() { return 'world'; }</code>",
+            "layoutsCode": "/code .inline-code\n\tfunction hello() { return 'world'; }"
         }
     ]
 }

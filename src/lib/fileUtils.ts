@@ -8,6 +8,10 @@ import essentials from '../docs/essential.json'
 export type FileElementType = {
     name: string;
     parsedName: string;
+    entries?: {
+        entry: string;
+        level: number;
+    }[];
     content?: {
         MdxContent: string;
         MdxFrontMatter: any;
@@ -68,7 +72,7 @@ function parseJson(json: any): FileElementType[] {
     // store in the store
     Object.keys(json).forEach(key => {
         if (json[key].content) {
-            store.push({name: json[key].name, parsedName: json[key].parsedName, content: json[key].content});
+            store.push({name: json[key].name, parsedName: json[key].parsedName, content: json[key].content, entries: json[key].entries});
         } else {
             store.push({name: json[key].name, parsedName: json[key].parsedName, folder: parseJson(json[key].folder)});
         }
@@ -77,10 +81,22 @@ function parseJson(json: any): FileElementType[] {
     return sortAndRemoveLeadingNumbers(store);
 }
 
-export function findElementByParsedName(root: FileElementType[], searchString: string): { MdxContent: string; MdxFrontMatter: any; } | null {
+export function findElementByParsedName(root: FileElementType[], searchString: string) : {
+    entries: {
+        entry: string;
+        level: number;
+    }[] | undefined;
+    content: {
+        MdxContent: string;
+        MdxFrontMatter: any;
+    };
+} | null {
     for (let element of root) {
         if (element.parsedName === searchString && element.content) {
-            return element.content;
+            return {
+                entries: element.entries,
+                content: element.content,
+            };
         }
         if (element.folder && element.folder.length > 0) {
             const foundName = findElementByParsedName(element.folder, searchString);

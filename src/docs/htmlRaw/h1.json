@@ -1,0 +1,71 @@
+{
+    "tag": "h1",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "left",
+                        "center",
+                        "right",
+                        "justify"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "title",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "h1",
+    "shortDescriptionOfTheTag": "The h1 tag is used to define the most important heading in a document.",
+    "usageExamples": [
+        {
+            "title": "Basic h1 Example",
+            "description": "A simple example of using h1 tag",
+            "code": "<h1>Hello World</h1>"
+        },
+        {
+            "title": "h1 with class attribute",
+            "description": "Example of using h1 tag with class attribute",
+            "code": "<h1 class=\"important\">Important Heading</h1>"
+        }
+    ]
+}

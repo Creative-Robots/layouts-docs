@@ -18,7 +18,8 @@
         {
             "title": "Basic colgroup example",
             "description": "Creating a colgroup element with specific span attribute.",
-            "code": "<colgroup span=\"2\">\n  <col>\n  <col>\n</colgroup>"
+            "code": "<colgroup span=\"2\">\n  <col>\n  <col>\n</colgroup>",
+            "layoutsCode": ""
         }
     ]
 }

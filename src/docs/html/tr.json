@@ -8,12 +8,14 @@
         {
             "title": "Basic Example",
             "description": "Creating a simple table row",
-            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td></tr></table>"
+            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td></tr></table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 1, Cell 1\n\t\t\t/td\n\t\t\t\tRow 1, Cell 2"
         },
         {
             "title": "Nested Example",
             "description": "Creating a nested table row",
-            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td><tr><table>"
+            "code": "<table><tr><td>Row 1, Cell 1</td><td>Row 1, Cell 2</td><tr><table>",
+            "layoutsCode": "/table\n\t/tbody\n\t\t/tr\n\t\t\t/td\n\t\t\t\tRow 1, Cell 1\n\t\t\t/td\n\t\t\t\tRow 1, Cell 2\n\t\t/tr\n/table"
         }
     ]
 }

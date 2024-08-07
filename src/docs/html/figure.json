@@ -45,12 +45,14 @@
         {
             "title": "Example 1",
             "description": "A simple usage of the figure tag",
-            "code": "<figure>\n  <img src=\"image.jpg\" alt=\"Description\">\n  <figcaption>Description of the image</figcaption>\n</figure>"
+            "code": "<figure>\n  <img src=\"image.jpg\" alt=\"Description\">\n  <figcaption>Description of the image</figcaption>\n</figure>",
+            "layoutsCode": "/figure\n\t/img @alt=\"Description\" @src=\"image.jpg\"\n\t/figcaption\n\t\tDescription of the image"
         },
         {
             "title": "Example 2",
             "description": "Using figure with a code snippet",
-            "code": "<figure>\n  <pre><code>const greeting = 'Hello World';\nconsole.log(greeting);</code></pre>\n  <figcaption>Simple code example</figcaption>\n</figure>"
+            "code": "<figure>\n  <pre><code>const greeting = 'Hello World';\nconsole.log(greeting);</code></pre>\n  <figcaption>Simple code example</figcaption>\n</figure>",
+            "layoutsCode": "/figure\n\t/pre\n\t\t/code\n\t\t\tconst greeting = 'Hello World';\nconsole.log(greeting);\n\t/figcaption\n\t\tSimple code example"
         }
     ]
 }

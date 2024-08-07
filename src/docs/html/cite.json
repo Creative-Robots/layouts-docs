@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "Using <cite> tag to mark up a title",
-            "code": "<p>I read the book <cite>The Great Gatsby</cite> last week.</p>"
+            "code": "<p>I read the book <cite>The Great Gatsby</cite> last week.</p>",
+            "layoutsCode": "/p\n\tI read the book \n\t/cite\n\t\tThe Great Gatsby\n\t last week."
         },
         {
             "title": "Example 2",
             "description": "Using <cite> tag for a song title",
-            "code": "<p>Have you heard the song <cite>Bohemian Rhapsody</cite> by Queen?</p>"
+            "code": "<p>Have you heard the song <cite>Bohemian Rhapsody</cite> by Queen?</p>",
+            "layoutsCode": "/p\n\tHave you heard the song \n\t/cite\n\t\tBohemian Rhapsody\n\t by Queen?"
         }
     ]
 }

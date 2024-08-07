@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Define a variable using the <var> tag",
-            "code": "<p>The value of <var>x</var> is 10.</p>"
+            "code": "<p>The value of <var>x</var> is 10.</p>",
+            "layoutsCode": "/p\n\tThe value of \n\t/var\n\t\tx\n\t is 10."
         },
         {
             "title": "Example 2",
             "description": "Use CSS to style a <var> element",
-            "code": "var { font-style: italic; color: blue; }"
+            "code": "var { font-style: italic; color: blue; }",
+            "layoutsCode": "var { font-style: italic; color: blue; }\n"
         }
     ]
 }

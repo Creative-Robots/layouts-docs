@@ -8,12 +8,14 @@
         {
             "title": "Example 1",
             "description": "This example demonstrates the usage of the <em> tag with children elements.",
-            "code": "<em>This is emphasized text</em>"
+            "code": "<em>This is emphasized text</em>",
+            "layoutsCode": "/em\n\tThis is emphasized text"
         },
         {
             "title": "Example 2",
             "description": "This example shows how to apply italic styling to a section of text using the <em> tag.",
-            "code": "<p>This is normal text <em>This is emphasized text</em></p>"
+            "code": "<p>This is normal text <em>This is emphasized text</em></p>",
+            "layoutsCode": "/p\n\tThis is normal text \n\t/em\n\t\tThis is emphasized text"
         }
     ]
 }

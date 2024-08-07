@@ -1,0 +1,47 @@
+{
+    "tag": "feDiffuseLighting",
+    "allowedAttributes": [
+        {
+            "name": "in",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "surfaceScale",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "diffuseConstant",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "feDiffuseLighting",
+    "shortDescriptionOfTheTag": "The feDiffuseLighting SVG filter primitive lights an image using the alpha channel as a bump map.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Applying feDiffuseLighting filter with specified surfaceScale.",
+            "code": "<feDiffuseLighting in=\"SourceGraphic\" surfaceScale=\"1.5\"></feDiffuseLighting>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Applying feDiffuseLighting filter without specifying optional attributes.",
+            "code": "<feDiffuseLighting in=\"SourceGraphic\"></feDiffuseLighting>"
+        }
+    ]
+}

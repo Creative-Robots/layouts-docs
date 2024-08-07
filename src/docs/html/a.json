@@ -51,17 +51,20 @@
         {
             "title": "Simple usage",
             "description": "A simple example of using the <a> tag to link to another webpage.",
-            "code": "<a href='https://www.example.com'>Visit Example.com</a>"
+            "code": "<a href='https://www.example.com'>Visit Example.com</a>",
+            "layoutsCode": "/a @href=\"https://www.example.com\"\n\tVisit Example.com"
         },
         {
             "title": "With target attribute",
             "description": "An example of using the <a> tag with the target attribute to open a link in a new tab.",
-            "code": "<a href='https://www.example.com' target='_blank'>Open Example.com in new tab</a>"
+            "code": "<a href='https://www.example.com' target='_blank'>Open Example.com in new tab</a>",
+            "layoutsCode": "/a @href=\"https://www.example.com\" @target=\"_blank\"\n\tOpen Example.com in new tab"
         },
         {
             "title": "With download attribute",
             "description": "An example of using the <a> tag with the download attribute to download a file.",
-            "code": "<a href='path/to/file.pdf' download>Download the file</a>"
+            "code": "<a href='path/to/file.pdf' download>Download the file</a>",
+            "layoutsCode": "/a @download=\"\" @href=\"path/to/file.pdf\"\n\tDownload the file"
         }
     ]
 }

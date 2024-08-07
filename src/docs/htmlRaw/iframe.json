@@ -1,0 +1,76 @@
+{
+    "tag": "iframe",
+    "allowedAttributes": [
+        {
+            "name": "src",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "url"
+                }
+            ]
+        },
+        {
+            "name": "width",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "frameborder",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "allow",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "text",
+                    "options": [
+                        "accelerometer",
+                        "autoplay",
+                        "camera",
+                        "encrypted-media",
+                        "geolocation",
+                        "microphone",
+                        "midi",
+                        "payment",
+                        "picture-in-picture"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": false,
+    "title": "iframe",
+    "shortDescriptionOfTheTag": "Displays a web page within a web page.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Embedding a YouTube video with iframe.",
+            "code": "<iframe src=\"https://www.youtube.com/embed/VIDEO_ID\" width=\"560\" height=\"315\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"></iframe>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Embedding an external website with iframe.",
+            "code": "<iframe src=\"https://www.example.com\" width=\"800\" height=\"600\"></iframe>"
+        }
+    ]
+}

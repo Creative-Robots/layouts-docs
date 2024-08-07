@@ -27,12 +27,14 @@
         {
             "title": "Italicize text",
             "description": "Use <i> tag to italicize text:",
-            "code": "<p>This is normal text. <i>This is italic text.</i></p>"
+            "code": "<p>This is normal text. <i>This is italic text.</i></p>",
+            "layoutsCode": "/p\n\tThis is normal text. \n\t/i\n\t\tThis is italic text."
         },
         {
             "title": "Styling with CSS",
             "description": "You can style the <i> tag using CSS:",
-            "code": "<style> i { font-style: italic; } </style>"
+            "code": "<style> i { font-style: italic; } </style>",
+            "layoutsCode": ""
         }
     ]
 }

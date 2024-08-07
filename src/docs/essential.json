@@ -6,6 +6,28 @@
       "help.mdx": {
         "name": "help",
         "parsedName": "help",
+        "entries": [
+          {
+            "entry": "Help & Support",
+            "level": 1
+          },
+          {
+            "entry": "Talk to an actual human",
+            "level": 1
+          },
+          {
+            "entry": "Contact support",
+            "level": 1
+          },
+          {
+            "entry": "Community",
+            "level": 1
+          },
+          {
+            "entry": "Contribute",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "You figured it out. Layouts is not a finished product polished at every angle.\nIt’s very raw, a bit buggy. We throwed it out into the wild to get feedback from people like you.\n\nWe’d love you to get in touch and tell us how you feel about it. \n\nHere are a few channels below on how to best reach out:\n\n## Talk to an actual human\n\n### Contact support\nReach out to Layouts.dev support by contacting us directly at help@creative-robots.ai or by clicking the _Contact Support_ button in app. \n\n**or**\n\nBy getting in touch with us on the dedicated _Contact Support_ link on our website.\n\nFor syntax questions, the best place to ask is the #syntax channel in our Discord community.\n\n### Community \nWe recommend joining the Layouts.dev Discord channel to meet other Layouts users and exchange tips/tricks. \nThe whole Layouts team lives in the Discord so it's a great place to ask questions. \n\nThe community is also a great place to report #bugs and share #product-feedback, ask for help while building and to get #help from the team or community.\n\n\n## Contribute \n\nIf you’re interested in contributing, we’d love to have you onboard!\nHere are a few ways:\n\n    **Giving feedback**:\n        - Feel free to contribute feedback on our Discord (see above for notes on where to best submit feedback).\n    \n    **Joining the team**: \n        - We’re a small company looking for funding, but we’ll certainly be hiring very soon. We’d love to get in touch beforehand so we can contact you. Feel free to send us an email at hi@creative-robots.ai\n   \n    **Investing**: \n        - Money (Capital at Risk): We believe in the power of community investing. We currently have an open SAFE in place for people wanting to invest. Anybody can send funds and you’ll be added to our SAFE as an investor. Works for contributions starting at $5k and beyond.\n        - Time: If you don’t have money (like a lot of us) but feel you could contribute time as a team member, we’re super open to talk. We can compensate you with a great pay rate in shares on our SAFE. It’s just shares, but hey, we’re aiming for the stars!",
           "MdxFrontMatter": {
@@ -23,6 +45,40 @@
       "01_What is Layouts.mdx": {
         "name": "01_What is Layouts",
         "parsedName": "what-is-layouts",
+        "entries": [
+          {
+            "entry": "What is Layouts",
+            "level": 1
+          },
+          {
+            "entry": "Why use Layouts.dev?",
+            "level": 1
+          },
+          {
+            "entry": "Concise syntax to help you focus on what matters",
+            "level": 1
+          },
+          {
+            "entry": "Live multi-screen, multi-preview of what youre building",
+            "level": 1
+          },
+          {
+            "entry": "Designed to be keyboard-first for fast iteration of Tailwind classes.",
+            "level": 1
+          },
+          {
+            "entry": "Tons of pre-made components to help you build complex UIs",
+            "level": 1
+          },
+          {
+            "entry": "Basically, less context switching all over the place",
+            "level": 1
+          },
+          {
+            "entry": "Helpful Links",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "\r\n<img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/hero-graphic-UI.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/hero-graphic-UI.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\n    Layouts is a web editor we built for ourselves to ship interfaces and components at hyper-speed. It’s very opinionated, tailor-made for Tailwind and filled with features to make your idea to production journey way easier as a developer. We're currently in early beta, so lots of bugs, but we felt it’s important to build in public together with a community. \r\n    \r\n    We’d love to get your feedback!\r\n\r\n## Why use Layouts.dev?\r\n\r\n**A notebook experience for Tailwind+React developers**\r\n\r\nWe love the idea of being able to open up a blank page, write a few lines of code and see the results instantly. \r\nWith Layouts, every page you create gets a unique URL you can share instantly.\r\nAs fun to play with as a Tailwind playground, as shareable as a GitHub Gist.\r\nNo setup, no yarn install, no boilerplate, no deploy. Just play & share.\r\n\r\n**A new way for designers to contribute to code**\r\n\r\nWe've found that by improving the DX in Layouts.dev, it has the potential to be a designer's bridge to the world of coding UI with high-quality, accessible and customizable code. Historically we've felt that drag-and-drop visual builders can constrain creativity vs. a code-focused approach, which means your creativity can truly be limitless.\r\n\r\nLayouts.dev provides the intuitive visuals and frameworks that empower designers to directly build out front-end UI themselves vs. tossing designs over the wall for developers. We've all been there 😮‍💨. For designers familiar with CSS frameworks like Tailwind, Layouts can open up new levels of accessibility to the code layer.\r\n\r\nMatter a fact, we've even used this internally to help speed up the development process by iterating quickly between our designer and developer for UI across Layouts. \r\n\r\n### Concise syntax to help you focus on what matters\r\n<img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/Syntax_graphic.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/Syntax_graphic.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\nAt first glance, we admit this may look like a bad idea (alert! new programming language!), but we felt we needed something more readable and also way more permissive to ship UIs faster. So we built a DSL (Domain Specific Language) focused on assembling a UI with React+Tailwind.\r\n\r\nIt enables us to generate state-of-the-art React code from a more natural, very approximate input. This allows both for a short syntax using beautiful defaults and a composable syntax giving you very accurate control on the output React code, all while making the code up to 10x smaller and more readable.\r\n\r\n>**Fun fact:** we created this language back in 2021 when trying to make apps using OpenAI's GPT-3. At that time, GPT-3 was so bad at React that we felt building a language for a lower intelligence was necessary. Then we figured out it actually contributed to a nicer DX for humans too, while drastically reducing both generation time and error rates of modern AI LLMs like GPT-4.\r\n\r\n### Live multi-screen, multi-preview of what you're building\r\n\r\nAnybody with a Layouts link can display your preview and see updates as you type.\r\n\r\nSuper useful for building responsive pages.\r\n\r\n### Designed to be keyboard-first for fast iteration of Tailwind classes.\r\n\r\nWe designed Layouts in a way that leans into developer ergonomics, so you can use the keyboard to build quickly. \r\n\r\n### Tons of pre-made components to help you build complex UIs\r\n\r\nEverything from accessible Dialog Boxes, Toggles and Buttons to Auto-Completes. We are huge fans of shadcn/ui, so we wanted to offer the full-library during Private Beta.\r\n\r\nMore component libraries coming soon! 🎉\r\n\r\n### Basically, less context switching all over the place\r\n\r\nLayouts displays contextual documentation when you click into any component, class, prop or attribute. It also fetches icons, illustrations and other image assets for you.\r\n\r\nAnd you don’t need to setup a repository to make it work. **Voilá**\r\n\r\n---\r\n## Helpful Links\r\n\r\n<CardGroup cols={2}>\r\n  <Card title=\"Quickstart\" icon=\"rocket\" href=\"/essentials/introduction\">\r\n    Start building right away.\r\n  </Card>\r\n  <Card title=\"The UI\" icon=\"display\" href=\"/essentials/editor\">\r\n    An orientation of the Layouts UI.\r\n  </Card>\r\n  <Card title=\"The syntax\" icon=\"code\" href=\"/essentials/The syntax\">\r\n    How programming works in Layouts.\r\n  </Card>\r\n  <Card title=\"Help & support\" icon=\"question\" href=\"/essentials/help\">\r\n    Best ways to get in touch.\r\n  </Card>\r\n</CardGroup>\r\n",
           "MdxFrontMatter": {
@@ -34,6 +90,48 @@
       "02_Quickstart.mdx": {
         "name": "02_Quickstart",
         "parsedName": "quickstart",
+        "entries": [
+          {
+            "entry": "Quickstart",
+            "level": 1
+          },
+          {
+            "entry": "How to start",
+            "level": 1
+          },
+          {
+            "entry": "Start coding",
+            "level": 1
+          },
+          {
+            "entry": "Start styling",
+            "level": 1
+          },
+          {
+            "entry": "Prompt-to-TailwindCSS",
+            "level": 1
+          },
+          {
+            "entry": "Adding images",
+            "level": 1
+          },
+          {
+            "entry": "Using components",
+            "level": 1
+          },
+          {
+            "entry": "See code output",
+            "level": 1
+          },
+          {
+            "entry": "Helpful Links",
+            "level": 1
+          },
+          {
+            "entry": "You did it!",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "\r\n<img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/minimal_layouts.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/minimal_layouts.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\n## How to start\r\n\r\n### Start coding\r\n  <img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/mx52yve3bydx9isfufif6/start-coding_QS_Layoutsdocs.gif?rlkey=5fa0sq6h7dlp56elu7lvtn6r8&st=lki3eq7i&dl=0\" />\r\n\r\n    - Open a new page\r\n    - Write \"Hello\". _You should see \"Hello\" in preview_.\r\n    - Open the Layouts preview on your mobile device using the QR code that appears when hovering over the **Preview** panel in navigation.\r\n    - Write \"again\". You should now see \"Hello again\" in your mobile preview window.\r\n\r\n### Start styling\r\n  <img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/zhvpmfmche12o1zppygy5/start-styling_QS_LayoutsDocs.gif?rlkey=mof2bk8dlvjha3k7i50685643&st=8eqstsox&dl=0\" />\r\n   - Now add `/div` and nest your text under it.\r\n   - Add `text-xl` before or after it. This class will change the text size. Add some padding, a border, round corners, set a width that fits your text and a drop shadow to give your `/div` some space. \r\n  \r\n  **ex.**\r\n   ```syntax Layouts\r\n    /div text-xl p-4 border rounded-xl shadow-md\r\n      hello\r\n   ```\r\n  <img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/55z1wimuvfv5oq3wfsfwu/ShiftUpDown_QS_Layoutsdocs.gif?rlkey=f4qw6dcrkdezh5ozdosbst6wx&st=hgq2ri4z&dl=0\" />\r\n   - Take your cursor and click on the Tailwind class `text-xl`. Using your keyboard press `Shift+Up` or `Shift+Down` to change the text size.\r\n   \r\n### Prompt-to-TailwindCSS \r\n   If you don't know all of the right Tailwind classes, AI can help with that.\r\n\r\n   <img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/9vw1pudqrxx9aqogszzw5/PromptoClass_QS_Layoutsdocs.gif?rlkey=zc3z577o5v82s877xg5jemsk0&st=i9s2xq76&dl=0\" />\r\n   \r\n   Prompt by typing `(your prompt goes here...)`\r\n      - **ex.** `(I'd like my text to have a beautiful gradient clipped to it, from pink to purple...)`\r\n   - The AI will generate and add all the necessary Tailwind classes to style your element.\r\n\r\n### Adding images\r\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/x2xq8q7jim6t1a2gmrzdf/Image_QS_Layoutsdocs.gif?rlkey=e48b7eb6bppove3ffzal00enj&st=vx2kn9df&dl=0\" />\r\n  - Erase all the content from your page and write `/image Tiger`. You'll see an image of a Tiger populate in your preview.\r\n  - Change the asset library your image comes from by using a variant. \r\n    - **ex.** `/image size-48 %google Tiger`.\r\n         <Note>The default variant is `%unsplash`</Note>\r\n  - You can also generate images with AI using variants. \r\n    - **ex.** `/image %ai/night-portrait handsome 22yo new york pizza delivery guy size-48`.\r\n\r\n### Using components\r\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/apknne24w4qw0ridhilyd/Components_QS_Layoutsdocs.gif?rlkey=nmil3mb4uu5dl7bwjp4qh2nyi&st=ooimzy69&dl=0\" />\r\n  - Type `/`. \r\n  - Select any component from the slash menu. \r\n  - After the component name, type `>>>` to generate the component's reference implementation. \r\n  - To see different implementations for a component, click on the `/component` in the editor and open the Docs panel in navigation.  \r\n\r\n### See code output\r\n  - Open your code panel. \r\n  - Click on the 'Copy' button to copy-paste your code. \r\n  -  If your code has dependencies, the output code will contain comments to help you setup those dependencies easily. \r\n\r\n## Helpful Links\r\n\r\n<CardGroup cols={2}>\r\n  <Card title=\"Quickstart\" icon=\"rocket\" href=\"/essentials/introduction\">\r\n    Start building right away.\r\n  </Card>\r\n  <Card title=\"The UI\" icon=\"display\" href=\"/essentials/editor\">\r\n    An orientation of the Layouts UI.\r\n  </Card>\r\n  <Card title=\"The syntax\" icon=\"code\" href=\"/essentials/The syntax\">\r\n    How programming works in Layouts.\r\n  </Card>\r\n  <Card title=\"Help & support\" icon=\"question\" href=\"/essentials/help\">\r\n    Best ways to get in touch.\r\n  </Card>\r\n</CardGroup>\r\n\r\n## You did it!\r\n\r\nCongrats! You’re ready to start building in Layouts! Need support or want to give some feedback? You can join our [community](https://discord.com) or drop us an email at help@creative-robots.ai\r\n\r\n",
           "MdxFrontMatter": {
@@ -45,6 +143,44 @@
       "03_The UI.mdx": {
         "name": "03_The UI",
         "parsedName": "the-ui",
+        "entries": [
+          {
+            "entry": "The UI",
+            "level": 1
+          },
+          {
+            "entry": "The Editor",
+            "level": 1
+          },
+          {
+            "entry": "Slash Menu",
+            "level": 1
+          },
+          {
+            "entry": "Explainer",
+            "level": 1
+          },
+          {
+            "entry": "Reference Implementation",
+            "level": 1
+          },
+          {
+            "entry": "Documentation Panel",
+            "level": 1
+          },
+          {
+            "entry": "Preview",
+            "level": 1
+          },
+          {
+            "entry": "Project URLs",
+            "level": 1
+          },
+          {
+            "entry": "Code export",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "<img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/hero-graphic-UI.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/hero-graphic-UI.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\n\r\n## The Editor \r\n\r\n <img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/editor_graphic.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/editor_graphic.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\n  The editor is the core programming workspace in Layouts. It is where you'll be primarily living when making code changes. Start programming here to watch your design come to life. We've also built in some ergonomics here via keyboard shortcuts to help speed up your workflow.  \r\n\r\n### Slash Menu\r\n <img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/slash_graphic.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/slash_graphic.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\nBy pressing `/` while in the editor, you can access all shadcn/UI components as well as HTML components which you can use to build your project.\r\n\r\n### Explainer\r\n <img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/explainer_graphic.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/explainer_graphic.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\nWhen focused on any Tailwind class, use `Shift + Up` or `Shift + Down` to cycle thru corresponding Tailwind classes.\r\n\r\n### Reference Implementation\r\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/08cmlwagf7r4e9xe2fxrn/ref_graphic.gif?rlkey=pkgo5vbxq839vl1x9d7mtzazq&dl=0\" />\r\nTo build even faster in your project, or get quick insight on how to best structure components, type `>>>` after a component tag to paste it’s reference implementation. \r\n\r\n\r\n## Documentation Panel\r\n<img\r\n  className=\"block dark:hidden\"\r\n  src=\"/images/docspanel-graphic.svg\"\r\n  alt=\"Hero Light\"\r\n/>\r\n<img\r\n  className=\"hidden dark:block\"\r\n  src=\"/images/docspanel-graphic.svg\"\r\n  alt=\"Hero Dark\"\r\n/>\r\n\r\nIncluded in Layouts is a documentation panel that’s context-aware, meaning if you click on any component or Tailwind class in the editor, the relevant documentation will populate in your docs panel.\r\nThis includes native Layouts, TailwindCSS and HTML docs.\r\n\r\n## Preview\r\n<video\r\n  autoPlay\r\n  muted\r\n  loop\r\n  playsInline\r\n  className=\"w-full aspect-video\"\r\n  src=\"https://dl.dropbox.com/scl/fi/egivd8wkcsvbh7s7cja5t/Preview_UI_Layoutsdocs.mp4?rlkey=zkyyzy381zxui9z407llcmz19&st=0yoq2ks5&dl=0\"\r\n></video>\r\n\r\nAny changes you make within the editor will render real-time in the Preview panel in Layouts. Users can scan the QR code in each panel's tooltip in order to open the window across other devices (mobile, tablet, etc). \r\n\r\nQuite useful to ensure responsiveness across breakpoints when building your projects.\r\n\r\n### Project URLs\r\n\r\nYou can also access each panel from anywhere by it’s URL:\r\n\r\n      - `https://layouts.dev/<pageId>`: Open the preview \r\n      - `https://layouts.dev/<pageId>/edit`: Open the editor\r\n      - `https://layouts.dev/<pageId>/doc`: Open the contextual doc\r\n      - `https://layouts.dev/<pageId>/code`: See the code output (HTML or React)\r\n\r\n## Code export\r\n\r\nWhenever you’re ready to export your page, by clicking on the Code panel in navigation, you’ll have the ability to export well-engineered HTML or React (if on Pro Plan) code.\r\n",
           "MdxFrontMatter": {
@@ -56,6 +192,52 @@
       "04_The syntax.mdx": {
         "name": "04_The syntax",
         "parsedName": "the-syntax",
+        "entries": [
+          {
+            "entry": "The syntax",
+            "level": 1
+          },
+          {
+            "entry": "Intro",
+            "level": 1
+          },
+          {
+            "entry": "Tabs and `/` instead of XML components.",
+            "level": 1
+          },
+          {
+            "entry": "Works with (included) React components or any HTML component.",
+            "level": 1
+          },
+          {
+            "entry": "Tailwind classes are first-class citizens",
+            "level": 1
+          },
+          {
+            "entry": "Props with `@`",
+            "level": 1
+          },
+          {
+            "entry": "Variables",
+            "level": 1
+          },
+          {
+            "entry": "Short vs. Composable Syntax",
+            "level": 1
+          },
+          {
+            "entry": "Custom classes",
+            "level": 1
+          },
+          {
+            "entry": "Variants",
+            "level": 1
+          },
+          {
+            "entry": "Summary",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "\r\n## Intro\r\n\r\nThe syntax we use in Layouts is different from HTML or JSX. See why [here](essentials/What%20is%20Layouts#concise-syntax-to-help-you-focus-on-what-matters).\r\nFear not! We decided to keep as close to the original, so it works just the same. 😎\r\n\r\nHere’s what you need to know:\r\n\r\n### Tabs and `/` instead of XML components.\r\n\r\n  Instead of writing: \r\n  ``` HTML HTML\r\n  <div class=\"bg-indigo-100\" >\r\n\t<button>\r\n\t\tHello\r\n\t</button>\r\n</div>\r\n```\r\nYou write: \r\n```syntax Layouts\r\n/div bg-indigo-100\r\n\t/button Hello\r\n```\r\n### Works with (included) React components or any HTML component.\r\n\r\nAny HTML component like `/div` or `/section` will work like: \r\n\r\n```syntax Layouts\r\n/div Hello!\r\n```\r\n### Tailwind classes are first-class citizens\r\n\r\nAny Tailwind class you input will be detected and used as a class name for the component on the same line: \r\n```syntax Layouts\r\n/button bg-indigo-100\r\n```\r\nIs the same as: \r\n```HTML HTML\r\n<button className=\"bg-indigo-100\" />\r\n```\r\n<Info>Tailwind classes can live on the same line as the `/component` or as a child of the component, on a line \r\nwith only Tailwind classes.</Info>\r\n\r\n**Here's an example:**\r\n```syntax Layouts\r\n/button \r\n   bg-indigo-100 font-medium text-xl \r\n   This works too\r\n```\r\n\r\n### Props with `@`\r\n\r\nUse:\r\n```syntax Layouts\r\n/button @onClick={() => alert ('Haha!')}\r\n```\r\nInstead of:\r\n```HTML HTML\r\n<button onClick={()  => alert('Haha!')} />\r\n```\r\n<Info>Props can live either on the same line as the `/component`, or nested as a child with one prop per line.</Info>\r\n\r\n**Here's an example:**\r\n```syntax Layouts\r\n  /button \r\n  @onClick={()  => alert('Haha!')}\r\n  This works too\r\n  ```\r\n\r\n### Variables\r\n  \r\nLayouts uses a simplified syntax for using variables with components.\r\n- All variable names are prefixed with `$`\r\n- Adding a variable name on a component line binds the variable to the component\r\n- Adding the variable name in props or as content uses the variable value there\r\n\r\n**Here's an example:**\r\n```\r\n  /input $name What’s your name?  \r\n  /h1 Hello $name !\r\n```\r\n\r\nYou can also load data from external sources into variables\r\nSee the specific section about data sources [here](essentials/datasources)\r\n\r\n  **ex. Data Source**\r\n    ```syntax Layouts\r\n    /data $movies = mock://movies with title and poster\r\n    /div w-full overflow-x-scroll\r\n    \t/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit\r\n    \t\t/foreach $movies\r\n    \t\t\t/vstack gap-3 %center justify-start\r\n    \t\t\t\t/div w-32\r\n    \t\t\t\t\t/aspect-ratio %video-portrait overflow-hidden\r\n    \t\t\t\t\t\t/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer\r\n    \t\t\t\t/center $item.title w-full text-center text-sm\r\n    ```\r\n\r\n### Short vs. Composable Syntax\r\nOn one hand, a great developer experience should enable you to build something at the speed of light.\r\nOn the other hand, it should give you unobstructed control over the tiniest details of each component.\r\nTo give you both, most components built in Layouts are usable with two types of syntax.\r\n\r\nThe short syntax is what you will use when you need great default and little customization.\r\nIt’s the syntax we use most of the time in reference implementations.\r\nIt’s made to be as easy to use as MDX and super intuitive _(hopefully...feedback welcome!)_\r\n    \r\n    **ex. Context Menu**\r\n    ```syntax Short Syntax\r\n    /context-menu\r\n     Menu item 1 <Alt 1>\r\n     Menu item 2\r\n          # Label\r\n          Sub-menu item 1 <Shift P>\r\n          ---\r\n          Sub-menu item 2 <Cmd S>\r\n    ```\r\n\r\n**Composable syntax** is what you’ll need when defaults don’t suit you, or if you need to surgically  \r\nchange the style of a specific element within your components.\r\n\r\n    **ex. Context Menu**\r\n    ```syntax Composable\r\n/div Right click here flex h-[150px] w-[300px] items-center justify-center rounded-md border border-dashed text-sm\r\n\t/context-menu w-64 \r\n\t\t/item Back\r\n\t\t/shortcut \r\n\t\t\t⌘\r\n\t/item Forward\r\n\t\t/shortcut ⌘]\r\n\t\t/item Reload\r\n\t\t/shortcut ⌘R\r\n    ``` \r\n\r\n### Custom classes\r\n\r\nWhen you find yourself having to break away from the design system to get your design right, consistent with TailwindCSS, you can use arbitrary values in your `/theme`, `/style` and across individal components.\r\n\r\nFor example, you can add some top-margin to a `/div` by using Tailwind’s square bracket notation to generate a class on any arbitrary value.\r\n\r\nThis works for everything, including things like text colors, font styles, pseudo-elements, and more.\r\n\r\n**ex.**\r\n```syntax Layouts\r\n/div flex flex-row items-center mt-[200px]\r\n  /h1 My avatar\r\n  /avatar https://github.com/shadcn.png\r\n\t\t\t@fallback=\"CN\"\r\n```\r\n\r\n### Variants\r\n\r\n<video\r\n  autoPlay\r\n  muted\r\n  loop\r\n  playsInline\r\n  className=\"w-full aspect-video\"\r\n  src=\"https://dl.dropbox.com/scl/fi/ldp5j91ws0nadfobg63la/Variants_Syntax_Layoutsdocs.mp4?rlkey=9t8pjjaf4f28dedk5p1uh55ts&st=6k2bvzg1&dl=0\"\r\n></video>\r\n\r\nMany components in Layouts have an alternative version which can share many of the same visual and behavioral differences. \r\n\r\nFor instance, if you're working with the `/alert` component in Layouts, you can quickly reference it's implementation (using `>>>`) and notice it's variant is set automatically set to `%default`.\r\nTo change a component's variant, you can either type it in manually, or (for ease of use), cycle thru available variants using your `Shift+Up, Shift+down` on your keyboard.\r\n\r\nTo look up a component's available variants, you can reference Layouts documentation via the Docs panel in navigation. \r\n\r\n\r\n### Summary \r\n\r\nAfter the `/component`, you can apply a number of different properties including:\r\n    - Type any Tailwind classes and they’ll be recognized as such. For example, write `bg-indigo-900`\r\n    - Type any other CSS class using the format `.customClassName`\r\n    - Specify variants for components using `%variantName` syntax\r\n    - Use custom classes across your `/theme`, `/style`, or individual components in Layouts like `/p-[24px]`.\r\n    - Add props like `@type=button` or `@title=”Title with spaces”` which will be equivalent to HTML attributes like `<div type=”button” ></div>`\r\n    - Bind a variable to a component by using `$variableName`\r\n    - Any plain text will be recognized as a text-string and placed as a child of the component\r\n\r\n  To summarize, type any valid HTML component and you can use any Tailwind class on it. Style away!",
           "MdxFrontMatter": {
@@ -73,6 +255,16 @@
       "-01_Settings.mdx": {
         "name": "-01_Settings",
         "parsedName": "settings",
+        "entries": [
+          {
+            "entry": "Global Settings",
+            "level": 1
+          },
+          {
+            "entry": "Properties",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "\nEvery Mintlify site needs a `mint.json` file with the core configuration settings. Learn more about the [properties](#properties) below.\n\n## Properties\n\n<ResponseField name=\"name\" type=\"string\" required>\nName of your project. Used for the global title.\n\nExample: `mintlify`\n\n</ResponseField>\n\n<ResponseField name=\"navigation\" type=\"Navigation[]\" required>\n  An array of groups with all the pages within that group\n  <Expandable title=\"Navigation\">\n    <ResponseField name=\"group\" type=\"string\">\n    The name of the group.\n\n    Example: `Settings`\n\n    </ResponseField>\n    <ResponseField name=\"pages\" type=\"string[]\">\n    The relative paths to the markdown files that will serve as pages.\n\n    Example: `[\"customization\", \"page\"]`\n\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"logo\" type=\"string or object\">\n  Path to logo image or object with path to \"light\" and \"dark\" mode logo images\n  <Expandable title=\"Logo\">\n    <ResponseField name=\"light\" type=\"string\">\n      Path to the logo in light mode\n    </ResponseField>\n    <ResponseField name=\"dark\" type=\"string\">\n      Path to the logo in dark mode\n    </ResponseField>\n    <ResponseField name=\"href\" type=\"string\" default=\"/\">\n      Where clicking on the logo links you to\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"favicon\" type=\"string\">\n  Path to the favicon image\n</ResponseField>\n\n<ResponseField name=\"colors\" type=\"Colors\">\n  Hex color codes for your global theme\n  <Expandable title=\"Colors\">\n    <ResponseField name=\"primary\" type=\"string\" required>\n      The primary color. Used for most often for highlighted content, section\n      headers, accents, in light mode\n    </ResponseField>\n    <ResponseField name=\"light\" type=\"string\">\n      The primary color for dark mode. Used for most often for highlighted\n      content, section headers, accents, in dark mode\n    </ResponseField>\n    <ResponseField name=\"dark\" type=\"string\">\n      The primary color for important buttons\n    </ResponseField>\n    <ResponseField name=\"background\" type=\"object\">\n      The color of the background in both light and dark mode\n      <Expandable title=\"Object\">\n        <ResponseField name=\"light\" type=\"string\" required>\n          The hex color code of the background in light mode\n        </ResponseField>\n        <ResponseField name=\"dark\" type=\"string\" required>\n          The hex color code of the background in dark mode\n        </ResponseField>\n      </Expandable>\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"topbarLinks\" type=\"TopbarLink[]\">\n  Array of `name`s and `url`s of links you want to include in the topbar\n  <Expandable title=\"TopbarLink\">\n    <ResponseField name=\"name\" type=\"string\">\n    The name of the button.\n\n    Example: `Contact us`\n    </ResponseField>\n    <ResponseField name=\"url\" type=\"string\">\n    The url once you click on the button. Example: `https://mintlify.com/contact`\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"topbarCtaButton\" type=\"Call to Action\">\n  <Expandable title=\"Topbar Call to Action\">\n    <ResponseField name=\"type\" type={'\"link\" or \"github\"'} default=\"link\">\n    Link shows a button. GitHub shows the repo information at the url provided including the number of GitHub stars.\n    </ResponseField>\n    <ResponseField name=\"url\" type=\"string\">\n    If `link`: What the button links to.\n    \n    If `github`: Link to the repository to load GitHub information from.\n    </ResponseField>\n    <ResponseField name=\"name\" type=\"string\">\n    Text inside the button. Only required if `type` is a `link`.\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"versions\" type=\"string[]\">\n  Array of version names. Only use this if you want to show different versions\n  of docs with a dropdown in the navigation bar.\n</ResponseField>\n\n<ResponseField name=\"anchors\" type=\"Anchor[]\">\n  An array of the anchors, includes the `icon`, `color`, and `url`.\n  <Expandable title=\"Anchor\">\n    <ResponseField name=\"icon\" type=\"string\">\n    The [Font Awesome](https://fontawesome.com/search?s=brands%2Cduotone) icon used to feature the anchor.\n\n    Example: `comments`\n    </ResponseField>\n    <ResponseField name=\"name\" type=\"string\">\n    The name of the anchor label.\n\n    Example: `Community`\n    </ResponseField>\n    <ResponseField name=\"url\" type=\"string\">\n      The start of the URL that marks what pages go in the anchor. Generally, this is the name of the folder you put your pages in.\n    </ResponseField>\n    <ResponseField name=\"color\" type=\"string\">\n      The hex color of the anchor icon background. Can also be a gradient if you pass an object with the properties `from` and `to` that are each a hex color.\n    </ResponseField>\n    <ResponseField name=\"version\" type=\"string\">\n      Used if you want to hide an anchor until the correct docs version is selected.\n    </ResponseField>\n    <ResponseField name=\"isDefaultHidden\" type=\"boolean\" default=\"false\">\n      Pass `true` if you want to hide the anchor until you directly link someone to docs inside it.\n    </ResponseField>\n    <ResponseField name=\"iconType\" default=\"duotone\" type=\"string\">\n      One of: \"brands\", \"duotone\", \"light\", \"sharp-solid\", \"solid\", or \"thin\"\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"topAnchor\" type=\"Object\">\n  Override the default configurations for the top-most anchor.\n  <Expandable title=\"Object\">\n    <ResponseField name=\"name\" default=\"Documentation\" type=\"string\">\n      The name of the top-most anchor\n    </ResponseField>\n    <ResponseField name=\"icon\" default=\"book-open\" type=\"string\">\n      Font Awesome icon.\n    </ResponseField>\n    <ResponseField name=\"iconType\" default=\"duotone\" type=\"string\">\n      One of: \"brands\", \"duotone\", \"light\", \"sharp-solid\", \"solid\", or \"thin\"\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"tabs\" type=\"Tabs[]\">\n  An array of navigational tabs.\n  <Expandable title=\"Tabs\">\n    <ResponseField name=\"name\" type=\"string\">\n      The name of the tab label.\n    </ResponseField>\n    <ResponseField name=\"url\" type=\"string\">\n      The start of the URL that marks what pages go in the tab. Generally, this\n      is the name of the folder you put your pages in.\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"api\" type=\"API\">\n  Configuration for API settings. Learn more about API pages at [API Components](/api-playground/demo).\n  <Expandable title=\"API\">\n    <ResponseField name=\"baseUrl\" type=\"string\">\n      The base url for all API endpoints. If `baseUrl` is an array, it will enable for multiple base url\n      options that the user can toggle.\n    </ResponseField>\n\n    <ResponseField name=\"auth\" type=\"Auth\">\n      <Expandable title=\"Auth\">\n        <ResponseField name=\"method\" type='\"bearer\" | \"basic\" | \"key\"'>\n          The authentication strategy used for all API endpoints.\n        </ResponseField>\n        <ResponseField name=\"name\" type=\"string\">\n        The name of the authentication parameter used in the API playground.\n\n        If method is `basic`, the format should be `[usernameName]:[passwordName]`\n        </ResponseField>\n        <ResponseField name=\"inputPrefix\" type=\"string\">\n        The default value that's designed to be a prefix for the authentication input field.\n\n        E.g. If an `inputPrefix` of `AuthKey` would inherit the default input result of the authentication field as `AuthKey`.\n        </ResponseField>\n      </Expandable>\n    </ResponseField>\n\n    <ResponseField name=\"playground\" type=\"Playground\">\n      Configurations for the API playground\n\n      <Expandable title=\"Playground\">\n        <ResponseField name=\"mode\" default=\"show\" type='\"show\" | \"simple\" | \"hide\"'>\n          Whether the playground is showing, hidden, or only displaying the endpoint with no added user interactivity `simple`\n\n          Learn more at the [playground guides](/api-playground/demo)\n        </ResponseField>\n      </Expandable>\n    </ResponseField>\n\n    <ResponseField name=\"maintainOrder\" type=\"boolean\">\n      Enabling this flag ensures that key ordering in OpenAPI pages matches the key ordering defined in the OpenAPI file.\n\n      <Warning>This behavior will soon be enabled by default, at which point this field will be deprecated.</Warning>\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"openapi\" type=\"string | string[]\">\n  A string or an array of strings of URL(s) or relative path(s) pointing to your\n  OpenAPI file.\n  \n  Examples:\n  <CodeGroup>\n    ```json Absolute\n    \"openapi\": \"https://example.com/openapi.json\"\n    ```\n    ```json Relative\n    \"openapi\": \"/openapi.json\"\n    ```\n    ```json Multiple\n    \"openapi\": [\"https://example.com/openapi1.json\", \"/openapi2.json\", \"/openapi3.json\"]\n    ```\n  </CodeGroup>\n\n</ResponseField>\n\n<ResponseField name=\"footerSocials\" type=\"FooterSocials\">\n  An object of social media accounts where the key:property pair represents the social media platform and the account url.\n  \n  Example: \n  ```json\n  {\n    \"twitter\": \"https://twitter.com/mintlify\",\n    \"website\": \"https://mintlify.com\"\n  }\n  ```\n  <Expandable title=\"FooterSocials\">\n    <ResponseField name=\"[key]\" type=\"string\">\n    One of the following values `website`, `facebook`, `twitter`, `discord`, `slack`, `github`, `linkedin`, `instagram`, `hacker-news`\n    \n    Example: `twitter`\n    </ResponseField>\n    <ResponseField name=\"property\" type=\"string\">\n    The URL to the social platform.\n    \n    Example: `https://twitter.com/mintlify`\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"feedback\" type=\"Feedback\">\n  Configurations to enable feedback buttons\n\n  <Expandable title=\"Feedback\">\n    <ResponseField name=\"suggestEdit\" type=\"boolean\" default=\"false\">\n    Enables a button to allow users to suggest edits via pull requests\n    </ResponseField>\n    <ResponseField name=\"raiseIssue\" type=\"boolean\" default=\"false\">\n    Enables a button to allow users to raise an issue about the documentation\n    </ResponseField>\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"modeToggle\" type=\"ModeToggle\">\n  Customize the dark mode toggle.\n  <Expandable title=\"ModeToggle\">\n    <ResponseField name=\"default\" type={'\"light\" or \"dark\"'}>\n      Set if you always want to show light or dark mode for new users. When not\n      set, we default to the same mode as the user's operating system.\n    </ResponseField>\n    <ResponseField name=\"isHidden\" type=\"boolean\" default=\"false\">\n      Set to true to hide the dark/light mode toggle. You can combine `isHidden` with `default` to force your docs to only use light or dark mode. For example:\n      \n      <CodeGroup>\n      ```json Only Dark Mode\n      \"modeToggle\": {\n        \"default\": \"dark\",\n        \"isHidden\": true\n      }\n      ```\n\n      ```json Only Light Mode\n      \"modeToggle\": {\n        \"default\": \"light\",\n        \"isHidden\": true\n      }\n      ```\n      </CodeGroup>\n\n    </ResponseField>\n\n  </Expandable>\n</ResponseField>\n\n<ResponseField name=\"backgroundImage\" type=\"string\">\n  A background image to be displayed behind every page. See example with\n  [Infisical](https://infisical.com/docs) and [FRPC](https://frpc.io).\n</ResponseField>\n",
           "MdxFrontMatter": {
@@ -89,6 +281,7 @@
           "nothing": {
             "name": "nothing",
             "parsedName": "nothing",
+            "entries": [],
             "content": {
               "MdxContent": "",
               "MdxFrontMatter": {}
@@ -99,6 +292,12 @@
       "Advanced syntax.mdx": {
         "name": "Advanced syntax",
         "parsedName": "advanced-syntax",
+        "entries": [
+          {
+            "entry": "Advanced syntax",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "",
           "MdxFrontMatter": {
@@ -110,8 +309,22 @@
       "Data sources.mdx": {
         "name": "Data sources",
         "parsedName": "data-sources",
+        "entries": [
+          {
+            "entry": "Data sources",
+            "level": 1
+          },
+          {
+            "entry": "Detailed usage",
+            "level": 1
+          },
+          {
+            "entry": "Coming soon",
+            "level": 1
+          }
+        ],
         "content": {
-          "MdxContent": "\nIn Layouts you can add external or JSON data to any project via the `/data` component.\n\n**ex:**\n```syntax Data \n/data $movies = mock://movies with title and poster\n/div w-full overflow-x-scroll\n\t/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit\n\t\t/foreach $movies\n\t\t\t/vstack gap-3 %center justify-start\n\t\t\t\t/div w-32\n\t\t\t\t\t/aspect-ratio %video-portrait overflow-hidden\n\t\t\t\t\t\t/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer\n\t\t\t\t/center $item.title w-full text-center text-sm\n```\n\n### Detailed usage\n\nFetch data via from our AI-based mockup API.\n\n**ex:**\n```syntax Mockup API\n/data $movies = mock://A list of movies with title and poster\n```\n### Coming soon\n\n<Warning>Below `/data` functions not yet available. Coming soon!</Warning>\n\nFetch data from Airtable\n\n**ex:**\n```syntax Airtable\n/data $users = airtable://my-airtable-account/my-database-name/my-table-name\n```\n\nFetch data from Stripe\n\n**ex:**\n```syntax Stripe\n/data $customers = stripe://my-stripe-account/customers\n```\n\nFetch data from MongoDB\n\n**ex:**\n```syntax MongoDB\n/data $customers = mongo://my-mongodb-account/my-database-name/my-collection-name\n```\n",
+          "MdxContent": "\nIn Layouts you can add external or JSON data to any project via the `/data` component.\n\n**ex:**\n```syntax Data \n/data $movies = mock://movies with title and poster\n/div w-full overflow-x-scroll\n\t/hstack bg-slate-950 gap-5 p-4 text-white items-start w-fit\n\t\t/foreach $movies\n\t\t\t/vstack gap-3 %center justify-start\n\t\t\t\t/div w-32\n\t\t\t\t\t/aspect-ratio %video-portrait overflow-hidden\n\t\t\t\t\t\t/image $item.poster size-full object-cover rounded hover:scale-105 cursor-pointer\n\t\t\t\t/center $item.title w-full text-center text-sm\n```\n\n### Detailed usage \n\nFetch data via from our AI-based mockup API.\n\n**ex:**\n```syntax Mockup API\n/data $movies = mock://A list of movies with title and poster\n```\n### Coming soon \n\n<Warning>Below `/data` functions not yet available. Coming soon!</Warning>\n\nFetch data from Airtable\n\n**ex:**\n```syntax Airtable\n/data $users = airtable://my-airtable-account/my-database-name/my-table-name\n```\n\nFetch data from Stripe\n\n**ex:**\n```syntax Stripe\n/data $customers = stripe://my-stripe-account/customers\n```\n\nFetch data from MongoDB\n\n**ex:**\n```syntax MongoDB\n/data $customers = mongo://my-mongodb-account/my-database-name/my-collection-name\n```\n",
           "MdxFrontMatter": {
             "title": "Data sources",
             "description": "How to manage and use data sources in Layouts"
@@ -121,6 +334,16 @@
       "Programming with variables.mdx": {
         "name": "Programming with variables",
         "parsedName": "programming-with-variables",
+        "entries": [
+          {
+            "entry": "Programming with variables",
+            "level": 1
+          },
+          {
+            "entry": "Detailed usage",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "\nIn Layouts, the `/foreach` component, allows for you to iterate over a list of items using variables:\n\n**ex.**\n```syntax Layouts\n/hstack gap-3\n\t/foreach [1...10]\n\t\t/center bg-slate-200 size-11 text-slate-700 rounded-lg $item\n```\n### Detailed usage\n\nWith a static array: \n```syntax Layouts\n/grid gap-2\n\t/foreach [apple, orange, pineapple]\n\t\t/center p-6 bg-slate-200 $item\n```\n\nWith a static array of objects:\n```syntax Layouts\n/grid gap-2\n\t/foreach [{ name: apple }, { name:orange }, { name: pineapple }]\n\t\t/center p-6 bg-slate-200 $item.name\n```\n\nWith static number series:\n```syntax Layouts\n/grid gap-2\n\t/foreach [3...8]\n\t\t/center p-6 bg-slate-200 $item\n```\n\nWith dynamic data:\n```syntax Layouts\n/data $movies = mock://A list of movies with title and poster\n/grid gap-2\n\t/foreach $movies\n\t\t/center p-6 bg-slate-200 $item.title\n```",
           "MdxFrontMatter": {
@@ -132,8 +355,30 @@
       "theming.mdx": {
         "name": "theming",
         "parsedName": "theming",
+        "entries": [
+          {
+            "entry": "Theming",
+            "level": 1
+          },
+          {
+            "entry": "Theme variables",
+            "level": 1
+          },
+          {
+            "entry": "AI-generated palette",
+            "level": 1
+          },
+          {
+            "entry": "Styling",
+            "level": 1
+          },
+          {
+            "entry": "Fonts",
+            "level": 1
+          }
+        ],
         "content": {
-          "MdxContent": "\nAll pre-made components in Layouts are built around a central design system.\nThis makes the design of your page easily customizable to your brand needs, and your code resilient to eventual future design system changes.\n\nChanging the theme of your page is as easy as adding a `/theme` component.\nIt enables you to change the radius of elements, the colors and we hope a few more things in the future. \n\n\n### Theme variables\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/88djayi834ru8f90csz8q/Darkmode_QS_Layoutsdocs.gif?rlkey=2801228goxj4gemi1tnet45hk&st=ttlui5y7&dl=0\" />\n\nHere is an example with all theme variables you can set:\n```syntax Layouts\n/theme\n    @colorScheme=\"light\" // Light or dark mode\n        @radius=\"0.5rem\" // Border radius for card, input, and buttons\n        @background=\"primary-50\" // Color overrides\n        @accent=\"#00ff00\"\n        @foreground=\"slate-900\"\n        @muted=\"slate-100\"\n        @mutedForeground=\"slate-800\"\n        @card=\"white\"\n        @cardForeground=\"slate-900\"\n        @popover=\"white\"\n        @popoverForeground=\"slate-900\"\n        @border=\"slate-200\"\n        @input=\"slate-100\"\n        @primary=\"blue-600\"\n        @primaryForeground=\"white\"\n        @secondary=\"blue-200\"\n        @secondaryForeground=\"blue-800\"\n        @accent=\"green-800\"\n        @accentForeground=\"white\"\n        @destructive=\"red-600\"\n        @destructiveForeground=\"white\"\n        @ring=\"blue-600\"\n```\n\n### AI-generated palette\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/ycud3jbwtiq0qf2plhh8u/AIPalette_Themeing_Layoutsdocs.gif?rlkey=lppgtvz1yx4elprodjg5vu7p3&st=1zzlmk67&dl=0\" />\n\nTo use a color palette generated by AI in your project's theme, you'll include the `@palette` prop in your `/theme`: \n\n```syntax Layouts\n/theme\n\t@palette=Intense Mediterranean turquoise as primary, creamy white in background\n```\n\nTo override palette colors provided by the AI: \n```syntax Layouts\n/theme\n\t@palette=Intense Mediterranean turquoise as primary, creamy white in background\n\t@background=\"primary-50\" // Color overrides\n```\n### Styling \n<video\n  autoPlay\n  muted\n  loop\n  playsInline\n  className=\"w-full aspect-video\"\n  src=\"https://dl.dropbox.com/scl/fi/lysj8lygvw7tsl4qai0mz/Style_Themeing_Layoutsdocs.mp4?rlkey=n7ot08wxof09mp84fmvlww1j9&st=j256304s&dl=0\"\n></video>\n\nSometimes, you need to change the default style of a component, either on a full website/app or within a specific section.\nYou can use `/style` for that. `/style` is a component that applies Tailwind classes to its parent's descendants. Use this component to customize font, colors and more across your project.\n\n**ex:**\n```syntax Layouts\n/style\n    /h1 font-['Jersey_10'] text-8xl\n\n/h1 Hello, styles!\n```\n\n### Fonts \nNeed custom fonts? In Layouts, users can leverage fonts via [Google Fonts](https://fonts.google.com/) as well as any fonts hosted locally on your machine. \n\n**ex.**\n``` syntax Layouts\n/div flex flex-col p-2 items-center border border-gray-200 rounded-lg shadow-sm\n    /p This is a card font-['Roboto'] text-xl font-semibold\n```\n\n<Info> Heads up! You’ll sometimes be tempted to use your local fonts not available in Google Fonts, because they’ll seem to work on your machine. \nBear in mind that they won’t display correctly on other people’s navigators.</Info>\n\n",
+          "MdxContent": "\nAll pre-made components in Layouts are built around a central design system.\nThis makes the design of your page easily customizable to your brand needs, and your code resilient to eventual future design system changes.\n\nChanging the theme of your page is as easy as adding a `/theme` component.\nIt enables you to change the radius of elements, the colors and we hope a few more things in the future. \n\n\n### Theme variables\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/88djayi834ru8f90csz8q/Darkmode_QS_Layoutsdocs.gif?rlkey=2801228goxj4gemi1tnet45hk&st=ttlui5y7&dl=0\" />\n\nHere is an example with all theme variables you can set:\n```syntax Layouts\n/theme\n  @colorScheme=\"light\" // Light or dark mode\n    @radius=\"0.5rem\" // Border radius for card, input, and buttons\n    @background=\"primary-50\" // Color overrides\n    @accent=\"#00ff00\"\n    @foreground=\"slate-900\"\n    @muted=\"slate-100\"\n    @mutedForeground=\"slate-800\"\n    @card=\"white\"\n    @cardForeground=\"slate-900\"\n    @popover=\"white\"\n    @popoverForeground=\"slate-900\"\n    @border=\"slate-200\"\n    @input=\"slate-100\"\n    @primary=\"blue-600\"\n    @primaryForeground=\"white\"\n    @secondary=\"blue-200\"\n    @secondaryForeground=\"blue-800\"\n    @accent=\"green-800\"\n    @accentForeground=\"white\"\n    @destructive=\"red-600\"\n    @destructiveForeground=\"white\"\n    @ring=\"blue-600\"\n```\n\n### AI-generated palette\n<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/ycud3jbwtiq0qf2plhh8u/AIPalette_Themeing_Layoutsdocs.gif?rlkey=lppgtvz1yx4elprodjg5vu7p3&st=1zzlmk67&dl=0\" />\n\nTo use a color palette generated by AI in your project's theme, you'll include the `@palette` prop in your `/theme`: \n\n```syntax Layouts\n/theme\n  @palette=Intense Mediterranean turquoise as primary, creamy white in background\n```\n\nTo override palette colors provided by the AI: \n```syntax Layouts\n/theme\n    @palette=Intense Mediterranean turquoise as primary, creamy white in background\n    @background=\"primary-50\" // Color overrides\n```\n### Styling \n<video\n  autoPlay\n  muted\n  loop\n  playsInline\n  className=\"w-full aspect-video\"\n  src=\"https://dl.dropbox.com/scl/fi/lysj8lygvw7tsl4qai0mz/Style_Themeing_Layoutsdocs.mp4?rlkey=n7ot08wxof09mp84fmvlww1j9&st=j256304s&dl=0\"\n></video>\n\nSometimes, you need to change the default style of a component, either on a full website/app or within a specific section.\nYou can use `/style` for that. `/style` is a component that applies Tailwind classes to its parent's descendants. Use this component to customize font, colors and more across your project.\n\n**ex:**\n```syntax Layouts\n/style\n    /h1 font-['Jersey_10'] text-8xl\n\n/h1 Hello, styles!\n```\n\n### Fonts \nNeed custom fonts? In Layouts, users can leverage fonts via [Google Fonts](https://fonts.google.com/) as well as any fonts hosted locally on your machine. \n\n**ex.**\n``` syntax Layouts\n/div flex flex-col p-2 items-center border border-gray-200 rounded-lg shadow-sm\n    /p This is a card font-['Roboto'] text-xl font-semibold\n```\n\n<Info> Heads up! You’ll sometimes be tempted to use your local fonts not available in Google Fonts, because they’ll seem to work on your machine. \nBear in mind that they won’t display correctly on other people’s navigators.</Info>\n\n",
           "MdxFrontMatter": {
             "title": "Theming",
             "description": "A short guide to using theming and styling elements in Layouts"
@@ -143,6 +388,32 @@
       "Working with images.mdx": {
         "name": "Working with images",
         "parsedName": "working-with-images",
+        "entries": [
+          {
+            "entry": "Working with images",
+            "level": 1
+          },
+          {
+            "entry": "Images",
+            "level": 1
+          },
+          {
+            "entry": "Using image variants",
+            "level": 1
+          },
+          {
+            "entry": "Icons",
+            "level": 1
+          },
+          {
+            "entry": "Illustrations",
+            "level": 1
+          },
+          {
+            "entry": "More detailed variant usage",
+            "level": 1
+          }
+        ],
         "content": {
           "MdxContent": "<img height=\"full\" src=\"https://dl.dropbox.com/scl/fi/x2xq8q7jim6t1a2gmrzdf/Image_QS_Layoutsdocs.gif?rlkey=e48b7eb6bppove3ffzal00enj&st=vx2kn9df&dl=0\" />\nIn Layouts, users can leverage AI or access various asset libraries to generate various types of images, modify them on the fly with modifiers, and change an image's aspect ratio, radius etc.\n\n### Images\n\nThe `/image` component in Layouts fetches an image from the internet or from your favorite asset libraries.\n\n**ex:**\n```syntax Layouts\n/image %unsplash spaceship size-48 rounded-lg\n```\n\n### Using image variants \n\n<video\n  autoPlay\n  muted\n  loop\n  playsInline\n  className=\"w-full aspect-video\"\n  src=\"https://dl.dropbox.com/scl/fi/zu4ob8vqqely3shyuoijn/Variants_Images_Layoutsdocs.mp4?rlkey=7io4n0hw8ra4hybrwap56fep1&st=2xh4po5l&dl=0\"\n></video>\n\n\nIf you'd like to set more constraints on where the image is sourced and how you'd like it to be generated, use the `%variant` to set constraints.\n\nFor instance, if you'd like to find an image of a tiger from Google images, use the `/image` component followed by `%google` on the same line.\n\n**ex.**\n``` syntax Layouts\n/image %google tiger\n```\n\nAvailable image variants include:\n\n| %variant | Description                           |\n| -------- | ------------------------------------- |\n| %unsplash    | Source from Unsplash              |\n| %google      | Source from Google Images |\n| %lexica      | Generate an image with Lexica AI |\n| %lexica-aperture | Generate a photorealistic image with Lexica AI |\n| %dall-e  | Generate an image with OpenAI's Dall-e |\n| %sdxl    | Generate an image from Stable Diffusion |\n| %ai/3D-clay-icon | Generate a 3D clay icon using AI |\n| %ai/children-book | Generate a children's book style image using AI |\n| %ai/clear-style | Generate a clear illustration using AI |\n| %ai/comics | Generate a comic-style image using AI |\n| %ai/flat-illustration | Generate a flat illustration using AI |\n| %ai/interior-design | Generate images of various interior styles using AI |\n| %ai/night-portrait | Generate an night scene portrait using AI |\n| %ai/outline-icon | Generate an outline style icon using AI |\n| %ai/poly-clay-icon | Generate a geometric clay icon using AI |\n| %ai/portrait | Generate a portrait-style image using AI |\n| %ai/undraw | Generate an image from unDraw's open source library |\n| %ai/vector-art | Generate vector art using AI |\n\n\n\n### Icons\n\n<video\n  autoPlay\n  muted\n  loop\n  playsInline\n  className=\"w-full aspect-video\"\n  src=\"https://dl.dropbox.com/scl/fi/dryivajxo6j677avz429r/Icon_Images_Layoutsdocs.mp4?rlkey=qn7vy42dzwbh5bpwob2us63wq&st=g42gh59s&dl=0\"\n></video>\n\nUse the `/icon` component in Layouts whenever you need to use a icon in your design. All icons in Layouts are made available via [Lucide](https://lucide.dev/).\n\nFor example, if your looking for a rocket icon for your primary `/button` on a landing page, nest the `/icon` component as a child under the button. On the same line as your `/icon` component, type in what you need and we'll find the icon most relevant based on your description. \n\n**ex.**\n```\n/button %default\n\t/icon rocket \n\t/p Get started \n```\n\n### Illustrations\n\n<video\n  autoPlay\n  muted\n  loop\n  playsInline\n  className=\"w-full aspect-video\"\n  src=\"https://dl.dropbox.com/scl/fi/mbq3oz2w1ylu86z75rcp3/Illustrations_Images_Layoutsdocs.mp4?rlkey=ppzivyw1igpk4wklxwfpaavmh&st=fccbs0dy&dl=0\"\n></video>\n\n\nUse the `/illustration` component if you need to use an illustration in your design. \nFor instance, if you've ever needed a minimalist illustration for a landing page, you can use the `/illustration` component and `%minimalistic` variant. On that same line, type in what you need and we’ll find the most relevant illustration based on your description.\n\n**ex.**\n``` syntax Layouts\n/div flex flex-col items-center p-12\n\t/illustration %minimalistic video call\n```\nOther available variants for illustrations include: \n| Illustration variants  |\n| -------- |\n| %kukla-angle\n| %kukla-face\n| %flatline\n| %isometric \n| %monochromatic\n| %outline\n| %two-color \n| %minimalistic \n\n\n### More detailed variant usage\n\nGet an image from Unsplash:\n```syntax Layouts\n/image w-40 %unsplash Tiger w-40\n```\n\nGet an image from Google:\n```syntax Layouts\n/image w-40 %google Tiger w-40\n```\n\nGet an image by url:\n```syntax Layouts\n/image w-40 https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png My image description here\n```\n\nApply transforms to an image:\n```syntax Layouts\n/image w-40 %google Lion | remove-bg\n```\n\nCreate an image with the right aspect-ratio:\n```syntax Layouts\n/div w-40\n\t/aspect-ratio %video\n\t\t/image Tiger size-full object-cover\n```\n\nGenerate an image with AI:\n```syntax Layouts\n/image w-40 %ai/flat-illustration Calendar\n```\n\nApply transforms to an illustration:\n```syntax Layouts\n/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize\n```\n\n",
           "MdxFrontMatter": {

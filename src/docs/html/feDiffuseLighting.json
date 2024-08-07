@@ -36,12 +36,14 @@
         {
             "title": "Example 1",
             "description": "Applying feDiffuseLighting filter with specified surfaceScale.",
-            "code": "<feDiffuseLighting in=\"SourceGraphic\" surfaceScale=\"1.5\"></feDiffuseLighting>"
+            "code": "<feDiffuseLighting in=\"SourceGraphic\" surfaceScale=\"1.5\"></feDiffuseLighting>",
+            "layoutsCode": "/fediffuselighting @in=\"SourceGraphic\" @surfacescale={1.5}"
         },
         {
             "title": "Example 2",
             "description": "Applying feDiffuseLighting filter without specifying optional attributes.",
-            "code": "<feDiffuseLighting in=\"SourceGraphic\"></feDiffuseLighting>"
+            "code": "<feDiffuseLighting in=\"SourceGraphic\"></feDiffuseLighting>",
+            "layoutsCode": "/fediffuselighting @in=\"SourceGraphic\""
         }
     ]
 }

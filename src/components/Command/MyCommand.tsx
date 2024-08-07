@@ -12,7 +12,7 @@ import {
   CommandSeparator,
   CommandShortcut,
 } from "./index"
-import LayoutsComponents from './../../docs/Layouts/Components.json';
+import LayoutsComponents from './../../docs/RawLayouts/Components.json';
 import HtmlComponents from './../../docs/html.json'
 import { useRouter } from "next/navigation";
 import { Input } from "../ui/input";

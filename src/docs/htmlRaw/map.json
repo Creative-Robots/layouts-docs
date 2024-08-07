@@ -1,0 +1,42 @@
+{
+    "tag": "map",
+    "allowedAttributes": [
+        {
+            "name": "name",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "hidden",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        },
+        {
+            "name": "ismap",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "boolean"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Map",
+    "shortDescriptionOfTheTag": "Defines a client-side image-map.",
+    "usageExamples": [
+        {
+            "title": "Basic Usage",
+            "description": "Creating a simple image map with two clickable areas.",
+            "code": "<map name=\"workmap\">\n  <area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\">\n  <area shape=\"circle\" coords=\"290,172,142\" alt=\"Phone\" href=\"phone.htm\">\n</map>"
+        }
+    ]
+}

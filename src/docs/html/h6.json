@@ -8,12 +8,14 @@
         {
             "title": "Basic Example",
             "description": "Using h6 tag to create a subheading in a document",
-            "code": "<h6>This is a subheading</h6>"
+            "code": "<h6>This is a subheading</h6>",
+            "layoutsCode": "/h6\n\tThis is a subheading"
         },
         {
             "title": "Nested Example",
             "description": "Nesting h6 tag within a div element",
-            "code": "<div><h6>This is a subheading within a div</h6></div>"
+            "code": "<div><h6>This is a subheading within a div</h6></div>",
+            "layoutsCode": "/div\n\t/h6\n\t\tThis is a subheading within a div"
         }
     ]
 }

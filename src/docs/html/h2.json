@@ -33,12 +33,14 @@
         {
             "title": "Basic h2 Example",
             "description": "Creating a simple h2 heading",
-            "code": "<h2>Hello World</h2>"
+            "code": "<h2>Hello World</h2>",
+            "layoutsCode": "/h2\n\tHello World"
         },
         {
             "title": "h2 With Alignment",
             "description": "Using the align attribute for alignment",
-            "code": "<h2 align='center'>Center Aligned Heading</h2>"
+            "code": "<h2 align='center'>Center Aligned Heading</h2>",
+            "layoutsCode": "/h2 @align=\"center\"\n\tCenter Aligned Heading"
         }
     ]
 }

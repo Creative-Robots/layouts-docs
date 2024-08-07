@@ -49,12 +49,14 @@
         {
             "title": "Simple Use Of 'abbr' Tag",
             "description": "This example shows how to use the 'abbr' tag to denote an abbreviation.",
-            "code": "<p>The <abbr title='World Health Organization'>WHO</abbr> was founded in 1948.</p>"
+            "code": "<p>The <abbr title='World Health Organization'>WHO</abbr> was founded in 1948.</p>",
+            "layoutsCode": "/p\n\tThe \n\t/abbr @title=\"World Health Organization\"\n\t\tWHO\n\t was founded in 1948."
         },
         {
             "title": "Using 'abbr' With CSS",
             "description": "This example shows how to use CSS with the 'abbr' tag to provide a visual cue that the text is an abbreviation.",
-            "code": "<style>abbr[title] { border-bottom: 1px dotted; }</style><p>The <abbr title='World Health Organization'>WHO</abbr> was founded in 1948.</p>"
+            "code": "<style>abbr[title] { border-bottom: 1px dotted; }</style><p>The <abbr title='World Health Organization'>WHO</abbr> was founded in 1948.</p>",
+            "layoutsCode": "/p\n\tThe \n\t/abbr @title=\"World Health Organization\"\n\t\tWHO\n\t was founded in 1948."
         }
     ]
 }

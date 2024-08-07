@@ -1,0 +1,47 @@
+{
+    "tag": "symbol",
+    "allowedAttributes": [
+        {
+            "name": "id",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "viewBox",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "preserveAspectRatio",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Symbol",
+    "shortDescriptionOfTheTag": "The element is used to define graphical templates which can then be referenced by other elements.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "A symbol with an ID of 'mySymbol' and a viewBox of '0 0 100 100'.",
+            "code": "<symbol id='mySymbol' viewBox='0 0 100 100'>...</symbol>"
+        },
+        {
+            "title": "Example 2",
+            "description": "A symbol with an ID of 'anotherSymbol' and a preserve aspect ratio value of 'xMinYMin'.",
+            "code": "<symbol id='anotherSymbol' preserveAspectRatio='xMinYMin'>...</symbol>"
+        }
+    ]
+}

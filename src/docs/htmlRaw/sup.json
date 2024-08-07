@@ -1,0 +1,38 @@
+{
+    "tag": "sup",
+    "allowedAttributes": [
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "sup",
+    "shortDescriptionOfTheTag": "The <sup> tag defines superscript text.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Superscript text in HTML.",
+            "code": "<p>This is a <sup>superscript</sup> text.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Superscript text with a class in HTML.",
+            "code": "<p>This is a <sup class=\"example\">superscript</sup> text.</p>"
+        }
+    ]
+}

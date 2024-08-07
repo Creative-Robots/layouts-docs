@@ -1,0 +1,56 @@
+{
+    "tag": "canvas",
+    "allowedAttributes": [
+        {
+            "name": "width",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "height",
+            "isRequired": true,
+            "acceptedValueTypes": [
+                {
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "style",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "Canvas",
+    "shortDescriptionOfTheTag": "Defines a rectangular area on an HTML page where graphics can be drawn with JavaScript.",
+    "usageExamples": [
+        {
+            "title": "Basic Canvas Example",
+            "description": "Creating a basic canvas element with dimensions 200px by 200px.",
+            "code": "<canvas width='200' height='200'></canvas>"
+        },
+        {
+            "title": "Canvas with Styling Example",
+            "description": "Creating a canvas element with dimensions 400px by 400px and applying a custom CSS style.",
+            "code": "<canvas width='400' height='400' style='border: 1px solid black;'></canvas>"
+        }
+    ]
+}

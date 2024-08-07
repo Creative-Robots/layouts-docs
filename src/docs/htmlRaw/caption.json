@@ -1,0 +1,31 @@
+{
+    "tag": "caption",
+    "allowedAttributes": [
+        {
+            "name": "align",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string",
+                    "options": [
+                        "top",
+                        "bottom",
+                        "left",
+                        "right",
+                        "center"
+                    ]
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "caption",
+    "shortDescriptionOfTheTag": "The caption tag defines a table caption.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Adding a caption to a table",
+            "code": "<table>\n  <caption align=\"bottom\">Table Caption</caption>\n  <tr>\n    <th>Header 1</th>\n    <th>Header 2</th>\n  </tr>\n  <tr>\n    <td>Data 1</td>\n    <td>Data 2</td>\n  </tr>\n</table>"
+        }
+    ]
+}

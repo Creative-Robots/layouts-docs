@@ -60,12 +60,14 @@
         {
             "title": "Example 1",
             "description": "Creating a simple h5 heading with alignment.",
-            "code": "<h5 align=\"center\">Center Aligned Heading</h5>"
+            "code": "<h5 align=\"center\">Center Aligned Heading</h5>",
+            "layoutsCode": "/h5 @align=\"center\"\n\tCenter Aligned Heading"
         },
         {
             "title": "Example 2",
             "description": "Creating a styled h5 heading with a class.",
-            "code": "<h5 class=\"header\">Styled Heading</h5>"
+            "code": "<h5 class=\"header\">Styled Heading</h5>",
+            "layoutsCode": "/h5 .header\n\tStyled Heading"
         }
     ]
 }

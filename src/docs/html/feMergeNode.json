@@ -18,12 +18,14 @@
         {
             "title": "Example 1",
             "description": "Create a feMergeNode tag with input 'SourceGraphic'.",
-            "code": "<feMergeNode in='SourceGraphic' />"
+            "code": "<feMergeNode in='SourceGraphic' />",
+            "layoutsCode": "/femergenode @in=\"SourceGraphic\""
         },
         {
             "title": "Example 2",
             "description": "Create a feMergeNode tag with input 'BackgroundImage'.",
-            "code": "<feMergeNode in='BackgroundImage' />"
+            "code": "<feMergeNode in='BackgroundImage' />",
+            "layoutsCode": "/femergenode @in=\"BackgroundImage\""
         }
     ]
 }

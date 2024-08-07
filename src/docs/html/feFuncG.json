@@ -78,12 +78,14 @@
         {
             "title": "Example 1",
             "description": "Setting type attribute to identity.",
-            "code": "<feFuncG type=\"identity\" />"
+            "code": "<feFuncG type=\"identity\" />",
+            "layoutsCode": "/fefuncg @type=\"identity\""
         },
         {
             "title": "Example 2",
             "description": "Setting type attribute to table with tableValues.",
-            "code": "<feFuncG type=\"table\" tableValues=\"0 0.5 1\" />"
+            "code": "<feFuncG type=\"table\" tableValues=\"0 0.5 1\" />",
+            "layoutsCode": "/fefuncg @tablevalues=\"0 0.5 1\" @type=\"table\""
         }
     ]
 }

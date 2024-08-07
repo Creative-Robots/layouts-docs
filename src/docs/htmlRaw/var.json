@@ -1,0 +1,47 @@
+{
+    "tag": "var",
+    "allowedAttributes": [
+        {
+            "name": "accesskey",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "class",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "id",
+            "isRequired": false,
+            "acceptedValueTypes": [
+                {
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "canHaveChildren": true,
+    "title": "var",
+    "shortDescriptionOfTheTag": "The <var> tag defines a variable in programming or an inline element in a document.",
+    "usageExamples": [
+        {
+            "title": "Example 1",
+            "description": "Define a variable using the <var> tag",
+            "code": "<p>The value of <var>x</var> is 10.</p>"
+        },
+        {
+            "title": "Example 2",
+            "description": "Use CSS to style a <var> element",
+            "code": "var { font-style: italic; color: blue; }"
+        }
+    ]
+}

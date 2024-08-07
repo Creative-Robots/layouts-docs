@@ -27,12 +27,14 @@
         {
             "title": "Basic Example",
             "description": "This is a basic example of using the data tag.",
-            "code": "<data value='123'>"
+            "code": "<data value='123'>",
+            "layoutsCode": "/data @value={123}"
         },
         {
             "title": "Example with ID",
             "description": "An example of using the data tag with an ID attribute.",
-            "code": "<data value='456' id='data1'>"
+            "code": "<data value='456' id='data1'>",
+            "layoutsCode": "/data @id=\"data1\" @value={456}"
         }
     ]
 }

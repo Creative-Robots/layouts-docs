@@ -40,7 +40,8 @@
         {
             "title": "Basic Example",
             "description": "This example shows the basic usage of the textPath tag.",
-            "code": "<svg>\n  <path d=\"M10 10 H 90 V 90 H 10 L 10 10\" />\n  <text>\n    <textPath href=\"#MyPath\">We go up, then we go down, then up again</textPath>\n  </text>\n</svg>"
+            "code": "<svg>\n  <path d=\"M10 10 H 90 V 90 H 10 L 10 10\" />\n  <text>\n    <textPath href=\"#MyPath\">We go up, then we go down, then up again</textPath>\n  </text>\n</svg>",
+            "layoutsCode": "/svg\n\t/path @d=\"M10 10 H 90 V 90 H 10 L 10 10\"\n\t/text\n\t\t/textPath @href=\"#MyPath\"\n\t\t\tWe go up, then we go down, then up again"
         }
     ]
 }

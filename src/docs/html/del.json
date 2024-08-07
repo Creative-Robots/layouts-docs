@@ -27,7 +27,8 @@
         {
             "title": "Example",
             "description": "Usage of del tag to display deleted text",
-            "code": "<del>This text is no longer valid</del>"
+            "code": "<del>This text is no longer valid</del>",
+            "layoutsCode": "/del\n\tThis text is no longer valid"
         }
     ]
 }

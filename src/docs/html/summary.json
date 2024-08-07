@@ -8,7 +8,8 @@
         {
             "title": "Example",
             "description": "Using summary tag with details tag",
-            "code": "<details>\n  <summary>Click me to see more</summary>\n  <p>Additional information.</p>\n</details>"
+            "code": "<details>\n  <summary>Click me to see more</summary>\n  <p>Additional information.</p>\n</details>",
+            "layoutsCode": "/details\n\t/summary\n\t\tClick me to see more\n\t/p\n\t\tAdditional information."
         }
     ]
 }
