@@ -131,7 +131,9 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
             </div>
             <div className="justify-start items-start flex-col flex w-full p-6" >
                 <pre className="font-robotomono text-sm font-normal leading-[24px] text-wrap">
-                    <code dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />
+                    {code.includes("</") || code.includes("/>")
+                    ? code
+                    : <code dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />}
                 </pre>
             </div>
         </div>

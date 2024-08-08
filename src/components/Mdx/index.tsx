@@ -13,6 +13,7 @@ import { Label } from "../ui/label"
 import { CodeBlock } from "../ContentComponents/CodeBlock"
 import { Strong } from "../ContentComponents/Strong"
 import Entries from "../ContentComponents/Entry"
+import { redirect, useRouter } from "next/navigation"
 
 interface MdxComponentProps {
     content: { 
@@ -112,15 +113,6 @@ const Icon = (icon:string) => {
   }
 }
 
-// Card
-const CardBox = ({  title, icon, id, ...props }: {children:ReactNode, id:string, title:string, icon:string}) => (
-  <div className={Card} id={id}>
-    {Icon(icon)}
-    <span className="text-lg font-body mt-2">{title}</span>
-    <span className="text-sm font-body text-gray-400">Other Text</span>
-  </div>
-);
-
 // ResponseField
 const ResponseField = ({ children, id }: {children:ReactNode, id:string}) => (
   <div className={responseField} id={id}>
@@ -142,28 +134,47 @@ const SnippetIntro = ({ children, id }: {children:ReactNode, id:string}) => (
   </div>
 );
 
-// Combinez vos composants personnalisés avec les composants existants
-const components = {
-  ...MintComponents,
-  h1: CustomH1,
-  h2: CustomH2,
-  h3: CustomH3,
-  p: P,
-  ul: CustomUl,
-  li: CustomLi,
-  strong: Strong,
-  Note: Note,
-  Info: Info,
-  code: Code,
-  ResponseField: ResponseField,
-  Latex: Latex,
-  SnippetIntro: SnippetIntro,
-  Card: CardBox,
-};
-
-
 
 export default function MdxComponent({content}: MdxComponentProps) {
+
+  const router = useRouter();
+
+  const redirCard = (title:string) => {
+    if (title === "Help & Support") {
+      router.push('/help');
+    } else {
+      router.push('/' + title.toLowerCase().replace(/ /g, '-'))
+    }
+  }
+  
+  // Card
+  const CardBox = ({  title, icon, id, children, ...props }: {children:ReactNode, id:string, title:string, icon:string}) => (
+    <div className={Card} id={id} onClick={() => redirCard(title)}>
+      {Icon(icon)}
+      <span className="text-lg font-body mt-2">{title}</span>
+      <span className="text-sm font-body text-gray-400 -my-2">{children}</span>
+    </div>
+  );
+
+  // Combinez vos composants personnalisés avec les composants existants
+  const components = {
+    ...MintComponents,
+    h1: CustomH1,
+    h2: CustomH2,
+    h3: CustomH3,
+    p: P,
+    ul: CustomUl,
+    li: CustomLi,
+    strong: Strong,
+    Note: Note,
+    Info: Info,
+    code: Code,
+    ResponseField: ResponseField,
+    Latex: Latex,
+    SnippetIntro: SnippetIntro,
+    Card: CardBox,
+  };
+
     return (
       <>
         <div className="flex flex-row flex-1 max-w-[1440px]">
