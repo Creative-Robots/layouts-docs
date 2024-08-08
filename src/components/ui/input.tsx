@@ -8,7 +8,7 @@ export interface InputProps
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ value, className, type, onChange, ...props }, ref) => {
+  ({ value, className, type, onChange, placeHolder, ...props }, ref) => {
     const onChangeHandler = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
       if (onChange) {
         onChange(e.target.value, e);

@@ -241,7 +241,7 @@
         "name": "Aspect Ratio",
         "tag": "aspect-ratio",
         "description": "Displays content within a desired ratio",
-        "refImplementation": "/div w-1/4\n\t  /aspect-ratio %video\n        /image size-full object-cover rounded-md Night full of stars",
+        "refImplementation": "/div w-1/4\n\t/aspect-ratio %video\n\t\t/image size-full object-cover rounded-md Night full of stars",
         "props": [],
         "subComponents": [],
         "examples": [

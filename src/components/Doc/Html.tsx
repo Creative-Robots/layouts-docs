@@ -6,7 +6,6 @@ import Separator from '../Separator';
 import { cn } from "@/lib/cn";
 import React from "react";
 import CopyClipboard from "../ClipBoard";
-import MyCodeBlock from "../CodeBlock";
 import { Heading1, Heading2, SubHeading, Title } from "../ContentComponents";
 import { AcceptChildrenBox, AcceptChildrenIcon, AcceptChildrenTitle, Description, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName } from "@/lib/Style";
 import { CodeBlock } from "../ContentComponents/CodeBlock";

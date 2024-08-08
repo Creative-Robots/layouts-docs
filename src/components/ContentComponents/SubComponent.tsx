@@ -1,4 +1,4 @@
-import { ComponentDoc } from "@/app/components/[name]/page";
+import { ComponentDoc } from "@/app/(app)/components/[name]/page";
 import { SubSection } from "./SubSection";
 import { CodeBlock } from "./CodeBlock";
 import { cn } from "@/lib/cn";

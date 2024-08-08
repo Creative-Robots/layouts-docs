@@ -51,7 +51,7 @@ function parsedContent(fileJson) {
         });
         fileJson.subComponents.forEach(function(ex) {
             entries.push({
-                entry: ex.name,
+                entry: `/${ex.tag}`,
                 level: 2,
             });
         })

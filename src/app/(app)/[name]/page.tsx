@@ -5,6 +5,7 @@ import { serialize } from 'next-mdx-remote/serialize'
 import MdxComponent from "@/components/Mdx";
 import { findElementByParsedName, getMdxFiles } from "@/lib/fileUtils";
 import { redirect } from 'next/navigation';
+import { SheetContent } from '@/components/Sheet';
 
 const files = getMdxFiles();
 

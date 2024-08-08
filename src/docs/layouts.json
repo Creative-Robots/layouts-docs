@@ -32,11 +32,11 @@
         "level": 1
       },
       {
-        "entry": "AccordionContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "AccordionTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -207,11 +207,11 @@
         "level": 1
       },
       {
-        "entry": "AlertDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "AlertTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -282,31 +282,31 @@
         "level": 1
       },
       {
-        "entry": "AlertDialogAction",
+        "entry": "/action",
         "level": 2
       },
       {
-        "entry": "AlertDialogCancel",
+        "entry": "/close",
         "level": 2
       },
       {
-        "entry": "AlertDialogInnerContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "AlertDialogDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "AlertDialogFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "AlertDialogHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "AlertDialogTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -412,7 +412,7 @@
       "name": "Aspect Ratio",
       "tag": "aspect-ratio",
       "description": "Displays content within a desired ratio",
-      "refImplementation": "/div w-1/4\n\t  /aspect-ratio %video\n        /image size-full object-cover rounded-md Night full of stars",
+      "refImplementation": "/div w-1/4\n\t/aspect-ratio %video\n\t\t/image size-full object-cover rounded-md Night full of stars",
       "props": [],
       "subComponents": [],
       "examples": [
@@ -845,23 +845,23 @@
         "level": 1
       },
       {
-        "entry": "CardContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "CardDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "CardFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "CardHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "CardTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -1204,11 +1204,11 @@
         "level": 1
       },
       {
-        "entry": "CollapsibleContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "CollapsibleTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -1335,31 +1335,31 @@
         "level": 1
       },
       {
-        "entry": "CommandEmpty",
+        "entry": "/empty",
         "level": 2
       },
       {
-        "entry": "CommandGroup",
+        "entry": "/group",
         "level": 2
       },
       {
-        "entry": "CommandInput",
+        "entry": "/input",
         "level": 2
       },
       {
-        "entry": "CommandItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "CommandList",
+        "entry": "/list",
         "level": 2
       },
       {
-        "entry": "CommandSeparator",
+        "entry": "/separator",
         "level": 2
       },
       {
-        "entry": "CommandShortcut",
+        "entry": "/shortcut",
         "level": 2
       }
     ],
@@ -1491,59 +1491,59 @@
         "level": 1
       },
       {
-        "entry": "ContextMenuCheckboxItem",
+        "entry": "/checkbox",
         "level": 2
       },
       {
-        "entry": "ContextMenuCheckboxItem",
+        "entry": "/checkbox-item",
         "level": 2
       },
       {
-        "entry": "ContextMenuContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "ContextMenuItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "ContextMenuLabel",
+        "entry": "/label",
         "level": 2
       },
       {
-        "entry": "ContextMenu",
+        "entry": "/menu",
         "level": 2
       },
       {
-        "entry": "ContextMenuRadioGroup",
+        "entry": "/radio-group",
         "level": 2
       },
       {
-        "entry": "ContextMenuRadioItem",
+        "entry": "/radio-item",
         "level": 2
       },
       {
-        "entry": "ContextMenuSeparator",
+        "entry": "/separator",
         "level": 2
       },
       {
-        "entry": "ContextMenuShortcut",
+        "entry": "/shortcut",
         "level": 2
       },
       {
-        "entry": "ContextMenuSub",
+        "entry": "/sub",
         "level": 2
       },
       {
-        "entry": "ContextMenuSubContent",
+        "entry": "/sub-content",
         "level": 2
       },
       {
-        "entry": "ContextMenuSubTrigger",
+        "entry": "/sub-trigger",
         "level": 2
       },
       {
-        "entry": "ContextMenuTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -1829,27 +1829,27 @@
         "level": 1
       },
       {
-        "entry": "DialogClose",
+        "entry": "/close",
         "level": 2
       },
       {
-        "entry": "DialogInnerContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "DialogDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "DialogFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "DialogHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "DialogTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -2011,31 +2011,31 @@
         "level": 1
       },
       {
-        "entry": "DrawerClose",
+        "entry": "/close",
         "level": 2
       },
       {
-        "entry": "DrawerInnerContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "DrawerDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "DrawerFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "DrawerHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "DrawerHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "DrawerTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -2130,51 +2130,51 @@
         "level": 1
       },
       {
-        "entry": "DropdownMenuContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "DropdownMenuGroup",
+        "entry": "/group",
         "level": 2
       },
       {
-        "entry": "DropdownMenuItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "DropdownMenuLabel",
+        "entry": "/label",
         "level": 2
       },
       {
-        "entry": "DropdownMenu",
+        "entry": "/menu",
         "level": 2
       },
       {
-        "entry": "DropdownMenuPortal",
+        "entry": "/portal",
         "level": 2
       },
       {
-        "entry": "DropdownMenuSeparator",
+        "entry": "/separator",
         "level": 2
       },
       {
-        "entry": "DropdownMenuShortcut",
+        "entry": "/shortcut",
         "level": 2
       },
       {
-        "entry": "DropdownMenuSub",
+        "entry": "/sub",
         "level": 2
       },
       {
-        "entry": "DropdownMenuSubContent",
+        "entry": "/sub-content",
         "level": 2
       },
       {
-        "entry": "DropdownMenuSubTrigger",
+        "entry": "/sub-trigger",
         "level": 2
       },
       {
-        "entry": "DropdownMenuTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -2394,31 +2394,31 @@
         "level": 1
       },
       {
-        "entry": "FormControl",
+        "entry": "/control",
         "level": 2
       },
       {
-        "entry": "FormDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "FormField",
+        "entry": "/field",
         "level": 2
       },
       {
-        "entry": "FormField",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "FormLabel",
+        "entry": "/label",
         "level": 2
       },
       {
-        "entry": "FormMessage",
+        "entry": "/message",
         "level": 2
       },
       {
-        "entry": "RadioGroup",
+        "entry": "/radio-group",
         "level": 2
       }
     ],
@@ -2859,15 +2859,15 @@
         "level": 1
       },
       {
-        "entry": "description",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "image",
+        "entry": "/image",
         "level": 2
       },
       {
-        "entry": "title",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -3107,15 +3107,15 @@
         "level": 1
       },
       {
-        "entry": "description",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "image",
+        "entry": "/image",
         "level": 2
       },
       {
-        "entry": "title",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -3253,51 +3253,51 @@
         "level": 1
       },
       {
-        "entry": "MenubarCheckboxItem",
+        "entry": "/checkbox",
         "level": 2
       },
       {
-        "entry": "MenubarContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "MenubarItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "MenubarMenu",
+        "entry": "/menu",
         "level": 2
       },
       {
-        "entry": "MenubarRadioGroup",
+        "entry": "/radio-group",
         "level": 2
       },
       {
-        "entry": "MenubarRadioItem",
+        "entry": "/radio-item",
         "level": 2
       },
       {
-        "entry": "MenubarSeparator",
+        "entry": "/separator",
         "level": 2
       },
       {
-        "entry": "MenubarShortcut",
+        "entry": "/shortcut",
         "level": 2
       },
       {
-        "entry": "MenubarSub",
+        "entry": "/sub",
         "level": 2
       },
       {
-        "entry": "MenubarSubContent",
+        "entry": "/sub-content",
         "level": 2
       },
       {
-        "entry": "MenubarSubTrigger",
+        "entry": "/sub-trigger",
         "level": 2
       },
       {
-        "entry": "MenubarTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -3920,11 +3920,11 @@
         "level": 1
       },
       {
-        "entry": "description",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "title",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -3970,43 +3970,43 @@
         "level": 1
       },
       {
-        "entry": "NavigationMenuContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "ListItemDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "NavigationMenuItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "NavigationMenuLink",
+        "entry": "/link",
         "level": 2
       },
       {
-        "entry": "NavigationMenuList",
+        "entry": "/list",
         "level": 2
       },
       {
-        "entry": "NavigationMenuListItem",
+        "entry": "/list-item",
         "level": 2
       },
       {
-        "entry": "NavigationMenu",
+        "entry": "/menu",
         "level": 2
       },
       {
-        "entry": "RadixNavigationMenu.Sub",
+        "entry": "/sub",
         "level": 2
       },
       {
-        "entry": "ListItemTitle",
+        "entry": "/title",
         "level": 2
       },
       {
-        "entry": "NavigationMenuTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -4188,7 +4188,7 @@
         "level": 1
       },
       {
-        "entry": "PaginationItem",
+        "entry": "/item",
         "level": 2
       }
     ],
@@ -4460,7 +4460,7 @@
         "level": 1
       },
       {
-        "entry": "ProgressIndicator",
+        "entry": "/indicator",
         "level": 2
       }
     ],
@@ -4569,11 +4569,11 @@
         "level": 1
       },
       {
-        "entry": "description",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "title",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -4703,11 +4703,11 @@
         "level": 1
       },
       {
-        "entry": "ResizableHandle",
+        "entry": "/handle",
         "level": 2
       },
       {
-        "entry": "ResizablePanel",
+        "entry": "/panel",
         "level": 2
       }
     ],
@@ -4856,39 +4856,39 @@
         "level": 1
       },
       {
-        "entry": "SelectContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "SelectGroup",
+        "entry": "/group",
         "level": 2
       },
       {
-        "entry": "SelectItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "SelectLabel",
+        "entry": "/label",
         "level": 2
       },
       {
-        "entry": "SelectScrollDownButton",
+        "entry": "/scroll-down-button",
         "level": 2
       },
       {
-        "entry": "SelectScrollUpButton",
+        "entry": "/scroll-up-button",
         "level": 2
       },
       {
-        "entry": "SelectSeparator",
+        "entry": "/separator",
         "level": 2
       },
       {
-        "entry": "SelectTrigger",
+        "entry": "/trigger",
         "level": 2
       },
       {
-        "entry": "SelectValue",
+        "entry": "/value",
         "level": 2
       }
     ],
@@ -5376,27 +5376,27 @@
         "level": 1
       },
       {
-        "entry": "SheetClose",
+        "entry": "/close",
         "level": 2
       },
       {
-        "entry": "content",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "SheetDescription",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "SheetFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "header",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "SheetTitle",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -5869,31 +5869,31 @@
         "level": 1
       },
       {
-        "entry": "TableBody",
+        "entry": "/body",
         "level": 2
       },
       {
-        "entry": "TableCaption",
+        "entry": "/caption",
         "level": 2
       },
       {
-        "entry": "TableCell",
+        "entry": "/cell",
         "level": 2
       },
       {
-        "entry": "TableFooter",
+        "entry": "/footer",
         "level": 2
       },
       {
-        "entry": "TableHead",
+        "entry": "/head",
         "level": 2
       },
       {
-        "entry": "TableHeader",
+        "entry": "/header",
         "level": 2
       },
       {
-        "entry": "TableRow",
+        "entry": "/row",
         "level": 2
       }
     ],
@@ -6014,15 +6014,15 @@
         "level": 1
       },
       {
-        "entry": "TabsContent",
+        "entry": "/content",
         "level": 2
       },
       {
-        "entry": "TabsList",
+        "entry": "/list",
         "level": 2
       },
       {
-        "entry": "TabsTrigger",
+        "entry": "/trigger",
         "level": 2
       }
     ],
@@ -6207,19 +6207,19 @@
         "level": 1
       },
       {
-        "entry": "p",
+        "entry": "/description",
         "level": 2
       },
       {
-        "entry": "img",
+        "entry": "/image",
         "level": 2
       },
       {
-        "entry": "span",
+        "entry": "/tagLine",
         "level": 2
       },
       {
-        "entry": "h1",
+        "entry": "/title",
         "level": 2
       }
     ],
@@ -6383,7 +6383,7 @@
         "level": 1
       },
       {
-        "entry": "Palette",
+        "entry": "/palette",
         "level": 2
       }
     ],
@@ -6529,11 +6529,11 @@
         "level": 1
       },
       {
-        "entry": "ToggleGroupItem",
+        "entry": "/item",
         "level": 2
       },
       {
-        "entry": "ToggleGroupItem",
+        "entry": "/toggle",
         "level": 2
       }
     ],
@@ -6796,7 +6796,7 @@
         "level": 1
       },
       {
-        "entry": "title",
+        "entry": "/title",
         "level": 2
       }
     ],

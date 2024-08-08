@@ -5,8 +5,8 @@ import { redirect } from "next/navigation";
 import path from "path";
 import fs from 'fs';
 
-import LayoutsComponents from '../../../docs/layouts.json';
-import HtmlComponents from '../../../docs/html.json'
+import LayoutsComponents from '../../../../docs/layouts.json';
+import HtmlComponents from '../../../../docs/html.json'
 
 export type RadixPropDocumentation = {
   name: string,

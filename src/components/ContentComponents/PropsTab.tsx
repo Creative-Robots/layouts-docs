@@ -1,7 +1,7 @@
-import { RadixPropDocumentation } from "@/app/components/[name]/page";
 import { cn } from "@/lib/cn";
 import { DivWithDescription, DivWithToolTip, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName, PropsNameWithDesc, requiredCol } from "@/lib/Style";
 import Separator from "../Separator";
+import { RadixPropDocumentation } from "@/app/(app)/components/[name]/page";
 
 
 

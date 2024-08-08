@@ -12,7 +12,7 @@ import { Heading1, Heading2, P, SubHeading, Title } from "../ContentComponents"
 import { Label } from "../ui/label"
 import { CodeBlock } from "../ContentComponents/CodeBlock"
 import { Strong } from "../ContentComponents/Strong"
-import Entry from "../ContentComponents/Entry"
+import Entries from "../ContentComponents/Entry"
 
 interface MdxComponentProps {
     content: { 
@@ -181,17 +181,7 @@ export default function MdxComponent({content}: MdxComponentProps) {
               </span> */}
             </div>
           </div>
-          <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0  h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
-            <Label className="text-sm font-medium" >
-							On this page
-						</Label>
-            {content.entries ? content.entries?.map((e, i) => {
-              console.log(e);
-              return (
-                <Entry entry={e.entry} i={i} />
-              )
-            }) : null}
-          </div>
+          <Entries entries={content.entries} />
         </div>
       </>
     )

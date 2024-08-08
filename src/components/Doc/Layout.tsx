@@ -1,4 +1,4 @@
-import { ComponentDoc } from "@/app/components/[name]/page";
+import { ComponentDoc } from "@/app/(app)/components/[name]/page";
 import DocBreadcrums from "../Breadcrums";
 import { PropsTab, Section, SubComponent, SubSection, Title } from "../ContentComponents";
 import { CodeBlock } from "../ContentComponents/CodeBlock";
