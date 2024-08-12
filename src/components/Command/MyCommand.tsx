@@ -67,7 +67,7 @@ const IntoCommandInput = (H: FileElementType[]):React.ReactNode => {
     <>
       <div className="justify-start items-start flex-col flex gap-2 relative max-w-[250px] ml-auto mr-4 self-center" onClick={simulateCtrlK}>
             <Input className="reset py-2 px-4 items-center rounded-lg w-full bg-gray-100 placeholder:text-gray-500 text-[13px] outline-white focus:outline-gray-200 text-[#1e1f22] focus:shadow-sm cursor-pointer" placeHolder="Search..." placeholder="Search..." />
-            <div className="items-center justify-start flex gap-1 absolute right-2 top-2" >
+            <div className="items-center justify-start flex gap-1 absolute right-2 top-2.5" >
                 <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
                     ⌘
                 </kbd>
