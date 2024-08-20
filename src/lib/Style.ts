@@ -49,12 +49,12 @@ const TitleDescription = cn(GlobalDescription, "text-[18px]");
 
 
 const Heading1Box = "justify-start gap-2 items-start flex-col flex w-full my-[0.67em]";
-const Heading1 = "text-[#1e1f22] text-2xl tracking-tight font-medium";
+const Heading1 = "text-[#1e1f22] text-xl tracking-tight font-medium";
 const Heading1Description = cn(GlobalDescription, "");
 
 const Heading2Box = "justify-start items-start flex-col flex w-full mb-2";
 const Heading2Box_Mdx = "mt-[48px] mb-[16px]";
-const Heading2 = "text-[#1e1f22] text-[24px] font-medium";
+const Heading2 = "text-[#1e1f22] text-[16px] font-medium";
 const Heading2Description = cn(GlobalDescription, "");
 
 const SubHeadingBox = "justify-start items-start flex-col flex w-full my-2";
@@ -63,7 +63,7 @@ const SubHeadingDescription = cn(GlobalDescription, "");
 
 const H3Box = "justify-start items-start flex-col flex w-full gap-2";
 const H3Box_Mdx = " mt-[48px] mb-[12px]";
-const H3 = "text-[#5b5e66] text-[20px] font-medium";
+const H3 = "text-[#5b5e66] text-[16px] font-medium";
 const H3Description = cn(GlobalDescription, "");
 
 
