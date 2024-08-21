@@ -25,7 +25,7 @@ export default function AppLayout({children}:{children?:ReactNode}) {
         {/** Header of the docs */}
         <div className="flex flex-col place-content-between border-b border-black/5 fixed z-30 w-[100%] backdrop-blur  bg-[#FDFDFD]">
         <div className="flex flex-row w-full max-w-[2000px] mx-auto h-fit p-4">
-            <div className="flex flex-row gap-1.5 items-center w-fit mr-4">
+            <div className="flex flex-row gap-1.5 items-center w-fit">
             <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=08zdnwu3&dl=0"}></img>
             <h1 className="text-base tracking-tight font-[Inter_Display] font-medium text-[#1E1F22]">Layouts.dev</h1>
             <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min">Docs</Badge>

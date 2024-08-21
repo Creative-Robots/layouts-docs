@@ -48,7 +48,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
     const {tag, title, shortDescriptionOfTheTag, allowedAttributes, canHaveChildren, usageExamples} = data;
     return (
         
-        <div className='flex flex-col gap-3 pb-20 sm:px-10 px-4 min-h-screen flex-1 pt-[122px]'>
+        <div className='flex flex-col gap-3 pb-20 sm:px-36 px-4 min-h-screen flex-1 pt-[122px]'>
             <DocBreadcrums items={[tag]} />
             <div className='flex flex-col'>
                 <Title title={title} description={shortDescriptionOfTheTag} ></Title>
