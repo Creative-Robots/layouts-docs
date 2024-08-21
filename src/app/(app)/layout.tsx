@@ -27,11 +27,11 @@ export default function AppLayout({children}:{children?:ReactNode}) {
         <div className="flex flex-row w-full max-w-[2000px] mx-auto h-fit p-4">
             <div className="flex flex-row gap-1.5 items-center w-fit mr-4">
             <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=08zdnwu3&dl=0"}></img>
-            <h1 className="text-base tracking-tight font-[Inter_Display] text-[#1E1F22]">Layouts.dev</h1>
+            <h1 className="text-base tracking-tight font-[Inter_Display] font-medium text-[#1E1F22]">Layouts.dev</h1>
             <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min">Docs</Badge>
             </div>
             <SearchCommand />
-            <div className="p-2 rounded hover:bg-black/5 size-fit self-center">
+            <div className="p-2 rounded hidden hover:bg-black/5 size-fit self-center">
             <IoSunnyOutline className="text-[#1E1F22]" width={16} height={16}/>
             </div>
         </div>
@@ -42,9 +42,9 @@ export default function AppLayout({children}:{children?:ReactNode}) {
             <SheetTrigger className=" hover:bg-gray-100 rounded-md size-fit my-auto p-1 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></SheetTrigger>
             <SheetC className="bg-white px-0 pb-0 flex flex-col" side={'left'}>
                 <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent">
-                <SheetTitle className="flex flex-row justify-center gap-4">
-                    <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/2bxt0v45q4odj1rvxdqo4/Clip-path-group.svg?rlkey=j7y748ujkqvapbybc6wqcyxy8&st=vjtgh475&dl=0"}></img>
-                    <span className="text-xl font-semibold">Documentation</span>
+                <SheetTitle className="flex flex-row justify-start px-8 gap-2">
+                    <img width={18} height={18} className="w-[18px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=yvk1ivqk&dl=0"}></img>
+                    <span className="text-lg font-medium">Documentation</span>
                 </SheetTitle>
                 </SheetHeader>
                 <SheetContent bottom />

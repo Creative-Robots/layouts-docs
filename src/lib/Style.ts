@@ -67,8 +67,8 @@ const H3 = "text-[#5b5e66] text-[16px] font-medium";
 const H3Description = cn(GlobalDescription, "");
 
 
-const Section = "flex flex-col my-6";
-const SubSection = "flex flex-col gap-1 my-3";
+const Section = "flex flex-col my-8";
+const SubSection = "flex flex-col gap-1 my-6";
 
 const DivWithToolTip = "relative flex flex-row items-center gap-2 text-xs";
 const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3";
