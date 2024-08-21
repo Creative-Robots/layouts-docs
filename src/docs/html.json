@@ -11004,75 +11004,6 @@
     }
   },
   {
-    "name": "textPath",
-    "parsedName": "textpath",
-    "entries": [
-      {
-        "entry": "textPath",
-        "level": 1
-      },
-      {
-        "entry": "Props",
-        "level": 1
-      },
-      {
-        "entry": "Usage Examples",
-        "level": 1
-      },
-      {
-        "entry": "Basic Example",
-        "level": 2
-      }
-    ],
-    "content": {
-      "tag": "textPath",
-      "allowedAttributes": [
-        {
-          "name": "href",
-          "isRequired": true,
-          "acceptedValueTypes": [
-            {
-              "type": "URL"
-            }
-          ]
-        },
-        {
-          "name": "startOffset",
-          "isRequired": false,
-          "acceptedValueTypes": [
-            {
-              "type": "number"
-            }
-          ]
-        },
-        {
-          "name": "method",
-          "isRequired": false,
-          "acceptedValueTypes": [
-            {
-              "type": "string",
-              "options": [
-                "align",
-                "stretch"
-              ]
-            }
-          ]
-        }
-      ],
-      "canHaveChildren": false,
-      "title": "textPath",
-      "shortDescriptionOfTheTag": "The SVG <textPath> element defines a set of content for display along a <path> element which corresponds to a shape defined in the SVG's graphical layout.",
-      "usageExamples": [
-        {
-          "title": "Basic Example",
-          "description": "This example shows the basic usage of the textPath tag.",
-          "code": "<svg>\n  <path d=\"M10 10 H 90 V 90 H 10 L 10 10\" />\n  <text>\n    <textPath href=\"#MyPath\">We go up, then we go down, then up again</textPath>\n  </text>\n</svg>",
-          "layoutsCode": "/svg\n\t/path @d=\"M10 10 H 90 V 90 H 10 L 10 10\"\n\t/text\n\t\t/textPath @href=\"#MyPath\"\n\t\t\tWe go up, then we go down, then up again"
-        }
-      ]
-    }
-  },
-  {
     "name": "textarea",
     "parsedName": "textarea",
     "entries": [
@@ -11152,6 +11083,75 @@
           "description": "Example of a textarea element with a placeholder text.",
           "code": "<textarea cols='30' rows='10' placeholder='Enter your text here'></textarea>",
           "layoutsCode": "/textarea @cols={30} @placeholder=\"Enter your text here\" @rows={10}"
+        }
+      ]
+    }
+  },
+  {
+    "name": "textPath",
+    "parsedName": "textpath",
+    "entries": [
+      {
+        "entry": "textPath",
+        "level": 1
+      },
+      {
+        "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Usage Examples",
+        "level": 1
+      },
+      {
+        "entry": "Basic Example",
+        "level": 2
+      }
+    ],
+    "content": {
+      "tag": "textPath",
+      "allowedAttributes": [
+        {
+          "name": "href",
+          "isRequired": true,
+          "acceptedValueTypes": [
+            {
+              "type": "URL"
+            }
+          ]
+        },
+        {
+          "name": "startOffset",
+          "isRequired": false,
+          "acceptedValueTypes": [
+            {
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "name": "method",
+          "isRequired": false,
+          "acceptedValueTypes": [
+            {
+              "type": "string",
+              "options": [
+                "align",
+                "stretch"
+              ]
+            }
+          ]
+        }
+      ],
+      "canHaveChildren": false,
+      "title": "textPath",
+      "shortDescriptionOfTheTag": "The SVG <textPath> element defines a set of content for display along a <path> element which corresponds to a shape defined in the SVG's graphical layout.",
+      "usageExamples": [
+        {
+          "title": "Basic Example",
+          "description": "This example shows the basic usage of the textPath tag.",
+          "code": "<svg>\n  <path d=\"M10 10 H 90 V 90 H 10 L 10 10\" />\n  <text>\n    <textPath href=\"#MyPath\">We go up, then we go down, then up again</textPath>\n  </text>\n</svg>",
+          "layoutsCode": "/svg\n\t/path @d=\"M10 10 H 90 V 90 H 10 L 10 10\"\n\t/text\n\t\t/textPath @href=\"#MyPath\"\n\t\t\tWe go up, then we go down, then up again"
         }
       ]
     }

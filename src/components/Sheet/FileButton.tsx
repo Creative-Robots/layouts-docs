@@ -6,6 +6,13 @@ import { element, selectedElementStyle } from "@/lib/Style"
 import { usePathname, useRouter } from "next/navigation"
 import { useMemo } from "react"
 
+function specialName(name: string) {
+    if (name === "Help and Support") {
+        return "Help & Support";
+    }
+    return name;
+}
+
 export const FileButton = ({f, i, level}:{f:FileElementType, i:number, level:number}) => {
     const router = useRouter();
     const path = usePathname();
@@ -13,6 +20,6 @@ export const FileButton = ({f, i, level}:{f:FileElementType, i:number, level:num
         return path === '/' + f.parsedName;
     }, [path])
     return (
-        <button key={i + level} className={cn(element, isSelected ? selectedElementStyle : " ")} onClick={() => router.push('/' + f.parsedName)}>{f.name}</button>
+        <button key={i + level} className={cn(element, isSelected ? selectedElementStyle : " ")} onClick={() => router.push('/' + f.parsedName)}>{specialName(f.name)}</button>
     )
 }

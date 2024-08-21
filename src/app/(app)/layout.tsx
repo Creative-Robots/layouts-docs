@@ -31,7 +31,7 @@ export default function AppLayout({children}:{children?:ReactNode}) {
             <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min">Docs</Badge>
             </div>
             <SearchCommand />
-            <div className="p-2 rounded hover:bg-black/5 size-fit self-center">
+            <div className="p-2 rounded hover:bg-black/5 size-fit self-center hidden">
             <IoSunnyOutline className="text-[#1E1F22]" width={16} height={16}/>
             </div>
         </div>
