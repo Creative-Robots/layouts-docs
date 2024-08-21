@@ -18,7 +18,7 @@ export default function Dropdown({name, children}:DropdownProps) {
 
     return (
         <>
-            <button onClick={toggle} className={cn("w-full h-fit flex flex-row justify-between items-center rounded-md pr-2",)}>
+            <button onClick={toggle} className={cn("w-full h-fit flex flex-row justify-between items-center rounded-md pr-2 py-1",)}>
                 <span className={cn(folder_2)}>{name}</span>
                 <BiChevronDown size={15} className={cn(open ? "rotate-180" : "")}/>
             </button>

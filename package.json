@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "prebuild": "node ./script/mdxToJson.js && node ./script/htmlIntoJson.js && node ./script/layoutsIntoJson.js",
+    "prebuild": "node ./scripts/mdxToJson.js && node ./scripts/htmlIntoJson.js && node ./scripts/layoutsIntoJson.js",
     "start": "next start",
     "lint": "next lint"
   },
