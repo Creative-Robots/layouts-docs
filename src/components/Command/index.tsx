@@ -3,6 +3,7 @@
 import * as React from "react"
 import { type DialogProps } from "@radix-ui/react-dialog"
 import { Command as CommandPrimitive } from "cmdk"
+import { Search } from "lucide-react"
 
 import { cn } from "@/lib/cn"
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "../Dialog"
@@ -43,7 +44,7 @@ const CommandInput = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
   <div className="flex items-center border-b px-3" cmdk-input-wrapper="">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
     <CommandPrimitive.Input
       ref={ref}
       className={cn(

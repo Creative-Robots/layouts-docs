@@ -83,7 +83,7 @@ const IntoCommandInput = (H: FileElementType[]):React.ReactNode => {
           <CommandGroup heading="Layouts components" className="gap-0">
               {LayoutsComponents.map((e) => {
                   return (
-                      <CommandItem key={e.tag} value={e.name} onMouseDown={() => {router.push('/components/' + e.tag); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
+                      <CommandItem key={e.tag} value={e.name} onSelect={() => {router.push('/components/' + e.tag); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
                               {/* <Calendar className="mr-2 h-4 w-4" /> */}
                               <span>{e.name}</span>
                       </CommandItem>
