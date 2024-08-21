@@ -1,6 +1,6 @@
 ---
-title: 'Working with images'
-description: 'How to create and manage images in Layouts'
+title: 'Working with assets'
+description: 'How to create and manage images, illustrations and icons in Layouts'
 
 ---
 <video
@@ -19,9 +19,17 @@ In Layouts, users can leverage AI or access various asset libraries to generate 
 
 The `/image` component in Layouts fetches an image from the internet or from your favorite asset libraries.
 
+
 **ex:**
 ```syntax Layouts
 /image %unsplash spaceship size-48 rounded-lg
+```
+
+You can also drop a hosted url with an image using the `/image` component. 
+
+**ex:**
+``` syntax Layouts 
+/image https://www.github.com/creativerobots.svg
 ```
 
 ### Using image variants 
@@ -155,8 +163,8 @@ Available image variants include:
   muted
   loop
   playsInline
-  className="w-full aspect-video"
-  src="https://dl.dropbox.com/scl/fi/dryivajxo6j677avz429r/Icon_Images_Layoutsdocs.mp4?rlkey=qn7vy42dzwbh5bpwob2us63wq&st=g42gh59s&dl=0"
+  className="w-full"
+  src="https://dl.dropbox.com/scl/fi/vifh5tsbkqr1m42hwp9ro/icons_images-docs.mp4?rlkey=lbsihvw0fia755hkuj4fr23v7&st=f5dfic8w&dl=0"
 ></video>
 
 Use the `/icon` component in Layouts whenever you need to use a icon in your design. All icons in Layouts are made available via [Lucide](https://lucide.dev/).
@@ -178,7 +186,7 @@ For example, if your looking for a rocket icon for your primary `/button` on a l
   loop
   playsInline
   className="w-full aspect-video"
-  src="https://dl.dropbox.com/scl/fi/mbq3oz2w1ylu86z75rcp3/Illustrations_Images_Layoutsdocs.mp4?rlkey=ppzivyw1igpk4wklxwfpaavmh&st=fccbs0dy&dl=0"
+  src="https://dl.dropbox.com/scl/fi/xsabjvuqhkjywmf1ieygv/illustrations_images-docs.mp4?rlkey=ryskgdq6xsecojfhv6576ja1e&st=9qeptvv4&dl=0"
 ></video>
 
 
@@ -230,11 +238,6 @@ Create an image with the right aspect-ratio:
 /div w-40
 	/aspect-ratio %video
 		/image Tiger size-full object-cover
-```
-
-Generate an image with AI:
-```syntax Layouts
-/image w-40 %ai/flat-illustration Calendar
 ```
 
 Apply transforms to an illustration:
