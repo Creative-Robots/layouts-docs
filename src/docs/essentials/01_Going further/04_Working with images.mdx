@@ -3,8 +3,17 @@ title: 'Working with images'
 description: 'How to create and manage images in Layouts'
 
 ---
-<img height="full" src="https://dl.dropbox.com/scl/fi/x2xq8q7jim6t1a2gmrzdf/Image_QS_Layoutsdocs.gif?rlkey=e48b7eb6bppove3ffzal00enj&st=vx2kn9df&dl=0" />
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full"
+  src="https://dl.dropbox.com/scl/fi/et246ozaxub6l8b2kxeeh/image_quickstart-docs.mp4?rlkey=cwnn05hsf6jcbc715idu51dzu&st=wroj3k6b&dl=0"
+></video>
+
 In Layouts, users can leverage AI or access various asset libraries to generate various types of images, modify them on the fly with modifiers, and change an image's aspect ratio, radius etc.
+
 
 ### Images
 
@@ -37,29 +46,107 @@ For instance, if you'd like to find an image of a tiger from Google images, use 
 ```
 
 Available image variants include:
-
-| %variant | Description                           |
-| -------- | ------------------------------------- |
-| %unsplash    | Source from Unsplash              |
-| %google      | Source from Google Images |
-| %lexica      | Generate an image with Lexica AI |
-| %lexica-aperture | Generate a photorealistic image with Lexica AI |
-| %dall-e  | Generate an image with OpenAI's Dall-e |
-| %sdxl    | Generate an image from Stable Diffusion |
-| %ai/3D-clay-icon | Generate a 3D clay icon using AI |
-| %ai/children-book | Generate a children's book style image using AI |
-| %ai/clear-style | Generate a clear illustration using AI |
-| %ai/comics | Generate a comic-style image using AI |
-| %ai/flat-illustration | Generate a flat illustration using AI |
-| %ai/interior-design | Generate images of various interior styles using AI |
-| %ai/night-portrait | Generate an night scene portrait using AI |
-| %ai/outline-icon | Generate an outline style icon using AI |
-| %ai/poly-clay-icon | Generate a geometric clay icon using AI |
-| %ai/portrait | Generate a portrait-style image using AI |
-| %ai/undraw | Generate an image from unDraw's open source library |
-| %ai/vector-art | Generate vector art using AI |
-
-
+<table style={{
+  width: '100%',
+  borderCollapse: 'separate',
+  borderSpacing: '0',
+  border: '1px solid #e5e7eb',
+  borderRadius: '8px',
+  overflow: 'hidden',
+  fontSize: '14px',
+  marginBottom: '20px',
+}}>
+  <thead>
+    <tr style={{ backgroundColor: '#f3f4f6' }}>
+      <th style={{
+        padding: '12px 16px',
+        textAlign: 'left',
+        fontWeight: 'bold',
+        borderBottom: '2px solid #e5e7eb',
+      }}>Variant</th>
+      <th style={{
+        padding: '12px 16px',
+        textAlign: 'left',
+        fontWeight: 'bold',
+        borderBottom: '2px solid #e5e7eb',
+      }}>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%unsplash</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Source from Unsplash</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%google</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Source from Google Images</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%lexica</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an image with Lexica AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%lexica-aperture</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a photorealistic image with Lexica AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%dall-e</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an image with OpenAI's Dall-e</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%sdxl</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an image from Stable Diffusion</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/3D-clay-icon</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a 3D clay icon using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/children-book</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a children's book style image using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/clear-style</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a clear illustration using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/comics</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a comic-style image using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/flat-illustration</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a flat illustration using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/interior-design</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate images of various interior styles using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/night-portrait</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an night scene portrait using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/outline-icon</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an outline style icon using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/poly-clay-icon</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a geometric clay icon using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/portrait</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate a portrait-style image using AI</td>
+    </tr>
+    <tr style={{ backgroundColor: '#ffffff' }}>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb', fontFamily: 'monospace', color: '#2563eb' }}>%ai/undraw</td>
+      <td style={{ padding: '12px 16px', borderBottom: '1px solid #e5e7eb' }}>Generate an image from unDraw's open source library</td>
+    </tr>
+    <tr style={{ backgroundColor: '#f9fafb' }}>
+      <td style={{ padding: '12px 16px', fontFamily: 'monospace', color: '#2563eb' }}>%ai/vector-art</td>
+      <td style={{ padding: '12px 16px' }}>Generate vector art using AI</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Icons
 
