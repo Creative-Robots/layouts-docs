@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run index-content && next dev",
     "build": "next build",
-    "prebuild": "node ./scripts/mdxToJson.js && node ./scripts/htmlIntoJson.js && node ./scripts/layoutsIntoJson.js",
-    "start": "next start",
-    "lint": "next lint"
+    "prebuild": "npm run index-content",
+    "start": "npm run index-content && next start",
+    "lint": "next lint",
+    "index-content": "node ./scripts/mdxToJson.js && node ./scripts/htmlIntoJson.js && node ./scripts/layoutsIntoJson.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
