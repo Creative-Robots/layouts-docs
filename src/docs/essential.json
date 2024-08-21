@@ -1,10 +1,10 @@
 {
-  "-10_Get in touch": {
-    "name": "-10_Get in touch",
-    "parsedName": "get-in-touch",
+  "-10_More": {
+    "name": "-10_More",
+    "parsedName": "more",
     "folder": {
-      "Help & Support.mdx": {
-        "name": "Help & Support",
+      "01_Help & Support.mdx": {
+        "name": "01_Help & Support",
         "parsedName": "help-&-support",
         "entries": [
           {
@@ -29,10 +29,27 @@
           }
         ],
         "content": {
-          "MdxContent": "You figured it out. Layouts is not a finished product polished at every angle.\nIt’s very raw, a bit buggy. We throwed it out into the wild to get feedback from people like you.\n\nWe’d love you to get in touch and tell us how you feel about it. \n\nHere are a few channels below on how to best reach out:\n\n## Talk to an actual human\n\n### Contact support\nReach out to Layouts.dev support by contacting us directly at help@creative-robots.ai or by clicking the _Contact Support_ button in app. \n\n**or**\n\nBy getting in touch with us on the dedicated _Contact Support_ link on our website.\n\nFor syntax questions, the best place to ask is the #syntax channel in our Discord community.\n\n### Community \nWe recommend joining the Layouts.dev Discord channel to meet other Layouts users and exchange tips/tricks. \nThe whole Layouts team lives in the Discord so it's a great place to ask questions. \n\nThe community is also a great place to report #bugs and share #product-feedback, ask for help while building and to get #help from the team or community.\n\n\n## Contribute \n\nIf you’re interested in contributing, we’d love to have you onboard!\nHere are a few ways:\n\n    **Giving feedback**:\n        - Feel free to contribute feedback on our Discord (see above for notes on where to best submit feedback).\n    \n    **Joining the team**: \n        - We’re a small company looking for funding, but we’ll certainly be hiring very soon. We’d love to get in touch beforehand so we can contact you. Feel free to send us an email at hi@creative-robots.ai\n   \n    **Investing**: \n        - Money (Capital at Risk): We believe in the power of community investing. We currently have an open SAFE in place for people wanting to invest. Anybody can send funds and you’ll be added to our SAFE as an investor. Works for contributions starting at $5k and beyond.\n        - Time: If you don’t have money (like a lot of us) but feel you could contribute time as a team member, we’re super open to talk. We can compensate you with a great pay rate in shares on our SAFE. It’s just shares, but hey, we’re aiming for the stars!",
+          "MdxContent": "You figured it out. Layouts is not a finished product polished at every angle.\nIt’s very raw, a bit buggy. We throwed it out into the wild to get feedback from people like you.\n\nWe’d love you to get in touch and tell us how you feel about it. \n\nHere are a few channels below on how to best reach out:\n\n## Talk to an actual human\n \n### Contact support\nReach out to Layouts.dev support by contacting us directly at help@creative-robots.ai or by clicking the _Contact Support_ button in app. \n\n**or**\n\nBy getting in touch with us on the dedicated _Contact Support_ link on our website.\n\nFor syntax questions, the best place to ask is the #syntax channel in our Discord community.\n\n### Community \nWe recommend joining the Layouts.dev Discord channel to meet other Layouts users and exchange tips/tricks. \nThe whole Layouts team lives in the Discord so it's a great place to ask questions. \n\nThe community is also a great place to report #bugs and share #product-feedback, ask for help while building and to get #help from the team or community.\n\n\n## Contribute \n\nIf you’re interested in contributing, we’d love to have you onboard!\nHere are a few ways:\n\n    **Giving feedback**:\n        - Feel free to contribute feedback on our Discord (see above for notes on where to best submit feedback).\n    \n    **Joining the team**: \n        - We’re a small company looking for funding, but we’ll certainly be hiring very soon. We’d love to get in touch beforehand so we can contact you. Feel free to send us an email at hi@creative-robots.ai\n   \n    **Investing**: \n        - Money (Capital at Risk): We believe in the power of community investing. We currently have an open SAFE in place for people wanting to invest. Anybody can send funds and you’ll be added to our SAFE as an investor. Works for contributions starting at $5k and beyond.\n        - Time: If you don’t have money (like a lot of us) but feel you could contribute time as a team member, we’re super open to talk. We can compensate you with a great pay rate in shares on our SAFE. It’s just shares, but hey, we’re aiming for the stars!",
           "MdxFrontMatter": {
             "title": "Help & Support",
             "description": "How to contact support and access additional resources"
+          }
+        }
+      },
+      "02_Cheatsheet.mdx": {
+        "name": "02_Cheatsheet",
+        "parsedName": "cheatsheet",
+        "entries": [
+          {
+            "entry": "Cheatsheet",
+            "level": 1
+          }
+        ],
+        "content": {
+          "MdxContent": "\n# Intro \n**Layouts** is like a playground for Tailwind CSS. <br /> You write something on the left and it displays on the right. **That simple**. <br /> The only difference is that we use a more concise syntax than HTML to improve developer experience.\n\nFor example, instead of writing:\n\n```html\n<div class=\"bg-indigo-100\">\n  <button>\n    Hello\n  </button>\n</div>\n```\n\nYou would write:\n\n```\n/div bg-indigo-100\n  /button Hello\n```\n\n<br />\n---\n<br />\n\n# Basic Syntax\n```\n/component %variant @property1=value @property2=value2 tailwind-class tailwind-class .css-class Text content\n  /child-component Text content\n    /grand-child-component Another text here\n```\n\n<br />\n---\n<br />\n\n# Add a Component\nWrite `/` and select the component in the menu.\n\n<br />\n---\n<br />\n\n# Get an example of use for your component\n```\n/button >>>\n```\nType `>>>` after your component name.  \n\n<br />\n---\n<br />\n\n# Select component variants\n```\n/button %variantName\n```\nPlace your caret over the variant name and press `Shift + Up` or `Shift + Down`.\n\n<br />\n---\n<br />\n\n# Style a Component with Tailwind Classes\n```\n/h1 Hello world text-6xl underline m-4\n```\nAdd the tailwind classes on the same line as the component.\n<br />\nIterate on values by placing your caret over the tailwind class and pressing `Shift + Up` or `Shift + Down`.\n\n<br />\n---\n<br />\n\n# Ask AI for the Right Tailwind Classes\n```\n/h1 Hello (I'd like the text to have a gradient background clipped to it...)\n```\nDescribe what you need in the following format: `(<DESCRIPTION HERE>...)`  \n\n<br />\n---\n<br />\n\n# Add an Image of an Icon\n```\n/image Tiger\n/icon Chevron left\n```\n\n<br />\n---\n<br />\n\n# Add a Global Style for a Component\n```\n/style\n  /button bg-indigo-900\n```\n\n<br />\n---\n<br />\n\n# Change the Global Theme for the App\n\n```\n/theme \n  @primaryColor=indigo-800\n  @radius=\"2em\"\n```\n",
+          "MdxFrontMatter": {
+            "title": "Cheatsheet",
+            "description": "Start using Layouts in minutes."
           }
         }
       }

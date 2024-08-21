@@ -1,0 +1,116 @@
+---
+title: Cheatsheet
+description: 'Start using Layouts in minutes.'
+---
+
+# Intro 
+**Layouts** is like a playground for Tailwind CSS. <br /> You write something on the left and it displays on the right. **That simple**. <br /> The only difference is that we use a more concise syntax than HTML to improve developer experience.
+
+For example, instead of writing:
+
+```html
+<div class="bg-indigo-100">
+  <button>
+    Hello
+  </button>
+</div>
+```
+
+You would write:
+
+```
+/div bg-indigo-100
+  /button Hello
+```
+
+<br />
+---
+<br />
+
+# Basic Syntax
+```
+/component %variant @property1=value @property2=value2 tailwind-class tailwind-class .css-class Text content
+  /child-component Text content
+    /grand-child-component Another text here
+```
+
+<br />
+---
+<br />
+
+# Add a Component
+Write `/` and select the component in the menu.
+
+<br />
+---
+<br />
+
+# Get an example of use for your component
+```
+/button >>>
+```
+Type `>>>` after your component name.  
+
+<br />
+---
+<br />
+
+# Select component variants
+```
+/button %variantName
+```
+Place your caret over the variant name and press `Shift + Up` or `Shift + Down`.
+
+<br />
+---
+<br />
+
+# Style a Component with Tailwind Classes
+```
+/h1 Hello world text-6xl underline m-4
+```
+Add the tailwind classes on the same line as the component.
+<br />
+Iterate on values by placing your caret over the tailwind class and pressing `Shift + Up` or `Shift + Down`.
+
+<br />
+---
+<br />
+
+# Ask AI for the Right Tailwind Classes
+```
+/h1 Hello (I'd like the text to have a gradient background clipped to it...)
+```
+Describe what you need in the following format: `(<DESCRIPTION HERE>...)`  
+
+<br />
+---
+<br />
+
+# Add an Image of an Icon
+```
+/image Tiger
+/icon Chevron left
+```
+
+<br />
+---
+<br />
+
+# Add a Global Style for a Component
+```
+/style
+  /button bg-indigo-900
+```
+
+<br />
+---
+<br />
+
+# Change the Global Theme for the App
+
+```
+/theme 
+  @primaryColor=indigo-800
+  @radius="2em"
+```

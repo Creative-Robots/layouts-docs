@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run index-content && next dev",
+    "dev": "concurrently \"npm run index-watch\" \"next dev\"",
     "build": "next build",
     "prebuild": "npm run index-content",
     "start": "npm run index-content && next start",
     "lint": "next lint",
+    "index-watch": "nodemon --watch 'src/docs/essentials' --ext 'js,json,md,mdx' --exec 'npm run index-content'",
     "index-content": "node ./scripts/mdxToJson.js && node ./scripts/htmlIntoJson.js && node ./scripts/layoutsIntoJson.js"
   },
   "dependencies": {
@@ -45,8 +46,10 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/unist": "^3.0.2",
+    "concurrently": "^8.2.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "nodemon": "^3.1.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
