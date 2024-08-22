@@ -179,7 +179,7 @@ export default function MdxComponent({content}: MdxComponentProps) {
       <>
         <div className="flex flex-row flex-1">
           <div className="max-w-[1440px] w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 pt-[122px] relative">
-            <div className="text-gray-800 px-10 w-full max-w-full overflow-hidden">
+            <div className="text-gray-800 xl:px-44 lg:px-12 md:px-8 px-4 w-full max-w-full overflow-hidden">
               {/* FIXME: Remove any below */}
               <MDXProvider components={components as any}>
                   <Title title={content.frontMatter.title} description={content.frontMatter.description}/>
