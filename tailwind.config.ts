@@ -50,6 +50,12 @@ module.exports = {
         body: "var(--font-body)",
         robotomono: "var(--font-roboto-mono)",
       },
+      screens: {
+        '4xs': '150px',
+        '3xs': '250px',
+        '2xs': '350px',
+        'xs': '475px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -97,6 +103,11 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      width: {
+        'middle-box-2/2': 'calc(100vw - 288px - 288px)',
+        'middle-box-1/2': 'calc(100vw - 288px)',
+        'middle-box-0/2': 'calc(100vw)',
+      }
     },
   },
   plugins: [

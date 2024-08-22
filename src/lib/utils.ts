@@ -47,3 +47,5 @@ export const getTextFromChildren = (children: React.ReactNode): string => {
 
   return text;
 };
+
+export const DISCORD_URL = 'https://layouts_discord_url';

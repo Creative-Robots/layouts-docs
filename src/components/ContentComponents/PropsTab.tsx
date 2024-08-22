@@ -63,7 +63,8 @@ interface ProspTabProps {
   
   export const PropsTab = ({props}:ProspTabProps) => {
   
-    return( <>
+    return( 
+    <div className="max-w-full overflow-x-scroll">
       <div className={cn(PropsHeaderBox)}>
         <div className={cn(PropsHeader)}>
           <p className={cn(PropsHeaderTitle)}>Prop</p>
@@ -72,7 +73,7 @@ interface ProspTabProps {
           <p className={cn(PropsHeaderTitle, isRequiredTitle)}>isRequired</p>
         </div>
       </div> 
-      <div className='w-full h-fit'>
+      <div className='w-full h-fit min-w-[500px]'>
         <Separator/>
         {props.map((attribute, idx) => {
             if (attribute === null) return null;
@@ -108,6 +109,6 @@ interface ProspTabProps {
             );
           })}
         </div>
-      </>
+      </div>
     )
   }

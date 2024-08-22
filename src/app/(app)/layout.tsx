@@ -17,6 +17,7 @@ import { cn } from "@/lib/cn";
 import { FaChevronRight } from "react-icons/fa6";
 import { SearchCommand } from "@/components/Command/MyCommand";
 import { ReactNode } from "react";
+import Image from "next/image";
 
 
 export default function AppLayout({children}:{children?:ReactNode}) {
@@ -26,9 +27,9 @@ export default function AppLayout({children}:{children?:ReactNode}) {
         <div className="flex flex-col place-content-between border-b border-black/5 fixed z-30 w-[100%] backdrop-blur  bg-[#FDFDFD]">
         <div className="flex flex-row w-full max-w-[2000px] mx-auto h-fit p-4">
             <div className="flex flex-row gap-1.5 items-center w-fit mr-4">
-            <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=08zdnwu3&dl=0"}></img>
-            <h1 className="text-base tracking-tight font-[Inter_Display] text-[#1E1F22]">Layouts.dev</h1>
-            <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min">Docs</Badge>
+            <Image width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
+            <h1 className="text-base tracking-tight font-[Inter_Display] text-[#1E1F22] hidden 3xs:block ">Layouts.dev</h1>
+            <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min hidden 2xs:block">Docs</Badge>
             </div>
             <SearchCommand />
             <div className="p-2 rounded hover:bg-black/5 size-fit self-center hidden">
@@ -41,13 +42,13 @@ export default function AppLayout({children}:{children?:ReactNode}) {
             <Sheet>
             <SheetTrigger className=" hover:bg-gray-100 rounded-md size-fit my-auto p-1 ml-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></SheetTrigger>
             <SheetC className="bg-white px-0 pb-0 flex flex-col" side={'left'}>
-                <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent">
-                <SheetTitle className="flex flex-row justify-center gap-4">
-                    <img width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={"https://dl.dropbox.com/scl/fi/2bxt0v45q4odj1rvxdqo4/Clip-path-group.svg?rlkey=j7y748ujkqvapbybc6wqcyxy8&st=vjtgh475&dl=0"}></img>
-                    <span className="text-xl font-semibold">Documentation</span>
+                <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent 4xs:block hidden pt-2 2xs:pt-0">
+                <SheetTitle className="flex flex-row justify-start 3xs:justify-center pl-4 3xs:pl-0 gap-2 3xs:gap-4 ">
+                    <Image width={20} height={20} className=" size-[12px] 4xs:size-[8vw] 3xs:size-[20px] my-auto" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
+                    <span className="text-[11px] 4xs:text-[8vw] 3xs:text-xl 4xs:pl-0 font-semibold">Documentation</span>
                 </SheetTitle>
                 </SheetHeader>
-                <SheetContent bottom />
+                <SheetContent bottom className="pt-4 4xs:pt-0"/>
             </SheetC>
             </Sheet>
             

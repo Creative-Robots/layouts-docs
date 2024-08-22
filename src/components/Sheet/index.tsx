@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
 import { FileElementType, getMdxFiles } from "@/lib/fileUtils";
 import React from "react";
@@ -10,6 +11,7 @@ import { folder_1, folder_3 } from "@/lib/Style";
 import LayoutsComponent from '../../docs/RawLayouts/Components.json';
 import { Button } from "../ui/button";
 import { SheetClose } from "../ShadCn/Sheet";
+import { DISCORD_URL } from "@/lib/utils";
 
 function isSpecialCase(file: FileElementType) {
     if (file.name === "Components") return true;
@@ -81,7 +83,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
             if (level === 0) {
                 return (<div key={i}>
                     <span className={cn(folder_1)}>{f.name}</span>
-                    <div key={i + level} className="w-full h-fit pl-4 mt-3 flex flex-col gap-1 ">
+                    <div key={i + level} className="w-full h-fit 4xs:pl-3 3xs:pl-4 mt-3 flex flex-col gap-1 ">
                         {parseFileHierarchie(f.folder, level+1)}
                     </div>
                 </div>)
@@ -92,7 +94,7 @@ function parseFileHierarchie(files: FileElementType[], level: number):React.Reac
             } else if (level === 2) {
                 return (<div key={i}>
                     <span className={cn(folder_3)}>{f.name}</span>
-                    <div key={i + level} className="w-full h-fit pl-4 my-3 flex flex-col gap-1">
+                    <div key={i + level} className="w-full h-fit pl-2 4xs:pl-3 3xs:pl-4 my-3 flex flex-col gap-1">
                         {parseFileHierarchie(f.folder, level+1)}
                     </div>
                 </div>)
@@ -121,22 +123,20 @@ export function SheetContent({className, bottom=false}:{className?:string, botto
     const router = useRouter();
     return (
         <>
-        <div className={cn("flex flex-col flex-1 gap-3 px-8 pb-4 overflow-y-scroll", className)}>
+        <div className={cn("flex flex-col flex-1 gap-3 px-3 4xs:px-8 overflow-y-scroll", !bottom && "pb-4", className)}>
             {parseFileHierarchie(fileNames, 0)}
         </div>
         {
-            bottom && <div className="w-full border-t border-gray-400/20 h-fit p-6  gap-2 flex flex-col bg-white">
-                <Button onClick={() => router.push('mailto:hey@@creative-robots.ai')} className="reset flex flex-row gap-2 items-center p-3 w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
+            bottom && <div className="w-full border-t border-gray-400/20 h-fit py-6 4xs:p-6 gap-2 flex flex-col items-center 4xs:items-start bg-white">
+                <Button onClick={() => router.push(DISCORD_URL)} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
                     <img alt="message" className="size-3.5" src="https://illustrations.dev/encrypted/img_MzM1QkNEQUQwQzgzQ0MxOUY0MTBFOTM0ODMwQjlDODM2NTZEQ0E3NzA2ODdGOTZE" />
-                    <span className="text-sm" >
-                        Contact support
-                    </span>
+                    <span className=" hidden 3xs:block text-sm" >Chat with us</span> {/** base text */}
+                    <span className="hidden 4xs:block text-[15px]" >Chat</span> {/** Small text */}
                 </Button>
-                <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
+                <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
                     <img alt="" className="size-3.5 opacity-60" src="https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=p3x6p2ud&dl=0" />
-                    <span className="text-sm" >
-                        Open the app
-                    </span>
+                    <span className=" hidden 3xs:block text-sm" >Open the App</span> {/** base text */}
+                    <span className=" hidden 4xs:block 3xs:hidden text-[15px]" >App</span> {/** Small text */}
                 </Button>
             </div>
         }

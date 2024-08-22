@@ -48,7 +48,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
     const {tag, title, shortDescriptionOfTheTag, allowedAttributes, canHaveChildren, usageExamples} = data;
     return (
         
-        <div className='flex flex-col gap-3 pb-20 px-10 min-h-screen flex-1 pt-[122px]'>
+        <div className='flex flex-col gap-3 pb-20 px-10 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2  pt-[122px]'>
             <DocBreadcrums items={[tag]} />
             <div className='flex flex-col'>
                 <Title title={title} description={shortDescriptionOfTheTag} ></Title>
@@ -59,9 +59,9 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                     <p className=' text-xs font-body text-[#1E1F22]'>HTML 5</p>
                 </div>} 
             </div>
-            {allowedAttributes && allowedAttributes.length > 0 && <>
+            {allowedAttributes && allowedAttributes.length > 0 && <div className="max-w-full overflow-x-scroll">
                 <Heading1 title="Props"></Heading1>
-                <div className={cn(PropsHeaderBox, "-mt-3 -mb-2")}>
+                <div className={cn(PropsHeaderBox)}>
                     <div className={cn(PropsHeader)}>
                     <p className={cn(PropsHeaderTitle)}>Prop</p>
                     <p className={cn(PropsHeaderTitle)}>Type</p>
@@ -69,7 +69,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                     <p className={cn(PropsHeaderTitle, isRequiredTitle)}>isRequired</p>
                     </div>
                 </div> 
-                <div className='w-full h-fit'>
+                <div className='w-full h-fit min-w-[500px]'>
                 <Separator/>
                 {allowedAttributes.map((attribute, idx) => {
                     const bg = idx % 2 === allowedAttributes.length % 2 ? PropsLine1_2 : PropsLine2_2;
@@ -111,7 +111,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                     );
                 })}
                 </div>
-            </>}
+            </div>}
             <SubHeading title={"Accept children : " + (canHaveChildren ? "✅" : "❌")}></SubHeading>
             {allowedAttributes && allowedAttributes.length > 0 && <>
                 <Heading1 title="Usage Examples"></Heading1>

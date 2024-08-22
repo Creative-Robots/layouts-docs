@@ -97,7 +97,7 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
     };
 
     if (dark) return (
-        <div className={cn("justify-start items-start flex-col flex bg-[#1e1f22] h-fit rounded-lg border border-gray-400 w-full", className)} >
+        <div className={cn("justify-start items-start flex-col flex bg-[#1e1f22] h-fit rounded-lg border border-gray-400 w-full min-w-[100px]", className)} >
             <div className="flex w-full p-3 justify-between border-b border-white/5 items-center py-1.5" >
                 <span className="text-xs text-white font-normal" >
                     { title ? title : "Short syntax"}
@@ -109,15 +109,15 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
                     }  
                 </Button>
             </div>
-            <div className="justify-start items-start flex-col flex w-full p-6" >
-                <pre className="font-robotomono text-sm font-normal leading-[24px] text-wrap" >
+            <div className="justify-start items-start flex-col flex w-full p-6 overflow-x-scroll" >
+                <pre className="font-robotomono text-sm font-normal leading-[24px] text-nowrap min-w-fit" >
                     <code dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />
                 </pre>
             </div>
         </div>
     )
     return (
-        <div className={cn("justify-start items-start flex-col flex bg-[#fbfbfb] h-fit rounded-lg border border-gray-400/20 w-full", className)} >
+        <div className={cn("justify-start items-start flex-col flex bg-[#fbfbfb] h-fit rounded-lg border border-gray-400/20 w-full min-w-[100px]", className)} >
             <div className="flex w-full p-3 justify-between border-b border-black/5 items-center py-1.5" >
                 <span className="text-xs text-[#5b5e66] font-normal" >
                     { title ? title : "Short syntax"}
@@ -129,8 +129,8 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
                     } 
                 </Button>
             </div>
-            <div className="justify-start items-start flex-col flex w-full p-6" >
-                <pre className="font-robotomono text-sm font-normal leading-[24px] text-wrap">
+            <div className="justify-start items-start flex-col flex w-full p-6 overflow-x-scroll" >
+                <pre className="font-robotomono text-sm font-normal leading-[24px] text-nowrap min-w-fit">
                     {code.includes("</") || code.includes("/>")
                     ? code
                     : <code dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />}

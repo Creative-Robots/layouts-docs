@@ -8,13 +8,13 @@ import { cn } from "./cn";
 const innerTextColor:string = "text-gray-400";
 export const selectedElementStyle:string = "text-[#1e1f22]";
 
-const folder_1 = cn("text-sm text-[#1e1f22] font-medium truncate");
+const folder_1 = cn(" text-[13px] 3xs:text-[5vw] 2xs:text-sm text-[#1e1f22] font-medium truncate");
 
-const folder_2 = cn("truncate hover:text-black text-sm", innerTextColor);
+const folder_2 = cn("truncate hover:text-black text-[13px] 3xs:text-[5vw] 2xs:text-sm", innerTextColor);
 
-const folder_3 = cn("text-sm truncate", innerTextColor);
+const folder_3 = cn("text-[13px] 3xs:text-[5vw] 2xs:text-sm truncate", innerTextColor);
 
-const element = cn("hover:text-[#1e1f22] w-fit text-sm font-body text-start truncate py-1", innerTextColor);
+const element = cn("hover:text-[#1e1f22] w-fit text-[13px] 3xs:text-[5vw] 2xs:text-sm font-body text-start truncate py-1 text-wrap", innerTextColor);
 
 const other = cn("", innerTextColor);
 
@@ -75,7 +75,7 @@ const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3
 const PropsNameWithDesc = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
 
 
-const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full mt-4 mb-2";
+const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[500px]";
 const PropsHeader = "grid grid-cols-11 gap-2";
 const PropsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
 const isRequiredTitle = "col-span-2 text-center";

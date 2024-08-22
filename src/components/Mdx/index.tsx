@@ -177,8 +177,8 @@ export default function MdxComponent({content}: MdxComponentProps) {
 
     return (
       <>
-        <div className="flex flex-row flex-1 max-w-[1440px]">
-          <div className="max-w-[1440px] flex-1 pt-[122px] relative">
+        <div className="flex flex-row flex-1">
+          <div className="max-w-[1440px] w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 pt-[122px] relative">
             <div className="text-gray-800 px-10 w-full max-w-full overflow-hidden">
               {/* FIXME: Remove any below */}
               <MDXProvider components={components as any}>
