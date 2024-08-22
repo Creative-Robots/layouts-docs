@@ -75,8 +75,8 @@ const DivWithDescription = "relative flex flex-row items-center gap-2 col-span-3
 const PropsNameWithDesc = "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
 
 
-const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[500px]";
-const PropsHeader = "grid grid-cols-11 gap-2";
+const PropsHeaderBox = "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[300px]";
+const PropsHeader = "grid grid-cols-6 sm:grid-cols-11 gap-2";
 const PropsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
 const isRequiredTitle = "col-span-2 text-center";
 
@@ -84,7 +84,7 @@ const PropsLine1_2 = "bg-[#fcfcfc]";
 const PropsLine2_2 = "bg-[#fafafa]";
 
 const PropsLineBox = "flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3";
-const PropsLine = "grid grid-cols-11 gap-2 items-center text-xs";
+const PropsLine = "grid grid-cols-6 sm:grid-cols-11 gap-2 items-center text-xs";
 
 const PropsName = "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate";
 
