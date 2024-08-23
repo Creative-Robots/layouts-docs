@@ -2,9 +2,15 @@ import { ComponentDoc } from "@/app/(app)/components/[name]/page";
 import DocBreadcrums from "../Breadcrums";
 import { PropsTab, Section, SubComponent, SubSection, Title } from "../ContentComponents";
 import { CodeBlock } from "../ContentComponents/CodeBlock";
+import { fixIndent } from "@/lib/indents";
+import check from "check-types";
 
 interface DocProps {
     data: ComponentDoc;
+}
+
+function cleanLayoutsCode(code: string): string {
+    return fixIndent(code.split('\n').filter(l => check.nonEmptyString(l.trim())).join('\n'));
 }
 
 export default function LayoutComponentsDoc({data}:DocProps) {
@@ -23,7 +29,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
             </div>
             {refImplementation
             ? <Section name="Ref Implementation">
-                <CodeBlock code={refImplementation}/>
+                <CodeBlock code={cleanLayoutsCode(refImplementation)}/>
             </Section>
             : <></>}
             {props && props.length > 0 ? (
@@ -37,7 +43,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                         if (!e.code) return null;
                         return (
                             <SubSection key={idx} name={e.title} description={description} level={2}>
-                                <CodeBlock code={e.code}/>
+                                <CodeBlock code={cleanLayoutsCode(e.code)}/>
                             </SubSection>
                         )
                     })}

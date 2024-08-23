@@ -116,9 +116,12 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
             </div>
         </div>
     )
+
+    const blockPadding = 'p-3 sm:p-4 py-3 sm:py-4'
+
     return (
         <div className={cn("justify-start items-start flex-col flex bg-[#fbfbfb] h-fit rounded-lg border border-gray-400/20 w-full min-w-[100px]", className)} >
-            <div className="flex w-full p-3 justify-between border-b border-black/5 items-center py-1.5" >
+            <div className={cn(blockPadding, `flex w-full justify-between border-b border-black/5 items-center py-1.5 sm:py-1.5 md:py-1.5`)} >
                 <span className="text-xs text-[#5b5e66] font-normal" >
                     { title ? title : "Short syntax"}
                 </span>
@@ -129,11 +132,11 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
                     } 
                 </Button>
             </div>
-            <div className="justify-start items-start flex-col flex w-full p-6 overflow-x-scroll" >
-                <pre className="font-robotomono text-sm font-normal leading-[24px] text-nowrap min-w-fit">
+            <div className={cn(blockPadding, `justify-start items-start flex-col flex w-full overflow-x-scroll`)} >
+                <pre className="font-robotomono text-xs sm:text-[0.8rem] font-normal leading-tight text-nowrap min-w-fit">
                     {code.includes("</") || code.includes("/>")
                     ? code
-                    : <code dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />}
+                    : <div dangerouslySetInnerHTML={{__html: applyCustomRules(convertTabsToSpaces(code))}} />}
                 </pre>
             </div>
         </div>
