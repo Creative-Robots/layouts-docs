@@ -263,3 +263,7 @@
       @apply text-[#5B5E66]
     }
 }
+
+code {
+	font-size: 0.9em;
+}
