@@ -142,8 +142,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AccordionTrigger",
@@ -160,8 +159,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -234,8 +232,7 @@
           "description": "Provides additional context or information about the alert.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertTitle",
@@ -243,8 +240,7 @@
           "description": "The title or main heading of the alert.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -369,8 +365,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogCancel",
@@ -387,8 +382,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogInnerContent",
@@ -432,8 +426,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogDescription",
@@ -450,24 +443,23 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogFooter",
           "tag": "footer",
+          "description": "The footer of the alert dialog.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogHeader",
           "tag": "header",
+          "description": "The header of the alert dialog.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AlertDialogTitle",
@@ -484,8 +476,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -661,8 +652,7 @@
       "refImplementation": "/auto-layout %vertical-bottom-right p-2 gap-2 rounded-xl size-56 border border-slate-300\n\t/center bg-slate-200 size-1/3 rounded-lg text-slate-700 font-bold A\n\t/center bg-slate-200 size-1/3 rounded-lg text-slate-700 font-bold B",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -751,8 +741,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "AvatarImage",
@@ -805,8 +794,7 @@
               "title": "Apply transforms to the illustration",
               "code": "/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize"
             }
-          ],
-          "sources": []
+          ]
         }
       ],
       "examples": [
@@ -933,8 +921,7 @@
           "title": "🔴 Props-based syntax",
           "code": "/div size-40\n\t/bg-mesh\n\t\t@seed=546\n\t\t@length=3\n\t\t@opacity=70\n\t\t@baseColor=teal-500"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -957,8 +944,7 @@
       "refImplementation": "/bg-pattern %light-gradrient-1",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -993,32 +979,7 @@
         }
       ],
       "subComponents": [],
-      "examples": [],
-      "sources": []
-    }
-  },
-  {
-    "name": "Bottom bar",
-    "parsedName": "bottom-bar",
-    "entries": [
-      {
-        "entry": "Bottom bar",
-        "level": 1
-      },
-      {
-        "entry": "Ref Implementation",
-        "level": 1
-      }
-    ],
-    "content": {
-      "name": "Bottom bar",
-      "tag": "bottom-bar",
-      "description": "Bottom navigation bar",
-      "refImplementation": "/bottom-bar\n    News\n    Tags\n    Settings\n",
-      "props": [],
-      "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -1371,8 +1332,7 @@
           "description": "The main content area of the card, typically containing the bulk of the card's content.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CardDescription",
@@ -1380,8 +1340,7 @@
           "description": "A short description or subtitle, usually displayed in the header section below the title.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CardFooter",
@@ -1389,8 +1348,7 @@
           "description": "The footer section of the card, often containing actions like buttons.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CardHeader",
@@ -1398,8 +1356,7 @@
           "description": "Represents the header section of the card, typically containing a title and a description.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CardTitle",
@@ -1407,8 +1364,7 @@
           "description": "The title of the card, usually displayed in the header section.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -1642,8 +1598,7 @@
           "description": "A container for the carousel's content, managing the overflow and positioning of items.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CarouselItem",
@@ -1651,8 +1606,7 @@
           "description": "An individual item within the carousel.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CarouselNext",
@@ -1667,8 +1621,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CarouselPrevious",
@@ -1683,8 +1636,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -1743,8 +1695,7 @@
       "refImplementation": "/center p-2 rounded-xl size-56 border border-slate-300\n        /div bg-slate-200 size-1/3 rounded-lg",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -1804,8 +1755,7 @@
           "title": "Composable syntax",
           "code": "/chart @data=[{ product: 'unicorn', price: 12.99, sales: 3455 }, { product: 'narwal', price: 9.99, sales: 465 } ]\n\t/bar @dataKey=price opacity-80 bg-indigo-900\n\t/bar @dataKey=sales opacity-80 bg-indigo-900"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -2056,8 +2006,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CollapsibleTrigger",
@@ -2074,8 +2023,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -2214,8 +2162,7 @@
           "description": "Automatically renders when there are no results for the search query.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CommandGroup",
@@ -2239,8 +2186,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CommandInput",
@@ -2285,8 +2231,7 @@
               "title": "Bound to a variable",
               "code": "/vstack gap-4\n\t/input What's your name ? $myNameVariable\n\t/h1 Hello $myNameVariable"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "CommandItem",
@@ -2320,8 +2265,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CommandList",
@@ -2335,8 +2279,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "CommandSeparator",
@@ -2359,16 +2302,15 @@
               "title": "Vertical",
               "code": "/hstack size-24 border rounded-lg\n\t/center A size-full\n\t/separator %vertical\n\t/center B size-full"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "CommandShortcut",
           "tag": "shortcut",
+          "description": "Display a keyboard shortcut in the command.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -2583,8 +2525,7 @@
               "title": "Form",
               "code": "// TODO"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "ContextMenuCheckboxItem",
@@ -2633,8 +2574,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuContent",
@@ -2745,8 +2685,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuItem",
@@ -2782,8 +2721,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuLabel",
@@ -2800,8 +2738,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenu",
@@ -2833,8 +2770,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuRadioGroup",
@@ -2873,8 +2809,7 @@
               "title": "Composable syntax",
               "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "ContextMenuRadioItem",
@@ -2917,8 +2852,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuSeparator",
@@ -2944,16 +2878,15 @@
               "title": "Vertical",
               "code": "/hstack size-24 border rounded-lg\n\t/center A size-full\n\t/separator %vertical\n\t/center B size-full"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "ContextMenuShortcut",
           "tag": "shortcut",
+          "description": "Display a keyboard shortcut in the context menu.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuSub",
@@ -2981,8 +2914,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuSubContent",
@@ -3100,8 +3032,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuSubTrigger",
@@ -3130,8 +3061,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ContextMenuTrigger",
@@ -3156,8 +3086,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -3209,8 +3138,7 @@
           "title": "Fetch fake data from out AI-based mockup API",
           "code": "/data $movies = mock://A list of movies with title and poster"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -3343,6 +3271,10 @@
         "level": 2
       },
       {
+        "entry": "/header",
+        "level": 2
+      },
+      {
         "entry": "/title",
         "level": 2
       }
@@ -3397,8 +3329,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DialogInnerContent",
@@ -3456,8 +3387,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DialogDescription",
@@ -3474,16 +3404,15 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DialogFooter",
           "tag": "footer",
+          "description": "The footer of the dialog.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DialogHeader",
@@ -3491,8 +3420,15 @@
           "description": "The header of the dialog",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
+        },
+        {
+          "name": "DialogHeader",
+          "tag": "header",
+          "description": "The header of the dialog.",
+          "props": [],
+          "subComponents": [],
+          "examples": []
         },
         {
           "name": "DialogTitle",
@@ -3509,8 +3445,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -3586,10 +3521,6 @@
         "level": 2
       },
       {
-        "entry": "/header",
-        "level": 2
-      },
-      {
         "entry": "/title",
         "level": 2
       }
@@ -3614,8 +3545,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DrawerInnerContent",
@@ -3664,8 +3594,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DrawerDescription",
@@ -3673,8 +3602,7 @@
           "description": "The description of the drawer.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DrawerFooter",
@@ -3682,8 +3610,7 @@
           "description": "The footer of the drawer.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DrawerHeader",
@@ -3691,17 +3618,7 @@
           "description": "The header of the drawer",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
-        },
-        {
-          "name": "DrawerHeader",
-          "tag": "header",
-          "description": "The header of the drawer.",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DrawerTitle",
@@ -3709,8 +3626,7 @@
           "description": "The title of the drawer.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -3984,8 +3900,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuGroup",
@@ -4002,8 +3917,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuItem",
@@ -4039,8 +3953,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuLabel",
@@ -4057,8 +3970,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenu",
@@ -4102,8 +4014,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuPortal",
@@ -4125,8 +4036,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuSeparator",
@@ -4152,16 +4062,15 @@
               "title": "Vertical",
               "code": "/hstack size-24 border rounded-lg\n\t/center A size-full\n\t/separator %vertical\n\t/center B size-full"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "DropdownMenuShortcut",
           "tag": "shortcut",
+          "description": "Display a keyboard shortcut in the dropdown menu.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuSub",
@@ -4189,8 +4098,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuSubContent",
@@ -4308,8 +4216,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuSubTrigger",
@@ -4338,8 +4245,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "DropdownMenuTrigger",
@@ -4356,8 +4262,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [],
@@ -4387,8 +4292,7 @@
       "refImplementation": "/font-pair %amulya-bold_synonym-regular",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4459,8 +4363,7 @@
           "title": "With dynamic data",
           "code": "/data $movies = mock://A list of movies with title and poster\n/grid gap-2\n\t/foreach $movies\n\t\t/center p-6 bg-slate-200 $item.title"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -4532,48 +4435,42 @@
           "tag": "control",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "FormDescription",
           "tag": "description",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "FormField",
           "tag": "field",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "FormField",
           "tag": "item",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "FormLabel",
           "tag": "label",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "FormMessage",
           "tag": "message",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "RadioGroup",
@@ -4589,8 +4486,7 @@
               "title": "Composable syntax",
               "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
             }
-          ],
-          "sources": []
+          ]
         }
       ],
       "examples": [
@@ -4602,8 +4498,7 @@
           "title": "Composable syntax",
           "code": "/form\n\t/field @name=email\n\t\t/label Email\n\t\t/input @placeholder=\"Your email\"\n\t\t/description This will help us stay in touch. We don't spam!\n\t/field @name=message\n\t\t/label Message\n\t\t/textarea Enter any message here...\n\t\t/description Come on! You can write anything!\n\t/field @name=sendImportantNotifications\n\t\t/switch Send me important notifications @defaultValue={true}\n\t/field @name=sendMarketingEmails\n\t\t/switch Send me marketing emails\n\t/field @name=foodPreferences\n\t\t/radio-group\n\t\t\t/radio Bacon @value=\"bacon\"\n\t\t\t/radio Miso soup @value=\"miso-soup\"\n\t\t\t/radio Pizza @value=\"pizza\"\n\t/button @type=submit Submit"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -4626,8 +4521,7 @@
       "refImplementation": "/grid %xs gap-4\n    /foreach [1...10]\n        /div bg-slate-200 p-4 text-slate-700 rounded-lg text-center $item",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4650,8 +4544,7 @@
       "refImplementation": "/h1 Hello, world!",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4674,8 +4567,7 @@
       "refImplementation": "/h2 Hello, world!",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4698,8 +4590,7 @@
       "refImplementation": "/h3 Hello, world!",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4886,8 +4777,7 @@
       "refImplementation": "/hstack p-2 gap-2 rounded-xl size-56 border border-slate-300\n\t/center bg-slate-200 w-16 h-full rounded-lg text-slate-700 font-bold A\n\t/center bg-slate-200 w-16 h-full rounded-lg text-slate-700 font-bold B",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -4939,8 +4829,7 @@
           "title": "⚠️ Get an icon by URL",
           "code": "/icon https://www.creativefabrica.com/wp-content/uploads/2022/07/08/1657258262/Golden-Retriever-Surfing-silhouette-580x386.jpg"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -4976,8 +4865,7 @@
           "title": "Get an illustration from one of the inegrated libraries",
           "code": "/illustration w-40 %kukla-angle Calendar"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -5061,98 +4949,7 @@
           "title": "Apply transforms to the illustration",
           "code": "/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize"
         }
-      ],
-      "sources": []
-    }
-  },
-  {
-    "name": "Image card",
-    "parsedName": "image-card",
-    "entries": [
-      {
-        "entry": "Image card",
-        "level": 1
-      },
-      {
-        "entry": "API Reference",
-        "level": 1
-      },
-      {
-        "entry": "/description",
-        "level": 2
-      },
-      {
-        "entry": "/image",
-        "level": 2
-      },
-      {
-        "entry": "/title",
-        "level": 2
-      }
-    ],
-    "content": {
-      "name": "Image card",
-      "tag": "image-card",
-      "description": "Card with image or icon",
-      "refImplementation": "",
-      "props": [],
-      "subComponents": [
-        {
-          "name": "description",
-          "tag": "description",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        },
-        {
-          "name": "image",
-          "tag": "image",
-          "props": [],
-          "subComponents": [],
-          "examples": [
-            {
-              "title": "Get an image from unsplash",
-              "code": "/image w-40 %unsplash Tiger w-40"
-            },
-            {
-              "title": "Get an image from google",
-              "code": "/image w-40 %google Tiger w-40"
-            },
-            {
-              "title": "Get an image by URL",
-              "code": "/image w-40 https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png My image description here"
-            },
-            {
-              "title": "Apply transforms to the image",
-              "code": "/image w-40 %google Lion | remove-bg"
-            },
-            {
-              "title": "Create an image with the right aspect ratio",
-              "code": "/div w-40\n\t/aspect-ratio %video\n\t\t/image Tiger size-full object-cover"
-            },
-            {
-              "title": "Generate an image via AI",
-              "code": "/image w-40 %ai/flat-illustration Calendar"
-            },
-            {
-              "title": "Apply transforms to the illustration",
-              "code": "/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize"
-            }
-          ],
-          "sources": []
-        },
-        {
-          "name": "title",
-          "tag": "title",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        }
-      ],
-      "examples": [],
-      "sources": []
+      ]
     }
   },
   {
@@ -5356,8 +5153,7 @@
           "title": "Sizes",
           "code": "/hstack gap-2\n\t/kbd %xs Shift S\n\t/kbd %sm Shift S\n\t/kbd %md Shift S\n\t/kbd %lg Shift S\n\t/kbd %xl Shift S"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -5407,96 +5203,6 @@
     }
   },
   {
-    "name": "List item card",
-    "parsedName": "list-item-card",
-    "entries": [
-      {
-        "entry": "List item card",
-        "level": 1
-      },
-      {
-        "entry": "API Reference",
-        "level": 1
-      },
-      {
-        "entry": "/description",
-        "level": 2
-      },
-      {
-        "entry": "/image",
-        "level": 2
-      },
-      {
-        "entry": "/title",
-        "level": 2
-      }
-    ],
-    "content": {
-      "name": "List item card",
-      "tag": "list-item-card",
-      "description": "Card usable as a list-item",
-      "refImplementation": "",
-      "props": [],
-      "subComponents": [
-        {
-          "name": "description",
-          "tag": "description",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        },
-        {
-          "name": "image",
-          "tag": "image",
-          "props": [],
-          "subComponents": [],
-          "examples": [
-            {
-              "title": "Get an image from unsplash",
-              "code": "/image w-40 %unsplash Tiger w-40"
-            },
-            {
-              "title": "Get an image from google",
-              "code": "/image w-40 %google Tiger w-40"
-            },
-            {
-              "title": "Get an image by URL",
-              "code": "/image w-40 https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png My image description here"
-            },
-            {
-              "title": "Apply transforms to the image",
-              "code": "/image w-40 %google Lion | remove-bg"
-            },
-            {
-              "title": "Create an image with the right aspect ratio",
-              "code": "/div w-40\n\t/aspect-ratio %video\n\t\t/image Tiger size-full object-cover"
-            },
-            {
-              "title": "Generate an image via AI",
-              "code": "/image w-40 %ai/flat-illustration Calendar"
-            },
-            {
-              "title": "Apply transforms to the illustration",
-              "code": "/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize"
-            }
-          ],
-          "sources": []
-        },
-        {
-          "name": "title",
-          "tag": "title",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        }
-      ],
-      "examples": [],
-      "sources": []
-    }
-  },
-  {
     "name": "Logo",
     "parsedName": "logo",
     "entries": [
@@ -5537,8 +5243,7 @@
           "title": "Apply transforms to a logo",
           "code": "/logo netflix | remove-bg"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -5752,8 +5457,7 @@
               "title": "Form",
               "code": "// TODO"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "MenubarContent",
@@ -5894,8 +5598,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarItem",
@@ -5931,8 +5634,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarMenu",
@@ -5956,8 +5658,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarRadioGroup",
@@ -5996,8 +5697,7 @@
               "title": "Composable syntax",
               "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "MenubarRadioItem",
@@ -6040,8 +5740,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarSeparator",
@@ -6067,16 +5766,15 @@
               "title": "Vertical",
               "code": "/hstack size-24 border rounded-lg\n\t/center A size-full\n\t/separator %vertical\n\t/center B size-full"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "MenubarShortcut",
           "tag": "shortcut",
+          "description": "Display a keyboard shortcut in the menubar.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarSub",
@@ -6104,8 +5802,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarSubContent",
@@ -6223,8 +5920,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarSubTrigger",
@@ -6253,8 +5949,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "MenubarTrigger",
@@ -6271,8 +5966,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -6289,55 +5983,6 @@
         "Shadcn",
         "Radix"
       ]
-    }
-  },
-  {
-    "name": "Metric card",
-    "parsedName": "metric-card",
-    "entries": [
-      {
-        "entry": "Metric card",
-        "level": 1
-      },
-      {
-        "entry": "API Reference",
-        "level": 1
-      },
-      {
-        "entry": "/description",
-        "level": 2
-      },
-      {
-        "entry": "/title",
-        "level": 2
-      }
-    ],
-    "content": {
-      "name": "Metric card",
-      "tag": "metric-card",
-      "description": "Card displaying a metric",
-      "refImplementation": "",
-      "props": [],
-      "subComponents": [
-        {
-          "name": "description",
-          "tag": "description",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        },
-        {
-          "name": "title",
-          "tag": "title",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        }
-      ],
-      "examples": [],
-      "sources": []
     }
   },
   {
@@ -6511,16 +6156,15 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ListItemDescription",
           "tag": "description",
+          "description": "The description of the navigation menu.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenuItem",
@@ -6544,8 +6188,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenuLink",
@@ -6577,8 +6220,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenuList",
@@ -6595,16 +6237,15 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenuListItem",
           "tag": "list-item",
+          "description": "A list item in the navigation menu.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenu",
@@ -6666,8 +6307,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "RadixNavigationMenu.Sub",
@@ -6707,16 +6347,15 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ListItemTitle",
           "tag": "title",
+          "description": "The title of the navigation menu.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "NavigationMenuTrigger",
@@ -6733,8 +6372,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [],
@@ -6800,8 +6438,7 @@
           "title": "Props-based syntax",
           "code": "/page @title=\"About page\" @path=\"/about\"\n\tThis is the about page contents"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -6925,8 +6562,7 @@
           "description": "An ellipsis indicating more pages in the pagination sequence.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "PaginationItem",
@@ -6934,8 +6570,7 @@
           "description": "A single item in the pagination, which can be a page link, next/previous button, or ellipsis.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "PaginationLink",
@@ -6956,8 +6591,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "PaginationNext",
@@ -6965,8 +6599,7 @@
           "description": "The button for navigating to the next page.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "PaginationPrevious",
@@ -6974,8 +6607,7 @@
           "description": "The button for navigating to the previous page.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -7011,8 +6643,7 @@
           "title": "Composable syntax",
           "code": "/pagination\n\t/item \n\t\t/previous @disabled\n\t/item \n\t\t/link @href=\"#/pages/1\"\n\t\t\t1\n\t/item \n\t\t/elipsis \n\t/item @isActive\n\t\t/link @href=\"#/pages/4\"\n\t/item \n\t\t/elipsis \n\t/item \n\t\t/next @href=\"#/pages/5\""
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -7290,8 +6921,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -7365,57 +6995,7 @@
         }
       ],
       "subComponents": [],
-      "examples": [],
-      "sources": []
-    }
-  },
-  {
-    "name": "Radio block",
-    "parsedName": "radio-block-item",
-    "entries": [
-      {
-        "entry": "Radio block",
-        "level": 1
-      },
-      {
-        "entry": "API Reference",
-        "level": 1
-      },
-      {
-        "entry": "/description",
-        "level": 2
-      },
-      {
-        "entry": "/title",
-        "level": 2
-      }
-    ],
-    "content": {
-      "name": "Radio block",
-      "tag": "radio-block-item",
-      "description": "Clickable block serving as a radio group option",
-      "refImplementation": "",
-      "props": [],
-      "subComponents": [
-        {
-          "name": "description",
-          "tag": "description",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        },
-        {
-          "name": "title",
-          "tag": "title",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        }
-      ],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -7694,8 +7274,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ResizablePanel",
@@ -7775,8 +7354,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -8183,8 +7761,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectGroup",
@@ -8201,8 +7778,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectItem",
@@ -8238,8 +7814,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectLabel",
@@ -8256,8 +7831,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectScrollDownButton",
@@ -8274,8 +7848,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectScrollUpButton",
@@ -8292,8 +7865,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectSeparator",
@@ -8319,8 +7891,7 @@
               "title": "Vertical",
               "code": "/hstack size-24 border rounded-lg\n\t/center A size-full\n\t/separator %vertical\n\t/center B size-full"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "SelectTrigger",
@@ -8337,8 +7908,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SelectValue",
@@ -8362,8 +7932,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -8563,8 +8132,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "content",
@@ -8572,8 +8140,7 @@
           "description": "The content of the sheet",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SheetDescription",
@@ -8581,8 +8148,7 @@
           "description": "An optional accessible description to be announced when the sheet is opened.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SheetFooter",
@@ -8590,8 +8156,7 @@
           "description": "The footer of the sheet.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "header",
@@ -8599,8 +8164,7 @@
           "description": "The header of the sheet",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "SheetTitle",
@@ -8608,8 +8172,7 @@
           "description": "An accessible title to be announced when the sheet is opened.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -8857,8 +8420,7 @@
       "refImplementation": "\n/style\n    /h1 font-['Jersey_10'] text-8xl\n\n/h1 Hello, styles!\n    ",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -9056,8 +8618,7 @@
           "description": "Contains the table rows.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableCaption",
@@ -9065,8 +8626,7 @@
           "description": "Provides a caption for the table.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableCell",
@@ -9081,8 +8641,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableFooter",
@@ -9090,8 +8649,7 @@
           "description": "Contains the footer rows for the table.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableHead",
@@ -9099,8 +8657,7 @@
           "description": "Represents a header cell in the table.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableHeader",
@@ -9108,8 +8665,7 @@
           "description": "Contains the header row(s) for the table.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TableRow",
@@ -9117,8 +8673,7 @@
           "description": "Represents a row of cells in the table.",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -9288,8 +8843,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TabsList",
@@ -9314,8 +8868,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "TabsTrigger",
@@ -9347,8 +8900,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -9411,8 +8963,7 @@
           "tag": "description",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "img",
@@ -9448,28 +8999,24 @@
               "title": "Apply transforms to the illustration",
               "code": "/image w-40 %ai/flat-illustration Calendar | remove-bg | vectorize"
             }
-          ],
-          "sources": []
+          ]
         },
         {
           "name": "span",
           "tag": "tagLine",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "h1",
           "tag": "title",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   },
   {
@@ -9800,8 +9347,7 @@
           "tag": "palette",
           "props": [],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         }
       ],
       "examples": [
@@ -9817,8 +9363,7 @@
           "title": "Override some palette colors",
           "code": "/theme\n\t@palette=Intense Mediterranean turquoise as primary, creamy white in background\n\t@background=\"primary-50\" // Color overrides"
         }
-      ],
-      "sources": []
+      ]
     }
   },
   {
@@ -10065,8 +9610,7 @@
             }
           ],
           "subComponents": [],
-          "examples": [],
-          "sources": []
+          "examples": []
         },
         {
           "name": "ToggleGroupItem",
@@ -10105,8 +9649,7 @@
               "title": "Composable syntax",
               "code": "/toggle @name=\"bold\"\n\t/icon %lucide Bold"
             }
-          ],
-          "sources": []
+          ]
         }
       ],
       "examples": [
@@ -10329,47 +9872,6 @@
     }
   },
   {
-    "name": "Top bar",
-    "parsedName": "top-bar",
-    "entries": [
-      {
-        "entry": "Top bar",
-        "level": 1
-      },
-      {
-        "entry": "Ref Implementation",
-        "level": 1
-      },
-      {
-        "entry": "API Reference",
-        "level": 1
-      },
-      {
-        "entry": "/title",
-        "level": 2
-      }
-    ],
-    "content": {
-      "name": "Top bar",
-      "tag": "top-bar",
-      "description": "Top navigation bar",
-      "refImplementation": "/top-bar\n    News\n    Tags\n    Settings\n",
-      "props": [],
-      "subComponents": [
-        {
-          "name": "title",
-          "tag": "title",
-          "props": [],
-          "subComponents": [],
-          "examples": [],
-          "sources": []
-        }
-      ],
-      "examples": [],
-      "sources": []
-    }
-  },
-  {
     "name": "VStack",
     "parsedName": "vstack",
     "entries": [
@@ -10389,8 +9891,7 @@
       "refImplementation": "/vstack p-2 gap-2 rounded-xl size-56 border border-slate-300\n\t/center bg-slate-200 h-16 w-full rounded-lg text-slate-700 font-bold A\n\t/center bg-slate-200 h-16 w-full rounded-lg text-slate-700 font-bold B",
       "props": [],
       "subComponents": [],
-      "examples": [],
-      "sources": []
+      "examples": []
     }
   }
 ]
