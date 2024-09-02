@@ -13,18 +13,44 @@ function cleanLayoutsCode(code: string): string {
     return fixIndent(code.split('\n').filter(l => check.nonEmptyString(l.trim())).join('\n'));
 }
 
+const SourcesUsage = ({sources}:{sources:string[]}) => {
+    const sourcesList : JSX.Element[] = []
+    
+    sources.map((source, idx) => {
+        if (sourcesList.length > 0) {
+            sourcesList.push(
+                <p className='text-xs font-body text-[#1E1F22]'>|</p>
+            )
+        }
+
+        if (source == "Shadcn") {
+            sourcesList.push(
+                <img alt="authorImg" src="https://ui.shadcn.com/apple-touch-icon.png"  className='w-[12px]'/>
+            )
+        }
+        sourcesList.push(
+            <p className='text-xs font-body text-[#1E1F22]'>{source}</p>
+        )
+    })
+
+    return (
+        <>
+            <p className='text-xs font-body text-[#1E1F22] '>Inspired by  : </p>
+            {sourcesList}
+        </>
+    )
+}
+
 export default function LayoutComponentsDoc({data}:DocProps) {
-    const {name, description, refImplementation, props, subComponents, examples} = data;
+    const {name, description, refImplementation, props, subComponents, examples, sources} = data;
     return (
         <div className='flex flex-col gap-3 pb-20 xl:px-44 lg:px-12 md:px-8 px-4 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 pt-[122px]'>
             <DocBreadcrums items={[name]} />
             <div className='flex flex-col gap-1'>
                 <Title title={name} description={description}></Title>
                 {/* <p className='text-lg text-[#5B5E66] font-normal'>{description}</p> */}
-                {name && <div className='flex flex-row gap-2 items-center  '>
-                    <p className='text-xs font-body text-[#1E1F22] '>Inspired by  : </p>
-                    <img alt="authorImg" src="https://ui.shadcn.com/apple-touch-icon.png"  className='w-[12px]'/>
-                    <p className=' text-xs font-body text-[#1E1F22]'>shadcn UI</p>
+                {name && sources && sources.length !== 0 && <div className='flex flex-row gap-2 items-center  '>
+                    <SourcesUsage sources={sources}/>
                 </div>} 
             </div>
             {refImplementation
@@ -42,7 +68,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                     {examples.map((e, idx) => {
                         if (!e.code) return null;
                         return (
-                            <SubSection key={idx} name={e.title} description={description} level={2}>
+                            <SubSection key={idx} name={e.title} /* description={description} */ level={2}>
                                 <CodeBlock code={cleanLayoutsCode(e.code)}/>
                             </SubSection>
                         )

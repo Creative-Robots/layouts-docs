@@ -31,6 +31,7 @@ export type ComponentDoc = {
     description?: string,
     code?: string,
   }[],
+  sources?: string[];
 };
 
 function getJsonData(filename:string):{
@@ -63,6 +64,7 @@ function getJsonDataLayouts(filename:string):{
       subComponents: match.content.subComponents,
 
       examples: match.content.examples,
+      sources: match.content.sources
     }
   };
 }

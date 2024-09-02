@@ -2,7 +2,7 @@ import { ComponentDoc } from "@/app/(app)/components/[name]/page";
 import { SubSection } from "./SubSection";
 import { CodeBlock } from "./CodeBlock";
 import { cn } from "@/lib/cn";
-import { _H3, _H4, _SubSection, H3Box } from "@/lib/Style";
+import { _H3, _H4, _SubSection, H3Box, SubTitleDescription } from "@/lib/Style";
 import { PropsTab } from "./PropsTab";
 import { H3 } from "./H3";
 
@@ -17,6 +17,11 @@ export const SubComponent = ({data, level}:{data:ComponentDoc, level:number}) =>
             <CodeBlock code={refImplementation}></CodeBlock>
           </SubSection>
         : <></>}
+        {description && description.length > 0 && 
+          <span className={cn(SubTitleDescription)} >
+              {description}
+          </span>
+        }
         {props && props.length > 0 ? (
           <section className={cn(_SubSection)}>
             <div className={H3Box}>

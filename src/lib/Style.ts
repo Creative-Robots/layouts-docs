@@ -56,6 +56,7 @@ const TitleBox_Mdx = "mb-[32px]";
 const Title =
     "text-[#1e1f22] text-2xl md:text-[30px] md:mb-3 md:mt-2 font-medium tracking-tight";
 const TitleDescription = cn(GlobalDescription, "text-sm md:text-base");
+const SubTitleDescription = cn(GlobalDescription, "text-xs md:text-sm");
 
 const Heading1Box =
     "justify-start gap-2 items-start flex-col flex w-full my-[0.67em]";
@@ -161,6 +162,7 @@ export {
     TitleBox_Mdx,
     Title as _Title,
     TitleDescription,
+    SubTitleDescription,
     Heading1Box,
     Heading1,
     Heading1Description,
