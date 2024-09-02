@@ -3233,20 +3233,48 @@
     {
         "name": "Form",
         "tag": "form",
-        "description": "A Form component.",
-        "refImplementation": "/form\n            # Email\n            [Your email]\n            -- This will help us stay in touch. We don't spam!\n        \n            # Message\n            [> Enter any message here...]\n            -- Come on! You can write anything!\n        \n            <x> Send me important notifications\n            <> Send me marketing emails\n        \n            # What do you prefer?\n            [] Bacon\n            [] Miso soup\n            [] Pizza\n\n            /button Submit @type=submit",
-        "props": [],
+        "description": "A control that allows the user to toggle between checked and not checked",
+        "refImplementation": "/form\n\t# Email\n\t[Your email]\n\t-- This will help us stay in touch. We don't spam!\n\t\t\n\t# Message\n\t[> Enter any message here...]\n\t-- Come on! You can write anything!\n\t\t\n\t/div flex gap-4\n\t\t<x> Send me important notifications\n\t\t<> Send me marketing emails\n\t\t\n\t/div flex flex-col gap-2\n\t\t# What do you prefer?\n\t\t[] Bacon\n\t\t[x] Miso soup\n\t\t[] Pizza\n\n\t# How old are you?\n\t() 18 or minus\n\t() 18-35\n\t(x) 35 or more\n\n\t/submit @asChild\n\t\t/button Submit @type=submit\n  ",
+        "props": [
+            {
+                "name": "asChild",
+                "required": false,
+                "type": "boolean",
+                "default": "false",
+                "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+            },
+            {
+                "name": "onClearServerErrors",
+                "required": false,
+                "type": "() => void",
+                "typeSimple": "function",
+                "description": "Event handler called when the form is submitted or reset and the server errors need to be cleared.",
+                "descriptionMdx": "Event handler called when the form is submitted or reset and the server errors need to be cleared."
+            }
+        ],
         "subComponents": [
             {
                 "name": "FormControl",
                 "tag": "control",
-                "props": [],
+                "description": "A control element (by default an `input`) which is automatically wired when nested inside a `Field` part.",
+                "props": [
+                    {
+                        "name": "asChild",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                        "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+                    }
+                ],
                 "subComponents": [],
                 "examples": []
             },
             {
                 "name": "FormDescription",
                 "tag": "description",
+                "description": "Display a description inside a form field.",
                 "props": [],
                 "subComponents": [],
                 "examples": []
@@ -3254,56 +3282,144 @@
             {
                 "name": "FormField",
                 "tag": "field",
-                "props": [],
-                "subComponents": [],
-                "examples": []
-            },
-            {
-                "name": "FormField",
-                "tag": "item",
-                "props": [],
+                "description": "The wrapper for a field. It handles id/name and label accessibility automatically.",
+                "props": [
+                    {
+                        "name": "asChild",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                        "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+                    },
+                    {
+                        "name": "name",
+                        "required": true,
+                        "type": "string",
+                        "description": "The name of the field that will be passed down to the control and used to match with validation messages.",
+                        "descriptionMdx": "The name of the field that will be passed down to the control and used to match with validation messages."
+                    },
+                    {
+                        "name": "serverInvalid",
+                        "required": false,
+                        "type": "boolean",
+                        "description": "Use this prop to mark the field as invalid on the server.",
+                        "descriptionMdx": "Use this prop to mark the field as invalid on the server."
+                    }
+                ],
                 "subComponents": [],
                 "examples": []
             },
             {
                 "name": "FormLabel",
                 "tag": "label",
-                "props": [],
+                "description": "A label element which is automatically wired when nested inside a `Field` part.",
+                "props": [
+                    {
+                        "name": "asChild",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                        "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+                    }
+                ],
                 "subComponents": [],
                 "examples": []
             },
             {
                 "name": "FormMessage",
                 "tag": "message",
-                "props": [],
+                "description": "A validation message which is automatically wired (functionality and accessibility) to a given control when nested inside a `Field` part. It can be used for built-in and custom client-side validation, as well as server-side validation. When used outside a `Field` you must pass a `name` prop matching a field.\n\n`Form.Message` accepts a `match` prop which is used to determine when the message should show. It matches the native HTML validity state (`ValidityState` on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState)) which validates against attributes such as `required`, `min`, `max`. The message will show if the given `match` is `true` on the control’s validity state.\n\nYou can also pass a function to `match` to provide custom validation rules.",
+                "props": [
+                    {
+                        "name": "asChild",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                        "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+                    },
+                    {
+                        "name": "match",
+                        "required": false,
+                        "description": "Used to indicate on which condition the message should be visible.",
+                        "typeSimple": "Matcher",
+                        "descriptionMdx": "Used to indicate on which condition the message should be visible."
+                    },
+                    {
+                        "name": "forceMatch",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Forces the message to be shown. This is useful when using server-side validation.",
+                        "descriptionMdx": "Forces the message to be shown. This is useful when using server-side validation."
+                    },
+                    {
+                        "name": "name",
+                        "required": false,
+                        "type": "string",
+                        "description": "Used to target a specific field by name when rendering outside of a{' '} `Field` part.",
+                        "descriptionMdx": "<>\n          Used to target a specific field by name when rendering outside of a{' '}\n          <Code>Field</Code> part.\n        </>"
+                    }
+                ],
                 "subComponents": [],
                 "examples": []
             },
             {
-                "name": "RadioGroup",
-                "tag": "radio-group",
-                "props": [],
-                "subComponents": [],
-                "examples": [
+                "name": "FormSubmit",
+                "tag": "submit",
+                "description": "The submit button.",
+                "props": [
                     {
-                        "title": "Short syntax",
-                        "code": "/radio-group\n\t() Bacon\n\t() Miso soup\n\t() Pizza"
+                        "name": "asChild",
+                        "required": false,
+                        "type": "boolean",
+                        "default": "false",
+                        "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+                        "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+                    }
+                ],
+                "subComponents": [],
+                "examples": []
+            },
+            {
+                "name": "FormValidityState",
+                "tag": "validity-state",
+                "description": "Use this render-prop component to access a given field’s validity state in render (see `ValidityState` on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/ValidityState)). A field's validity is available automatically when nested inside a `Field` part, otherwise you must pass a `name` prop to associate it.",
+                "props": [
+                    {
+                        "name": "children",
+                        "required": false,
+                        "type": "(validity: ValidityState | undefined) => React.ReactNode",
+                        "typeSimple": "function",
+                        "description": "A render function that receives the validity state of the field.",
+                        "descriptionMdx": "A render function that receives the validity state of the field."
                     },
                     {
-                        "title": "Composable syntax",
-                        "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
+                        "name": "name",
+                        "required": false,
+                        "type": "string",
+                        "description": "Used to target a specific field by name when rendering outside of a{' '} `Field` part.",
+                        "descriptionMdx": "<>\n          Used to target a specific field by name when rendering outside of a{' '}\n          <Code>Field</Code> part.\n        </>"
                     }
-                ]
+                ],
+                "subComponents": [],
+                "examples": []
             }
         ],
         "examples": [
             {
                 "title": "Short syntax",
-                "code": "/form\n\t# Email\n\t[Your email]\n\t-- This will help us stay in touch. We don't spam!\n\t# Message\n\t[> Enter any message here...]\n\t-- Come on! You can write anything!\n\t<x> Send me important notifications\n\t<> Send me marketing emails\n\t# What do you prefer?\n\t() Bacon\n\t() Miso soup\n\t() Pizza\n\t/button Submit @type=submit"
+                "code": "/form\n\t# Email\n\t[Your email]\n\t-- This will help us stay in touch. We don't spam!\n\t# Message\n\t[> Enter any message here...]\n\t-- Come on! You can write anything!\n\t/div flex gap-4\n\t\t<x> Send me important notifications\n\t\t<> Send me marketing emails\n\t/div flex flex-col gap-2\n\t\t# What do you prefer?\n\t\t[] Bacon\n\t\t[x] Miso soup\n\t\t[] Pizza\n\t# How old are you?\n\t() 18 or minus\n\t() 18-35\n\t(x) 35 or more\n\t/submit @asChild\n\t\t/button Submit @type=submit"
             },
             {
                 "title": "Composable syntax",
-                "code": "/form\n\t/field @name=email\n\t\t/label Email\n\t\t/input @placeholder=\"Your email\"\n\t\t/description This will help us stay in touch. We don't spam!\n\t/field @name=message\n\t\t/label Message\n\t\t/textarea Enter any message here...\n\t\t/description Come on! You can write anything!\n\t/field @name=sendImportantNotifications\n\t\t/switch Send me important notifications @defaultValue={true}\n\t/field @name=sendMarketingEmails\n\t\t/switch Send me marketing emails\n\t/field @name=foodPreferences\n\t\t/radio-group\n\t\t\t/radio Bacon @value=\"bacon\"\n\t\t\t/radio Miso soup @value=\"miso-soup\"\n\t\t\t/radio Pizza @value=\"pizza\"\n\t/button @type=submit Submit"
+                "code": "/form\n\t/field \n\t\t/label Email\n\t\t/control @asChild \n\t\t\t/input Your email\n\t\t/description This will help us stay in touch. We don't spam!\n\t/field \n\t\t/label Message\n\t\t/control @asChild \n\t\t\t/textarea Enter any message here...\n\t\t/description Come on! You can write anything!\n\t/div flex gap-4\n\t\t/field\n\t\t\t/control @asChild \n\t\t\t\t/switch Send me important notifications ON\n\t\t/field\n\t\t\t/control @asChild \n\t\t\t\t/switch Send me marketing emails\n\t/div flex flex-col gap-2\n\t\t/field\n\t\t\t/label What do you prefer?\n\t\t\t/control @asChild\n\t\t\t\t/checkbox Bacon\n\t\t/field\n\t\t\t/control @asChild\n\t\t\t\t/checkbox Miso soup ON\n\t\t/field\n\t\t\t/control @asChild\n\t\t\t\t/checkbox Pizza\n\t/field \n\t\t/label How old are you?\n\t\t/control @asChild \n\t\t\t/radio-group @defaultValue=\"35-or-more\"\n\t\t\t\t/radio 18 or minus\n\t\t\t\t/radio 18-35\n\t\t\t\t/radio 35 or more\n\t/submit @asChild\n\t\t/button Submit @type=submit"
+            },
+            {
+                "title": "With messages",
+                "code": "/form\n\t/field @name=Email\n\t\t/label Email\n\t\t/message @match=\"valueMissing\" Please enter your email\n\t\t/message @match=\"typeMismatch\" Please provide a valid email\n\t\t/control @asChild \n\t\t\t/input @type=email @required\n\t/field @name=Question\n\t\t/label Question\n\t\t/message @match=\"valueMissing\" Please enter a question\n\t\t/control @asChild\n\t\t\t/textarea @required\n\t/submit @asChild \n\t\t/button %default Post question "
             }
         ]
     },
