@@ -1,7 +1,7 @@
 'use client'
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote"
-import { ReactNode } from "react"
+import { ReactNode, useEffect } from "react"
 import * as MintComponents from "@mintlify/components"
 import { MDXProvider } from '@mdx-js/react'
 import { cn } from "@/lib/cn"
@@ -155,6 +155,21 @@ export default function MdxComponent({content}: MdxComponentProps) {
       <span className="text-sm font-body text-gray-400 -my-2">{children}</span>
     </div>
   );
+
+  useEffect(() => {
+    function sendClickEventToParent() {
+      window.parent.postMessage(
+        { type: 'CLICK_EVENT', message: 'A click has been detected inside Doc Iframe' },
+        '*'
+      );
+    }
+
+    window.addEventListener('click', sendClickEventToParent);
+
+    return () => {
+      window.removeEventListener('click', sendClickEventToParent);
+    }
+  }, []);
 
   // Combinez vos composants personnalisés avec les composants existants
   const components = {

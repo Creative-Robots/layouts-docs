@@ -6,25 +6,32 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { MySheet, SheetContent } from "@/components/Sheet";
 import { cn } from "@/lib/cn";
 import { FaChevronRight } from "react-icons/fa6";
-import { SearchCommand } from "@/components/Command/MyCommand";
 import { ReactNode } from "react";
-import Image from "next/image";
+import LayoutsImage from "@/components/LayoutsImage";
+import { SearchCommand } from "@/components/Command/MyCommand";
 
-
-export default async function AppLayout({children}:{children?:ReactNode}) {
+export default async function AppLayout({
+    children,
+    searchParams,
+  }: {
+    children?: ReactNode;
+    searchParams: { [key: string]: string | undefined };
+  }) {
+    const type = searchParams?.type;
+    
     return (
     <>
         {/** Header of the docs */}
         <div className="flex flex-col place-content-between border-b border-black/5 fixed z-30 w-[100%] backdrop-blur  bg-[#FDFDFD]">
         <div className="flex flex-row w-full max-w-[2000px] mx-auto h-fit p-4">
             <div className="flex flex-row gap-1.5 items-center w-fit">
-            <Image width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
-            <h1 className="text-base tracking-tight font-[Inter_Display] font-medium text-[#1E1F22] hidden 3xs:block ">Layouts.dev</h1>
-            <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min hidden 2xs:block">Docs</Badge>
+                <LayoutsImage/>
+                <h1 className="text-base tracking-tight font-[Inter_Display] font-medium text-[#1E1F22] hidden 3xs:block ">Layouts.dev</h1>
+                <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min hidden 2xs:block">Docs</Badge>
             </div>
             <SearchCommand />
             <div className="p-2 rounded hidden hover:bg-black/5 size-fit self-center">
-            <IoSunnyOutline className="text-[#1E1F22]" width={16} height={16}/>
+                <IoSunnyOutline className="text-[#1E1F22]" width={16} height={16}/>
             </div>
         </div>
 

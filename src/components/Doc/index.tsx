@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/cn';
 import { componentsProps } from '@/lib/componentTypes';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import HtmlComponentDoc from './Html';
 import { scrollToElement } from '@/lib/utils';
 import { ComponentDoc } from '@/app/(app)/components/[name]/page';
@@ -50,7 +50,22 @@ interface DocProps {
 }
 
 const Doc = ({htmldata, isLayouts, layoutData, entries}:DocProps) => {
+
+    useEffect(() => {
+        function sendClickEventToParent() {
+          window.parent.postMessage(
+            { type: 'CLICK_EVENT', message: 'A click has been detected inside Doc Iframe' },
+            '*'
+          );
+        }
     
+        window.addEventListener('click', sendClickEventToParent);
+    
+        return () => {
+          window.removeEventListener('click', sendClickEventToParent);
+        }
+      }, []);    
+
     return (
         <> 
 

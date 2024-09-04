@@ -127,6 +127,31 @@ export default function Entries({ entries }: EntriesProps) {
         };
     }, [entries, activeIndex]);
 
+    const adjustScrollForTopBar = () => {
+        const hash = window.location.hash.substring(1); 
+
+        if (hash) {
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+            const topBarHeight = 120;
+
+            window.scrollTo({
+            top: elementPosition - topBarHeight,
+            behavior: 'smooth'
+            });
+        }
+        }
+    };
+
+    window.addEventListener('load', () => {
+        adjustScrollForTopBar();
+    });
+    window.addEventListener('hashchange', () => {
+        adjustScrollForTopBar();
+    });
+
     return (
         <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0 h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
             <Label className="text-sm font-medium">

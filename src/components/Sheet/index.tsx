@@ -4,7 +4,7 @@ import { FileElementType, getMdxFiles } from "@/lib/fileUtils";
 import React, { useState } from "react";
 import Dropdown from "../Dropdown";
 import { cn } from "@/lib/cn";
-import { useRouter} from 'next/navigation'
+import { useRouter, useSearchParams} from 'next/navigation'
 import { FileButton } from "./FileButton";
 import { folder_1, folder_3 } from "@/lib/Style";
 
@@ -21,6 +21,7 @@ import {
   } from "@/components/ShadCn/Sheet"
 import { DISCORD_URL } from "@/lib/utils";
 import Image from "next/image";
+import LayoutsImage from "../LayoutsImage";
 
 export function MySheet() {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export function MySheet() {
             <SheetC className="bg-white px-0 pb-0 flex flex-col" side={'left'} setIsOpen={setIsOpen}>
                 <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent 4xs:block hidden pt-2 2xs:pt-0">
                 <SheetTitle className="flex flex-row justify-start 3xs:justify-center pl-4 3xs:pl-0 gap-2 3xs:gap-4 ">
-                    <Image width={20} height={20} className=" size-[12px] 4xs:size-[8vw] 3xs:size-[20px] my-auto" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
+                    <LayoutsImage/>
                     <span className="text-[11px] 4xs:text-[8vw] 3xs:text-xl 4xs:pl-0 font-semibold">Documentation</span>
                 </SheetTitle>
                 </SheetHeader>
@@ -146,9 +147,17 @@ const handleOpen = () => {
     window.open(url, '_blank'); // Ouvre la page dans un nouvel onglet
 };
 
+const handleDiscordOpen = () => {
+    window.open(DISCORD_URL, '_blank'); // Ouvre la page dans un nouvel onglet
+};
+
 export function SheetContent({className, bottom=false, onOpenChange}:{className?:string, bottom?:boolean, onOpenChange:any}) {
     const fileNames = getMdxFiles();
     const router = useRouter();
+
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+
     return (
         <>
         {/* <SheetClose>TestClose</SheetClose> */}
@@ -157,16 +166,18 @@ export function SheetContent({className, bottom=false, onOpenChange}:{className?
         </div>
         {
             bottom && <div className="w-full border-t border-gray-400/20 h-fit py-6 4xs:p-6 gap-2 flex flex-col items-center 4xs:items-start bg-white">
-                <Button onClick={() => router.push(DISCORD_URL)} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
+                <Button onClick={handleDiscordOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
                     <img alt="message" className="size-3.5" src="https://illustrations.dev/encrypted/img_MzM1QkNEQUQwQzgzQ0MxOUY0MTBFOTM0ODMwQjlDODM2NTZEQ0E3NzA2ODdGOTZE" />
                     <span className=" hidden 3xs:block text-sm" >Chat with us</span> {/** base text */}
-                    <span className="hidden 4xs:block text-[15px]" >Chat</span> {/** Small text */}
+                    <span className="hidden 4xs:block 3xs:hidden text-[15px]" >Chat</span> {/** Small text */}
                 </Button>
-                <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
-                    <img alt="" className="size-3.5 opacity-60" src="https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=p3x6p2ud&dl=0" />
-                    <span className=" hidden 3xs:block text-sm" >Open the App</span> {/** base text */}
-                    <span className=" hidden 4xs:block 3xs:hidden text-[15px]" >App</span> {/** Small text */}
-                </Button>
+                {
+                    type !== "editor" && <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
+                        <img alt="" className="size-3.5 opacity-60" src="https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=p3x6p2ud&dl=0" />
+                        <span className=" hidden 3xs:block text-sm" >Open the App</span> {/** base text */}
+                        <span className=" hidden 4xs:block 3xs:hidden text-[15px]" >App</span> {/** Small text */}
+                    </Button>
+                }
             </div>
         }
         
