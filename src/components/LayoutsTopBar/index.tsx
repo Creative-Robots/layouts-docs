@@ -38,7 +38,7 @@ const SecondLayoutsTopBar = () => {
         return (            
             <div className="h-12 w-full flex-row border-t border-black/5 hidden md:flex">
                 <div className={cn("h-fit w-fit flex flex-row gap-1 justify-start items-center my-auto ml-4")}>
-                    <SecondLayoutsSearchCommand/>
+                    <SecondLayoutsSearchCommand first={false}/>
                 </div>
             </div>
         )

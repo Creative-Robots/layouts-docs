@@ -22,7 +22,7 @@ import { cn } from "@/lib/cn";
 
 const Essentials = getMdxFiles();
 
-export function SearchCommand() {
+export function SearchCommand({first} : {first: boolean}) {
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
 
@@ -37,8 +37,15 @@ export function SearchCommand() {
       }
     }
 
-    document.addEventListener("keydown", down)
-    return () => document.removeEventListener("keydown", down)
+    console.log("VALLLLL", first)
+    if (first) {
+      document.addEventListener("keydown", down)
+    }
+    return () => {
+      if (first) {
+        document.removeEventListener("keydown", down)
+      }
+    }
   }, [])
 
   const simulateCtrlK = () => {
