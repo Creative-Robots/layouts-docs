@@ -4,6 +4,8 @@ import { PropsTab, Section, SubComponent, SubSection, Title } from "../ContentCo
 import { CodeBlock } from "../ContentComponents/CodeBlock";
 import { fixIndent } from "@/lib/indents";
 import check from "check-types";
+import { useSearchParams } from "next/navigation";
+import { cn } from "@/lib/cn";
 
 interface DocProps {
     data: ComponentDoc;
@@ -43,8 +45,12 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
 
 export default function LayoutComponentsDoc({data}:DocProps) {
     const {name, description, refImplementation, props, subComponents, examples, sources} = data;
+
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+    
     return (
-        <div className='flex flex-col gap-3 pb-20 xl:px-44 lg:px-12 md:px-8 px-4 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 pt-[122px]'>
+        <div className={cn('flex flex-col gap-3 pb-20 xl:px-44 lg:px-12 md:px-8 px-4 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2', type === "editor" ? "pt-[77px]" : "pt-[122px]")}>
             <DocBreadcrums items={[name]} />
             <div className='flex flex-col gap-1'>
                 <Title title={name} description={description}></Title>

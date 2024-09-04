@@ -13,7 +13,7 @@ import { Label } from "../ui/label"
 import { CodeBlock } from "../ContentComponents/CodeBlock"
 import { Strong } from "../ContentComponents/Strong"
 import Entries from "../ContentComponents/Entry"
-import { redirect, useRouter } from "next/navigation"
+import { redirect, useRouter, useSearchParams } from "next/navigation"
 
 interface MdxComponentProps {
     content: { 
@@ -45,9 +45,12 @@ const CustomH3 = ({ children, id }: {children:ReactNode, id:string}) => {
 }
 
 const Linkable = ({id}:{id:string}) => {
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+
     return (
         <div className="absolute">
-        <a href={`#${id}`} onClick={scrollToElement} className="-ml-8 flex items-center opacity-0 border-0 group-hover:opacity-100 bg-gray-50 rounded-md shadow size-fit p-1 hover:bg-gray-100" aria-label="Navigate to header">
+        <a href={`#${id}`} onClick={(e) => scrollToElement(e, type)} className="-ml-8 flex items-center opacity-0 border-0 group-hover:opacity-100 bg-gray-50 rounded-md shadow size-fit p-1 hover:bg-gray-100" aria-label="Navigate to header">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         </a>
       </div>
@@ -139,6 +142,9 @@ export default function MdxComponent({content}: MdxComponentProps) {
 
   const router = useRouter();
 
+  const searchParams = useSearchParams();
+  const type = searchParams.get("type");
+
   const redirCard = (title:string) => {
     if (title === "Help & Support") {
       router.push('/help');
@@ -193,7 +199,7 @@ export default function MdxComponent({content}: MdxComponentProps) {
     return (
       <>
         <div className="flex flex-row flex-1">
-          <div className="max-w-[1440px] w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 pt-[122px] relative">
+          <div className={cn("max-w-[1440px] w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2 relative", type === "editor" ? "pt-[77px]" : "pt-[122px]")}>
             <div className="text-gray-800 xl:px-44 lg:px-12 md:px-8 px-4 w-full max-w-full overflow-hidden">
               {/* FIXME: Remove any below */}
               <MDXProvider components={components as any}>

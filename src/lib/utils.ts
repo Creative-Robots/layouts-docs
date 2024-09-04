@@ -1,6 +1,6 @@
 import React from "react";
 
-export function scrollToElement(event: React.MouseEvent<HTMLAnchorElement>): void {
+export function scrollToElement(event: React.MouseEvent<HTMLAnchorElement>, type: string | null): void {
     event.preventDefault(); // Empêche le comportement par défaut du lien
   
     const target = event.currentTarget as HTMLAnchorElement;
@@ -10,7 +10,7 @@ export function scrollToElement(event: React.MouseEvent<HTMLAnchorElement>): voi
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - 120;
+        const offsetPosition = elementPosition - (type === "editor" ? 75 : 120);
   
         window.scrollTo({
           top: offsetPosition,

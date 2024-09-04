@@ -4,6 +4,7 @@ import { cn } from "@/lib/cn";
 import { scrollToElement } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 import { Label } from "../ui/label";
+import { useSearchParams } from "next/navigation";
 
 interface EntryProps {
     i: number;
@@ -20,7 +21,11 @@ export default function Entries({ entries }: EntriesProps) {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
     const [activeEntries, setActiveEntries] = useState<number[]>([]);
     const debounceTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-    const TOPBAR_HEIGHT = 105; // Adjust this constant to match your topbar height
+
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+
+    const TOPBAR_HEIGHT = type === "editor" ? 65 : 105; // Adjust this constant to match your topbar height
 
     useEffect(() => {
         const updateHash = (newIndex: number | null) => {
@@ -135,10 +140,8 @@ export default function Entries({ entries }: EntriesProps) {
         if (targetElement) {
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
 
-            const topBarHeight = 120;
-
             window.scrollTo({
-            top: elementPosition - topBarHeight,
+            top: elementPosition - (type === "editor" ? 75 : 120),
             behavior: 'smooth'
             });
         }
@@ -153,7 +156,7 @@ export default function Entries({ entries }: EntriesProps) {
     });
 
     return (
-        <div className='w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0 h-screen pl-2 pr-4 pt-[122px] overflow-y-scroll flex-col gap-4'>
+        <div className={cn('w-60 min-w-60 max-w-60 hidden lg:flex sticky top-0 h-screen pl-2 pr-4 overflow-y-scroll flex-col gap-4', type === "editor" ? "pt-[77px]" : "pt-[122px]")}>
             <Label className="text-sm font-medium">
                 On this page
             </Label>
@@ -165,13 +168,16 @@ export default function Entries({ entries }: EntriesProps) {
 }
 
 export function Entry({ i, entry, isActive, level }: EntryProps) {
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+
     const elementId = entry.normalize().replace(/`/g, "");
 
     return (
         <a
             className={cn("text-xs font-normal text-gray-400 hover:text-[#1e1f22] cursor-pointer flex flex-row items-center", isActive ? "text-black" : "")}
             href={`#${elementId}`}
-            onClick={scrollToElement}
+            onClick={(e) => scrollToElement(e, type)}
         >
             {level === 2 ? <div className='text-xs h-0.5 w-1 rounded-full bg-gray-300 group-hover:bg-[#1e1f22] mr-2'></div> : null}
             {level === 3 ? <div className='text-xs size-0.5 rounded-none bg-gray-200 group-hover:bg-[#1e1f22] mr-2'></div> : null}

@@ -10,6 +10,7 @@ import { Heading1, Heading2, PropsTab, Section, SubHeading, Title } from "../Con
 import { AcceptChildrenBox, AcceptChildrenIcon, AcceptChildrenTitle, Description, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName, requiredCol } from "@/lib/Style";
 import { CodeBlock } from "../ContentComponents/CodeBlock";
 import { withDescription } from "../ContentComponents/PropsTab";
+import { useSearchParams } from "next/navigation";
 
 interface DocProps extends componentsProps {
     data: DocType;
@@ -47,9 +48,13 @@ function convertToHtmlFormat(text:string) {
 
 export default function HtmlComponentDoc({children, className, data}:DocProps) {
     const {tag, title, shortDescriptionOfTheTag, allowedAttributes, canHaveChildren, usageExamples} = data;
+
+    const searchParams = useSearchParams();
+    const type = searchParams.get("type");
+
     return (
         
-        <div className='flex flex-col gap-3 pb-20 xl:px-44 lg:px-12 md:px-8 px-4 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2  pt-[122px]'>
+        <div className={cn('flex flex-col gap-3 pb-20 xl:px-44 lg:px-12 md:px-8 px-4 min-h-screen w-middle-box-0/2 md:w-middle-box-1/2 lg:w-middle-box-2/2', type === "editor" ? "pt-[77px]" : "pt-[122px]")}>
             <DocBreadcrums items={[tag]} />
             <div className='flex flex-col'>
                 <Title title={title} description={shortDescriptionOfTheTag} ></Title>

@@ -14,16 +14,20 @@ import {
 } from "./index"
 import LayoutsComponents from './../../docs/RawLayouts/Components.json';
 
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Input } from "../ui/input";
 import { FileElementType, getMdxFiles } from "@/lib/fileUtils";
 import { SearchIcon } from "lucide-react";
+import { cn } from "@/lib/cn";
 
 const Essentials = getMdxFiles();
 
 export function SearchCommand() {
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
+
+  const searchParams = useSearchParams();
+  const type = searchParams.get("type");
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -66,9 +70,9 @@ export function SearchCommand() {
 
   return (
     <>
-      <div className="justify-start items-start flex-row flex gap-2 relative max-w-fit xs:max-w-[250px] ml-auto xs:mr-4 self-center" onClick={simulateCtrlK}>
-            <Input className="reset py-2 px-4 items-center rounded-lg w-full bg-gray-100 placeholder:text-gray-500 text-[13px] outline-white focus:outline-gray-200 text-[#1e1f22] focus:shadow-sm cursor-pointer hidden xs:block" placeHolder="Search..." placeholder="Search..." />
-            <div className="items-center justify-start hidden gap-1 absolute right-2 top-2.5 xs:flex" >
+      <div className={cn("justify-start items-start flex-row flex gap-2 relative max-w-fit ml-auto self-center", type === "editor" ? "h-7 md:max-w-[250px] md:mr-4": "h-10 xs:max-w-[250px] xs:mr-4")} onClick={simulateCtrlK}>
+            <Input className={cn("reset px-4 py-2 items-center rounded-lg w-full bg-gray-100 placeholder:text-gray-500 outline-white focus:outline-gray-200 text-[#1e1f22] focus:shadow-sm cursor-pointer", type === "editor" ? "hidden md:block text-[10px] h-7" : "hidden xs:block text-[13px] h-10")} placeHolder="Search..." placeholder="Search..." />
+            <div className={cn("items-center justify-start gap-1 absolute right-2", type === "editor" ? "hidden md:flex top-1" : "hidden xs:flex top-2.5")} >
                 <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
                     ⌘
                 </kbd>
@@ -76,7 +80,7 @@ export function SearchCommand() {
                     K
                 </kbd>
             </div>
-            <SearchIcon height={16} width={16} className="items-center justify-start flex gap-1 my-auto xs:hidden hover:text-black cursor-pointer"></SearchIcon>
+            <SearchIcon height={16} width={16} className={cn("items-center justify-start gap-1 my-auto hover:text-black cursor-pointer", type === "editor" ? "hidden 4xs:flex md:hidden" : "flex xs:hidden")}></SearchIcon>
       </div>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />

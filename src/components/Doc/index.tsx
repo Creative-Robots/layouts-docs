@@ -4,7 +4,6 @@ import { cn } from '@/lib/cn';
 import { componentsProps } from '@/lib/componentTypes';
 import React, { useEffect, useRef, useState } from 'react';
 import HtmlComponentDoc from './Html';
-import { scrollToElement } from '@/lib/utils';
 import { ComponentDoc } from '@/app/(app)/components/[name]/page';
 import LayoutComponentsDoc from './Layout';
 import Entries from '../ContentComponents/Entry';
