@@ -6,6 +6,7 @@ import { fixIndent } from "@/lib/indents";
 import check from "check-types";
 import { useSearchParams } from "next/navigation";
 import { cn } from "@/lib/cn";
+import { VariantsTab } from "../ContentComponents/VariantsTab";
 
 interface DocProps {
     data: ComponentDoc;
@@ -27,7 +28,31 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
 
         if (source == "Shadcn") {
             sourcesList.push(
-                <img alt="authorImg" src="https://ui.shadcn.com/apple-touch-icon.png"  className='w-[12px]'/>
+                <img alt="Shadcn Website Logo" src="https://ui.shadcn.com/apple-touch-icon.png"  className='w-[12px]'/>
+            )
+        } else if (source == "Radix") {
+            sourcesList.push(
+                <img alt="Radix Website Logo" src="https://www.radix-ui.com/favicon.png"  className='w-[12px]'/>
+            )
+        } else if (source == "Cmdk") {
+            sourcesList.push(
+                <img alt="Cmdk Website Logo" src="https://cmdk.paco.me/favicon.svg"  className='w-[12px]'/>
+            )
+        } else if (source == "EmblaCarousel") {
+            sourcesList.push(
+                <img alt="EmblaCarousel Website Logo" src="https://www.embla-carousel.com/favicon.svg?v=438bb8af91f59256d3cb36c30e91b51e"  className='w-[12px]'/>
+            )
+        } else if (source == "ReactDayPicker") {
+            sourcesList.push(
+                <img alt="ReactDayPicker Website Logo" src="https://daypicker.dev/img/favicon.ico"  className='w-[12px]'/>
+            )
+        } else if (source == "Vaul") {
+            sourcesList.push(
+                <img alt="Vaul Website Logo" src="https://vaul.emilkowal.ski/favicon.ico"  className='w-[12px]'/>
+            )
+        } else if (source == "ReactResizablePanels") {
+            sourcesList.push(
+                <img alt="ReactResizablePanels Website Logo" src="https://user-images.githubusercontent.com/29597/210075327-faeb4ca8-31df-4dc8-a649-01d0ee3cd315.png"  className='w-[24px] clip-path-[inset(0_50%_0_0)]'/>
             )
         }
         sourcesList.push(
@@ -37,14 +62,14 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
 
     return (
         <>
-            <p className='text-xs font-body text-[#1E1F22] '>Inspired by  : </p>
+            <p className='text-xs font-body text-[#1E1F22] '>Uses  : </p>
             {sourcesList}
         </>
     )
 }
 
 export default function LayoutComponentsDoc({data}:DocProps) {
-    const {name, description, refImplementation, props, subComponents, examples, sources} = data;
+    const {name, description, refImplementation, props, subComponents, examples, sources, variants} = data;
 
     const searchParams = useSearchParams();
     const type = searchParams.get("type");
@@ -67,6 +92,11 @@ export default function LayoutComponentsDoc({data}:DocProps) {
             {props && props.length > 0 ? (
                 <Section name="Props">
                     <PropsTab props={props} />
+                </Section>
+            ) : null}
+            {variants && variants.length > 0 ? (
+                <Section name="Variants">
+                    <VariantsTab props={variants} />
                 </Section>
             ) : null}
             {examples && examples.length > 0 ? (

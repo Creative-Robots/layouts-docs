@@ -37,7 +37,6 @@ export function SearchCommand({first} : {first: boolean}) {
       }
     }
 
-    console.log("VALLLLL", first)
     if (first) {
       document.addEventListener("keydown", down)
     }

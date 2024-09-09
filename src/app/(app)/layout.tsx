@@ -41,7 +41,9 @@ export default async function AppLayout({children}: {children?: ReactNode}) {
 
         {/** Pages */}
         <main className="w-full max-w-[2000px] flex flex-row mx-auto min-h-full bg-[#FDFDFD] ">
-            <LayoutsMain children={children}/>
+            <LayoutsMain>
+                {children}
+            </LayoutsMain>
         </main>
 
         {/** Footer */}

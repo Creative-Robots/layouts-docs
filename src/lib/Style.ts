@@ -112,6 +112,27 @@ const requiredCol = "text-sm text-[#1E1F22] text-center col-span-2";
 
 const Description = "text-base text-[#5B5E66] font-normal";
 
+const VariantsHeaderBox =
+    "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[300px]";
+const VariantsHeader = "grid grid-cols-5 gap-2";
+const VariantsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-2";
+const VariantsSecondHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
+
+const VariantsLine1_2 = "bg-[#fcfcfc]";
+const VariantsLine2_2 = "bg-[#fafafa]";
+
+const VariantsLineBox =
+    "flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3";
+const VariantsLine = "grid grid-cols-5 gap-2 items-center text-xs";
+
+const VariantsName =
+    "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-2 break-all";
+
+const VariantsCol = "flex flex-col justify-normal items-start col-span-3";
+const VariantsColTitle = "flex flex-col justify-normal items-start";
+const VariantsColTitleText = "text-xs font-medium text-[#1E1F22]";
+
+
 //CodeBlock
 const CodeBlockBox =
     "h-fit w-full max-w-full bg-gray-900 rounded-lg my-4 shadow-lg py-2 relative flex flex-col overflow-hidden";
@@ -200,6 +221,18 @@ export {
     AcceptChildrenBox,
     AcceptChildrenIcon,
     AcceptChildrenTitle,
+    VariantsCol,
+    VariantsColTitle,
+    VariantsColTitleText,
+    VariantsHeaderBox,
+    VariantsHeader,
+    VariantsHeaderTitle,
+    VariantsSecondHeaderTitle,
+    VariantsLineBox,
+    VariantsLine,
+    VariantsName,
+    VariantsLine1_2,
+    VariantsLine2_2,
 
     //CodeBlock
     CodeBlockBox,
