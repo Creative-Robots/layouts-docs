@@ -653,7 +653,7 @@
           "description": "The controlled value of the autocomplete input."
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "required": false,
           "type": "(val: string) => void",
           "description": "Callback function called when the value changes."
