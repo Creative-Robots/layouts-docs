@@ -974,6 +974,30 @@
     }
   },
   {
+    "name": "Background image",
+    "parsedName": "bg-image",
+    "entries": [
+      {
+        "entry": "Background image",
+        "level": 1
+      },
+      {
+        "entry": "Ref Implementation",
+        "level": 1
+      }
+    ],
+    "content": {
+      "name": "Background image",
+      "tag": "bg-image",
+      "description": "Add a background image to a component.",
+      "refImplementation": "/center size-80 p-5 rounded-2xl shadow-xl\n      /bg-image %unsplash pizza\n      Food text-white text-3xl font-semibold",
+      "props": [],
+      "subComponents": [],
+      "examples": [],
+      "variants": []
+    }
+  },
+  {
     "name": "Background Mesh Gradient",
     "parsedName": "bg-mesh",
     "entries": [
@@ -1185,7 +1209,7 @@
       "name": "Background video",
       "tag": "bg-video",
       "description": "Add a background video to a component.",
-      "refImplementation": "/center size-80 p-5 rounded-2xl shadow-xl\n        /bg-video https://motion.layouts.dev/colorful-gradient.mp4\n        Hello text-white text-3xl font-semibold",
+      "refImplementation": "/center size-80 p-5 rounded-2xl shadow-xl\n      /bg-video https://motion.layouts.dev/colorful-gradient.mp4\n      Hello text-white text-3xl font-semibold",
       "props": [
         {
           "name": "src",
@@ -5954,7 +5978,7 @@
       "name": "Image",
       "tag": "image",
       "description": "An image component that fetches an image from the internet or your favorite assets libraries.",
-      "refImplementation": "/image %unsplash deep space size-48 rounded-lg",
+      "refImplementation": "/image %pexels deep space size-48 rounded-lg",
       "props": [],
       "subComponents": [],
       "examples": [
@@ -11045,6 +11069,30 @@
         "Shadcn",
         "Radix"
       ]
+    }
+  },
+  {
+    "name": "Video",
+    "parsedName": "video",
+    "entries": [
+      {
+        "entry": "Video",
+        "level": 1
+      },
+      {
+        "entry": "Ref Implementation",
+        "level": 1
+      }
+    ],
+    "content": {
+      "name": "Video",
+      "tag": "video",
+      "description": "A video",
+      "refImplementation": "/video kitten",
+      "props": [],
+      "subComponents": [],
+      "examples": [],
+      "variants": []
     }
   },
   {

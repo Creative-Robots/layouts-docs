@@ -5,11 +5,9 @@ import DocBreadcrums from "../Breadcrums";
 import Separator from '../Separator';
 import { cn } from "@/lib/cn";
 import React from "react";
-import CopyClipboard from "../ClipBoard";
-import { Heading1, Heading2, PropsTab, Section, SubHeading, Title } from "../ContentComponents";
-import { AcceptChildrenBox, AcceptChildrenIcon, AcceptChildrenTitle, Description, isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName, requiredCol } from "@/lib/Style";
+import { Heading1, Heading2, SubHeading, Title } from "../ContentComponents";
+import { isRequiredTitle, PropsCol, PropsColTitle, PropsColTitleText, PropsHeader, PropsHeaderBox, PropsHeaderTitle, PropsLine, PropsLine1_2, PropsLine2_2, PropsLineBox, PropsName, requiredCol } from "@/lib/Style";
 import { CodeBlock } from "../ContentComponents/CodeBlock";
-import { withDescription } from "../ContentComponents/PropsTab";
 import { useSearchParams } from "next/navigation";
 
 interface DocProps extends componentsProps {
@@ -39,12 +37,6 @@ type attributeType = {
         options?: string[];
     }[];
 };
-
-function convertToHtmlFormat(text:string) {
-    let formattedText = text.replace('><', '>\n<');
-    return formattedText;
-}
-
 
 export default function HtmlComponentDoc({children, className, data}:DocProps) {
     const {tag, title, shortDescriptionOfTheTag, allowedAttributes, canHaveChildren, usageExamples} = data;
@@ -123,55 +115,6 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                 })}
                 </div>
             </div>}
-
-
-{/* <div className="max-w-full overflow-x-scroll overflow-y-visible">
-      <div className={cn(PropsHeaderBox)}>
-        <div className={cn(PropsHeader)}>
-          <p className={cn(PropsHeaderTitle)}>Prop</p>
-          <p className={cn(PropsHeaderTitle)}>Type</p>
-          <p className={cn(PropsHeaderTitle, "hidden sm:block")}>Default</p>
-          <p className={cn(PropsHeaderTitle, isRequiredTitle, "hidden sm:block")}>isRequired</p>
-        </div>
-      </div> 
-      <div className='w-full h-fit min-w-[300px] overflow-y-visible'>
-        <Separator/>
-        {props.map((attribute, idx) => {
-            const tooDown = props.length - idx <= 2;
-            if (attribute === null) return null;
-            const bg = idx % 2 === props.length % 2 ? PropsLine1_2 : PropsLine2_2;
-            return (
-              <div className={cn(PropsLineBox, bg)} key={attribute.name + 'attribute' + idx}>
-                <div className={cn(PropsLine)}>
-                    {attribute.description
-                    ? withDescription(attribute.description, attribute.name, attribute.required, tooDown)
-                    : <div className={cn(PropsName)}>{attribute.name}<span className={cn(attribute.required === false ? "sm:hidden opacity-65" : "hidden")}>?</span></div>}
-                    {attribute.type ? (
-                        <>
-                        <div className={cn(PropsCol, "")}>
-                            <div className={PropsColTitle}>
-                              <div className={PropsColTitleText}>{trueType(attribute.type)}</div>
-                            </div>
-                        </div>
-                        <div className={cn(PropsCol, "hidden sm:block")}>
-                          <div className={PropsColTitle}>
-                            <p className={cn(PropsColTitleText, "truncate")}>{attribute.default}</p>
-                          </div>
-                        </div>
-                    </>
-                    ) : (
-                      <>
-                        <span key="span1"></span>
-                        <span key="span2" className="hidden sm:block"></span>
-                    </>
-                    )}
-                    <p className={cn(requiredCol, "hidden sm:block")}>{attribute.required === true ? "✅" : "❌"}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
 
             <SubHeading title={"Accept children : " + (canHaveChildren ? "✅" : "❌")}></SubHeading>
             {allowedAttributes && allowedAttributes.length > 0 && <>
