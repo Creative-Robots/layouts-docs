@@ -18,10 +18,10 @@ interface ProspTabProps {
 	                <HoverCardTrigger asChild className="relative" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                   </HoverCardTrigger>
-	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit" collisionPadding={20} side="bottom" >
-	                    <span className="text-sm" >
+	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full" collisionPadding={20} side="bottom" >
+	                    <p className="text-xs text-black max-w-40 w-fit" >
                           {addNewlineAfterPeriod(tip)}
-	                    </span>
+	                    </p>
 	                </HoverCardContent>
 	          </div>
 	      </HoverCard>
@@ -56,10 +56,10 @@ interface ProspTabProps {
 	                <HoverCardTrigger asChild className="relative" >
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
 	                </HoverCardTrigger>
-	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5" collisionPadding={20} side="bottom" >
-	                    <span className="text-sm" >
+	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full" collisionPadding={20} side="bottom" >
+	                    <p className="text-xs text-black max-w-40 w-fit" >
                           {addNewlineAfterPeriod(desc)}
-	                    </span>
+	                    </p>
 	                </HoverCardContent>
 	            </div>
 	        </HoverCard>
