@@ -109,15 +109,6 @@
           "default": "\"ltr\"",
           "description": "The reading direction of the accordion when applicable. If omitted, assumes LTR (left-to-right) reading mode.",
           "descriptionMdx": "The reading direction of the accordion when applicable. If omitted, assumes LTR (left-to-right) reading mode."
-        },
-        {
-          "name": "orientation",
-          "required": false,
-          "type": "\"horizontal\" | \"vertical\"",
-          "typeSimple": "enum",
-          "default": "\"vertical\"",
-          "description": "The orientation of the accordion.",
-          "descriptionMdx": "The orientation of the accordion."
         }
       ],
       "subComponents": [
@@ -1508,6 +1499,12 @@
           "required": false,
           "type": "string | Date",
           "description": "The default month displayed when the calendar is first rendered."
+        },
+        {
+          "name": "onChange",
+          "required": false,
+          "type": "(value: string) => void",
+          "description": "Callback function called when the selected date changes."
         }
       ],
       "subComponents": [],
@@ -2113,20 +2110,20 @@
           "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
         },
         {
-          "name": "defaultChecked",
+          "name": "defaultValue",
           "type": "boolean | 'indeterminate'",
           "description": "The checked state of the checkbox when it is initially rendered. Use when you do not need to control its checked state.",
           "descriptionMdx": "The checked state of the checkbox when it is initially rendered. Use when you do not need to control its checked state."
         },
         {
-          "name": "checked",
+          "name": "value",
           "type": "boolean | 'indeterminate'",
-          "description": "The controlled checked state of the checkbox. Must be used in conjunction with `onCheckedChange`.",
-          "descriptionMdx": "<span>\n          The controlled checked state of the checkbox. Must be used in\n          conjunction with <Code>onCheckedChange</Code>.\n        </span>"
+          "description": "The controlled checked state of the checkbox. Must be used in conjunction with `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled checked state of the checkbox. Must be used in\n          conjunction with <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onCheckedChange",
-          "type": "(checked: boolean | 'indeterminate') => void",
+          "name": "onChange",
+          "type": "(value: boolean | 'indeterminate') => void",
           "typeSimple": "function",
           "description": "Event handler called when the checked state of the checkbox changes.",
           "descriptionMdx": "Event handler called when the checked state of the checkbox changes."
@@ -2148,13 +2145,6 @@
           "type": "string",
           "description": "The name of the checkbox. Submitted with its owning form as part of a name/value pair.",
           "descriptionMdx": "The name of the checkbox. Submitted with its owning form as part of a name/value pair."
-        },
-        {
-          "name": "value",
-          "type": "string",
-          "default": "on",
-          "description": "The value given as data when submitted with a `name`.",
-          "descriptionMdx": "<span>\n          The value given as data when submitted with a <Code>name</Code>.\n        </span>"
         }
       ],
       "subComponents": [],
@@ -2430,7 +2420,7 @@
           "description": "Controlled state of the selected command menu item."
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "type": "function",
           "description": "Event handler called when the selected item of the menu changes."
         },
@@ -2496,7 +2486,7 @@
               "description": "Controlled state for the value of the search input."
             },
             {
-              "name": "onValueChange",
+              "name": "onChange",
               "type": "function",
               "description": "Event handler called when the search value changes."
             },
@@ -3511,7 +3501,7 @@
           "description": "The initial date value when the component is first rendered, in the format YYYY-MM-DD."
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "type": "(value?: string) => void",
           "description": "Callback triggered when the selected date changes."
         }
@@ -6096,7 +6086,7 @@
           "description": "The initial value of the input when the component is first rendered."
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "type": "(value: string, event: ChangeEvent<HTMLInputElement>) => void",
           "description": "Event handler called when the input value changes."
         },
@@ -8181,11 +8171,11 @@
         {
           "name": "value",
           "type": "string",
-          "description": "The controlled value of the radio item to check. Should be used in conjunction with `onValueChange`.",
-          "descriptionMdx": "<span>\n          The controlled value of the radio item to check. Should be used in\n          conjunction with <Code>onValueChange</Code>.\n        </span>"
+          "description": "The controlled value of the radio item to check. Should be used in conjunction with `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled value of the radio item to check. Should be used in\n          conjunction with <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "type": "(value: string) => void",
           "typeSimple": "function",
           "description": "Event handler called when the value changes.",
@@ -8742,11 +8732,11 @@
           "name": "value",
           "required": false,
           "type": "string",
-          "description": "The controlled value of the select. Should be used in conjunction with{' '} `onValueChange`.",
-          "descriptionMdx": "<span>\n          The controlled value of the select. Should be used in conjunction with{' '}\n          <Code>onValueChange</Code>.\n        </span>"
+          "description": "The controlled value of the select. Should be used in conjunction with{' '} `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled value of the select. Should be used in conjunction with{' '}\n          <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "required": false,
           "type": "(value: string) => void",
           "typeSimple": "function",
@@ -9494,13 +9484,13 @@
           "name": "value",
           "required": false,
           "type": "number[]",
-          "description": "The controlled value of the slider. Must be used in conjunction with{' '} `onValueChange`.",
-          "descriptionMdx": "<span>\n          The controlled value of the slider. Must be used in conjunction with{' '}\n          <Code>onValueChange</Code>.\n        </span>"
+          "description": "The controlled value of the slider. Must be used in conjunction with{' '} `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled value of the slider. Must be used in conjunction with{' '}\n          <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "required": false,
-          "type": "onValueChange?(value: number[]): void",
+          "type": "onChange?(value: number[]): void",
           "typeSimple": "function",
           "description": "Event handler called when the value changes.",
           "descriptionMdx": "Event handler called when the value changes."
@@ -9693,20 +9683,20 @@
           "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
         },
         {
-          "name": "defaultChecked",
+          "name": "defaultValue",
           "type": "boolean",
           "description": "The state of the switch when it is initially rendered. Use when you do not need to control its state.",
           "descriptionMdx": "The state of the switch when it is initially rendered. Use when you do not need to control its state."
         },
         {
-          "name": "checked",
+          "name": "value",
           "type": "boolean",
-          "description": "The controlled state of the switch. Must be used in conjunction with{' '} `onCheckedChange`.",
-          "descriptionMdx": "<span>\n          The controlled state of the switch. Must be used in conjunction with{' '}\n          <Code>onCheckedChange</Code>.\n        </span>"
+          "description": "The controlled state of the switch. Must be used in conjunction with{' '} `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled state of the switch. Must be used in conjunction with{' '}\n          <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onCheckedChange",
-          "type": "(checked: boolean) => void",
+          "name": "onChange",
+          "type": "(value: boolean) => void",
           "typeSimple": "function",
           "description": "Event handler called when the state of the switch changes.",
           "descriptionMdx": "Event handler called when the state of the switch changes."
@@ -9728,13 +9718,6 @@
           "type": "string",
           "description": "The name of the switch. Submitted with its owning form as part of a name/value pair.",
           "descriptionMdx": "The name of the switch. Submitted with its owning form as part of a name/value pair."
-        },
-        {
-          "name": "value",
-          "type": "string",
-          "default": "on",
-          "description": "The value given as data when submitted with a `name`.",
-          "descriptionMdx": "<span>\n          The value given as data when submitted with a <Code>name</Code>.\n        </span>"
         }
       ],
       "subComponents": [],
@@ -10217,7 +10200,7 @@
           "description": "A short hint that describes the expected value of the textarea."
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "type": "(value: string, event: ChangeEvent<HTMLTextAreaElement>) => void",
           "description": "Event handler called when the textarea value changes."
         },
@@ -10570,20 +10553,20 @@
           "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
         },
         {
-          "name": "defaultPressed",
+          "name": "defaultValue",
           "type": "boolean",
           "description": "The pressed state of the toggle when it is initially rendered. Use when you do not need to control its pressed state.",
           "descriptionMdx": "The pressed state of the toggle when it is initially rendered. Use when you do not need to control its pressed state."
         },
         {
-          "name": "pressed",
+          "name": "value",
           "type": "boolean",
-          "description": "The controlled pressed state of the toggle. Must be used in conjunction with `onPressedChange`.",
-          "descriptionMdx": "<span>\n          The controlled pressed state of the toggle. Must be used in\n          conjunction with <Code>onPressedChange</Code>.\n        </span>"
+          "description": "The controlled pressed state of the toggle. Must be used in conjunction with `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled pressed state of the toggle. Must be used in\n          conjunction with <Code>onChange</Code>.\n        </span>"
         },
         {
-          "name": "onPressedChange",
-          "type": "(pressed: boolean) => void",
+          "name": "onChange",
+          "type": "(value: boolean) => void",
           "typeSimple": "function",
           "description": "Event handler called when the pressed state of the toggle changes.",
           "descriptionMdx": "Event handler called when the pressed state of the toggle changes."
@@ -10690,8 +10673,8 @@
           "required": false,
           "default": "[]",
           "type": "string[]",
-          "description": "The controlled value of the pressed items when `type` is{' '} `\"multiple\"`. Must be used in conjunction with{' '} `onValueChange`.",
-          "descriptionMdx": "<span>\n          The controlled value of the pressed items when <Code>type</Code> is{' '}\n          <Code>\"multiple\"</Code>. Must be used in conjunction with{' '}\n          <Code>onValueChange</Code>.\n        </span>"
+          "description": "The controlled value of the pressed items when `type` is{' '} `\"multiple\"`. Must be used in conjunction with{' '} `onChange`.",
+          "descriptionMdx": "<span>\n          The controlled value of the pressed items when <Code>type</Code> is{' '}\n          <Code>\"multiple\"</Code>. Must be used in conjunction with{' '}\n          <Code>onChange</Code>.\n        </span>"
         },
         {
           "name": "defaultValue",
@@ -10702,7 +10685,7 @@
           "descriptionMdx": "<span>\n          The values of the items to show as pressed when initially rendered and{' '}\n          <Code>type</Code> is <Code>\"multiple\"</Code>. Use when you do not need\n          to control the state of the items.\n        </span>"
         },
         {
-          "name": "onValueChange",
+          "name": "onChange",
           "required": false,
           "type": "(value: string[]) => void",
           "typeSimple": "function",
