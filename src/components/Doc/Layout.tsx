@@ -124,7 +124,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                 {/* <span className="text-xs" >
                     64px height
                 </span> */}
-            </div>1
+            </div>
         </div>
     )
 }
