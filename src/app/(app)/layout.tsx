@@ -18,7 +18,7 @@ export default async function AppLayout({children}:{children?:ReactNode}) {
         <div className="flex flex-col place-content-between border-b border-black/5 fixed z-30 w-[100%] backdrop-blur  bg-[#FDFDFD]">
         <div className="flex flex-row w-full max-w-[2000px] mx-auto h-fit p-4">
             <div className="flex flex-row gap-1.5 items-center w-fit">
-            <Image width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
+            <Image width={18} height={18} className="w-[18px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>
             <h1 className="text-base tracking-tight font-[Inter_Display] font-medium text-[#1E1F22] hidden 3xs:block ">Layouts.dev</h1>
             <Badge className="bg-[#F4F3F1] text-[#5A5E65] text-xs font-[Roboto_Mono]  hover:bg-[#f4f3f1] py-1 h-min hidden 2xs:block">Docs</Badge>
             </div>
