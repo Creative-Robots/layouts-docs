@@ -31,6 +31,13 @@ function parsedContent(fileJson) {
         });
     }
 
+    if (fileJson.variants && fileJson.variants.length > 0) {
+        entries.push({
+            entry: "Variants",
+            level: 1,
+        });
+    }
+
     if (fileJson.examples && fileJson.examples.length > 0) {
         entries.push({
             entry: "Examples",

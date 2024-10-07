@@ -185,6 +185,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -528,6 +532,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -681,6 +689,10 @@
       },
       {
         "entry": "Ref Implementation",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       }
     ],
@@ -1098,6 +1110,10 @@
       {
         "entry": "Ref Implementation",
         "level": 1
+      },
+      {
+        "entry": "Variants",
+        "level": 1
       }
     ],
     "content": {
@@ -1279,6 +1295,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -1715,6 +1735,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -2043,6 +2067,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -6279,6 +6307,10 @@
       {
         "entry": "Ref Implementation",
         "level": 1
+      },
+      {
+        "entry": "Variants",
+        "level": 1
       }
     ],
     "content": {
@@ -7030,6 +7062,10 @@
       {
         "entry": "Ref Implementation",
         "level": 1
+      },
+      {
+        "entry": "Variants",
+        "level": 1
       }
     ],
     "content": {
@@ -7154,6 +7190,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -7359,6 +7399,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -7417,6 +7461,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -7472,6 +7520,10 @@
       },
       {
         "entry": "Ref Implementation",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -9314,6 +9366,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -9852,6 +9908,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -10139,6 +10199,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -10718,6 +10782,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -10800,6 +10868,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -11028,6 +11100,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -12136,6 +12212,10 @@
         "level": 1
       },
       {
+        "entry": "Variants",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -12229,6 +12309,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -12457,6 +12541,10 @@
       },
       {
         "entry": "Props",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       },
       {
@@ -12727,6 +12815,10 @@
       },
       {
         "entry": "Ref Implementation",
+        "level": 1
+      },
+      {
+        "entry": "Variants",
         "level": 1
       }
     ],
