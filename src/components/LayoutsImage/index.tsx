@@ -9,7 +9,7 @@ const LayoutsImage = () => {
     const type = searchParams.get("type");
 
     if (!type || type !== "editor") {
-        return (<Image width={20} height={20} className="w-[20px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}/>)
+        return (<Image width={18} height={18} className="w-[18px]" alt="CreativeRobots" src={'/logo/layouts-logo.png'}></Image>)
     }
     return null;
 }
