@@ -54,6 +54,16 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
             sourcesList.push(
                 <img alt="ReactResizablePanels Website Logo" src="https://user-images.githubusercontent.com/29597/210075327-faeb4ca8-31df-4dc8-a649-01d0ee3cd315.png"  className='w-[24px] clip-path-[inset(0_50%_0_0)]'/>
             )
+        } else if (source == "Recharts") {
+            sourcesList.push(
+                <p className="text-xs text-[#22b5bf]">&lt;Recharts /&gt;</p>
+            )
+            return (
+                <>
+                    <p className='text-xs font-body text-[#1E1F22] '>Uses  : </p>
+                    {sourcesList}
+                </>
+            )
         }
         sourcesList.push(
             <p className='text-xs font-body text-[#1E1F22]'>{source}</p>
@@ -72,7 +82,7 @@ function WarningChart() {
     return (
         <div className='mt-4 bg-[#FFF3CD] border border-[#FFD700] rounded-md p-4'>
             <p className='text-[#8B5C00] font-body text-sm'>This component is still in development and does not yet work on NextJs (COMING SOON).</p>
-            <p className='text-[#8B5C00] font-body text-sm'>"Ask us <a className="text-blue-400" target="_blank" href="https://discord.gg/B5jakw6t">on Discord</a> for more information"</p>
+            <p className='text-[#8B5C00] font-body text-sm'>Ask us <a className="text-blue-400" target="_blank" href="https://discord.gg/B5jakw6t">on Discord</a> for more information</p>
         </div>
     )
 }

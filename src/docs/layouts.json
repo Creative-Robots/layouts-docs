@@ -975,6 +975,18 @@
       {
         "entry": "Ref Implementation",
         "level": 1
+      },
+      {
+        "entry": "Examples",
+        "level": 1
+      },
+      {
+        "entry": "Short syntax",
+        "level": 2
+      },
+      {
+        "entry": "Get a bg-image from unsplash",
+        "level": 2
       }
     ],
     "content": {
@@ -984,7 +996,16 @@
       "refImplementation": "/center size-80 p-5 rounded-2xl shadow-xl\n      /bg-image %unsplash pizza\n      Food text-white text-3xl font-semibold",
       "props": [],
       "subComponents": [],
-      "examples": [],
+      "examples": [
+        {
+          "title": "Short syntax",
+          "code": "/center size-80 p-5 rounded-2xl shadow-xl\n\t/bg-image %unsplash star\n\tHello text-white text-3xl font-semibold"
+        },
+        {
+          "title": "Get a bg-image from unsplash",
+          "code": "/center size-80 p-5 rounded-2xl shadow-xl\n\t/bg-image %unsplash Home\n\t/div Welcome absolute text-white text-3xl font-semibold\n\t/div Welcome relative text-black text-3xl font-semibold translate-x-px translate-y-px"
+        }
+      ],
       "variants": []
     }
   },
@@ -1194,6 +1215,22 @@
       {
         "entry": "Props",
         "level": 1
+      },
+      {
+        "entry": "Examples",
+        "level": 1
+      },
+      {
+        "entry": "Short syntax",
+        "level": 2
+      },
+      {
+        "entry": "Get a bg-video from pexels",
+        "level": 2
+      },
+      {
+        "entry": "Get a video from pixabay",
+        "level": 2
       }
     ],
     "content": {
@@ -1211,7 +1248,20 @@
         }
       ],
       "subComponents": [],
-      "examples": [],
+      "examples": [
+        {
+          "title": "Short syntax",
+          "code": "/center size-80 p-5 rounded-2xl shadow-xl\n\t/bg-video https://motion.layouts.dev/colorful-gradient.mp4\n\tHello text-white text-3xl font-semibold"
+        },
+        {
+          "title": "Get a bg-video from pexels",
+          "code": "/center size-80 p-5 rounded-2xl shadow-xl\n\t/bg-video %pexels Autumn\n\tAutumn text-white text-3xl font-semibold"
+        },
+        {
+          "title": "Get a video from pixabay",
+          "code": "/center size-80 p-5 rounded-2xl shadow-xl\n\t/bg-video %pixabay Winter\n\tWinter text-white text-3xl font-semibold"
+        }
+      ],
       "variants": []
     }
   },
@@ -1278,12 +1328,6 @@
           "type": "\"icon\" | \"default\" | \"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\" | \"2xl\" | \"3xl\" | \"4xl\" | \"5xl\" | \"6xl\"",
           "typeSimple": "enum",
           "description": "Defines the size of the button."
-        },
-        {
-          "name": "action",
-          "required": false,
-          "type": "string",
-          "description": "Defines a custom action to trigger when the button is clicked."
         },
         {
           "name": "href",
@@ -1998,6 +2042,10 @@
         "level": 1
       },
       {
+        "entry": "Props",
+        "level": 1
+      },
+      {
         "entry": "Examples",
         "level": 1
       },
@@ -2010,21 +2058,1410 @@
         "level": 2
       },
       {
+        "entry": "Short syntax / area chart",
+        "level": 2
+      },
+      {
+        "entry": "Short syntax / area chart 2",
+        "level": 2
+      },
+      {
         "entry": "Bound to variable",
         "level": 2
       },
       {
         "entry": "Composable syntax",
         "level": 2
+      },
+      {
+        "entry": "Composable syntax 2",
+        "level": 2
+      },
+      {
+        "entry": "Composable syntax 3",
+        "level": 2
+      },
+      {
+        "entry": "API Reference",
+        "level": 1
+      },
+      {
+        "entry": "/area",
+        "level": 2
+      },
+      {
+        "entry": "/bar",
+        "level": 2
+      },
+      {
+        "entry": "/grid",
+        "level": 2
+      },
+      {
+        "entry": "/legend",
+        "level": 2
+      },
+      {
+        "entry": "/line",
+        "level": 2
+      },
+      {
+        "entry": "/tooltip",
+        "level": 2
+      },
+      {
+        "entry": "/x-axis",
+        "level": 2
+      },
+      {
+        "entry": "/y-axis",
+        "level": 2
       }
     ],
     "content": {
       "name": "Chart",
       "tag": "chart",
-      "description": "Chart component",
+      "description": "A graphical representation of data used to visualize patterns, trends, and relationships, often incorporating different types such as bars, lines, or areas to make complex data more accessible.",
       "refImplementation": "/chart %bar [10, 20, 30, 50, 80, 110, 150] size-52",
-      "props": [],
-      "subComponents": [],
+      "props": [
+        {
+          "name": "dataKey",
+          "description": "The key of a group of data which should be unique in a line/bar/area chart",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "fill",
+          "description": "The fill color of the line/bar/area",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "stroke",
+          "description": "The stroke color of the chart",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "margin",
+          "description": "The sizes of whitespace around the container",
+          "type": "Object (left, right, top, bottom)",
+          "required": false
+        },
+        {
+          "name": "barCategoryGap",
+          "description": "The gap between two bar categories, which can be a percent value or a fixed value",
+          "type": "Number",
+          "required": false
+        },
+        {
+          "name": "barGap",
+          "description": "The gap between two bars in the same category",
+          "type": "Number",
+          "required": false
+        },
+        {
+          "name": "barSize",
+          "description": "The width or height of each bar. If the barSize is not specified, the size of the bar will be calculated by the barCategoryGap, barGap and the quantity of bar groups",
+          "type": "Number",
+          "required": false
+        },
+        {
+          "name": "reverseStackOrder",
+          "description": "If false set, stacked items will be rendered left to right. If true set, stacked items will be rendered right to left",
+          "type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "baseValue",
+          "description": "The base value of area",
+          "type": "Number | 'dataMin' | 'dataMax' | 'auto'",
+          "required": false
+        },
+        {
+          "name": "onClick",
+          "description": "The onClick event handler",
+          "type": "Function",
+          "required": false
+        },
+        {
+          "name": "onMouseEnter",
+          "description": "The onMouseEnter event handler",
+          "type": "Function",
+          "required": false
+        },
+        {
+          "name": "onMouseLeave",
+          "description": "The onMouseLeave event handler",
+          "type": "Function",
+          "required": false
+        },
+        {
+          "name": "onMouseMove",
+          "description": "The onMouseMove event handler",
+          "type": "Function",
+          "required": false
+        },
+        {
+          "name": "syncId",
+          "description": "The syncId of the chart to link multiple charts tooltips",
+          "type": "String",
+          "required": false
+        },
+        {
+          "name": "syncMethod",
+          "description": "The sync method of the chart to link multiple charts tooltips",
+          "type": "Function",
+          "required": false
+        }
+      ],
+      "subComponents": [
+        {
+          "name": "Area",
+          "tag": "area",
+          "description": "Displays a filled area under a line, ideal for showing cumulative trends.",
+          "props": [
+            {
+              "name": "dataKey",
+              "description": "The key of a group of data which should be unique in an area chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "fill",
+              "description": "The fill color of the area",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "stroke",
+              "description": "The stroke color of the chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "legendType",
+              "description": "The type of icon in legend. If set to 'none', no legend item will be rendered",
+              "type": "'line' | 'plainline' | 'square' | 'rect'| 'circle' | 'cross' | 'diamond' | 'square' | 'star' | 'triangle' | 'wye' | 'none'",
+              "required": false
+            },
+            {
+              "name": "type",
+              "description": "The interpolation type of area. And customized interpolation function can be set to type",
+              "type": "'basis' | 'basisClosed' | 'basisOpen' | 'bumpX' | 'bumpY' | 'bump' | 'linear' | 'linearClosed' | 'natural' | 'monotoneX' | 'monotoneY' | 'monotone' | 'step' | 'stepBefore' | 'stepAfter'",
+              "required": false
+            },
+            {
+              "name": "dot",
+              "description": "If false set, dots will not be drawn. If true set, dots will be drawn which have the props calculated internally. If object set, dots will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "activeDot",
+              "description": "The dot is shown when user enter an area chart and this chart has tooltip. If false set, no active dot will not be drawn. If true set, active dot will be drawn which have the props calculated internally. If object set, active dot will be drawn which have the props merged by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "label",
+              "description": "If false set, labels will not be drawn. If true set, labels will be drawn which have the props calculated internally. If object set, labels will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "strokeWidth",
+              "description": "The width of the stroke",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "stackId",
+              "description": "The stack id of area, when two areas have the same value axis and same stackId, then the two areas area stacked in order",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "connectNulls",
+              "description": "Whether to connect a graph area across null points",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "description": "The unit of data. This option will be used in tooltip",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "name",
+              "description": "The name of data. This option will be used in tooltip and legend to represent a area. If no value was set to this option, the value of dataKey will be used alternatively",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "isAnimationActive",
+              "description": "If set false, animation of area will be disabled",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "animationBegin",
+              "description": "Specifies when the animation should begin (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationDuration",
+              "description": "Specifies the duration of animation (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationEasing",
+              "description": "The type of easing function",
+              "type": "'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'linear'",
+              "required": false
+            },
+            {
+              "name": "id",
+              "description": "The unique id of this component, which will be used to generate unique clip path id internally",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "onAnimationStart",
+              "description": "The onAnimationStart event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onAnimationEnd",
+              "description": "The onAnimationEnd event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "strokeDasharray",
+              "description": "The pattern of dashes and gaps used to paint the line",
+              "type": "String",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "Bar",
+          "tag": "bar",
+          "description": "Represents a bar to compare values across categories.",
+          "props": [
+            {
+              "name": "dataKey",
+              "description": "The key of a group of data which should be unique in an area chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "fill",
+              "description": "The fill color of the bar",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "stroke",
+              "description": "The stroke color",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "legendType",
+              "description": "The type of icon in legend. If set to 'none', no legend item will be rendered",
+              "type": "'line' | 'plainline' | 'square' | 'rect'| 'circle' | 'cross' | 'diamond' | 'square' | 'star' | 'triangle' | 'wye' | 'none'",
+              "required": false
+            },
+            {
+              "name": "label",
+              "description": "If false set, labels will not be drawn. If true set, labels will be drawn which have the props calculated internally. If object set, labels will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "barSize",
+              "description": "The width or height of each bar. If the barSize is not specified, the size of bar will be caculated by the barCategoryGap, barGap and the quantity of bar groups",
+              "type": "Percentage | Number",
+              "required": false
+            },
+            {
+              "name": "maxBarSize",
+              "description": "The maximum width of bar in a horizontal BarChart, or maximum height in a vertical BarChart",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "minPointSize",
+              "description": "The minimal height of a bar",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "background",
+              "description": "If false set, background of bars will not be drawn. If true set, background of bars will be drawn which have the props calculated internally. If object set, background of bars will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "activeBar",
+              "description": "The active bar is shown when a user enters a bar chart and this chart has tooltip. If set to false, no active bar will be drawn. If set to true, active bar will be drawn with the props calculated internally. If passed an object, active bar will be drawn, and the internally calculated props will be merged with the key value pairs of the passed object",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "stackId",
+              "description": "The stack id of bar, when two bars have the same value axis and same stackId, then the two bars are stacked in order",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "description": "The unit of data. This option will be used in tooltip",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "name",
+              "description": "The name of data. This option will be used in tooltip and legend to represent a bar. If no value was set to this option, the value of dataKey will be used alternatively",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "isAnimationActive",
+              "description": "If set false, animation of bar will be disabled",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "animationBegin",
+              "description": "Specifies when the animation should begin (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationDuration",
+              "description": "Specifies the duration of animation (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationEasing",
+              "description": "The type of easing function",
+              "type": "'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'linear'",
+              "required": false
+            },
+            {
+              "name": "id",
+              "description": "The unique id of this component, which will be used to generate unique clip path id internally",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "onAnimationStart",
+              "description": "The onAnimationStart event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onAnimationEnd",
+              "description": "The onAnimationEnd event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "CartesianGrid",
+          "tag": "grid",
+          "description": "Adds a grid to help with data reading.",
+          "props": [
+            {
+              "name": "x",
+              "description": "The x-coordinate of grid",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "y",
+              "description": "The y-coordinate of grid",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "stroke",
+              "description": "The stroke color of the grid",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "horizontal",
+              "description": "If set false, no horizontal grid lines will be drawn",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "vertical",
+              "description": "If set false, no vertical grid lines will be drawn",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "horizontalPoints",
+              "description": "The y-coordinates of all horizontal lines",
+              "type": "Array",
+              "required": false
+            },
+            {
+              "name": "verticalPoints",
+              "description": "The x-coordinates of all vertical lines",
+              "type": "Array",
+              "required": false
+            },
+            {
+              "name": "horizontalCoordinatesGenerator",
+              "description": "A function that generates the y-coordinates of all horizontal lines",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "verticalCoordinatesGenerator",
+              "description": "A function that generates the x-coordinates of all vertical lines",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "fill",
+              "description": "The background color used to fill the space between grid lines",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "fillOpacity",
+              "description": "The opacity of the background used to fill the space between grid lines",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "strokeDasharray",
+              "description": "The pattern of dashes and gaps used to paint the lines of the grid",
+              "type": "String",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "Legend",
+          "tag": "legend",
+          "description": "Displays a legend indicating the meaning of data series.",
+          "props": [
+            {
+              "name": "align",
+              "description": "The alignment of the legend",
+              "type": "'center' | 'left' | 'right'",
+              "required": false
+            },
+            {
+              "name": "verticalAlign",
+              "description": "The vertical alignment of the legend",
+              "type": "'top' | 'middle' | 'bottom'",
+              "required": false
+            },
+            {
+              "name": "iconSize",
+              "description": "The size of icon in each legend item",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "iconType",
+              "description": "The type of icon in each legend item",
+              "type": "'line' | 'plainline' | 'square' | 'rect'| 'circle' | 'cross' | 'diamond' | 'square' | 'star' | 'triangle' | 'wye' | 'none'",
+              "required": false
+            },
+            {
+              "name": "wrapperStyle",
+              "description": "The wrapper styling",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "Line",
+          "tag": "line",
+          "description": "Draws a line between data points to show trends.",
+          "props": [
+            {
+              "name": "dataKey",
+              "description": "The key or getter of a group of data which should be unique in a LineChart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "fill",
+              "description": "The fill color of the line",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "stroke",
+              "description": "The stroke color of the chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "legendType",
+              "description": "The type of icon in legend. If set to 'none', no legend item will be rendered",
+              "type": "'line' | 'plainline' | 'square' | 'rect'| 'circle' | 'cross' | 'diamond' | 'square' | 'star' | 'triangle' | 'wye' | 'none'",
+              "required": false
+            },
+            {
+              "name": "type",
+              "description": "The interpolation type of line. And customized interpolation function can be set to type. It's the same as type in Area",
+              "type": "'basis' | 'basisClosed' | 'basisOpen' | 'bumpX' | 'bumpY' | 'bump' | 'linear' | 'linearClosed' | 'natural' | 'monotoneX' | 'monotoneY' | 'monotone' | 'step' | 'stepBefore' | 'stepAfter'",
+              "required": false
+            },
+            {
+              "name": "dot",
+              "description": "If false set, dots will not be drawn. If true set, dots will be drawn which have the props calculated internally. If object set, dots will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "activeDot",
+              "description": "The active dot is shown when a user enters a line chart and this chart has tooltip. If set to false, no active dot will be drawn. If set to true, active dot will be drawn with the props calculated internally. If passed an object, active dot will be drawn, and the internally calculated props will be merged with the key value pairs of the passed object",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "label",
+              "description": "If false set, labels will not be drawn. If true set, labels will be drawn which have the props calculated internally. If object set, labels will be drawn which have the props mergered by the internal calculated props and the option",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "hide",
+              "description": "Hides the line when true, useful when toggling visibility state via legend",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "strokeWidth",
+              "description": "The width of the stroke",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "connectNulls",
+              "description": "Whether to connect a graph line across null points",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "description": "The unit displayed in the tooltip",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "name",
+              "description": "The name of data. This option will be used in tooltip and legend to represent a line. If no value was set to this option, the value of dataKey will be used alternatively.",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "isAnimationActive",
+              "description": "If set false, animation of line will be disabled",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "animationBegin",
+              "description": "Specifies when the animation should begin (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationDuration",
+              "description": "Specifies the duration of animation (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationEasing",
+              "description": "The type of easing function",
+              "type": "'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'linear'",
+              "required": false
+            },
+            {
+              "name": "id",
+              "description": "The unique id of this component, which will be used to generate unique clip path id internally",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "onAnimationStart",
+              "description": "The onAnimationStart event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onAnimationEnd",
+              "description": "The onAnimationEnd event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "strokeDasharray",
+              "description": "The pattern of dashes and gaps used to paint the line",
+              "type": "String",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "Tooltip",
+          "tag": "tooltip",
+          "description": "Shows extra info when hovering over data points.",
+          "props": [
+            {
+              "name": "separator",
+              "description": "The separator between name and value",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "offset",
+              "description": "The offset size between the position of tooltip and the active position",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "filterNull",
+              "description": "When an item of the payload has value null or undefined, this item won't be displayed",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "itemStyle",
+              "description": "The style of default tooltip content item which is a li element",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "wrapperStyle",
+              "description": "The style of tooltip wrapper which is a dom element",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "contentStyle",
+              "description": "The style of tooltip content which is a dom element",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "labelStyle",
+              "description": "The style of default tooltip label which is a p element",
+              "type": "Object (styles)",
+              "required": false
+            },
+            {
+              "name": "cursor",
+              "description": "If set false, no cursor will be drawn when tooltip is active. If set a object, the option is the configuration of cursor",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "allowEscapeViewBox",
+              "description": "This option allows the tooltip to extend beyond the viewBox of the chart itself",
+              "type": "Object (x, y)",
+              "required": false
+            },
+            {
+              "name": "position",
+              "description": "If this field is set, the tooltip position will be fixed and will not move anymore",
+              "type": "Object (x, y)",
+              "required": false
+            },
+            {
+              "name": "formatter",
+              "description": "The formatter function of value in tooltip",
+              "type": "(value, name, props) => [\"formatted value\", \"formatted name\"]",
+              "required": false
+            },
+            {
+              "name": "isAnimationActive",
+              "description": "If set false, animation of tooltip will be disabled",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "animationDuration",
+              "description": "Specifies the duration of animation (in ms)",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "animationEasing",
+              "description": "The type of easing function",
+              "type": "'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'linear'",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [
+            {
+              "title": "Change position",
+              "code": "/center w-full h-52\n\t/button Positions\n\t\t/tooltip %left \n\t\t\tLeft\n\t\t/tooltip %top \n\t\t\tTop\n\t\t/tooltip %right \n\t\t\tRight\n\t\t/tooltip %bottom \n\t\t\tBottom"
+            },
+            {
+              "title": "Change open delay",
+              "code": "/button Hover me\n\t/tooltip @openDelay=10\n\t\tI pop!"
+            },
+            {
+              "title": "Change offset from trigger bounds",
+              "code": "/button Hover me\n\t/tooltip %right @sideOffset=50\n\t\tI'm far away"
+            }
+          ],
+          "variants": []
+        },
+        {
+          "name": "XAxis",
+          "tag": "x-axis",
+          "description": "Horizontal axis for categories or time.",
+          "props": [
+            {
+              "name": "dataKey",
+              "description": "The key of data displayed in the axis",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "hide",
+              "description": "If set true, the axis do not display in the chart",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "orientation",
+              "description": "The orientation of axis",
+              "type": "'top' | 'bottom'",
+              "required": false
+            },
+            {
+              "name": "type",
+              "description": "The type of axis",
+              "type": "'number' | 'category'",
+              "required": false
+            },
+            {
+              "name": "allowDecimals",
+              "description": "Allow the ticks of XAxis to be decimals or not",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "allowDataOverflow",
+              "description": "When domain of the axis is specified and the type of the axis is 'number', if set to true, graphic elements (line, area, bars) will be clipped to conform to the specified domain",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "allowDuplicatedCategory",
+              "description": "Allow the axis has duplicated categorys or not when the type of axis is \"category\"",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "angle",
+              "description": "The angle of axis ticks",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "tickCount",
+              "description": "The count of axis ticks. Not used if 'type' is 'category'.",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "domain",
+              "description": "Specify the domain of axis when the axis is a number axis",
+              "type": "Array | function",
+              "required": false
+            },
+            {
+              "name": "includeHidden",
+              "description": "Ensures that all datapoints within a chart contribute to its domain calculation, even when they are hidden",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "\"preserveStart\" | \"preserveEnd\" | \"preserveStartEnd\" | \"equidistantPreserveStart\" | Number",
+              "description": "If set 0, all the ticks will be shown",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "padding",
+              "description": "Specify the padding of x-axis",
+              "type": "Object (left, right) | \"gap\" | \"no-gap\"",
+              "required": false
+            },
+            {
+              "name": "minTickGap",
+              "description": "The minimum gap between two adjacent labels",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "axisLine",
+              "description": "If set false, no axis line will be drawn. If set a object, the option is the configuration of axis line",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "tickLine",
+              "description": "If set false, no axis tick lines will be drawn. If set a object, the option is the configuration of tick lines",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "tickSize",
+              "description": "The length of tick line",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "ticks",
+              "description": "Set the values of axis ticks manually",
+              "type": "Array",
+              "required": false
+            },
+            {
+              "name": "tick",
+              "description": "If set false, no ticks will be drawn. If set a object, the option is the configuration of ticks",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "mirror",
+              "description": "If set true, flips ticks around the axis line, displaying the labels inside the chart instead of outside",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "reversed",
+              "description": "Reverse the ticks or not",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "label",
+              "description": "If set a string or a number, default label will be drawn, and the option is content. If an object, the option is the props of a new Label instance",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "scale",
+              "description": "If 'auto' set, the scale function is decided by the type of chart, and the props type",
+              "type": "'auto' | 'linear' | 'pow' | 'sqrt' | 'log' | 'identity' | 'time' | 'band' | 'point' | 'ordinal' | 'quantile' | 'quantize' | 'utc' | 'sequential' | 'threshold'",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "description": "The unit of data displayed in the axis. This option will be used to represent an index unit in a scatter chart.",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "name",
+              "description": "The name of data displayed in the axis. This option will be used to represent an index in a scatter chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "tickMargin",
+              "description": "The margin between tick line and tick",
+              "type": "Number",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        },
+        {
+          "name": "YAxis",
+          "tag": "y-axis",
+          "description": "Vertical axis for numerical values.",
+          "props": [
+            {
+              "name": "dataKey",
+              "description": "The key of data displayed in the axis",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "hide",
+              "description": "If set true, the axis do not display in the chart",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "orientation",
+              "description": "The orientation of axis",
+              "type": "'left' | 'right'",
+              "required": false
+            },
+            {
+              "name": "type",
+              "description": "The type of axis",
+              "type": "'number' | 'category'",
+              "required": false
+            },
+            {
+              "name": "tickCount",
+              "description": "The count of axis ticks. Not used if 'type' is 'category'",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "domain",
+              "description": "Specify the domain of axis when the axis is a number axis",
+              "type": "Array | function",
+              "required": false
+            },
+            {
+              "name": "includeHidden",
+              "description": "Ensures that all datapoints within a chart contribute to its domain calculation, even when they are hidden",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "interval",
+              "description": "If set 0, all the ticks will be shown",
+              "type": "\"preserveStart\" | \"preserveEnd\" | \"preserveStartEnd\" | \"equidistantPreserveStart\" | Number",
+              "required": false
+            },
+            {
+              "name": "padding",
+              "description": "Specify the padding of y-axis. It's similar to padding of XAxis",
+              "type": "Object (left, right) | \"gap\" | \"no-gap\"",
+              "required": false
+            },
+            {
+              "name": "minTickGap",
+              "description": "The minimum gap between two adjacent labels",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "allowDecimals",
+              "description": "Allow the ticks of YAxis to be decimals or not",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "allowDataOverflow",
+              "description": "When domain of the axis is specified and the type of the axis is 'number', if set to true, graphic elements (line, area, bars) will be clipped to conform to the specified domain",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "allowDuplicatedCategory",
+              "description": "Allow the axis has duplicated categorys or not when the type of axis is \"category\"",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "axisLine",
+              "description": "If set false, no axis line will be drawn. If set a object, the option is the configuration of axis line",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "tickLine",
+              "description": "If set false, no axis tick lines will be drawn. If set a object, the option is the configuration of tick lines",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "tickSize",
+              "description": "The length of tick line",
+              "type": "Number",
+              "required": false
+            },
+            {
+              "name": "ticks",
+              "description": "Set the values of axis ticks manually",
+              "type": "Array",
+              "required": false
+            },
+            {
+              "name": "tick",
+              "description": "If set false, no ticks will be drawn. If set a object, the option is the configuration of ticks",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "mirror",
+              "description": "If set true, flips ticks around the axis line, displaying the labels inside the chart instead of outside",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "reversed",
+              "description": "Reverse the ticks or not",
+              "type": "Boolean",
+              "required": false
+            },
+            {
+              "name": "label",
+              "description": "If set a string or a number, default label will be drawn, and the option is content. If an object, the option is the props of a new Label instance",
+              "type": "Boolean | Object (styles)",
+              "required": false
+            },
+            {
+              "name": "scale",
+              "description": "If 'auto' set, the scale function is decided by the type of chart, and the props type",
+              "type": "'auto' | 'linear' | 'pow' | 'sqrt' | 'log' | 'identity' | 'time' | 'band' | 'point' | 'ordinal' | 'quantile' | 'quantize' | 'utc' | 'sequential' | 'threshold'",
+              "required": false
+            },
+            {
+              "name": "unit",
+              "description": "The unit of data displayed in the axis. This option will be used to represent an index unit in a scatter chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "name",
+              "description": "The name of data displayed in the axis. This option will be used to represent an index in a scatter chart",
+              "type": "String",
+              "required": false
+            },
+            {
+              "name": "onClick",
+              "description": "The onClick event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseEnter",
+              "description": "The onMouseEnter event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseLeave",
+              "description": "The onMouseLeave event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseMove",
+              "description": "The onMouseMove event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseDown",
+              "description": "The onMouseDown event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseUp",
+              "description": "The onMouseUp event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOver",
+              "description": "The onMouseOver event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "onMouseOut",
+              "description": "The onMouseOut event handler",
+              "type": "Function",
+              "required": false
+            },
+            {
+              "name": "tickMargin",
+              "description": "The margin between tick line and tick",
+              "type": "Number",
+              "required": false
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        }
+      ],
       "examples": [
         {
           "title": "Short syntax / bar chart",
@@ -2032,18 +3469,54 @@
         },
         {
           "title": "Short syntax / line chart",
-          "code": "/chart %line [10, 20, 30, 50, 80, 110, 150] size-52"
+          "code": "/chart %line [10, 20, 30, 50, 80, 110, 150] size-52 text-yellow-500"
+        },
+        {
+          "title": "Short syntax / area chart",
+          "code": "/chart %area [10, 20, 30, 50, 80, 110, 150] size-52 text-emerald-500"
+        },
+        {
+          "title": "Short syntax / area chart 2",
+          "code": "/chart %area [[0, 10], [0, 20], [10, 30], [20, 50], [40, 80], [60, 110], [100, 150]] size-52 text-red-500"
         },
         {
           "title": "Bound to variable",
-          "code": "/char %bar $invoices // Define dimensions here"
+          "code": "/char %bar $invoices size-52 // Define dimensions here"
         },
         {
           "title": "Composable syntax",
-          "code": "/chart @data=[{ product: 'unicorn', price: 12.99, sales: 3455 }, { product: 'narwal', price: 9.99, sales: 465 } ]\n\t/bar @dataKey=price opacity-80 bg-indigo-900\n\t/bar @dataKey=sales opacity-80 bg-indigo-900"
+          "code": "/chart %default size-56\n\t/x-axis\n\t/y-axis\n\t/tooltip\n\t/legend \n\t/grid \n\t/area [[0, 10], [0, 20], [10, 30], [20, 50], [40, 80], [60, 110], [100, 150]] text-red-500"
+        },
+        {
+          "title": "Composable syntax 2",
+          "code": "/chart [{ product: 'unicorn', price: 1200.99, sales: 3455 }, { product: 'narwal', price: 900.99, sales: 465 }] size-56\n\t/x-axis @dataKey=product\n\t/bar @dataKey=price opacity-80 text-indigo-900\n\t/bar @dataKey=sales opacity-80 text-indigo-900"
+        },
+        {
+          "title": "Composable syntax 3",
+          "code": "/div w-full\n\t/chart %default [{\"name\": \"Page A\", \"uv\": 4000, \"pv\": 2400, \"amt\": 2400}, {\"name\": \"Page B\", \"uv\": 3000, \"pv\": 1398, \"amt\": 2210}, {\"name\": \"Page C\", \"uv\": 2000, \"pv\": 9800, \"amt\": 2290}, {\"name\": \"Page D\", \"uv\": 2780, \"pv\": 3908, \"amt\": 2000}, {\"name\": \"Page E\", \"uv\": 1890, \"pv\": 4800, \"amt\": 2181}, {\"name\": \"Page F\", \"uv\": 2390, \"pv\": 3800, \"amt\": 2500}, {\"name\": \"Page G\", \"uv\": 3490, \"pv\": 4300, \"amt\": 2100}] h-64 \n\t\t/x-axis @dataKey=name\n\t\t/y-axis\n\t\t/tooltip\n\t\t/legend \n\t\t/grid text-[#f5f5f5]\n\t\t/area @dataKey=amt @type=monotone text-[#8884d8] \n\t\t/bar @dataKey=pv @barSize=20 text-[#413ea0]\n\t\t/line @dataKey=uv @type=monotone text-[#ff7300]"
         }
       ],
-      "variants": []
+      "variants": [
+        {
+          "name": "default",
+          "description": "The default variant displays no Charts"
+        },
+        {
+          "name": "line",
+          "description": "The line variant is a LineChart"
+        },
+        {
+          "name": "bar",
+          "description": "The bar variant is a BarChart"
+        },
+        {
+          "name": "area",
+          "description": "The area variant is a AreaChart"
+        }
+      ],
+      "sources": [
+        "Recharts"
+      ]
     }
   },
   {
@@ -2091,7 +3564,19 @@
         "level": 2
       },
       {
+        "entry": "With data-state className",
+        "level": 2
+      },
+      {
         "entry": "Form",
+        "level": 2
+      },
+      {
+        "entry": "API Reference",
+        "level": 1
+      },
+      {
+        "entry": "/indicator",
         "level": 2
       }
     ],
@@ -2147,7 +3632,32 @@
           "descriptionMdx": "The name of the checkbox. Submitted with its owning form as part of a name/value pair."
         }
       ],
-      "subComponents": [],
+      "subComponents": [
+        {
+          "name": "CheckboxIndicator",
+          "tag": "indicator",
+          "description": "Renders when the checkbox is in a checked or indeterminate state. You can style this element directly, or you can use it as a wrapper to put an icon into, or both.",
+          "props": [
+            {
+              "name": "asChild",
+              "required": false,
+              "type": "boolean",
+              "default": "false",
+              "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+              "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+            },
+            {
+              "name": "forceMount",
+              "type": "boolean",
+              "description": "Used to force mounting when more control is needed. Useful when controlling animation with React animation libraries.",
+              "descriptionMdx": "Used to force mounting when more control is needed. Useful when controlling animation with React animation libraries."
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        }
+      ],
       "examples": [
         {
           "title": "Short syntax",
@@ -2172,6 +3682,10 @@
         {
           "title": "With text",
           "code": "/label @htmlFor=\"terms1\"\n\t/hstack gap-2 items-start p-2 rounded-md border p-4 shadow\n\t\t/checkbox @id=terms1 peer\n\t\t/div grid gap-1.5 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\n\t\t\t/p text-sm font-medium leading-none\n\t\t\t\tAccept terms and conditions\n\t\t\t/p text-sm text-muted-foreground\n\t\t\t\tYou agree to our Terms of Service and Privacy Policy."
+        },
+        {
+          "title": "With data-state className",
+          "code": "/checkbox Receive marketing emails ON size-8 text-slate-500 data-[state=checked]:bg-lime-400 data-[state=unchecked]:bg-red-800 data-[state=checked]:text-lime-600\n\t/indicator\n\t\t/icon Emails size-5 mb-0.5"
         },
         {
           "title": "Form",
@@ -2815,6 +4329,10 @@
               "code": "/label @htmlFor=\"terms1\"\n\t/hstack gap-2 items-start p-2 rounded-md border p-4 shadow\n\t\t/checkbox @id=terms1 peer\n\t\t/div grid gap-1.5 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\n\t\t\t/p text-sm font-medium leading-none\n\t\t\t\tAccept terms and conditions\n\t\t\t/p text-sm text-muted-foreground\n\t\t\t\tYou agree to our Terms of Service and Privacy Policy."
             },
             {
+              "title": "With data-state className",
+              "code": "/checkbox Receive marketing emails ON size-8 text-slate-500 data-[state=checked]:bg-lime-400 data-[state=unchecked]:bg-red-800 data-[state=checked]:text-lime-600\n\t/indicator\n\t\t/icon Emails size-5 mb-0.5"
+            },
+            {
               "title": "Form",
               "code": "// TODO"
             }
@@ -3107,6 +4625,10 @@
             {
               "title": "Composable syntax",
               "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
+            },
+            {
+              "title": "With data-state className",
+              "code": "/radio-group\n\t/radio Vegan text-green-300 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Vegetarian text-green-500 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Omnivore text-green-700 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500 \n\t\t\t/icon size-4 check"
             }
           ],
           "variants": []
@@ -3593,7 +5115,7 @@
       "name": "Dialog",
       "tag": "dialog",
       "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert",
-      "refImplementation": "\n  /button %outline Edit Profile\n    /dialog sm:max-w-[425px]\n      /header\n        /title Edit profile\n        /description Make changes to your profile here. Click save when you're done.\n      /content \n        /div grid gap-4 py-4\n          /div grid grid-cols-4 items-center gap-4\n            /label Name text-right\n            /input @defaultValue=\"Alex McKee\" col-span-3\n          /div grid grid-cols-4 items-center gap-4\n            /label Username text-right\n            /input @defaultValue=\"@McKeeAlex_\" col-span-3\n      /footer\n        /close\n          /button @type=submit Save changes\n  ",
+      "refImplementation": "/button %outline Edit Profile\n  /dialog sm:max-w-[425px]\n    /header\n      /title Edit profile\n      /description Make changes to your profile here. Click save when you're done.\n    /content \n      /div grid gap-4 py-4\n        /div grid grid-cols-4 items-center gap-4\n          /label Name text-right\n          /input @defaultValue=\"Alex McKee\" col-span-3\n        /div grid grid-cols-4 items-center gap-4\n          /label Username text-right\n          /input @defaultValue=\"@McKeeAlex_\" col-span-3\n    /footer\n      /close\n        /button @type=submit Save changes\n  ",
       "props": [
         {
           "name": "defaultOpen",
@@ -4104,6 +5626,18 @@
       {
         "entry": "Props",
         "level": 1
+      },
+      {
+        "entry": "Examples",
+        "level": 1
+      },
+      {
+        "entry": "Short syntax",
+        "level": 2
+      },
+      {
+        "entry": "Composable syntax",
+        "level": 2
       },
       {
         "entry": "API Reference",
@@ -4717,7 +6251,16 @@
           "variants": []
         }
       ],
-      "examples": [],
+      "examples": [
+        {
+          "title": "Short syntax",
+          "code": "/button Open menu\n\t/dropdown-menu w-56\n\t\t# My account\n\t\t---\n\t\tProfile <Shift + Cmd + P>\n\t\t\t/icon Single user\n\t\tBilling <Cmd + B>\n\t\t\t/icon Credit card\n\t\tSettings <Cmd + S>\n\t\tKeyboard shortcuts <Cmd + K>\n\t\t---\n\t\tTeam\n\t\t\t/icon Multiple users\n\t\tInvite users w-40\n\t\t\t/icon Add a user\n\t\t\tEmail\n\t\t\tMessage \n\t\t\t\t/icon Chat bubble\n\t\t\t---\n\t\t\tMore...\n\t\t\t\t/icon Plus in circle\n\t\tNew Team <Cmd + T>\n\t\t\t/icon Plus\n\t\t---\n\t\tGitHub\n\t\tSupport \n\t\t\t/icon life saving\n\t\tAPI @disabled\n\t\t\t/icon Cloud\n\t\t---\n\t\tLog out <Shift + Cmd + Q>"
+        },
+        {
+          "title": "Composable syntax",
+          "code": "/button Open menu\n\t/dropdown-menu w-56\n\t\t/label Menu label\n\t\t/separator\n\t\t/item \n\t\t\tOne-item\n\t\t\t/shortcut Cmd + O\n\t\t\t/icon plant seed\n\t\t/sub \n\t\t\t/sub-trigger bg-blue-100\n\t\t\t\t/icon Plus circle\n\t\t\t\tSubmenu\t\n\t\t\t/sub-content w-80\n\t\t\t\t/label Submenu title\n\t\t\t\t/item Email <Cmd+E>\n\t\t\t\t\t/icon Email\n\t\t\t\t/separator\n\t\t\t\t/item Message \n\t\t\t\t\t@onClick={() => alert('Message clicked')}\n\t\t\t\t\t/icon message"
+        }
+      ],
       "variants": [],
       "sources": [
         "Shadcn",
@@ -6523,6 +8066,10 @@
               "code": "/label @htmlFor=\"terms1\"\n\t/hstack gap-2 items-start p-2 rounded-md border p-4 shadow\n\t\t/checkbox @id=terms1 peer\n\t\t/div grid gap-1.5 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\n\t\t\t/p text-sm font-medium leading-none\n\t\t\t\tAccept terms and conditions\n\t\t\t/p text-sm text-muted-foreground\n\t\t\t\tYou agree to our Terms of Service and Privacy Policy."
             },
             {
+              "title": "With data-state className",
+              "code": "/checkbox Receive marketing emails ON size-8 text-slate-500 data-[state=checked]:bg-lime-400 data-[state=unchecked]:bg-red-800 data-[state=checked]:text-lime-600\n\t/indicator\n\t\t/icon Emails size-5 mb-0.5"
+            },
+            {
               "title": "Form",
               "code": "// TODO"
             }
@@ -6769,6 +8316,10 @@
             {
               "title": "Composable syntax",
               "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
+            },
+            {
+              "title": "With data-state className",
+              "code": "/radio-group\n\t/radio Vegan text-green-300 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Vegetarian text-green-500 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Omnivore text-green-700 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500 \n\t\t\t/icon size-4 check"
             }
           ],
           "variants": []
@@ -8079,6 +9630,14 @@
       {
         "entry": "Props",
         "level": 1
+      },
+      {
+        "entry": "API Reference",
+        "level": 1
+      },
+      {
+        "entry": "/indicator",
+        "level": 2
       }
     ],
     "content": {
@@ -8114,7 +9673,32 @@
           "descriptionMdx": "<span>\n          When <Code>true</Code>, indicates that the user must check the radio\n          item before the owning form can be submitted.\n        </span>"
         }
       ],
-      "subComponents": [],
+      "subComponents": [
+        {
+          "name": "RadioGroupIndicator",
+          "tag": "indicator",
+          "description": "Renders when the radio item is in a checked state. You can style this element directly, or you can use it as a wrapper to put an icon into, or both.",
+          "props": [
+            {
+              "name": "asChild",
+              "required": false,
+              "type": "boolean",
+              "default": "false",
+              "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+              "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+            },
+            {
+              "name": "forceMount",
+              "type": "boolean",
+              "description": "Used to force mounting when more control is needed. Useful when controlling animation with React animation libraries.",
+              "descriptionMdx": "Used to force mounting when more control is needed. Useful when controlling animation with React animation libraries."
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        }
+      ],
       "examples": [],
       "variants": []
     }
@@ -8145,6 +9729,10 @@
       },
       {
         "entry": "Composable syntax",
+        "level": 2
+      },
+      {
+        "entry": "With data-state className",
         "level": 2
       }
     ],
@@ -8234,6 +9822,10 @@
         {
           "title": "Composable syntax",
           "code": "/radio-group @defaultValue=bacon @name=foodPreferences\n\t/radio Bacon @value=\"bacon\"\n\t/radio Miso soup @value=\"miso-soup\"\n\t/radio Pizza @value=\"pizza\""
+        },
+        {
+          "title": "With data-state className",
+          "code": "/radio-group\n\t/radio Vegan text-green-300 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Vegetarian text-green-500 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500\n\t\t\t/icon size-4 check\n\t/radio Omnivore text-green-700 data-[state=unchecked]:bg-red-300 data-[state=checked]:bg-lime-300\n\t\t/indicator text-teal-500 \n\t\t\t/icon size-4 check"
         }
       ],
       "variants": [],
@@ -8316,7 +9908,7 @@
       "name": "Resizable",
       "tag": "resizable",
       "description": "Accessible resizable panel groups and layouts with keyboard support.",
-      "refImplementation": "/resizable @withHandle 25\n      /center size-full text-2xl font-semibold gap-5\n          1\n          /span text-sm text-slate-400 font-light defaultWidth: 25%\n      /resizable %vertical @withHandle 80 | 10,20,50\n          /center size-full text-2xl font-semibold gap-5\n              2\n              /span text-sm text-slate-400 font-light defaultHeight: 80%\n          /center size-full text-2xl font-semibold gap-5\n              3\n              /vstack\n                  /span text-sm text-slate-400 font-light minHeight: 10%\n                  /span text-sm text-slate-400 font-light defaultHeight: 20%\n                  /span text-sm text-slate-400 font-light maxHeight: 50%",
+      "refImplementation": "/div min-h-80 w-full\n      /resizable @withHandle 25\n        /center size-full text-2xl font-semibold gap-5\n            1\n            /span text-sm text-slate-400 font-light defaultWidth: 25%\n        /resizable %vertical @withHandle 60 | 10,40,50\n            /center size-full text-2xl font-semibold gap-5\n                2\n                /span text-sm text-slate-400 font-light defaultHeight: 60%\n            /center size-full text-2xl font-semibold gap-5\n                3\n                /vstack\n                    /span text-sm text-slate-400 font-light minHeight: 10%\n                    /span text-sm text-slate-400 font-light defaultHeight: 40%\n                    /span text-sm text-slate-400 font-light maxHeight: 50%",
       "props": [
         {
           "name": "autoSaveId",
@@ -8484,31 +10076,31 @@
       "examples": [
         {
           "title": "Horizontal split",
-          "code": "/resizable"
+          "code": "/div min-h-40 w-full\n\t/resizable"
         },
         {
           "title": "Vertical split",
-          "code": "/resizable %vertical\n\t/center A size-full\n\t/center B size-full"
+          "code": "/div min-h-60 w-full\n\t/resizable %vertical\n\t\t/center A size-full\n\t\t/center B size-full"
         },
         {
           "title": "With handle",
-          "code": "/resizable @withHandle\n\t/center A size-full\n\t/center B size-full"
+          "code": "/div min-h-40 w-full\n\t/resizable @withHandle\n\t\t/center A size-full\n\t\t/center B size-full"
         },
         {
           "title": "Defining default size of first panels",
-          "code": "/resizable 25\n\t/center A size-full\n\t/center B size-full"
+          "code": "/div min-h-40 w-full\n\t/resizable 25\n\t\t/center A size-full\n\t\t/center B size-full"
         },
         {
           "title": "Defining size of all panels",
-          "code": "/resizable 25 | 75\n\t/center A size-full\n\t/center B size-full"
+          "code": "/div min-h-40 w-full\n\t/resizable 25 | 75\n\t\t/center A size-full\n\t\t/center B size-full"
         },
         {
           "title": "Defining min, default, max sizes of panels",
-          "code": "/resizable 25,50,80 | 20,75,75\n\t/center A size-full\n\t/center B size-full"
+          "code": "/div min-h-40 w-full\n\t/resizable 25,50,80 | 20,75,75\n\t\t/center A size-full\n\t\t/center B size-full"
         },
         {
           "title": "Nesting panels",
-          "code": "/resizable\n\t/center A size-full\n\t/resizable %vertical\n\t\t/center B size-full\n\t\t/center C size-full"
+          "code": "/div min-h-60 w-full\n\t/resizable\n\t\t/center A size-full\n\t\t/resizable %vertical\n\t\t\t/center B size-full\n\t\t\t/center C size-full"
         },
         {
           "title": "🔴 Collapsable panels"
@@ -8570,7 +10162,7 @@
       "name": "Scroll-area",
       "tag": "scroll-area",
       "description": "Augments native scroll functionality for custom, cross-browser styling.",
-      "refImplementation": "/scroll h-72 w-48 rounded-md border gap-2 p-2\n    /foreach [1...1042]\n        /center p-4 bg-slate-100 w-full rounded $item",
+      "refImplementation": "/scroll-area h-72 w-48 rounded-md border gap-2 p-2\n    /foreach [1...142]\n        /center p-4 bg-slate-100 w-full rounded $item",
       "props": [
         {
           "name": "asChild",
@@ -8615,15 +10207,15 @@
       "examples": [
         {
           "title": "Vertical scroll",
-          "code": "/scroll %vertical-flex h-72 w-48 rounded-md border\n\t/foreach [1...256]\n\t\t/center p-4 bg-slate-100 h-full rounded $item"
+          "code": "/scroll-area %vertical-flex h-72 w-48 rounded-md border\n\t/foreach [1...256]\n\t\t/center p-4 bg-slate-100 h-full rounded $item"
         },
         {
           "title": "Horizontal scroll",
-          "code": "/scroll %horizontal-flex w-48 rounded-md border\n\t/foreach [1...256]\n\t\t/center p-4 bg-slate-100 h-full rounded $item"
+          "code": "/scroll-area %horizontal-flex w-48 rounded-md border\n\t/foreach [1...256]\n\t\t/center p-4 bg-slate-100 h-full rounded $item"
         },
         {
           "title": "Bare usage",
-          "code": "/scroll %bare h-72 w-48 rounded-md border\n\t/vstack gap-4 w-full\n\t\t/foreach [1...10]\n\t\t\t/center p-4 bg-slate-100 w-full rounded \n\t\t\t\t$item"
+          "code": "/scroll-area %bare h-72 w-48 rounded-md border\n\t/vstack gap-4 w-full\n\t\t/foreach [1...10]\n\t\t\t/center p-4 bg-slate-100 w-full rounded \n\t\t\t\t$item"
         }
       ],
       "variants": [
@@ -9666,6 +11258,18 @@
       {
         "entry": "Bound to variable",
         "level": 2
+      },
+      {
+        "entry": "With data-state className",
+        "level": 2
+      },
+      {
+        "entry": "API Reference",
+        "level": 1
+      },
+      {
+        "entry": "/thumb",
+        "level": 2
       }
     ],
     "content": {
@@ -9720,7 +11324,26 @@
           "descriptionMdx": "The name of the switch. Submitted with its owning form as part of a name/value pair."
         }
       ],
-      "subComponents": [],
+      "subComponents": [
+        {
+          "name": "SwitchThumb",
+          "tag": "thumb",
+          "description": "The thumb that is used to visually indicate whether the switch is on or off.",
+          "props": [
+            {
+              "name": "asChild",
+              "required": false,
+              "type": "boolean",
+              "default": "false",
+              "description": "Change the default rendered element for the one passed as a child, merging their props and behavior. Read our guide for more details.",
+              "descriptionMdx": "<>\n          Change the default rendered element for the one passed as a child,\n          merging their props and behavior.\n          <br />\n          <br />\n          Read our <a href=\"../guides/composition\">Composition</a> guide for more\n          details.\n        </>"
+            }
+          ],
+          "subComponents": [],
+          "examples": [],
+          "variants": []
+        }
+      ],
       "examples": [
         {
           "title": "Short syntax",
@@ -9733,6 +11356,10 @@
         {
           "title": "Bound to variable",
           "code": "/vstack gap-2\n\t/input Enter value $myVariable\n\t/switch Airplane mode $myVariable"
+        },
+        {
+          "title": "With data-state className",
+          "code": "/switch Airplane mode ON outline outline-0 border-black w-20 text-slate-500 data-[state=checked]:bg-lime-400 data-[state=unchecked]:bg-red-800 \n\t/thumb data-[state=checked]:bg-lime-600 data-[state=unchecked]:bg-red-600 data-[state=checked]:translate-x-14"
         }
       ],
       "variants": [],
@@ -10489,24 +12116,7 @@
           "code": "/theme\n\t@palette=Intense Mediterranean turquoise as primary, creamy white in background\n\t@background=\"primary-50\" // Color overrides"
         }
       ],
-      "variants": [
-        {
-          "name": "grotesque",
-          "description": "A grotesque theme."
-        },
-        {
-          "name": "merriweather",
-          "description": "A merriweather theme."
-        },
-        {
-          "name": "mobile",
-          "description": "A mobile theme."
-        },
-        {
-          "name": "default",
-          "description": "The default theme."
-        }
-      ]
+      "variants": []
     }
   },
   {
@@ -11065,6 +12675,22 @@
       {
         "entry": "Ref Implementation",
         "level": 1
+      },
+      {
+        "entry": "Examples",
+        "level": 1
+      },
+      {
+        "entry": "Short syntax",
+        "level": 2
+      },
+      {
+        "entry": "Get a video from pexels",
+        "level": 2
+      },
+      {
+        "entry": "Get a video from pixabay",
+        "level": 2
       }
     ],
     "content": {
@@ -11074,7 +12700,20 @@
       "refImplementation": "/video kitten",
       "props": [],
       "subComponents": [],
-      "examples": [],
+      "examples": [
+        {
+          "title": "Short syntax",
+          "code": "/video https://motion.layouts.dev/colorful-gradient.mp4"
+        },
+        {
+          "title": "Get a video from pexels",
+          "code": "/video %pexels White Tiger h-40"
+        },
+        {
+          "title": "Get a video from pixabay",
+          "code": "/video %pixabay White Tiger h-40"
+        }
+      ],
       "variants": []
     }
   },
