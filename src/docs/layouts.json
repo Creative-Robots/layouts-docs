@@ -4045,7 +4045,7 @@
             },
             {
               "title": "Complete syntax",
-              "code": "/input \n\t@placeholder=\"This is the placeholder\"\n\t@type=\"email\"\n\t@defaultValue=\"severin@creative-robots.ai\""
+              "code": "/input \n\t@placeholder=\"This is the placeholder\"\n\t@type=\"email\"\n\t@defaultValue=\"hey@layouts.dev\""
             },
             {
               "title": "With static value",
@@ -7743,7 +7743,7 @@
         },
         {
           "title": "Complete syntax",
-          "code": "/input \n\t@placeholder=\"This is the placeholder\"\n\t@type=\"email\"\n\t@defaultValue=\"severin@creative-robots.ai\""
+          "code": "/input \n\t@placeholder=\"This is the placeholder\"\n\t@type=\"email\"\n\t@defaultValue=\"hey@layouts.dev\""
         },
         {
           "title": "With static value",
