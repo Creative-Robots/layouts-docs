@@ -3972,11 +3972,6 @@
           "description": "Enables looping around when using arrow keys."
         },
         {
-          "name": "disablePointerSelection",
-          "type": "boolean",
-          "description": "Disables selection via pointer events."
-        },
-        {
           "name": "vimBindings",
           "type": "boolean",
           "description": "Disables ctrl+n/j/p/k shortcuts when set to false."
