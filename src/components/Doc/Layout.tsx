@@ -68,6 +68,15 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
     )
 }
 
+function WarningChart() {
+    return (
+        <div className='mt-4 bg-[#FFF3CD] border border-[#FFD700] rounded-md p-4'>
+            <p className='text-[#8B5C00] font-body text-sm'>This component is still in development and does not yet work on NextJs (COMING SOON).</p>
+            <p className='text-[#8B5C00] font-body text-sm'>"Ask us <a className="text-blue-400" target="_blank" href="https://discord.gg/B5jakw6t">on Discord</a> for more information"</p>
+        </div>
+    )
+}
+
 export default function LayoutComponentsDoc({data}:DocProps) {
     const {name, description, refImplementation, props, subComponents, examples, sources, variants} = data;
 
@@ -83,6 +92,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
                 {name && sources && sources.length !== 0 && <div className='flex flex-row gap-2 items-center  '>
                     <SourcesUsage sources={sources}/>
                 </div>} 
+                {name === "Chart" && <WarningChart/>}
             </div>
             {refImplementation
             ? <Section name="Ref Implementation">

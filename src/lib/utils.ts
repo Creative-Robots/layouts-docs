@@ -48,4 +48,4 @@ export const getTextFromChildren = (children: React.ReactNode): string => {
   return text;
 };
 
-export const DISCORD_URL = 'https://discord.com/invite/ysmacWJSzK';
+export const DISCORD_URL = 'https://discord.gg/B5jakw6t';
