@@ -32,7 +32,7 @@ export function MySheet() {
             <SheetC className="bg-white px-0 pb-0 flex flex-col" side={'left'} setIsOpen={setIsOpen}>
                 <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent 4xs:block hidden pt-2 2xs:pt-0">
                 <SheetTitle className="flex flex-row justify-start 3xs:justify-center pl-4 3xs:pl-0 gap-2 3xs:gap-4 ">
-                    <LayoutsImage/>
+                    <div className="my-auto"><LayoutsImage/></div>
                     <span className="text-[11px] 4xs:text-[8vw] 3xs:text-xl 4xs:pl-0 font-semibold">Documentation</span>
                 </SheetTitle>
                 </SheetHeader>
