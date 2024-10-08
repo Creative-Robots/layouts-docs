@@ -1,5 +1,5 @@
 ---
-title: 'Theming'
+title: 'Theming & Styling'
 description: 'A short guide to using theming and styling elements in Layouts'
 ---
 
@@ -103,6 +103,41 @@ You can use `/style` for that. `/style` is a component that applies Tailwind cla
 
 /h1 Hello, styles!
 ```
+## Prompt to TailwindCSS 
+
+<video
+	autoPlay
+	muted
+	loop
+	playsInline
+	className="w-full"
+	src="https://dl.dropbox.com/scl/fi/e39bmefehrhbuxxf5j5nv/PromptTtailwind.mp4?rlkey=bouixz11xy2b6xsgl2ixxbcm8&st=x7q5j5bx&dl=0"
+></video>
+
+
+
+Ever stumped on what the right Tailwind class is for any given styling? Included in your Layouts.dev plan is inline Prompt-to-TailwindCSS. 
+
+On the same line as the component you'd like to add styling to, write `(insert your prompt here...)` and our AI will generate the right Tailwind classes. 
+
+*ex.*
+``` Layouts syntax 
+/vstack w-full (add a white background, small padding, large corner radius and a drop shadow...)
+				/image $item.cover_image aspect-square rounded-xl size-full h-auto object-cover
+				/vstack p-2.5
+					/h1 $item.name font-medium text-base
+					/p $item.description text-sm text-gray-500
+```
+
+<video
+	autoPlay
+	muted
+	loop
+	playsInline
+	className="w-full"
+	src="https://dl.dropbox.com/scl/fi/4um52ycrf4a4b2g5vlc20/promptTtailwind2.mp4?rlkey=k2g31wglwqh9ryvldsb7wkr1f&st=cxradagb&dl=0"
+></video>
+
 
 ### Fonts 
 Need custom fonts? In Layouts, users can leverage fonts via [Google Fonts](https://fonts.google.com/) as well as any fonts hosted locally on your machine. 
@@ -115,4 +150,5 @@ Need custom fonts? In Layouts, users can leverage fonts via [Google Fonts](https
 
 <Info> Heads up! You’ll be tempted to export your project using your local fonts not available in Google Fonts because they’ll seem to work on your machine. 
 Bear in mind that they won’t display correctly on other people’s navigators when sharing your Layouts URL, so you'll still need to add the custom font to your CSS file after exporting.</Info>
+
 
