@@ -35,9 +35,9 @@ const ul = cn("flex flex-col my-4");
 const li = cn("flex flex-row justify-start");
 
 const note =
-    "w-full max-w-full h-fit flex flex-row bg-blue-50 border border-blue-200 rounded-lg p-3 items-center mt-4 text-sm gap-2";
+    "w-full max-w-full h-fit flex flex-row bg-blue-50 border border-blue-200 rounded-lg p-3 items-start mt-4 text-sm gap-2";
 const info =
-    "w-full max-w-full h-fit flex flex-row bg-gray-100 border border-gray-200 rounded-lg p-3 items-center mt-4 text-sm gap-2 text-wrap";
+    "w-full max-w-full h-fit flex flex-row bg-gray-100 border border-gray-200 rounded-lg p-3 items-start mt-4 text-sm gap-2 text-wrap";
 const code = "w-full max-w-full overflow-x-scroll h-fit";
 const responseField = "";
 const latex = "";

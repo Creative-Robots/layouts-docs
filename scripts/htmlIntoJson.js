@@ -3,7 +3,7 @@ const path = require('path');
 
 function parsedFileName(fileName) {
     // Suppression de la partie initiale avec chiffres et tirets
-    let modifiedFileName = fileName.replace(/^[\d-]+_/, '');
+    let modifiedFileName = fileName.replace(/^[\d-]+_/, '').replace('&', 'and');
 
     // Suppression de l'extension de fichier
     modifiedFileName = removeFileExtension(modifiedFileName);

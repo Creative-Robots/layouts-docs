@@ -75,7 +75,7 @@ const CustomLi = ({ children, id }: {children:ReactNode, id:string}) => (
 // Note
 const Note = ({ children, id }: {children:ReactNode, id:string}) => (
   <div className={note} id={id}>
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0080ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 shrink-0 mt-2" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0080ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
     {children}
   </div>
 );
@@ -83,7 +83,7 @@ const Note = ({ children, id }: {children:ReactNode, id:string}) => (
 // Note
 const Info = ({ children, id }: {children:ReactNode, id:string}) => (
   <div className={info} id={id}>
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#808080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 shrink-0 mt-2" viewBox="0 0 24 24" fill="none" stroke="#808080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
     <span>
       {children}
     </span>

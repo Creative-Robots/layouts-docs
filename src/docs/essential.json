@@ -291,9 +291,9 @@
           }
         }
       },
-      "01_Theming.mdx": {
-        "name": "01_Theming",
-        "parsedName": "theming",
+      "01_Theming & Styling.mdx": {
+        "name": "01_Theming & Styling",
+        "parsedName": "theming-and-styling",
         "entries": [
           {
             "entry": "Theming & Styling",
