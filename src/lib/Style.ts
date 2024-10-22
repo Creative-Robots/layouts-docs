@@ -2,7 +2,7 @@
 
 import { cn } from "./cn";
 
-const innerTextColor: string = "text-textcolor-secondary";
+const innerTextColor: string = "text-textcolor-secondary group-hover:text-absolute-negative";
 export const selectedElementStyle: string = "text-textcolor-primary";
 
 const folder_1 = cn(
@@ -10,7 +10,7 @@ const folder_1 = cn(
 );
 
 const folder_2 = cn(
-    "truncate hover:text-black text-[13px] 3xs:text-[5vw] 2xs:text-sm",
+    "truncate hover:text-absolute-negative text-[13px] 3xs:text-[5vw] 2xs:text-sm",
     innerTextColor
 );
 
@@ -152,7 +152,7 @@ const CodeBlockLineToken = "max-w-full";
 
 // BreadCrums
 const BreadCrums = "h-fit w-fit flex flex-row gap-1 justify-start items-center";
-const BreadCrumsBase = "text-xs h-fit text-black/30 bg-background-2";
+const BreadCrumsBase = "text-xs h-fit text-absolute-negative/30";
 const BreadCrumsItem = "text-xs text-textcolor-primary";
 
 // Other
