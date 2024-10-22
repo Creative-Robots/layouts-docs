@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
+import { text } from "stream/consumers";
+
 function colorVariant(color: string) {
   return {
     DEFAULT: `hsl(var(--${color}))`,
@@ -60,9 +62,18 @@ module.exports = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+
+        hover:  "hsl(var(--hover))",
+
         background: "hsl(var(--background))",
+        "background-2": "hsl(var(--background-2))",
+        relief: "hsl(var(--relief))",
+        text: "hsl(var(--text))",
+
+        "absolute-negative": "hsl(var(--absolute-negative))",
+        "absolute-positive": "hsl(var(--absolute-positve))",
+
         foreground: "hsl(var(--foreground))",
-        ...colorVariants(['background', 'primary', 'secondary', 'destructive', 'muted', 'accent', 'popover', 'card']),
         textcolor: {
           DEFAULT: "hsl(var(--textcolor-primary))",
           primary: "hsl(var(--textcolor-primary))",

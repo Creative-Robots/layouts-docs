@@ -50,11 +50,11 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
             <DocBreadcrums items={[tag]} />
             <div className='flex flex-col'>
                 <Title title={title} description={shortDescriptionOfTheTag} ></Title>
-                {/* <p className='text-lg text-[#5B5E66] font-normal'>{shortDescriptionOfTheTag}</p> */}
+                {/* <p className='text-lg text-textcolor-tertiary font-normal'>{shortDescriptionOfTheTag}</p> */}
                 {title && <div className='flex flex-row gap-2 items-center  '>
-                    <p className='text-xs font-body text-[#1E1F22] '>Source : </p>
-                    <img alt="authorImg" src="https://seeklogo.com/images/H/html5-without-wordmark-black-white-logo-104D0855A4-seeklogo.com.png"  className='w-[12px]'/>
-                    <p className=' text-xs font-body text-[#1E1F22]'>HTML 5</p>
+                    <p className='text-xs font-body text-textcolor-primary '>Source : </p>
+                    <img alt="authorImg" src="https://seeklogo.com/images/H/html5-without-wordmark-absolute-negative-absolute-positive-logo-104D0855A4-seeklogo.com.png"  className='w-[12px]'/>
+                    <p className=' text-xs font-body text-textcolor-primary'>HTML 5</p>
                 </div>} 
             </div>
 
@@ -85,7 +85,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                                 <div className={PropsCol}>
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
                                     <div className={cn(PropsColTitle)} key={attribute.name + 'acceptedValueType' + idx2}>
-                                        <p className="text-sm text-[#5B5E66]">{at.type}</p>
+                                        <p className="text-sm text-textcolor-tertiary">{at.type}</p>
                                         {at.options?.map((e, i) => (
                                             <span key={e + i}></span>
                                         ))}
@@ -96,7 +96,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                                 {attribute.acceptedValueTypes.map((at, idx2) => (
                                     <div className={cn(PropsColTitle, "gap-0.5")} key={attribute.name + 'options' + idx2}>
                                     {at.options?.map((e, i) => (
-                                        <p className={cn(PropsColTitleText, "truncate bg-white rounded-sm px-1")} key={e + i}>{e}</p>
+                                        <p className={cn(PropsColTitleText, "truncate bg-absolute-positive rounded-sm px-1")} key={e + i}>{e}</p>
                                     ))}
                                     </div>
                                 ))}

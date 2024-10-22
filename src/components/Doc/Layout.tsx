@@ -22,7 +22,7 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
     sources.map((source, idx) => {
         if (sourcesList.length > 0) {
             sourcesList.push(
-                <p className='text-xs font-body text-[#1E1F22]'>|</p>
+                <p className='text-xs font-body text-textcolor-primary'>|</p>
             )
         }
 
@@ -60,19 +60,19 @@ const SourcesUsage = ({sources}:{sources:string[]}) => {
             )
             return (
                 <>
-                    <p className='text-xs font-body text-[#1E1F22] '>Uses  : </p>
+                    <p className='text-xs font-body text-textcolor-primary '>Uses  : </p>
                     {sourcesList}
                 </>
             )
         }
         sourcesList.push(
-            <p className='text-xs font-body text-[#1E1F22]'>{source}</p>
+            <p className='text-xs font-body text-textcolor-primary'>{source}</p>
         )
     })
 
     return (
         <>
-            <p className='text-xs font-body text-[#1E1F22] '>Uses  : </p>
+            <p className='text-xs font-body text-textcolor-primary '>Uses  : </p>
             {sourcesList}
         </>
     )
@@ -98,7 +98,7 @@ export default function LayoutComponentsDoc({data}:DocProps) {
             <DocBreadcrums items={[name]} />
             <div className='flex flex-col gap-1'>
                 <Title title={name} description={description}></Title>
-                {/* <p className='text-lg text-[#5B5E66] font-normal'>{description}</p> */}
+                {/* <p className='text-lg text-textcolor-tertiary font-normal'>{description}</p> */}
                 {name && sources && sources.length !== 0 && <div className='flex flex-row gap-2 items-center  '>
                     <SourcesUsage sources={sources}/>
                 </div>} 

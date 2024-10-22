@@ -175,12 +175,12 @@ export function Entry({ i, entry, isActive, level }: EntryProps) {
 
     return (
         <a
-            className={cn("text-xs font-normal text-gray-400 hover:text-[#1e1f22] cursor-pointer flex flex-row items-center", isActive ? "text-black" : "")}
+            className={cn("text-xs font-normal text-gray-400 hover:text-textcolor-primary cursor-pointer flex flex-row items-center", isActive ? "text-absolute-negative" : "")}
             href={`#${elementId}`}
             onClick={(e) => scrollToElement(e, type)}
         >
-            {level === 2 ? <div className='text-xs h-0.5 w-1 rounded-full bg-gray-300 group-hover:bg-[#1e1f22] mr-2'></div> : null}
-            {level === 3 ? <div className='text-xs size-0.5 rounded-none bg-gray-200 group-hover:bg-[#1e1f22] mr-2'></div> : null}
+            {level === 2 ? <div className='text-xs h-0.5 w-1 rounded-full bg-gray-300 group-hover:bg-background mr-2'></div> : null}
+            {level === 3 ? <div className='text-xs size-0.5 rounded-none bg-hover group-hover:bg-background mr-2'></div> : null}
             {entry}
         </a>
     );

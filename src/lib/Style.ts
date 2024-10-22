@@ -2,11 +2,11 @@
 
 import { cn } from "./cn";
 
-const innerTextColor: string = "text-gray-400";
-export const selectedElementStyle: string = "text-[#1e1f22]";
+const innerTextColor: string = "text-textcolor-secondary";
+export const selectedElementStyle: string = "text-textcolor-primary";
 
 const folder_1 = cn(
-    " text-[13px] 3xs:text-[5vw] 2xs:text-sm text-[#1e1f22] font-medium truncate"
+    " text-[13px] 3xs:text-[5vw] 2xs:text-sm text-textcolor-primary font-medium truncate"
 );
 
 const folder_2 = cn(
@@ -20,7 +20,7 @@ const folder_3 = cn(
 );
 
 const element = cn(
-    "hover:text-[#1e1f22] w-fit text-[13px] 3xs:text-[5vw] 2xs:text-sm font-body text-start truncate py-1 text-wrap",
+    "hover:text-textcolor-primary w-fit text-[13px] 3xs:text-[5vw] 2xs:text-sm font-body text-start truncate py-1 text-wrap",
     innerTextColor
 );
 
@@ -37,44 +37,44 @@ const li = cn("flex flex-row justify-start");
 const note =
     "w-full max-w-full h-fit flex flex-row bg-blue-50 border border-blue-200 rounded-lg p-3 items-start mt-4 text-sm gap-2";
 const info =
-    "w-full max-w-full h-fit flex flex-row bg-gray-100 border border-gray-200 rounded-lg p-3 items-start mt-4 text-sm gap-2 text-wrap";
+    "w-full max-w-full h-fit flex flex-row bg-background-2 border border-hover rounded-lg p-3 items-start mt-4 text-sm gap-2 text-wrap";
 const code = "w-full max-w-full overflow-x-scroll h-fit";
 const responseField = "";
 const latex = "";
 const snippetIntro = "";
 const Card =
-    "flex flex-col h-fit p-6 mt-5 border w-full p-3 rounded-xl hover:border-black cursor-pointer";
+    "flex flex-col h-fit p-6 mt-5 border w-full p-3 rounded-xl hover:border-absolute-negative cursor-pointer bg-relief";
 
 // similarity
 
-const GlobalDescription = "text-sm text-[#5B5E66] mb-2";
+const GlobalDescription = "text-sm text-textcolor-primary mb-2";
 
 // styles for Components Pages
 
 const TitleBox = "justify-start items-start gap-1 flex-col flex w-full";
 const TitleBox_Mdx = "mb-[32px]";
 const Title =
-    "text-[#1e1f22] text-2xl md:text-[30px] md:mb-3 md:mt-2 font-medium tracking-tight";
+    "text-textcolor-primary text-2xl md:text-[30px] md:mb-3 md:mt-2 font-medium tracking-tight";
 const TitleDescription = cn(GlobalDescription, "text-sm md:text-base");
 const SubTitleDescription = cn(GlobalDescription, "text-xs md:text-sm");
 
 const Heading1Box =
     "justify-start gap-2 items-start flex-col flex w-full my-[0.67em]";
-const Heading1 = "text-[#1e1f22] text-lg md:text-xl tracking-tight font-medium";
+const Heading1 = "text-textcolor-primary text-lg md:text-xl tracking-tight font-medium";
 const Heading1Description = cn(GlobalDescription, "");
 
 const Heading2Box = "justify-start items-start flex-col flex w-full mb-2";
 const Heading2Box_Mdx = "mt-[48px] mb-[16px]";
-const Heading2 = "text-[#1e1f22] text-sm md:text-base font-medium mb-1";
+const Heading2 = "text-textcolor-primary text-sm md:text-base font-medium mb-1";
 const Heading2Description = cn(GlobalDescription, "");
 
 const SubHeadingBox = "justify-start items-start flex-col flex w-full my-2";
-const SubHeading = "text-[#5b5e66] text-sm";
+const SubHeading = "text-textcolor-primary text-sm";
 const SubHeadingDescription = cn(GlobalDescription, "");
 
 const H3Box = "justify-start items-start flex-col flex w-full gap-2";
 const H3Box_Mdx = " mt-[48px] mb-[12px]";
-const H3 = "text-[#5b5e66] text-[16px] font-medium";
+const H3 = "text-textcolor-primary text-[16px] font-medium";
 const H3Description = cn(GlobalDescription, "");
 
 const H4 = "text-slate-900/80 text-[14px] font-medium";
@@ -86,51 +86,51 @@ const DivWithToolTip = "relative flex flex-row items-center gap-2 text-xs";
 const DivWithDescription =
     "relative flex flex-row items-center gap-2 col-span-3";
 const PropsNameWithDesc =
-    "text-sm text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit truncate";
+    "text-sm text-textcolor-secondary bg-hover px-2 py-1 rounded-lg w-fit truncate";
 
 const PropsHeaderBox =
     "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[300px]";
 const PropsHeader = "grid grid-cols-6 sm:grid-cols-11 gap-2";
-const PropsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
+const PropsHeaderTitle = "text-sm text-textcolor-primary font-medium col-span-3";
 const isRequiredTitle = "col-span-2 text-center";
 
-const PropsLine1_2 = "bg-[#fcfcfc]";
-const PropsLine2_2 = "bg-[#fafafa]";
+const PropsLine1_2 = "bg-background";
+const PropsLine2_2 = "bg-relief";
 
 const PropsLineBox =
     "flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3";
 const PropsLine = "grid grid-cols-6 sm:grid-cols-11 gap-2 items-center text-xs";
 
 const PropsName =
-    "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-3 truncate";
+    "text-xs text-textcolor-secondary bg-hover px-2 py-1 rounded-lg w-fit col-span-3 truncate";
 
 const PropsCol = "flex flex-col justify-normal items-start col-span-3";
 const PropsColTitle = "flex flex-col justify-normal items-start";
-const PropsColTitleText = "text-xs font-medium text-[#1E1F22]";
+const PropsColTitleText = "text-xs font-medium text-textcolor-primary";
 
-const requiredCol = "text-sm text-[#1E1F22] text-center col-span-2";
+const requiredCol = "text-sm text-textcolor-primary text-center col-span-2";
 
-const Description = "text-base text-[#5B5E66] font-normal";
+const Description = "text-base text-textcolor-primary font-normal";
 
 const VariantsHeaderBox =
     "flex flex-col gap-2 px-4 w-full mt-4 mb-2 min-w-[300px]";
 const VariantsHeader = "grid grid-cols-5 gap-2";
-const VariantsHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-2";
-const VariantsSecondHeaderTitle = "text-sm text-[#5B5E66] font-medium col-span-3";
+const VariantsHeaderTitle = "text-sm text-textcolor-primary font-medium col-span-2";
+const VariantsSecondHeaderTitle = "text-sm text-textcolor-primary font-medium col-span-3";
 
-const VariantsLine1_2 = "bg-[#fcfcfc]";
-const VariantsLine2_2 = "bg-[#fafafa]";
+const VariantsLine1_2 = "bg-background";
+const VariantsLine2_2 = "bg-relief";
 
 const VariantsLineBox =
     "flex flex-col gap-4 min-h-8 justify-center px-4 border-b py-3";
 const VariantsLine = "grid grid-cols-5 gap-2 items-center text-xs";
 
 const VariantsName =
-    "text-xs text-[#373114] bg-gray-200 px-2 py-1 rounded-lg w-fit col-span-2 break-all";
+    "text-xs text-textcolor-secondary bg-hover px-2 py-1 rounded-lg w-fit col-span-2 break-all";
 
 const VariantsCol = "flex flex-col justify-normal items-start col-span-3";
 const VariantsColTitle = "flex flex-col justify-normal items-start";
-const VariantsColTitleText = "text-xs font-medium text-[#1E1F22]";
+const VariantsColTitleText = "text-xs font-medium text-textcolor-primary";
 
 
 //CodeBlock
@@ -152,13 +152,13 @@ const CodeBlockLineToken = "max-w-full";
 
 // BreadCrums
 const BreadCrums = "h-fit w-fit flex flex-row gap-1 justify-start items-center";
-const BreadCrumsBase = "text-xs h-fit text-black/30";
-const BreadCrumsItem = "text-xs text-[#1E1F22]";
+const BreadCrumsBase = "text-xs h-fit text-black/30 bg-background-2";
+const BreadCrumsItem = "text-xs text-textcolor-primary";
 
 // Other
 const AcceptChildrenBox = "flex-row items-center";
 const AcceptChildrenTitle = ""; // by default its H2
-const AcceptChildrenIcon = "text-sm text-[#5B5E66] font-normal ml-10";
+const AcceptChildrenIcon = "text-sm text-textcolor-primary font-normal ml-10";
 
 // Export
 export {

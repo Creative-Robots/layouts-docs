@@ -12,14 +12,14 @@ interface ProspTabProps {
   const withToolTip = (tip:string, name:string, outline:boolean = false, required:boolean|undefined=false, tooDown:boolean=false) => {
     return (
       <span className={cn(DivWithToolTip)}>
-        <span className={cn("truncate" , outline ? "bg-gray-100 p-2 rounded-lg text-[#5b5e66]" : "")}>{name}<span className={cn(required === false ? "sm:hidden opacity-65" : "hidden")}>?</span></span>
+        <span className={cn("truncate" , outline ? "bg-background-2 p-2 rounded-lg text-textcolor-secondary" : "")}>{name}<span className={cn(required === false ? "sm:hidden opacity-65" : "hidden")}>?</span></span>
         <HoverCard closeDelay={10} openDelay={5} >
 	          <div className="hover-card" >
 	                <HoverCardTrigger asChild className="relative" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                   </HoverCardTrigger>
-	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full" collisionPadding={20} side="bottom" >
-	                    <p className="text-xs text-black max-w-40 w-fit" >
+	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full bg-background" collisionPadding={20} side="bottom" >
+	                    <p className="text-xs text-absolute-negative max-w-40 w-fit" >
                           {addNewlineAfterPeriod(tip)}
 	                    </p>
 	                </HoverCardContent>
@@ -46,8 +46,8 @@ interface ProspTabProps {
     }
     return (
         <div className={cn(DivWithDescription, "justify-start flex flex-row gap-1 items-center max-w-full")} >
-            <div className="flex p-2 rounded-lg bg-gray-100 truncate flex-1 max-w-fit" >
-                <p className="text-[#5b5e66] text-xs truncate" >
+            <div className="flex p-2 rounded-lg bg-background-2 truncate flex-1 max-w-fit" >
+                <p className="text-textcolor-secondary text-xs truncate" >
                     {name}<span className={cn(required === false ? "sm:hidden opacity-65" : "hidden")}>?</span>
                 </p>
             </div>
@@ -56,8 +56,8 @@ interface ProspTabProps {
 	                <HoverCardTrigger asChild className="relative" >
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
 	                </HoverCardTrigger>
-	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full" collisionPadding={20} side="bottom" >
-	                    <p className="text-xs text-black max-w-40 w-fit" >
+	                <HoverCardContent avoidCollisions className=" px-0 py-0 p-2.5 w-fit max-w-full bg-background" collisionPadding={20} side="bottom" >
+	                    <p className="text-xs text-absolute-negative max-w-40 w-fit" >
                           {addNewlineAfterPeriod(desc)}
 	                    </p>
 	                </HoverCardContent>

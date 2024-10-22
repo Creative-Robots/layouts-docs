@@ -65,7 +65,7 @@ export function SearchCommand({first} : {first: boolean}) {
         return IntoCommandInput(h.folder);
       } else {
         return (
-          <CommandItem key={h.name} value={h.name} onMouseDown={() => {router.push('/components/' + h.parsedName); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
+          <CommandItem key={h.name} value={h.name} onMouseDown={() => {router.push('/components/' + h.parsedName); setOpen((open) => !open);}} className="hover:bg-background-2 cursor-pointer rounded-md">
               {/* <Calendar className="mr-2 h-4 w-4" /> */}
               <span>{h.name}</span>
           </CommandItem>
@@ -76,17 +76,17 @@ export function SearchCommand({first} : {first: boolean}) {
 
   return (
     <>
-      <div className={cn("justify-start items-start flex-row flex gap-2 relative max-w-fit ml-auto self-center", type === "editor" ? "h-7 md:max-w-[250px] md:mr-4": "h-10 xs:max-w-[250px] xs:mr-4")} onClick={simulateCtrlK}>
-            <Input className={cn("reset px-4 py-2 items-center rounded-lg w-full bg-gray-100 placeholder:text-gray-500 outline-white focus:outline-gray-200 text-[#1e1f22] focus:shadow-sm cursor-pointer", type === "editor" ? "hidden md:block text-[10px] h-7" : "hidden xs:block text-[13px] h-10")} placeHolder="Search..." placeholder="Search..." />
+      <div className={cn("justify-start items-start flex-row flex gap-2 relative max-w-fit ml-auto self-center rounded-lg", type === "editor" ? "h-7 md:max-w-[250px] md:mr-4": "h-10 xs:max-w-[250px] xs:mr-4")} onClick={simulateCtrlK}>
+            <Input className={cn("reset px-4 py-2 items-center rounded-lg w-full bg-background-2 placeholder:text-gray-500 dark:placeholder:text-gray-400 border-border outline-absolute-positive focus:outline-relief text-textcolor-primary focus:shadow-sm cursor-pointer", type === "editor" ? "hidden md:block text-[10px] h-7" : "hidden xs:block text-[13px] h-10")} placeHolder="Search..." placeholder="Search..." />
             <div className={cn("items-center justify-start gap-1 absolute right-2", type === "editor" ? "hidden md:flex top-1" : "hidden xs:flex top-2.5")} >
-                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
+                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-textcolor-secondary opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-absolute-positive border border-gray-400/20" >
                     ⌘
                 </kbd>
-                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-muted-foreground opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-white border border-gray-400/20" >
+                <kbd className="w-fit pointer-events-none inline-flex select-none items-center font-mono text-textcolor-secondary opacity-100 h-5 gap-1 px-1.5 text-xs font-medium rounded bg-absolute-positive border border-gray-400/20" >
                     K
                 </kbd>
             </div>
-            <SearchIcon height={16} width={16} className={cn("items-center justify-start gap-1 my-auto hover:text-black cursor-pointer", type === "editor" ? "hidden 4xs:flex md:hidden" : "flex xs:hidden")}></SearchIcon>
+            <SearchIcon height={16} width={16} className={cn("items-center justify-start gap-1 my-auto hover:text-absolute-negative cursor-pointer", type === "editor" ? "hidden 4xs:flex md:hidden" : "flex xs:hidden")}></SearchIcon>
       </div>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a command or search..." />
@@ -95,7 +95,7 @@ export function SearchCommand({first} : {first: boolean}) {
           <CommandGroup heading="Layouts components" className="gap-0">
               {LayoutsComponents.map((e) => {
                   return (
-                      <CommandItem key={e.tag} value={e.name} onSelect={() => {router.push('/components/' + e.tag); setOpen((open) => !open);}} className="hover:bg-gray-100 cursor-pointer rounded-md">
+                      <CommandItem key={e.tag} value={e.name} onSelect={() => {router.push('/components/' + e.tag); setOpen((open) => !open);}} className="hover:bg-background-2 cursor-pointer rounded-md">
                               {/* <Calendar className="mr-2 h-4 w-4" /> */}
                               <span>{e.name}</span>
                       </CommandItem>

@@ -28,12 +28,12 @@ export function MySheet() {
 
     return (
         <Sheet open={isOpen}>
-            <SheetTrigger className=" hover:bg-gray-100 rounded-md size-fit my-auto p-1 ml-2" onClick={() => setIsOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></SheetTrigger>
-            <SheetC className="bg-white px-0 pb-0 flex flex-col" side={'left'} setIsOpen={setIsOpen}>
-                <SheetHeader className="mb-4 bg-gradient-to-b from-white to-transparent 4xs:block hidden pt-2 2xs:pt-0">
+            <SheetTrigger className=" hover:bg-background-2 rounded-md size-fit my-auto p-1 ml-2" onClick={() => setIsOpen(true)}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg></SheetTrigger>
+            <SheetC className="bg-absolute-positive px-0 pb-0 flex flex-col" side={'left'} setIsOpen={setIsOpen}>
+                <SheetHeader className="mb-4 bg-gradient-to-b from-absolute-positive to-transparent 4xs:block hidden pt-2 2xs:pt-0">
                 <SheetTitle className="flex flex-row justify-start 3xs:justify-center pl-4 3xs:pl-0 gap-2 3xs:gap-4 ">
                     <div className="my-auto"><LayoutsImage/></div>
-                    <span className="text-[11px] 4xs:text-[8vw] 3xs:text-xl 4xs:pl-0 font-semibold">Documentation</span>
+                    <span className="text-[11px] 4xs:text-[8vw] 3xs:text-xl 4xs:pl-0 font-semibold text-textcolor-primary">Documentation</span>
                 </SheetTitle>
                 </SheetHeader>
                 <SheetContent bottom className="pt-4 4xs:pt-0" onOpenChange={setIsOpen}/>
@@ -165,14 +165,14 @@ export function SheetContent({className, bottom=false, onOpenChange}:{className?
             {parseFileHierarchie(fileNames, 0, onOpenChange)}
         </div>
         {
-            bottom && <div className="w-full border-t border-gray-400/20 h-fit py-6 4xs:p-6 gap-2 flex flex-col items-center 4xs:items-start bg-white">
-                <Button onClick={handleDiscordOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto text-[#5b5e66] hover:text-[#1e1f22] font-normal bg-gray-100 hover:bg-gray-200 rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
+            bottom && <div className="w-full border-t border-gray-400/20 h-fit py-6 4xs:p-6 gap-2 flex flex-col items-center 4xs:items-start bg-background">
+                <Button onClick={handleDiscordOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto hover:text-textcolor-primary text-textcolor-secondary font-normal bg-background-2 hover:bg-hover rounded-lg transition delay-0 duration-0 justify-center" variant="secondary" >
                     <img alt="message" className="size-3.5" src="https://illustrations.dev/encrypted/img_MzM1QkNEQUQwQzgzQ0MxOUY0MTBFOTM0ODMwQjlDODM2NTZEQ0E3NzA2ODdGOTZE" />
                     <span className=" hidden 3xs:block text-sm" >Chat with us</span> {/** base text */}
                     <span className="hidden 4xs:block 3xs:hidden text-[15px]" >Chat</span> {/** Small text */}
                 </Button>
                 {
-                    type !== "editor" && <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto bg-white text-[#5b5e66] hover:text-[#1e1f22] font-normal hover:bg-gray-50 border border-gray-400/20 rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
+                    type !== "editor" && <Button onClick={handleOpen} className="reset flex flex-row gap-2 items-center p-3 w-fit 4xs:w-full mx-auto bg-absolute-positive hover:text-textcolor-primary text-textcolor-secondary font-normal hover:bg-background-2 border border-border rounded-lg shadow-sm transition delay-0 duration-0 justify-center" variant="outline" >
                         <img alt="" className="size-3.5 opacity-60" src="https://dl.dropbox.com/scl/fi/igx4yvav3q5ygc1kvhl05/layoutsv2_2.2_black.svg?rlkey=5c93fcyf4414om4ijvnhzpepo&st=p3x6p2ud&dl=0" />
                         <span className=" hidden 3xs:block text-sm" >Open the App</span> {/** base text */}
                         <span className=" hidden 4xs:block 3xs:hidden text-[15px]" >App</span> {/** Small text */}

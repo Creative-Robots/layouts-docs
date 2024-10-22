@@ -7,7 +7,7 @@ interface badgeProps extends componentsProps {
 
 const Badge = ({children, className}:badgeProps) => {
     return (
-        <div className={cn("bg-gray-100 px-3 py-1 rounded-full text-sm", className)}>
+        <div className={cn("bg-background-2 px-3 py-1 rounded-full text-sm", className)}>
             {children}
         </div>
     )

@@ -35,7 +35,7 @@ export default function CopyClipboard({id}:{id:string}) {
     };
 
     return (
-        <button title='Copy to clipboard' onClick={handle} className={cn('absolute size-fit rounded-sm bg-[#ffffff] p-1 top-2 right-2 z-30', (activated ? "border-green-200 border" : ""))}>
+        <button title='Copy to clipboard' onClick={handle} className={cn('absolute size-fit rounded-sm bg-absolute-positive dark:bg-absolute-negative p-1 top-2 right-2 z-30', (activated ? "border-green-200 border" : ""))}>
             { !activated
             ? <IoCopySharp color='#333333' size={12}/>
             : <span className='text-[#339933] text-xs flex flex-row items-center'>copied <FaCheck color='#339933' size={12}/></span>}

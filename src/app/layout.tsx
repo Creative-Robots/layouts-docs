@@ -1,27 +1,8 @@
 
-import type { GetServerSideProps, Metadata } from "next";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
-import Badge from "@/components/Badge";
-import Icon from "@/components/Icon";
 import "@mintlify/mdx/dist/styles.css"
-
-import { CiSearch } from "react-icons/ci";
-import { IoSunnyOutline } from "react-icons/io5";
-import { SheetContent } from "@/components/Sheet";
-
-import {
-  Sheet,
-  SheetContent as SheetC,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ShadCn/Sheet"
-import { cn } from "@/lib/cn";
-import { FaChevronRight } from "react-icons/fa6";
-import { SearchCommand } from "@/components/Command/MyCommand";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +16,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
