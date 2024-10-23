@@ -53,7 +53,7 @@ export default function HtmlComponentDoc({children, className, data}:DocProps) {
                 {/* <p className='text-lg text-textcolor-tertiary font-normal'>{shortDescriptionOfTheTag}</p> */}
                 {title && <div className='flex flex-row gap-2 items-center  '>
                     <p className='text-xs font-body text-textcolor-primary '>Source : </p>
-                    <img alt="authorImg" src="https://seeklogo.com/images/H/html5-without-wordmark-absolute-negative-absolute-positive-logo-104D0855A4-seeklogo.com.png"  className='w-[12px]'/>
+                    <img alt="authorImg" src="https://seeklogo.com/images/H/html5-without-wordmark-black-white-logo-104D0855A4-seeklogo.com.png"  className='w-[12px]'/>
                     <p className=' text-xs font-body text-textcolor-primary'>HTML 5</p>
                 </div>} 
             </div>
