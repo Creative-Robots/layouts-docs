@@ -22,7 +22,7 @@ export default async function AppLayout({children}: {children?: ReactNode}) {
             <LayoutsTopBar/>
             <ToggleMode />
             {/** Sheet if small */}
-            <div className="h-12 w-full flex flex-row border-t border-absolute-negative/5 md:hidden">
+            <div className="h-12 w-full flex flex-row border-absolute-negative/5 md:hidden">
                 
                 <MySheet />
                 
