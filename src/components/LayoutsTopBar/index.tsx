@@ -11,6 +11,7 @@ import { cn } from '@/lib/cn';
 const LayoutsTopBar = () => {
     const searchParams = useSearchParams();
     const type = searchParams.get("type");
+    
 
     if (!type || type !== "editor") {
         return (            

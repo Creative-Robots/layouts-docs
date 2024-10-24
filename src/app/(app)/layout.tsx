@@ -11,6 +11,7 @@ import { SecondLayoutsSearchCommand } from "@/components/SearchCommand";
 import { LayoutsTopBar, SecondLayoutsTopBar } from "@/components/LayoutsTopBar";
 import LayoutsMain from "@/components/LayoutsMain";
 import ToggleMode from "@/components/ToggleMode";
+import BorderDisable from "@/components/LayoutsImage/borderDisable";
 
 export default async function AppLayout({children}: {children?: ReactNode}) {
 
@@ -22,7 +23,7 @@ export default async function AppLayout({children}: {children?: ReactNode}) {
             <LayoutsTopBar/>
             <ToggleMode />
             {/** Sheet if small */}
-            <div className="h-12 w-full flex flex-row border-absolute-negative/5 md:hidden">
+            <BorderDisable>
                 
                 <MySheet />
                 
@@ -35,7 +36,7 @@ export default async function AppLayout({children}: {children?: ReactNode}) {
                         <span className="text-xs text-textcolor-primary" key={idx + 'sp'}>{i}</span>
                     </React.Fragment>))} */}
                 </div>
-            </div>
+            </BorderDisable>
             <SecondLayoutsTopBar/>
         </div>
 
