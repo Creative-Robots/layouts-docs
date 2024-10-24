@@ -97,12 +97,12 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
     };
 
     if (dark) return (
-        <div className={cn("justify-start items-start flex-col flex bg-background h-fit rounded-lg border border-gray-400 w-full min-w-[100px]", className)} >
-            <div className="flex w-full p-3 justify-between border-b border-absolute-positive/5 items-center py-1.5" >
+        <div className={cn("justify-start items-start flex-col flex bg-relief h-fit rounded-lg border border-gray-400 w-full min-w-[100px]", className)} >
+            <div className="flex w-full p-3 justify-between border-b border-absolute-positive items-center py-1.5" >
                 <span className="text-xs text-absolute-positive font-normal" >
                     { title ? title : "Short syntax"}
                 </span>
-                <Button onClick={copyCode} className="reset size-fit flex p-1.5 border rounded-lg bg-transparent hover:bg-absolute-positive/10 text-absolute-positive border-transparent transition delay-0 duration-75 hover:shadow-sm" variant="default" >
+                <Button onClick={copyCode} className="reset size-fit flex p-1.5 border rounded-lg bg-background hover:bg-absolute-positive/10 text-absolute-positive border-transparent transition delay-0 duration-75 hover:shadow-sm" variant="default" >
                     {state.value 
                         ? <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
                         : <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
@@ -120,12 +120,12 @@ export const CodeBlock = ({code, label, title, dark=false, className}:CodeBlockP
     const blockPadding = 'p-3 sm:p-4 py-3 sm:py-4'
 
     return (
-        <div className={cn("justify-start items-start flex-col flex bg-relief h-fit rounded-lg border border-gray-400/20 w-full min-w-[100px]", className)} >
+        <div className={cn("justify-start items-start flex-col flex  bg-relief h-fit rounded-lg border border-gray-400/20 w-full min-w-[100px]", className)} >
             <div className={cn(blockPadding, `flex w-full justify-between border-b border-absolute-negative/5 items-center py-1.5 sm:py-1.5 md:py-1.5`)} >
                 <span className="text-xs text-textcolor-secondary font-normal" >
                     { title ? title : "Short syntax"}
                 </span>
-                <Button onClick={copyCode} className="reset size-fit flex p-1.5 border rounded-lg bg-transparent hover:bg-absolute-positive dark:hover:bg-absolute-negative text-textcolor-tertiary hover:text-textcolor-primary transition delay-0 duration-75 hover:shadow-sm" variant="default" >
+                <Button onClick={copyCode} className="reset size-fit flex p-1.5 border rounded-lg bg-background hover:bg-absolute-positive text-textcolor-tertiary hover:text-textcolor-primary transition delay-0 duration-75 hover:shadow-sm" variant="default" >
                     {state.value 
                         ? <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
                         : <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
