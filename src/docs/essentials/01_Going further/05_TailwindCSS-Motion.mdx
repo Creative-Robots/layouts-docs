@@ -1,0 +1,128 @@
+---
+title: tailwindCSS-motion 
+description: Comprehensive guide to using tailwindcss-motion in layouts.dev, including classes, examples, and pseudo-class details.
+---
+
+Welcome to the TailwindCSS Motion guide for layouts.dev! This page provides an overview of all available motion classes, examples of how to use them, and notes on pseudo-classes that enhance motion effects.
+---
+<video
+	autoPlay
+	muted
+	loop
+	playsInline
+	className="w-full"
+	src="https://dl.dropbox.com/scl/fi/cnwd65k43m2zz079sg49f/animation-example-1.mp4?rlkey=7o03d0to88vknym1jfa5drnxd&st=zrog9c4h&dl=0"
+ ></video>
+ 
+---
+
+# Motion Presets
+
+tailwindcss-motion offers a variety of presets to simplify animations:
+
+- **Fade**: `motion-preset-fade`
+- **Slide**:
+  - Right: `motion-preset-slide-right`
+  - Left: `motion-preset-slide-left`
+  - Up: `motion-preset-slide-up`
+  - Down: `motion-preset-slide-down`
+- **Focus**: `motion-preset-focus`
+- **Blur**:
+  - Right: `motion-preset-blur-right`
+  - Left: `motion-preset-blur-left`
+  - Up: `motion-preset-blur-up`
+  - Down: `motion-preset-blur-down`
+- **Bounce**: `motion-preset-bounce`
+- **Expand**: `motion-preset-expand`
+- **Shrink**: `motion-preset-shrink`
+- **Pop**: `motion-preset-pop`
+- **Compress**: `motion-preset-compress`
+- **Shake**: `motion-preset-shake`
+- **Wiggle**: `motion-preset-wiggle`
+- **Confetti**: `motion-preset-confetti`
+- **Typewriter**: `motion-preset-typewriter-[number of characters]`
+- **Flomoji**: `motion-preset-flomoji`
+
+### Example: Applying a Fade Preset
+
+```Layouts syntax
+/div motion-preset-fade
+  <!-- Your content here -->
+```
+---
+
+# Custom animations
+
+For more control, tailwindcss-motion provides base classes for creating custom animations:
+
+- **Fade In**: `motion-opacity-in-0`
+- **Slide In**:
+- **From below**: `motion-translate-y-in-100`
+- **From above**: `-motion-translate-y-in-100`
+- **Scale In**: `motion-scale-in-75`
+- **Rotate In**:
+    - From 180 degrees: `motion-rotate-in-180`
+    - From -90 degrees: `-motion-rotate-in-90`
+- **Blur In**: `motion-blur-in-sm`
+- **Grayscale In**: `motion-grayscale-in`
+- **Background Color Change**: `motion-bg-in-red-500`
+- **Text Color Change**: `motion-text-in-blue-500`
+
+### Example: Applying a Fade Preset
+```Layouts syntax
+/div motion-scale-in-75 motion-translate-y-in-100 motion-rotate-in-90
+  <!-- Your content here -->
+```
+
+---
+
+## Modifiers
+
+Fine-tune animations with these modifiers:
+
+- **Duration**: `motion-duration-500`
+- **Delay**: `motion-delay-500`
+- **Timing Function**: `motion-timing-spring-bouncy`
+- **Play State**: `motion-paused` or `motion-running`
+
+### Example: Adjusting Duration
+```Layouts syntax
+/div motion-duration-1500 motion-rotate-in-180 motion-opacity-in-[0]
+    <!-- Your content here -->
+```
+
+---
+
+# Ease functions
+
+Tailwind Motion includes custom timing functions:
+
+- `motion-ease-spring-smooth`
+- `motion-ease-spring-snappy`
+- `motion-ease-spring-bouncy`
+- `motion-ease-spring-bounciest`
+- `motion-ease-bounce`
+
+---
+
+# Psuedo-Classes
+
+Enhance interactivity with pseudo-classes:
+
+- **Hover**: `hover:motion-preset-fade`
+- **Focus**: `focus:motion-preset-slide-right`
+- **Active**: `active:motion-preset-bounce`
+
+### Example: Hover Animation
+```Layouts syntax
+/button hover:motion-preset-pop
+  Hover over me!
+```
+
+---
+
+For a comprehensive guide on using `tailwindcss-motion`, including class examples and pseudo-class details, visit the official documentation:
+
+[**View TailwindCSS Motion on GitHub**](https://github.com/romboHQ/tailwindcss-motion)
+
+

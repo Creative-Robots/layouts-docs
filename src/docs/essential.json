@@ -410,6 +410,43 @@
             "description": "How to create and manage images, illustrations and icons in Layouts"
           }
         }
+      },
+      "05_TailwindCSS-Motion.mdx": {
+        "name": "05_TailwindCSS-Motion",
+        "parsedName": "tailwindcss-motion",
+        "entries": [
+          {
+            "entry": "tailwindCSS-motion",
+            "level": 1
+          },
+          {
+            "entry": "Example: Applying a Fade Preset",
+            "level": 1
+          },
+          {
+            "entry": "Example: Applying a Fade Preset",
+            "level": 1
+          },
+          {
+            "entry": "Modifiers",
+            "level": 1
+          },
+          {
+            "entry": "Example: Adjusting Duration",
+            "level": 1
+          },
+          {
+            "entry": "Example: Hover Animation",
+            "level": 1
+          }
+        ],
+        "content": {
+          "MdxContent": "\nWelcome to the TailwindCSS Motion guide for layouts.dev! This page provides an overview of all available motion classes, examples of how to use them, and notes on pseudo-classes that enhance motion effects.\n---\n<video\n\tautoPlay\n\tmuted\n\tloop\n\tplaysInline\n\tclassName=\"w-full\"\n\tsrc=\"https://dl.dropbox.com/scl/fi/cnwd65k43m2zz079sg49f/animation-example-1.mp4?rlkey=7o03d0to88vknym1jfa5drnxd&st=zrog9c4h&dl=0\"\n ></video>\n \n---\n\n# Motion Presets\n\ntailwindcss-motion offers a variety of presets to simplify animations:\n\n- **Fade**: `motion-preset-fade`\n- **Slide**:\n  - Right: `motion-preset-slide-right`\n  - Left: `motion-preset-slide-left`\n  - Up: `motion-preset-slide-up`\n  - Down: `motion-preset-slide-down`\n- **Focus**: `motion-preset-focus`\n- **Blur**:\n  - Right: `motion-preset-blur-right`\n  - Left: `motion-preset-blur-left`\n  - Up: `motion-preset-blur-up`\n  - Down: `motion-preset-blur-down`\n- **Bounce**: `motion-preset-bounce`\n- **Expand**: `motion-preset-expand`\n- **Shrink**: `motion-preset-shrink`\n- **Pop**: `motion-preset-pop`\n- **Compress**: `motion-preset-compress`\n- **Shake**: `motion-preset-shake`\n- **Wiggle**: `motion-preset-wiggle`\n- **Confetti**: `motion-preset-confetti`\n- **Typewriter**: `motion-preset-typewriter-[number of characters]`\n- **Flomoji**: `motion-preset-flomoji`\n\n### Example: Applying a Fade Preset\n\n```Layouts syntax\n/div motion-preset-fade\n  <!-- Your content here -->\n```\n---\n\n# Custom animations\n\nFor more control, tailwindcss-motion provides base classes for creating custom animations:\n\n- **Fade In**: `motion-opacity-in-0`\n- **Slide In**:\n- **From below**: `motion-translate-y-in-100`\n- **From above**: `-motion-translate-y-in-100`\n- **Scale In**: `motion-scale-in-75`\n- **Rotate In**:\n    - From 180 degrees: `motion-rotate-in-180`\n    - From -90 degrees: `-motion-rotate-in-90`\n- **Blur In**: `motion-blur-in-sm`\n- **Grayscale In**: `motion-grayscale-in`\n- **Background Color Change**: `motion-bg-in-red-500`\n- **Text Color Change**: `motion-text-in-blue-500`\n\n### Example: Applying a Fade Preset\n```Layouts syntax\n/div motion-scale-in-75 motion-translate-y-in-100 motion-rotate-in-90\n  <!-- Your content here -->\n```\n\n---\n\n## Modifiers\n\nFine-tune animations with these modifiers:\n\n- **Duration**: `motion-duration-500`\n- **Delay**: `motion-delay-500`\n- **Timing Function**: `motion-timing-spring-bouncy`\n- **Play State**: `motion-paused` or `motion-running`\n\n### Example: Adjusting Duration\n```Layouts syntax\n/div motion-duration-1500 motion-rotate-in-180 motion-opacity-in-[0]\n    <!-- Your content here -->\n```\n\n---\n\n# Ease functions\n\nTailwind Motion includes custom timing functions:\n\n- `motion-ease-spring-smooth`\n- `motion-ease-spring-snappy`\n- `motion-ease-spring-bouncy`\n- `motion-ease-spring-bounciest`\n- `motion-ease-bounce`\n\n---\n\n# Psuedo-Classes\n\nEnhance interactivity with pseudo-classes:\n\n- **Hover**: `hover:motion-preset-fade`\n- **Focus**: `focus:motion-preset-slide-right`\n- **Active**: `active:motion-preset-bounce`\n\n### Example: Hover Animation\n```Layouts syntax\n/button hover:motion-preset-pop\n  Hover over me!\n```\n\n---\n\nFor a comprehensive guide on using `tailwindcss-motion`, including class examples and pseudo-class details, visit the official documentation:\n\n[**View TailwindCSS Motion on GitHub**](https://github.com/romboHQ/tailwindcss-motion)\n\n\n",
+          "MdxFrontMatter": {
+            "title": "tailwindCSS-motion",
+            "description": "Comprehensive guide to using tailwindcss-motion in layouts.dev, including classes, examples, and pseudo-class details."
+          }
+        }
       }
     }
   }
