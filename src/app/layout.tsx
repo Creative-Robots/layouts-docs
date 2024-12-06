@@ -23,6 +23,12 @@ export default async function RootLayout({
 
   return (
     <html>
+      <Head>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Layouts.dev" />
+        <meta name="og:logo" content="/android-chrome-512x512.png" />
+      </Head>
       <Script id="custom-script" strategy="lazyOnload">
           {`
             (function() {
